@@ -1,0 +1,2625 @@
+ARM GAS  /tmp/ccj7mO0o.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m4
+   3              		.eabi_attribute 27, 1
+   4              		.eabi_attribute 28, 1
+   5              		.fpu fpv4-sp-d16
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 6
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.thumb
+  16              		.file	"ILI9341_GFX.c"
+  17              		.text
+  18              	.Ltext0:
+  19              		.cfi_sections	.debug_frame
+  20              		.section	.rodata.font,"a",%progbits
+  21              		.align	2
+  24              	font:
+  25 0000 00       		.byte	0
+  26 0001 00       		.byte	0
+  27 0002 00       		.byte	0
+  28 0003 00       		.byte	0
+  29 0004 00       		.byte	0
+  30 0005 00       		.byte	0
+  31 0006 5C       		.byte	92
+  32 0007 00       		.byte	0
+  33 0008 00       		.byte	0
+  34 0009 00       		.byte	0
+  35 000a 00       		.byte	0
+  36 000b 00       		.byte	0
+  37 000c 06       		.byte	6
+  38 000d 00       		.byte	0
+  39 000e 06       		.byte	6
+  40 000f 00       		.byte	0
+  41 0010 00       		.byte	0
+  42 0011 00       		.byte	0
+  43 0012 28       		.byte	40
+  44 0013 7C       		.byte	124
+  45 0014 28       		.byte	40
+  46 0015 7C       		.byte	124
+  47 0016 28       		.byte	40
+  48 0017 00       		.byte	0
+  49 0018 5C       		.byte	92
+  50 0019 54       		.byte	84
+  51 001a FE       		.byte	-2
+  52 001b 54       		.byte	84
+  53 001c 74       		.byte	116
+  54 001d 00       		.byte	0
+  55 001e 44       		.byte	68
+  56 001f 20       		.byte	32
+  57 0020 10       		.byte	16
+  58 0021 08       		.byte	8
+  59 0022 44       		.byte	68
+ARM GAS  /tmp/ccj7mO0o.s 			page 2
+
+
+  60 0023 00       		.byte	0
+  61 0024 28       		.byte	40
+  62 0025 54       		.byte	84
+  63 0026 54       		.byte	84
+  64 0027 20       		.byte	32
+  65 0028 50       		.byte	80
+  66 0029 00       		.byte	0
+  67 002a 06       		.byte	6
+  68 002b 00       		.byte	0
+  69 002c 00       		.byte	0
+  70 002d 00       		.byte	0
+  71 002e 00       		.byte	0
+  72 002f 00       		.byte	0
+  73 0030 38       		.byte	56
+  74 0031 44       		.byte	68
+  75 0032 00       		.byte	0
+  76 0033 00       		.byte	0
+  77 0034 00       		.byte	0
+  78 0035 00       		.byte	0
+  79 0036 44       		.byte	68
+  80 0037 38       		.byte	56
+  81 0038 00       		.byte	0
+  82 0039 00       		.byte	0
+  83 003a 00       		.byte	0
+  84 003b 00       		.byte	0
+  85 003c 02       		.byte	2
+  86 003d 07       		.byte	7
+  87 003e 02       		.byte	2
+  88 003f 00       		.byte	0
+  89 0040 00       		.byte	0
+  90 0041 00       		.byte	0
+  91 0042 10       		.byte	16
+  92 0043 10       		.byte	16
+  93 0044 7C       		.byte	124
+  94 0045 10       		.byte	16
+  95 0046 10       		.byte	16
+  96 0047 00       		.byte	0
+  97 0048 C0       		.byte	-64
+  98 0049 00       		.byte	0
+  99 004a 00       		.byte	0
+ 100 004b 00       		.byte	0
+ 101 004c 00       		.byte	0
+ 102 004d 00       		.byte	0
+ 103 004e 10       		.byte	16
+ 104 004f 10       		.byte	16
+ 105 0050 10       		.byte	16
+ 106 0051 10       		.byte	16
+ 107 0052 10       		.byte	16
+ 108 0053 00       		.byte	0
+ 109 0054 40       		.byte	64
+ 110 0055 00       		.byte	0
+ 111 0056 00       		.byte	0
+ 112 0057 00       		.byte	0
+ 113 0058 00       		.byte	0
+ 114 0059 00       		.byte	0
+ 115 005a 60       		.byte	96
+ 116 005b 10       		.byte	16
+ARM GAS  /tmp/ccj7mO0o.s 			page 3
+
+
+ 117 005c 0C       		.byte	12
+ 118 005d 00       		.byte	0
+ 119 005e 00       		.byte	0
+ 120 005f 00       		.byte	0
+ 121 0060 7C       		.byte	124
+ 122 0061 64       		.byte	100
+ 123 0062 54       		.byte	84
+ 124 0063 4C       		.byte	76
+ 125 0064 7C       		.byte	124
+ 126 0065 00       		.byte	0
+ 127 0066 48       		.byte	72
+ 128 0067 7C       		.byte	124
+ 129 0068 40       		.byte	64
+ 130 0069 00       		.byte	0
+ 131 006a 00       		.byte	0
+ 132 006b 00       		.byte	0
+ 133 006c 64       		.byte	100
+ 134 006d 54       		.byte	84
+ 135 006e 54       		.byte	84
+ 136 006f 54       		.byte	84
+ 137 0070 48       		.byte	72
+ 138 0071 00       		.byte	0
+ 139 0072 44       		.byte	68
+ 140 0073 54       		.byte	84
+ 141 0074 54       		.byte	84
+ 142 0075 54       		.byte	84
+ 143 0076 6C       		.byte	108
+ 144 0077 00       		.byte	0
+ 145 0078 3C       		.byte	60
+ 146 0079 20       		.byte	32
+ 147 007a 70       		.byte	112
+ 148 007b 20       		.byte	32
+ 149 007c 20       		.byte	32
+ 150 007d 00       		.byte	0
+ 151 007e 5C       		.byte	92
+ 152 007f 54       		.byte	84
+ 153 0080 54       		.byte	84
+ 154 0081 54       		.byte	84
+ 155 0082 24       		.byte	36
+ 156 0083 00       		.byte	0
+ 157 0084 7C       		.byte	124
+ 158 0085 54       		.byte	84
+ 159 0086 54       		.byte	84
+ 160 0087 54       		.byte	84
+ 161 0088 74       		.byte	116
+ 162 0089 00       		.byte	0
+ 163 008a 04       		.byte	4
+ 164 008b 04       		.byte	4
+ 165 008c 64       		.byte	100
+ 166 008d 14       		.byte	20
+ 167 008e 0C       		.byte	12
+ 168 008f 00       		.byte	0
+ 169 0090 7C       		.byte	124
+ 170 0091 54       		.byte	84
+ 171 0092 54       		.byte	84
+ 172 0093 54       		.byte	84
+ 173 0094 7C       		.byte	124
+ARM GAS  /tmp/ccj7mO0o.s 			page 4
+
+
+ 174 0095 00       		.byte	0
+ 175 0096 5C       		.byte	92
+ 176 0097 54       		.byte	84
+ 177 0098 54       		.byte	84
+ 178 0099 54       		.byte	84
+ 179 009a 7C       		.byte	124
+ 180 009b 00       		.byte	0
+ 181 009c 44       		.byte	68
+ 182 009d 00       		.byte	0
+ 183 009e 00       		.byte	0
+ 184 009f 00       		.byte	0
+ 185 00a0 00       		.byte	0
+ 186 00a1 00       		.byte	0
+ 187 00a2 C4       		.byte	-60
+ 188 00a3 00       		.byte	0
+ 189 00a4 00       		.byte	0
+ 190 00a5 00       		.byte	0
+ 191 00a6 00       		.byte	0
+ 192 00a7 00       		.byte	0
+ 193 00a8 10       		.byte	16
+ 194 00a9 28       		.byte	40
+ 195 00aa 44       		.byte	68
+ 196 00ab 00       		.byte	0
+ 197 00ac 00       		.byte	0
+ 198 00ad 00       		.byte	0
+ 199 00ae 28       		.byte	40
+ 200 00af 28       		.byte	40
+ 201 00b0 28       		.byte	40
+ 202 00b1 28       		.byte	40
+ 203 00b2 28       		.byte	40
+ 204 00b3 00       		.byte	0
+ 205 00b4 44       		.byte	68
+ 206 00b5 28       		.byte	40
+ 207 00b6 10       		.byte	16
+ 208 00b7 00       		.byte	0
+ 209 00b8 00       		.byte	0
+ 210 00b9 00       		.byte	0
+ 211 00ba 08       		.byte	8
+ 212 00bb 04       		.byte	4
+ 213 00bc 54       		.byte	84
+ 214 00bd 08       		.byte	8
+ 215 00be 00       		.byte	0
+ 216 00bf 00       		.byte	0
+ 217 00c0 7C       		.byte	124
+ 218 00c1 44       		.byte	68
+ 219 00c2 54       		.byte	84
+ 220 00c3 54       		.byte	84
+ 221 00c4 5C       		.byte	92
+ 222 00c5 00       		.byte	0
+ 223 00c6 7C       		.byte	124
+ 224 00c7 24       		.byte	36
+ 225 00c8 24       		.byte	36
+ 226 00c9 24       		.byte	36
+ 227 00ca 7C       		.byte	124
+ 228 00cb 00       		.byte	0
+ 229 00cc 7C       		.byte	124
+ 230 00cd 54       		.byte	84
+ARM GAS  /tmp/ccj7mO0o.s 			page 5
+
+
+ 231 00ce 54       		.byte	84
+ 232 00cf 54       		.byte	84
+ 233 00d0 6C       		.byte	108
+ 234 00d1 00       		.byte	0
+ 235 00d2 7C       		.byte	124
+ 236 00d3 44       		.byte	68
+ 237 00d4 44       		.byte	68
+ 238 00d5 44       		.byte	68
+ 239 00d6 44       		.byte	68
+ 240 00d7 00       		.byte	0
+ 241 00d8 7C       		.byte	124
+ 242 00d9 44       		.byte	68
+ 243 00da 44       		.byte	68
+ 244 00db 44       		.byte	68
+ 245 00dc 38       		.byte	56
+ 246 00dd 00       		.byte	0
+ 247 00de 7C       		.byte	124
+ 248 00df 54       		.byte	84
+ 249 00e0 54       		.byte	84
+ 250 00e1 54       		.byte	84
+ 251 00e2 44       		.byte	68
+ 252 00e3 00       		.byte	0
+ 253 00e4 7C       		.byte	124
+ 254 00e5 14       		.byte	20
+ 255 00e6 14       		.byte	20
+ 256 00e7 14       		.byte	20
+ 257 00e8 04       		.byte	4
+ 258 00e9 00       		.byte	0
+ 259 00ea 7C       		.byte	124
+ 260 00eb 44       		.byte	68
+ 261 00ec 44       		.byte	68
+ 262 00ed 54       		.byte	84
+ 263 00ee 74       		.byte	116
+ 264 00ef 00       		.byte	0
+ 265 00f0 7C       		.byte	124
+ 266 00f1 10       		.byte	16
+ 267 00f2 10       		.byte	16
+ 268 00f3 10       		.byte	16
+ 269 00f4 7C       		.byte	124
+ 270 00f5 00       		.byte	0
+ 271 00f6 44       		.byte	68
+ 272 00f7 44       		.byte	68
+ 273 00f8 7C       		.byte	124
+ 274 00f9 44       		.byte	68
+ 275 00fa 44       		.byte	68
+ 276 00fb 00       		.byte	0
+ 277 00fc 60       		.byte	96
+ 278 00fd 40       		.byte	64
+ 279 00fe 40       		.byte	64
+ 280 00ff 44       		.byte	68
+ 281 0100 7C       		.byte	124
+ 282 0101 00       		.byte	0
+ 283 0102 7C       		.byte	124
+ 284 0103 10       		.byte	16
+ 285 0104 10       		.byte	16
+ 286 0105 28       		.byte	40
+ 287 0106 44       		.byte	68
+ARM GAS  /tmp/ccj7mO0o.s 			page 6
+
+
+ 288 0107 00       		.byte	0
+ 289 0108 7C       		.byte	124
+ 290 0109 40       		.byte	64
+ 291 010a 40       		.byte	64
+ 292 010b 40       		.byte	64
+ 293 010c 40       		.byte	64
+ 294 010d 00       		.byte	0
+ 295 010e 7C       		.byte	124
+ 296 010f 08       		.byte	8
+ 297 0110 10       		.byte	16
+ 298 0111 08       		.byte	8
+ 299 0112 7C       		.byte	124
+ 300 0113 00       		.byte	0
+ 301 0114 7C       		.byte	124
+ 302 0115 08       		.byte	8
+ 303 0116 10       		.byte	16
+ 304 0117 20       		.byte	32
+ 305 0118 7C       		.byte	124
+ 306 0119 00       		.byte	0
+ 307 011a 38       		.byte	56
+ 308 011b 44       		.byte	68
+ 309 011c 44       		.byte	68
+ 310 011d 44       		.byte	68
+ 311 011e 38       		.byte	56
+ 312 011f 00       		.byte	0
+ 313 0120 7C       		.byte	124
+ 314 0121 14       		.byte	20
+ 315 0122 14       		.byte	20
+ 316 0123 14       		.byte	20
+ 317 0124 08       		.byte	8
+ 318 0125 00       		.byte	0
+ 319 0126 3C       		.byte	60
+ 320 0127 24       		.byte	36
+ 321 0128 64       		.byte	100
+ 322 0129 24       		.byte	36
+ 323 012a 3C       		.byte	60
+ 324 012b 00       		.byte	0
+ 325 012c 7C       		.byte	124
+ 326 012d 14       		.byte	20
+ 327 012e 14       		.byte	20
+ 328 012f 14       		.byte	20
+ 329 0130 68       		.byte	104
+ 330 0131 00       		.byte	0
+ 331 0132 5C       		.byte	92
+ 332 0133 54       		.byte	84
+ 333 0134 54       		.byte	84
+ 334 0135 54       		.byte	84
+ 335 0136 74       		.byte	116
+ 336 0137 00       		.byte	0
+ 337 0138 04       		.byte	4
+ 338 0139 04       		.byte	4
+ 339 013a 7C       		.byte	124
+ 340 013b 04       		.byte	4
+ 341 013c 04       		.byte	4
+ 342 013d 00       		.byte	0
+ 343 013e 7C       		.byte	124
+ 344 013f 40       		.byte	64
+ARM GAS  /tmp/ccj7mO0o.s 			page 7
+
+
+ 345 0140 40       		.byte	64
+ 346 0141 40       		.byte	64
+ 347 0142 7C       		.byte	124
+ 348 0143 00       		.byte	0
+ 349 0144 0C       		.byte	12
+ 350 0145 30       		.byte	48
+ 351 0146 40       		.byte	64
+ 352 0147 30       		.byte	48
+ 353 0148 0C       		.byte	12
+ 354 0149 00       		.byte	0
+ 355 014a 3C       		.byte	60
+ 356 014b 40       		.byte	64
+ 357 014c 30       		.byte	48
+ 358 014d 40       		.byte	64
+ 359 014e 3C       		.byte	60
+ 360 014f 00       		.byte	0
+ 361 0150 44       		.byte	68
+ 362 0151 28       		.byte	40
+ 363 0152 10       		.byte	16
+ 364 0153 28       		.byte	40
+ 365 0154 44       		.byte	68
+ 366 0155 00       		.byte	0
+ 367 0156 0C       		.byte	12
+ 368 0157 10       		.byte	16
+ 369 0158 60       		.byte	96
+ 370 0159 10       		.byte	16
+ 371 015a 0C       		.byte	12
+ 372 015b 00       		.byte	0
+ 373 015c 44       		.byte	68
+ 374 015d 64       		.byte	100
+ 375 015e 54       		.byte	84
+ 376 015f 4C       		.byte	76
+ 377 0160 44       		.byte	68
+ 378 0161 00       		.byte	0
+ 379 0162 7C       		.byte	124
+ 380 0163 44       		.byte	68
+ 381 0164 00       		.byte	0
+ 382 0165 00       		.byte	0
+ 383 0166 00       		.byte	0
+ 384 0167 00       		.byte	0
+ 385 0168 0C       		.byte	12
+ 386 0169 10       		.byte	16
+ 387 016a 60       		.byte	96
+ 388 016b 00       		.byte	0
+ 389 016c 00       		.byte	0
+ 390 016d 00       		.byte	0
+ 391 016e 44       		.byte	68
+ 392 016f 7C       		.byte	124
+ 393 0170 00       		.byte	0
+ 394 0171 00       		.byte	0
+ 395 0172 00       		.byte	0
+ 396 0173 00       		.byte	0
+ 397 0174 00       		.byte	0
+ 398 0175 01       		.byte	1
+ 399 0176 00       		.byte	0
+ 400 0177 01       		.byte	1
+ 401 0178 00       		.byte	0
+ARM GAS  /tmp/ccj7mO0o.s 			page 8
+
+
+ 402 0179 00       		.byte	0
+ 403 017a 40       		.byte	64
+ 404 017b 40       		.byte	64
+ 405 017c 40       		.byte	64
+ 406 017d 40       		.byte	64
+ 407 017e 40       		.byte	64
+ 408 017f 40       		.byte	64
+ 409 0180 00       		.byte	0
+ 410 0181 01       		.byte	1
+ 411 0182 00       		.byte	0
+ 412 0183 00       		.byte	0
+ 413 0184 00       		.byte	0
+ 414 0185 00       		.byte	0
+ 415 0186 7C       		.byte	124
+ 416 0187 24       		.byte	36
+ 417 0188 24       		.byte	36
+ 418 0189 24       		.byte	36
+ 419 018a 7C       		.byte	124
+ 420 018b 00       		.byte	0
+ 421 018c 7C       		.byte	124
+ 422 018d 54       		.byte	84
+ 423 018e 54       		.byte	84
+ 424 018f 54       		.byte	84
+ 425 0190 6C       		.byte	108
+ 426 0191 00       		.byte	0
+ 427 0192 7C       		.byte	124
+ 428 0193 44       		.byte	68
+ 429 0194 44       		.byte	68
+ 430 0195 44       		.byte	68
+ 431 0196 44       		.byte	68
+ 432 0197 00       		.byte	0
+ 433 0198 7C       		.byte	124
+ 434 0199 44       		.byte	68
+ 435 019a 44       		.byte	68
+ 436 019b 44       		.byte	68
+ 437 019c 38       		.byte	56
+ 438 019d 00       		.byte	0
+ 439 019e 7C       		.byte	124
+ 440 019f 54       		.byte	84
+ 441 01a0 54       		.byte	84
+ 442 01a1 54       		.byte	84
+ 443 01a2 44       		.byte	68
+ 444 01a3 00       		.byte	0
+ 445 01a4 7C       		.byte	124
+ 446 01a5 14       		.byte	20
+ 447 01a6 14       		.byte	20
+ 448 01a7 14       		.byte	20
+ 449 01a8 04       		.byte	4
+ 450 01a9 00       		.byte	0
+ 451 01aa 7C       		.byte	124
+ 452 01ab 44       		.byte	68
+ 453 01ac 44       		.byte	68
+ 454 01ad 54       		.byte	84
+ 455 01ae 74       		.byte	116
+ 456 01af 00       		.byte	0
+ 457 01b0 7C       		.byte	124
+ 458 01b1 10       		.byte	16
+ARM GAS  /tmp/ccj7mO0o.s 			page 9
+
+
+ 459 01b2 10       		.byte	16
+ 460 01b3 10       		.byte	16
+ 461 01b4 7C       		.byte	124
+ 462 01b5 00       		.byte	0
+ 463 01b6 44       		.byte	68
+ 464 01b7 44       		.byte	68
+ 465 01b8 7C       		.byte	124
+ 466 01b9 44       		.byte	68
+ 467 01ba 44       		.byte	68
+ 468 01bb 00       		.byte	0
+ 469 01bc 60       		.byte	96
+ 470 01bd 40       		.byte	64
+ 471 01be 40       		.byte	64
+ 472 01bf 44       		.byte	68
+ 473 01c0 7C       		.byte	124
+ 474 01c1 00       		.byte	0
+ 475 01c2 7C       		.byte	124
+ 476 01c3 10       		.byte	16
+ 477 01c4 10       		.byte	16
+ 478 01c5 28       		.byte	40
+ 479 01c6 44       		.byte	68
+ 480 01c7 00       		.byte	0
+ 481 01c8 7C       		.byte	124
+ 482 01c9 40       		.byte	64
+ 483 01ca 40       		.byte	64
+ 484 01cb 40       		.byte	64
+ 485 01cc 40       		.byte	64
+ 486 01cd 00       		.byte	0
+ 487 01ce 7C       		.byte	124
+ 488 01cf 08       		.byte	8
+ 489 01d0 10       		.byte	16
+ 490 01d1 08       		.byte	8
+ 491 01d2 7C       		.byte	124
+ 492 01d3 00       		.byte	0
+ 493 01d4 7C       		.byte	124
+ 494 01d5 08       		.byte	8
+ 495 01d6 10       		.byte	16
+ 496 01d7 20       		.byte	32
+ 497 01d8 7C       		.byte	124
+ 498 01d9 00       		.byte	0
+ 499 01da 38       		.byte	56
+ 500 01db 44       		.byte	68
+ 501 01dc 44       		.byte	68
+ 502 01dd 44       		.byte	68
+ 503 01de 38       		.byte	56
+ 504 01df 00       		.byte	0
+ 505 01e0 7C       		.byte	124
+ 506 01e1 14       		.byte	20
+ 507 01e2 14       		.byte	20
+ 508 01e3 14       		.byte	20
+ 509 01e4 08       		.byte	8
+ 510 01e5 00       		.byte	0
+ 511 01e6 3C       		.byte	60
+ 512 01e7 24       		.byte	36
+ 513 01e8 64       		.byte	100
+ 514 01e9 24       		.byte	36
+ 515 01ea 3C       		.byte	60
+ARM GAS  /tmp/ccj7mO0o.s 			page 10
+
+
+ 516 01eb 00       		.byte	0
+ 517 01ec 7C       		.byte	124
+ 518 01ed 14       		.byte	20
+ 519 01ee 14       		.byte	20
+ 520 01ef 14       		.byte	20
+ 521 01f0 68       		.byte	104
+ 522 01f1 00       		.byte	0
+ 523 01f2 5C       		.byte	92
+ 524 01f3 54       		.byte	84
+ 525 01f4 54       		.byte	84
+ 526 01f5 54       		.byte	84
+ 527 01f6 74       		.byte	116
+ 528 01f7 00       		.byte	0
+ 529 01f8 04       		.byte	4
+ 530 01f9 04       		.byte	4
+ 531 01fa 7C       		.byte	124
+ 532 01fb 04       		.byte	4
+ 533 01fc 04       		.byte	4
+ 534 01fd 00       		.byte	0
+ 535 01fe 7C       		.byte	124
+ 536 01ff 40       		.byte	64
+ 537 0200 40       		.byte	64
+ 538 0201 40       		.byte	64
+ 539 0202 7C       		.byte	124
+ 540 0203 00       		.byte	0
+ 541 0204 0C       		.byte	12
+ 542 0205 30       		.byte	48
+ 543 0206 40       		.byte	64
+ 544 0207 30       		.byte	48
+ 545 0208 0C       		.byte	12
+ 546 0209 00       		.byte	0
+ 547 020a 3C       		.byte	60
+ 548 020b 40       		.byte	64
+ 549 020c 30       		.byte	48
+ 550 020d 40       		.byte	64
+ 551 020e 3C       		.byte	60
+ 552 020f 00       		.byte	0
+ 553 0210 44       		.byte	68
+ 554 0211 28       		.byte	40
+ 555 0212 10       		.byte	16
+ 556 0213 28       		.byte	40
+ 557 0214 44       		.byte	68
+ 558 0215 00       		.byte	0
+ 559 0216 0C       		.byte	12
+ 560 0217 10       		.byte	16
+ 561 0218 60       		.byte	96
+ 562 0219 10       		.byte	16
+ 563 021a 0C       		.byte	12
+ 564 021b 00       		.byte	0
+ 565 021c 44       		.byte	68
+ 566 021d 64       		.byte	100
+ 567 021e 54       		.byte	84
+ 568 021f 4C       		.byte	76
+ 569 0220 44       		.byte	68
+ 570 0221 00       		.byte	0
+ 571 0222 10       		.byte	16
+ 572 0223 7C       		.byte	124
+ARM GAS  /tmp/ccj7mO0o.s 			page 11
+
+
+ 573 0224 44       		.byte	68
+ 574 0225 00       		.byte	0
+ 575 0226 00       		.byte	0
+ 576 0227 00       		.byte	0
+ 577 0228 6C       		.byte	108
+ 578 0229 00       		.byte	0
+ 579 022a 00       		.byte	0
+ 580 022b 00       		.byte	0
+ 581 022c 00       		.byte	0
+ 582 022d 00       		.byte	0
+ 583 022e 44       		.byte	68
+ 584 022f 7C       		.byte	124
+ 585 0230 10       		.byte	16
+ 586 0231 00       		.byte	0
+ 587 0232 00       		.byte	0
+ 588 0233 00       		.byte	0
+ 589 0234 02       		.byte	2
+ 590 0235 01       		.byte	1
+ 591 0236 02       		.byte	2
+ 592 0237 01       		.byte	1
+ 593 0238 00       		.byte	0
+ 594 0239 00       		.byte	0
+ 595 023a 00       		.byte	0
+ 596 023b 00       		.byte	0
+ 597 023c 00       		.byte	0
+ 598 023d 00       		.byte	0
+ 599 023e 00       		.byte	0
+ 600 023f 00       		.byte	0
+ 601              		.section	.text.ILI9341_Draw_Hollow_Circle,"ax",%progbits
+ 602              		.align	2
+ 603              		.global	ILI9341_Draw_Hollow_Circle
+ 604              		.thumb
+ 605              		.thumb_func
+ 607              	ILI9341_Draw_Hollow_Circle:
+ 608              	.LFB123:
+ 609              		.file 1 "Src/ILI9341/ILI9341_GFX.c"
+   1:Src/ILI9341/ILI9341_GFX.c **** //	MIT License
+   2:Src/ILI9341/ILI9341_GFX.c **** //
+   3:Src/ILI9341/ILI9341_GFX.c **** //	Copyright (c) 2017 Matej Artnak
+   4:Src/ILI9341/ILI9341_GFX.c **** //
+   5:Src/ILI9341/ILI9341_GFX.c **** //	Permission is hereby granted, free of charge, to any person obtaining a copy
+   6:Src/ILI9341/ILI9341_GFX.c **** //	of this software and associated documentation files (the "Software"), to deal
+   7:Src/ILI9341/ILI9341_GFX.c **** //	in the Software without restriction, including without limitation the rights
+   8:Src/ILI9341/ILI9341_GFX.c **** //	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+   9:Src/ILI9341/ILI9341_GFX.c **** //	copies of the Software, and to permit persons to whom the Software is
+  10:Src/ILI9341/ILI9341_GFX.c **** //	furnished to do so, subject to the following conditions:
+  11:Src/ILI9341/ILI9341_GFX.c **** //
+  12:Src/ILI9341/ILI9341_GFX.c **** //	The above copyright notice and this permission notice shall be included in all
+  13:Src/ILI9341/ILI9341_GFX.c **** //	copies or substantial portions of the Software.
+  14:Src/ILI9341/ILI9341_GFX.c **** //
+  15:Src/ILI9341/ILI9341_GFX.c **** //	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  16:Src/ILI9341/ILI9341_GFX.c **** //	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  17:Src/ILI9341/ILI9341_GFX.c **** //	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  18:Src/ILI9341/ILI9341_GFX.c **** //	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  19:Src/ILI9341/ILI9341_GFX.c **** //	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  20:Src/ILI9341/ILI9341_GFX.c **** //	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  21:Src/ILI9341/ILI9341_GFX.c **** //	SOFTWARE.
+ARM GAS  /tmp/ccj7mO0o.s 			page 12
+
+
+  22:Src/ILI9341/ILI9341_GFX.c **** //
+  23:Src/ILI9341/ILI9341_GFX.c **** //
+  24:Src/ILI9341/ILI9341_GFX.c **** //
+  25:Src/ILI9341/ILI9341_GFX.c **** //-----------------------------------
+  26:Src/ILI9341/ILI9341_GFX.c **** //	ILI9341 GFX library for STM32
+  27:Src/ILI9341/ILI9341_GFX.c **** //-----------------------------------
+  28:Src/ILI9341/ILI9341_GFX.c **** //
+  29:Src/ILI9341/ILI9341_GFX.c **** //	Very simple GFX library built upon ILI9342_STM32_Driver library.
+  30:Src/ILI9341/ILI9341_GFX.c **** //	Adds basic shapes, image and font drawing capabilities to ILI9341
+  31:Src/ILI9341/ILI9341_GFX.c **** //
+  32:Src/ILI9341/ILI9341_GFX.c **** //	Library is written for STM32 HAL library and supports STM32CUBEMX. To use the library with Cube 
+  33:Src/ILI9341/ILI9341_GFX.c **** //	you need to tick the box that generates peripheral initialization code in their own respective .
+  34:Src/ILI9341/ILI9341_GFX.c **** //
+  35:Src/ILI9341/ILI9341_GFX.c **** //
+  36:Src/ILI9341/ILI9341_GFX.c **** //-----------------------------------
+  37:Src/ILI9341/ILI9341_GFX.c **** //	How to use this library
+  38:Src/ILI9341/ILI9341_GFX.c **** //-----------------------------------
+  39:Src/ILI9341/ILI9341_GFX.c **** //
+  40:Src/ILI9341/ILI9341_GFX.c **** //	-If using MCUs other than STM32F7 you will have to change the #include "stm32f7xx_hal.h" in the 
+  41:Src/ILI9341/ILI9341_GFX.c **** //
+  42:Src/ILI9341/ILI9341_GFX.c **** //	If using "ILI9341_STM32_Driver" then all other prequisites to use the library have allready been
+  43:Src/ILI9341/ILI9341_GFX.c **** //	Simply include the library and it is ready to be used
+  44:Src/ILI9341/ILI9341_GFX.c **** //
+  45:Src/ILI9341/ILI9341_GFX.c **** //-----------------------------------
+  46:Src/ILI9341/ILI9341_GFX.c **** 
+  47:Src/ILI9341/ILI9341_GFX.c **** 
+  48:Src/ILI9341/ILI9341_GFX.c **** #include "ILI9341_STM32_Driver.h"
+  49:Src/ILI9341/ILI9341_GFX.c **** #include "ILI9341_GFX.h"
+  50:Src/ILI9341/ILI9341_GFX.c **** #include "5x5_font.h"
+  51:Src/ILI9341/ILI9341_GFX.c **** #include "lcd_spi.h"
+  52:Src/ILI9341/ILI9341_GFX.c **** 
+  53:Src/ILI9341/ILI9341_GFX.c **** 
+  54:Src/ILI9341/ILI9341_GFX.c **** 
+  55:Src/ILI9341/ILI9341_GFX.c **** /*Draw hollow circle at X,Y location with specified radius and colour. X and Y represent circles ce
+  56:Src/ILI9341/ILI9341_GFX.c **** void ILI9341_Draw_Hollow_Circle(uint16_t X, uint16_t Y, uint16_t Radius, uint16_t Colour)
+  57:Src/ILI9341/ILI9341_GFX.c **** {
+ 610              		.loc 1 57 0
+ 611              		.cfi_startproc
+ 612              		@ args = 0, pretend = 0, frame = 32
+ 613              		@ frame_needed = 1, uses_anonymous_args = 0
+ 614 0000 90B5     		push	{r4, r7, lr}
+ 615              	.LCFI0:
+ 616              		.cfi_def_cfa_offset 12
+ 617              		.cfi_offset 4, -12
+ 618              		.cfi_offset 7, -8
+ 619              		.cfi_offset 14, -4
+ 620 0002 89B0     		sub	sp, sp, #36
+ 621              	.LCFI1:
+ 622              		.cfi_def_cfa_offset 48
+ 623 0004 00AF     		add	r7, sp, #0
+ 624              	.LCFI2:
+ 625              		.cfi_def_cfa_register 7
+ 626 0006 0446     		mov	r4, r0
+ 627 0008 0846     		mov	r0, r1
+ 628 000a 1146     		mov	r1, r2
+ 629 000c 1A46     		mov	r2, r3
+ 630 000e 2346     		mov	r3, r4	@ movhi
+ARM GAS  /tmp/ccj7mO0o.s 			page 13
+
+
+ 631 0010 FB80     		strh	r3, [r7, #6]	@ movhi
+ 632 0012 0346     		mov	r3, r0	@ movhi
+ 633 0014 BB80     		strh	r3, [r7, #4]	@ movhi
+ 634 0016 0B46     		mov	r3, r1	@ movhi
+ 635 0018 7B80     		strh	r3, [r7, #2]	@ movhi
+ 636 001a 1346     		mov	r3, r2	@ movhi
+ 637 001c 3B80     		strh	r3, [r7]	@ movhi
+  58:Src/ILI9341/ILI9341_GFX.c **** 	int x = Radius-1;
+ 638              		.loc 1 58 0
+ 639 001e 7B88     		ldrh	r3, [r7, #2]
+ 640 0020 013B     		subs	r3, r3, #1
+ 641 0022 FB61     		str	r3, [r7, #28]
+  59:Src/ILI9341/ILI9341_GFX.c ****     int y = 0;
+ 642              		.loc 1 59 0
+ 643 0024 0023     		movs	r3, #0
+ 644 0026 BB61     		str	r3, [r7, #24]
+  60:Src/ILI9341/ILI9341_GFX.c ****     int dx = 1;
+ 645              		.loc 1 60 0
+ 646 0028 0123     		movs	r3, #1
+ 647 002a 7B61     		str	r3, [r7, #20]
+  61:Src/ILI9341/ILI9341_GFX.c ****     int dy = 1;
+ 648              		.loc 1 61 0
+ 649 002c 0123     		movs	r3, #1
+ 650 002e 3B61     		str	r3, [r7, #16]
+  62:Src/ILI9341/ILI9341_GFX.c ****     int err = dx - (Radius << 1);
+ 651              		.loc 1 62 0
+ 652 0030 7B88     		ldrh	r3, [r7, #2]
+ 653 0032 5B00     		lsls	r3, r3, #1
+ 654 0034 7A69     		ldr	r2, [r7, #20]
+ 655 0036 D31A     		subs	r3, r2, r3
+ 656 0038 FB60     		str	r3, [r7, #12]
+  63:Src/ILI9341/ILI9341_GFX.c **** 
+  64:Src/ILI9341/ILI9341_GFX.c ****     while (x >= y)
+ 657              		.loc 1 64 0
+ 658 003a 9DE0     		b	.L2
+ 659              	.L4:
+  65:Src/ILI9341/ILI9341_GFX.c ****     {
+  66:Src/ILI9341/ILI9341_GFX.c ****         ILI9341_Draw_Pixel(X + x, Y + y, Colour);
+ 660              		.loc 1 66 0
+ 661 003c FB69     		ldr	r3, [r7, #28]
+ 662 003e 9AB2     		uxth	r2, r3
+ 663 0040 FB88     		ldrh	r3, [r7, #6]	@ movhi
+ 664 0042 1344     		add	r3, r3, r2
+ 665 0044 99B2     		uxth	r1, r3
+ 666 0046 BB69     		ldr	r3, [r7, #24]
+ 667 0048 9AB2     		uxth	r2, r3
+ 668 004a BB88     		ldrh	r3, [r7, #4]	@ movhi
+ 669 004c 1344     		add	r3, r3, r2
+ 670 004e 9AB2     		uxth	r2, r3
+ 671 0050 3B88     		ldrh	r3, [r7]
+ 672 0052 0846     		mov	r0, r1
+ 673 0054 1146     		mov	r1, r2
+ 674 0056 1A46     		mov	r2, r3
+ 675 0058 FFF7FEFF 		bl	ILI9341_Draw_Pixel
+  67:Src/ILI9341/ILI9341_GFX.c ****         ILI9341_Draw_Pixel(X + y, Y + x, Colour);
+ 676              		.loc 1 67 0
+ 677 005c BB69     		ldr	r3, [r7, #24]
+ARM GAS  /tmp/ccj7mO0o.s 			page 14
+
+
+ 678 005e 9AB2     		uxth	r2, r3
+ 679 0060 FB88     		ldrh	r3, [r7, #6]	@ movhi
+ 680 0062 1344     		add	r3, r3, r2
+ 681 0064 99B2     		uxth	r1, r3
+ 682 0066 FB69     		ldr	r3, [r7, #28]
+ 683 0068 9AB2     		uxth	r2, r3
+ 684 006a BB88     		ldrh	r3, [r7, #4]	@ movhi
+ 685 006c 1344     		add	r3, r3, r2
+ 686 006e 9AB2     		uxth	r2, r3
+ 687 0070 3B88     		ldrh	r3, [r7]
+ 688 0072 0846     		mov	r0, r1
+ 689 0074 1146     		mov	r1, r2
+ 690 0076 1A46     		mov	r2, r3
+ 691 0078 FFF7FEFF 		bl	ILI9341_Draw_Pixel
+  68:Src/ILI9341/ILI9341_GFX.c ****         ILI9341_Draw_Pixel(X - y, Y + x, Colour);
+ 692              		.loc 1 68 0
+ 693 007c BB69     		ldr	r3, [r7, #24]
+ 694 007e 9BB2     		uxth	r3, r3
+ 695 0080 FA88     		ldrh	r2, [r7, #6]	@ movhi
+ 696 0082 D31A     		subs	r3, r2, r3
+ 697 0084 99B2     		uxth	r1, r3
+ 698 0086 FB69     		ldr	r3, [r7, #28]
+ 699 0088 9AB2     		uxth	r2, r3
+ 700 008a BB88     		ldrh	r3, [r7, #4]	@ movhi
+ 701 008c 1344     		add	r3, r3, r2
+ 702 008e 9AB2     		uxth	r2, r3
+ 703 0090 3B88     		ldrh	r3, [r7]
+ 704 0092 0846     		mov	r0, r1
+ 705 0094 1146     		mov	r1, r2
+ 706 0096 1A46     		mov	r2, r3
+ 707 0098 FFF7FEFF 		bl	ILI9341_Draw_Pixel
+  69:Src/ILI9341/ILI9341_GFX.c ****         ILI9341_Draw_Pixel(X - x, Y + y, Colour);
+ 708              		.loc 1 69 0
+ 709 009c FB69     		ldr	r3, [r7, #28]
+ 710 009e 9BB2     		uxth	r3, r3
+ 711 00a0 FA88     		ldrh	r2, [r7, #6]	@ movhi
+ 712 00a2 D31A     		subs	r3, r2, r3
+ 713 00a4 99B2     		uxth	r1, r3
+ 714 00a6 BB69     		ldr	r3, [r7, #24]
+ 715 00a8 9AB2     		uxth	r2, r3
+ 716 00aa BB88     		ldrh	r3, [r7, #4]	@ movhi
+ 717 00ac 1344     		add	r3, r3, r2
+ 718 00ae 9AB2     		uxth	r2, r3
+ 719 00b0 3B88     		ldrh	r3, [r7]
+ 720 00b2 0846     		mov	r0, r1
+ 721 00b4 1146     		mov	r1, r2
+ 722 00b6 1A46     		mov	r2, r3
+ 723 00b8 FFF7FEFF 		bl	ILI9341_Draw_Pixel
+  70:Src/ILI9341/ILI9341_GFX.c ****         ILI9341_Draw_Pixel(X - x, Y - y, Colour);
+ 724              		.loc 1 70 0
+ 725 00bc FB69     		ldr	r3, [r7, #28]
+ 726 00be 9BB2     		uxth	r3, r3
+ 727 00c0 FA88     		ldrh	r2, [r7, #6]	@ movhi
+ 728 00c2 D31A     		subs	r3, r2, r3
+ 729 00c4 99B2     		uxth	r1, r3
+ 730 00c6 BB69     		ldr	r3, [r7, #24]
+ 731 00c8 9BB2     		uxth	r3, r3
+ARM GAS  /tmp/ccj7mO0o.s 			page 15
+
+
+ 732 00ca BA88     		ldrh	r2, [r7, #4]	@ movhi
+ 733 00cc D31A     		subs	r3, r2, r3
+ 734 00ce 9AB2     		uxth	r2, r3
+ 735 00d0 3B88     		ldrh	r3, [r7]
+ 736 00d2 0846     		mov	r0, r1
+ 737 00d4 1146     		mov	r1, r2
+ 738 00d6 1A46     		mov	r2, r3
+ 739 00d8 FFF7FEFF 		bl	ILI9341_Draw_Pixel
+  71:Src/ILI9341/ILI9341_GFX.c ****         ILI9341_Draw_Pixel(X - y, Y - x, Colour);
+ 740              		.loc 1 71 0
+ 741 00dc BB69     		ldr	r3, [r7, #24]
+ 742 00de 9BB2     		uxth	r3, r3
+ 743 00e0 FA88     		ldrh	r2, [r7, #6]	@ movhi
+ 744 00e2 D31A     		subs	r3, r2, r3
+ 745 00e4 99B2     		uxth	r1, r3
+ 746 00e6 FB69     		ldr	r3, [r7, #28]
+ 747 00e8 9BB2     		uxth	r3, r3
+ 748 00ea BA88     		ldrh	r2, [r7, #4]	@ movhi
+ 749 00ec D31A     		subs	r3, r2, r3
+ 750 00ee 9AB2     		uxth	r2, r3
+ 751 00f0 3B88     		ldrh	r3, [r7]
+ 752 00f2 0846     		mov	r0, r1
+ 753 00f4 1146     		mov	r1, r2
+ 754 00f6 1A46     		mov	r2, r3
+ 755 00f8 FFF7FEFF 		bl	ILI9341_Draw_Pixel
+  72:Src/ILI9341/ILI9341_GFX.c ****         ILI9341_Draw_Pixel(X + y, Y - x, Colour);
+ 756              		.loc 1 72 0
+ 757 00fc BB69     		ldr	r3, [r7, #24]
+ 758 00fe 9AB2     		uxth	r2, r3
+ 759 0100 FB88     		ldrh	r3, [r7, #6]	@ movhi
+ 760 0102 1344     		add	r3, r3, r2
+ 761 0104 99B2     		uxth	r1, r3
+ 762 0106 FB69     		ldr	r3, [r7, #28]
+ 763 0108 9BB2     		uxth	r3, r3
+ 764 010a BA88     		ldrh	r2, [r7, #4]	@ movhi
+ 765 010c D31A     		subs	r3, r2, r3
+ 766 010e 9AB2     		uxth	r2, r3
+ 767 0110 3B88     		ldrh	r3, [r7]
+ 768 0112 0846     		mov	r0, r1
+ 769 0114 1146     		mov	r1, r2
+ 770 0116 1A46     		mov	r2, r3
+ 771 0118 FFF7FEFF 		bl	ILI9341_Draw_Pixel
+  73:Src/ILI9341/ILI9341_GFX.c ****         ILI9341_Draw_Pixel(X + x, Y - y, Colour);
+ 772              		.loc 1 73 0
+ 773 011c FB69     		ldr	r3, [r7, #28]
+ 774 011e 9AB2     		uxth	r2, r3
+ 775 0120 FB88     		ldrh	r3, [r7, #6]	@ movhi
+ 776 0122 1344     		add	r3, r3, r2
+ 777 0124 99B2     		uxth	r1, r3
+ 778 0126 BB69     		ldr	r3, [r7, #24]
+ 779 0128 9BB2     		uxth	r3, r3
+ 780 012a BA88     		ldrh	r2, [r7, #4]	@ movhi
+ 781 012c D31A     		subs	r3, r2, r3
+ 782 012e 9AB2     		uxth	r2, r3
+ 783 0130 3B88     		ldrh	r3, [r7]
+ 784 0132 0846     		mov	r0, r1
+ 785 0134 1146     		mov	r1, r2
+ARM GAS  /tmp/ccj7mO0o.s 			page 16
+
+
+ 786 0136 1A46     		mov	r2, r3
+ 787 0138 FFF7FEFF 		bl	ILI9341_Draw_Pixel
+  74:Src/ILI9341/ILI9341_GFX.c **** 
+  75:Src/ILI9341/ILI9341_GFX.c ****         if (err <= 0)
+ 788              		.loc 1 75 0
+ 789 013c FB68     		ldr	r3, [r7, #12]
+ 790 013e 002B     		cmp	r3, #0
+ 791 0140 09DC     		bgt	.L3
+  76:Src/ILI9341/ILI9341_GFX.c ****         {
+  77:Src/ILI9341/ILI9341_GFX.c ****             y++;
+ 792              		.loc 1 77 0
+ 793 0142 BB69     		ldr	r3, [r7, #24]
+ 794 0144 0133     		adds	r3, r3, #1
+ 795 0146 BB61     		str	r3, [r7, #24]
+  78:Src/ILI9341/ILI9341_GFX.c ****             err += dy;
+ 796              		.loc 1 78 0
+ 797 0148 FA68     		ldr	r2, [r7, #12]
+ 798 014a 3B69     		ldr	r3, [r7, #16]
+ 799 014c 1344     		add	r3, r3, r2
+ 800 014e FB60     		str	r3, [r7, #12]
+  79:Src/ILI9341/ILI9341_GFX.c ****             dy += 2;
+ 801              		.loc 1 79 0
+ 802 0150 3B69     		ldr	r3, [r7, #16]
+ 803 0152 0233     		adds	r3, r3, #2
+ 804 0154 3B61     		str	r3, [r7, #16]
+ 805              	.L3:
+  80:Src/ILI9341/ILI9341_GFX.c ****         }
+  81:Src/ILI9341/ILI9341_GFX.c ****         if (err > 0)
+ 806              		.loc 1 81 0
+ 807 0156 FB68     		ldr	r3, [r7, #12]
+ 808 0158 002B     		cmp	r3, #0
+ 809 015a 0DDD     		ble	.L2
+  82:Src/ILI9341/ILI9341_GFX.c ****         {
+  83:Src/ILI9341/ILI9341_GFX.c ****             x--;
+ 810              		.loc 1 83 0
+ 811 015c FB69     		ldr	r3, [r7, #28]
+ 812 015e 013B     		subs	r3, r3, #1
+ 813 0160 FB61     		str	r3, [r7, #28]
+  84:Src/ILI9341/ILI9341_GFX.c ****             dx += 2;
+ 814              		.loc 1 84 0
+ 815 0162 7B69     		ldr	r3, [r7, #20]
+ 816 0164 0233     		adds	r3, r3, #2
+ 817 0166 7B61     		str	r3, [r7, #20]
+  85:Src/ILI9341/ILI9341_GFX.c ****             err += (-Radius << 1) + dx;
+ 818              		.loc 1 85 0
+ 819 0168 7B88     		ldrh	r3, [r7, #2]
+ 820 016a 5B42     		negs	r3, r3
+ 821 016c 5A00     		lsls	r2, r3, #1
+ 822 016e 7B69     		ldr	r3, [r7, #20]
+ 823 0170 1344     		add	r3, r3, r2
+ 824 0172 FA68     		ldr	r2, [r7, #12]
+ 825 0174 1344     		add	r3, r3, r2
+ 826 0176 FB60     		str	r3, [r7, #12]
+ 827              	.L2:
+  64:Src/ILI9341/ILI9341_GFX.c ****     {
+ 828              		.loc 1 64 0
+ 829 0178 FA69     		ldr	r2, [r7, #28]
+ARM GAS  /tmp/ccj7mO0o.s 			page 17
+
+
+ 830 017a BB69     		ldr	r3, [r7, #24]
+ 831 017c 9A42     		cmp	r2, r3
+ 832 017e BFF65DAF 		bge	.L4
+  86:Src/ILI9341/ILI9341_GFX.c ****         }
+  87:Src/ILI9341/ILI9341_GFX.c ****     }
+  88:Src/ILI9341/ILI9341_GFX.c **** }
+ 833              		.loc 1 88 0
+ 834 0182 2437     		adds	r7, r7, #36
+ 835              	.LCFI3:
+ 836              		.cfi_def_cfa_offset 12
+ 837 0184 BD46     		mov	sp, r7
+ 838              	.LCFI4:
+ 839              		.cfi_def_cfa_register 13
+ 840              		@ sp needed
+ 841 0186 90BD     		pop	{r4, r7, pc}
+ 842              		.cfi_endproc
+ 843              	.LFE123:
+ 845              		.section	.text.ILI9341_Draw_Filled_Circle,"ax",%progbits
+ 846              		.align	2
+ 847              		.global	ILI9341_Draw_Filled_Circle
+ 848              		.thumb
+ 849              		.thumb_func
+ 851              	ILI9341_Draw_Filled_Circle:
+ 852              	.LFB124:
+  89:Src/ILI9341/ILI9341_GFX.c **** 
+  90:Src/ILI9341/ILI9341_GFX.c **** /*Draw filled circle at X,Y location with specified radius and colour. X and Y represent circles ce
+  91:Src/ILI9341/ILI9341_GFX.c **** void ILI9341_Draw_Filled_Circle(uint16_t X, uint16_t Y, uint16_t Radius, uint16_t Colour)
+  92:Src/ILI9341/ILI9341_GFX.c **** {
+ 853              		.loc 1 92 0
+ 854              		.cfi_startproc
+ 855              		@ args = 0, pretend = 0, frame = 40
+ 856              		@ frame_needed = 1, uses_anonymous_args = 0
+ 857 0000 90B5     		push	{r4, r7, lr}
+ 858              	.LCFI5:
+ 859              		.cfi_def_cfa_offset 12
+ 860              		.cfi_offset 4, -12
+ 861              		.cfi_offset 7, -8
+ 862              		.cfi_offset 14, -4
+ 863 0002 8BB0     		sub	sp, sp, #44
+ 864              	.LCFI6:
+ 865              		.cfi_def_cfa_offset 56
+ 866 0004 00AF     		add	r7, sp, #0
+ 867              	.LCFI7:
+ 868              		.cfi_def_cfa_register 7
+ 869 0006 0446     		mov	r4, r0
+ 870 0008 0846     		mov	r0, r1
+ 871 000a 1146     		mov	r1, r2
+ 872 000c 1A46     		mov	r2, r3
+ 873 000e 2346     		mov	r3, r4	@ movhi
+ 874 0010 FB80     		strh	r3, [r7, #6]	@ movhi
+ 875 0012 0346     		mov	r3, r0	@ movhi
+ 876 0014 BB80     		strh	r3, [r7, #4]	@ movhi
+ 877 0016 0B46     		mov	r3, r1	@ movhi
+ 878 0018 7B80     		strh	r3, [r7, #2]	@ movhi
+ 879 001a 1346     		mov	r3, r2	@ movhi
+ 880 001c 3B80     		strh	r3, [r7]	@ movhi
+  93:Src/ILI9341/ILI9341_GFX.c **** 	
+ARM GAS  /tmp/ccj7mO0o.s 			page 18
+
+
+  94:Src/ILI9341/ILI9341_GFX.c **** 		int x = Radius;
+ 881              		.loc 1 94 0
+ 882 001e 7B88     		ldrh	r3, [r7, #2]
+ 883 0020 7B62     		str	r3, [r7, #36]
+  95:Src/ILI9341/ILI9341_GFX.c ****     int y = 0;
+ 884              		.loc 1 95 0
+ 885 0022 0023     		movs	r3, #0
+ 886 0024 3B62     		str	r3, [r7, #32]
+  96:Src/ILI9341/ILI9341_GFX.c ****     int xChange = 1 - (Radius << 1);
+ 887              		.loc 1 96 0
+ 888 0026 7B88     		ldrh	r3, [r7, #2]
+ 889 0028 5B00     		lsls	r3, r3, #1
+ 890 002a C3F10103 		rsb	r3, r3, #1
+ 891 002e FB61     		str	r3, [r7, #28]
+  97:Src/ILI9341/ILI9341_GFX.c ****     int yChange = 0;
+ 892              		.loc 1 97 0
+ 893 0030 0023     		movs	r3, #0
+ 894 0032 BB61     		str	r3, [r7, #24]
+  98:Src/ILI9341/ILI9341_GFX.c ****     int radiusError = 0;
+ 895              		.loc 1 98 0
+ 896 0034 0023     		movs	r3, #0
+ 897 0036 7B61     		str	r3, [r7, #20]
+  99:Src/ILI9341/ILI9341_GFX.c **** 
+ 100:Src/ILI9341/ILI9341_GFX.c ****     while (x >= y)
+ 898              		.loc 1 100 0
+ 899 0038 69E0     		b	.L6
+ 900              	.L11:
+ 901              	.LBB2:
+ 101:Src/ILI9341/ILI9341_GFX.c ****     {
+ 102:Src/ILI9341/ILI9341_GFX.c ****         for (int i = X - x; i <= X + x; i++)
+ 902              		.loc 1 102 0
+ 903 003a FA88     		ldrh	r2, [r7, #6]
+ 904 003c 7B6A     		ldr	r3, [r7, #36]
+ 905 003e D31A     		subs	r3, r2, r3
+ 906 0040 3B61     		str	r3, [r7, #16]
+ 907 0042 1CE0     		b	.L7
+ 908              	.L8:
+ 103:Src/ILI9341/ILI9341_GFX.c ****         {
+ 104:Src/ILI9341/ILI9341_GFX.c ****             ILI9341_Draw_Pixel(i, Y + y,Colour);
+ 909              		.loc 1 104 0 discriminator 3
+ 910 0044 3B69     		ldr	r3, [r7, #16]
+ 911 0046 99B2     		uxth	r1, r3
+ 912 0048 3B6A     		ldr	r3, [r7, #32]
+ 913 004a 9AB2     		uxth	r2, r3
+ 914 004c BB88     		ldrh	r3, [r7, #4]	@ movhi
+ 915 004e 1344     		add	r3, r3, r2
+ 916 0050 9AB2     		uxth	r2, r3
+ 917 0052 3B88     		ldrh	r3, [r7]
+ 918 0054 0846     		mov	r0, r1
+ 919 0056 1146     		mov	r1, r2
+ 920 0058 1A46     		mov	r2, r3
+ 921 005a FFF7FEFF 		bl	ILI9341_Draw_Pixel
+ 105:Src/ILI9341/ILI9341_GFX.c ****             ILI9341_Draw_Pixel(i, Y - y,Colour);
+ 922              		.loc 1 105 0 discriminator 3
+ 923 005e 3B69     		ldr	r3, [r7, #16]
+ 924 0060 99B2     		uxth	r1, r3
+ 925 0062 3B6A     		ldr	r3, [r7, #32]
+ARM GAS  /tmp/ccj7mO0o.s 			page 19
+
+
+ 926 0064 9BB2     		uxth	r3, r3
+ 927 0066 BA88     		ldrh	r2, [r7, #4]	@ movhi
+ 928 0068 D31A     		subs	r3, r2, r3
+ 929 006a 9AB2     		uxth	r2, r3
+ 930 006c 3B88     		ldrh	r3, [r7]
+ 931 006e 0846     		mov	r0, r1
+ 932 0070 1146     		mov	r1, r2
+ 933 0072 1A46     		mov	r2, r3
+ 934 0074 FFF7FEFF 		bl	ILI9341_Draw_Pixel
+ 102:Src/ILI9341/ILI9341_GFX.c ****         {
+ 935              		.loc 1 102 0 discriminator 3
+ 936 0078 3B69     		ldr	r3, [r7, #16]
+ 937 007a 0133     		adds	r3, r3, #1
+ 938 007c 3B61     		str	r3, [r7, #16]
+ 939              	.L7:
+ 102:Src/ILI9341/ILI9341_GFX.c ****         {
+ 940              		.loc 1 102 0 is_stmt 0 discriminator 1
+ 941 007e FA88     		ldrh	r2, [r7, #6]
+ 942 0080 7B6A     		ldr	r3, [r7, #36]
+ 943 0082 1A44     		add	r2, r2, r3
+ 944 0084 3B69     		ldr	r3, [r7, #16]
+ 945 0086 9A42     		cmp	r2, r3
+ 946 0088 DCDA     		bge	.L8
+ 947              	.LBE2:
+ 948              	.LBB3:
+ 106:Src/ILI9341/ILI9341_GFX.c ****         }
+ 107:Src/ILI9341/ILI9341_GFX.c ****         for (int i = X - y; i <= X + y; i++)
+ 949              		.loc 1 107 0 is_stmt 1
+ 950 008a FA88     		ldrh	r2, [r7, #6]
+ 951 008c 3B6A     		ldr	r3, [r7, #32]
+ 952 008e D31A     		subs	r3, r2, r3
+ 953 0090 FB60     		str	r3, [r7, #12]
+ 954 0092 1CE0     		b	.L9
+ 955              	.L10:
+ 108:Src/ILI9341/ILI9341_GFX.c ****         {
+ 109:Src/ILI9341/ILI9341_GFX.c ****             ILI9341_Draw_Pixel(i, Y + x,Colour);
+ 956              		.loc 1 109 0 discriminator 3
+ 957 0094 FB68     		ldr	r3, [r7, #12]
+ 958 0096 99B2     		uxth	r1, r3
+ 959 0098 7B6A     		ldr	r3, [r7, #36]
+ 960 009a 9AB2     		uxth	r2, r3
+ 961 009c BB88     		ldrh	r3, [r7, #4]	@ movhi
+ 962 009e 1344     		add	r3, r3, r2
+ 963 00a0 9AB2     		uxth	r2, r3
+ 964 00a2 3B88     		ldrh	r3, [r7]
+ 965 00a4 0846     		mov	r0, r1
+ 966 00a6 1146     		mov	r1, r2
+ 967 00a8 1A46     		mov	r2, r3
+ 968 00aa FFF7FEFF 		bl	ILI9341_Draw_Pixel
+ 110:Src/ILI9341/ILI9341_GFX.c ****             ILI9341_Draw_Pixel(i, Y - x,Colour);
+ 969              		.loc 1 110 0 discriminator 3
+ 970 00ae FB68     		ldr	r3, [r7, #12]
+ 971 00b0 99B2     		uxth	r1, r3
+ 972 00b2 7B6A     		ldr	r3, [r7, #36]
+ 973 00b4 9BB2     		uxth	r3, r3
+ 974 00b6 BA88     		ldrh	r2, [r7, #4]	@ movhi
+ 975 00b8 D31A     		subs	r3, r2, r3
+ARM GAS  /tmp/ccj7mO0o.s 			page 20
+
+
+ 976 00ba 9AB2     		uxth	r2, r3
+ 977 00bc 3B88     		ldrh	r3, [r7]
+ 978 00be 0846     		mov	r0, r1
+ 979 00c0 1146     		mov	r1, r2
+ 980 00c2 1A46     		mov	r2, r3
+ 981 00c4 FFF7FEFF 		bl	ILI9341_Draw_Pixel
+ 107:Src/ILI9341/ILI9341_GFX.c ****         {
+ 982              		.loc 1 107 0 discriminator 3
+ 983 00c8 FB68     		ldr	r3, [r7, #12]
+ 984 00ca 0133     		adds	r3, r3, #1
+ 985 00cc FB60     		str	r3, [r7, #12]
+ 986              	.L9:
+ 107:Src/ILI9341/ILI9341_GFX.c ****         {
+ 987              		.loc 1 107 0 is_stmt 0 discriminator 1
+ 988 00ce FA88     		ldrh	r2, [r7, #6]
+ 989 00d0 3B6A     		ldr	r3, [r7, #32]
+ 990 00d2 1A44     		add	r2, r2, r3
+ 991 00d4 FB68     		ldr	r3, [r7, #12]
+ 992 00d6 9A42     		cmp	r2, r3
+ 993 00d8 DCDA     		bge	.L10
+ 994              	.LBE3:
+ 111:Src/ILI9341/ILI9341_GFX.c ****         }
+ 112:Src/ILI9341/ILI9341_GFX.c **** 
+ 113:Src/ILI9341/ILI9341_GFX.c ****         y++;
+ 995              		.loc 1 113 0 is_stmt 1
+ 996 00da 3B6A     		ldr	r3, [r7, #32]
+ 997 00dc 0133     		adds	r3, r3, #1
+ 998 00de 3B62     		str	r3, [r7, #32]
+ 114:Src/ILI9341/ILI9341_GFX.c ****         radiusError += yChange;
+ 999              		.loc 1 114 0
+ 1000 00e0 7A69     		ldr	r2, [r7, #20]
+ 1001 00e2 BB69     		ldr	r3, [r7, #24]
+ 1002 00e4 1344     		add	r3, r3, r2
+ 1003 00e6 7B61     		str	r3, [r7, #20]
+ 115:Src/ILI9341/ILI9341_GFX.c ****         yChange += 2;
+ 1004              		.loc 1 115 0
+ 1005 00e8 BB69     		ldr	r3, [r7, #24]
+ 1006 00ea 0233     		adds	r3, r3, #2
+ 1007 00ec BB61     		str	r3, [r7, #24]
+ 116:Src/ILI9341/ILI9341_GFX.c ****         if (((radiusError << 1) + xChange) > 0)
+ 1008              		.loc 1 116 0
+ 1009 00ee 7B69     		ldr	r3, [r7, #20]
+ 1010 00f0 5A00     		lsls	r2, r3, #1
+ 1011 00f2 FB69     		ldr	r3, [r7, #28]
+ 1012 00f4 1344     		add	r3, r3, r2
+ 1013 00f6 002B     		cmp	r3, #0
+ 1014 00f8 09DD     		ble	.L6
+ 117:Src/ILI9341/ILI9341_GFX.c ****         {
+ 118:Src/ILI9341/ILI9341_GFX.c ****             x--;
+ 1015              		.loc 1 118 0
+ 1016 00fa 7B6A     		ldr	r3, [r7, #36]
+ 1017 00fc 013B     		subs	r3, r3, #1
+ 1018 00fe 7B62     		str	r3, [r7, #36]
+ 119:Src/ILI9341/ILI9341_GFX.c ****             radiusError += xChange;
+ 1019              		.loc 1 119 0
+ 1020 0100 7A69     		ldr	r2, [r7, #20]
+ 1021 0102 FB69     		ldr	r3, [r7, #28]
+ARM GAS  /tmp/ccj7mO0o.s 			page 21
+
+
+ 1022 0104 1344     		add	r3, r3, r2
+ 1023 0106 7B61     		str	r3, [r7, #20]
+ 120:Src/ILI9341/ILI9341_GFX.c ****             xChange += 2;
+ 1024              		.loc 1 120 0
+ 1025 0108 FB69     		ldr	r3, [r7, #28]
+ 1026 010a 0233     		adds	r3, r3, #2
+ 1027 010c FB61     		str	r3, [r7, #28]
+ 1028              	.L6:
+ 100:Src/ILI9341/ILI9341_GFX.c ****     {
+ 1029              		.loc 1 100 0
+ 1030 010e 7A6A     		ldr	r2, [r7, #36]
+ 1031 0110 3B6A     		ldr	r3, [r7, #32]
+ 1032 0112 9A42     		cmp	r2, r3
+ 1033 0114 91DA     		bge	.L11
+ 121:Src/ILI9341/ILI9341_GFX.c ****         }
+ 122:Src/ILI9341/ILI9341_GFX.c ****     }
+ 123:Src/ILI9341/ILI9341_GFX.c **** 		//Really slow implementation, will require future overhaul
+ 124:Src/ILI9341/ILI9341_GFX.c **** 		//TODO:	https://stackoverflow.com/questions/1201200/fast-algorithm-for-drawing-filled-circles	
+ 125:Src/ILI9341/ILI9341_GFX.c **** }
+ 1034              		.loc 1 125 0
+ 1035 0116 2C37     		adds	r7, r7, #44
+ 1036              	.LCFI8:
+ 1037              		.cfi_def_cfa_offset 12
+ 1038 0118 BD46     		mov	sp, r7
+ 1039              	.LCFI9:
+ 1040              		.cfi_def_cfa_register 13
+ 1041              		@ sp needed
+ 1042 011a 90BD     		pop	{r4, r7, pc}
+ 1043              		.cfi_endproc
+ 1044              	.LFE124:
+ 1046              		.section	.text.ILI9341_Draw_Hollow_Rectangle_Coord,"ax",%progbits
+ 1047              		.align	2
+ 1048              		.global	ILI9341_Draw_Hollow_Rectangle_Coord
+ 1049              		.thumb
+ 1050              		.thumb_func
+ 1052              	ILI9341_Draw_Hollow_Rectangle_Coord:
+ 1053              	.LFB125:
+ 126:Src/ILI9341/ILI9341_GFX.c **** 
+ 127:Src/ILI9341/ILI9341_GFX.c **** /*Draw a hollow rectangle between positions X0,Y0 and X1,Y1 with specified colour*/
+ 128:Src/ILI9341/ILI9341_GFX.c **** void ILI9341_Draw_Hollow_Rectangle_Coord(uint16_t X0, uint16_t Y0, uint16_t X1, uint16_t Y1, uint16
+ 129:Src/ILI9341/ILI9341_GFX.c **** {
+ 1054              		.loc 1 129 0
+ 1055              		.cfi_startproc
+ 1056              		@ args = 4, pretend = 0, frame = 24
+ 1057              		@ frame_needed = 1, uses_anonymous_args = 0
+ 1058 0000 90B5     		push	{r4, r7, lr}
+ 1059              	.LCFI10:
+ 1060              		.cfi_def_cfa_offset 12
+ 1061              		.cfi_offset 4, -12
+ 1062              		.cfi_offset 7, -8
+ 1063              		.cfi_offset 14, -4
+ 1064 0002 87B0     		sub	sp, sp, #28
+ 1065              	.LCFI11:
+ 1066              		.cfi_def_cfa_offset 40
+ 1067 0004 00AF     		add	r7, sp, #0
+ 1068              	.LCFI12:
+ 1069              		.cfi_def_cfa_register 7
+ARM GAS  /tmp/ccj7mO0o.s 			page 22
+
+
+ 1070 0006 0446     		mov	r4, r0
+ 1071 0008 0846     		mov	r0, r1
+ 1072 000a 1146     		mov	r1, r2
+ 1073 000c 1A46     		mov	r2, r3
+ 1074 000e 2346     		mov	r3, r4	@ movhi
+ 1075 0010 FB80     		strh	r3, [r7, #6]	@ movhi
+ 1076 0012 0346     		mov	r3, r0	@ movhi
+ 1077 0014 BB80     		strh	r3, [r7, #4]	@ movhi
+ 1078 0016 0B46     		mov	r3, r1	@ movhi
+ 1079 0018 7B80     		strh	r3, [r7, #2]	@ movhi
+ 1080 001a 1346     		mov	r3, r2	@ movhi
+ 1081 001c 3B80     		strh	r3, [r7]	@ movhi
+ 130:Src/ILI9341/ILI9341_GFX.c **** 	uint16_t 	X_length = 0;
+ 1082              		.loc 1 130 0
+ 1083 001e 0023     		movs	r3, #0
+ 1084 0020 FB82     		strh	r3, [r7, #22]	@ movhi
+ 131:Src/ILI9341/ILI9341_GFX.c **** 	uint16_t 	Y_length = 0;
+ 1085              		.loc 1 131 0
+ 1086 0022 0023     		movs	r3, #0
+ 1087 0024 BB82     		strh	r3, [r7, #20]	@ movhi
+ 132:Src/ILI9341/ILI9341_GFX.c **** 	uint8_t		Negative_X = 0;
+ 1088              		.loc 1 132 0
+ 1089 0026 0023     		movs	r3, #0
+ 1090 0028 FB74     		strb	r3, [r7, #19]
+ 133:Src/ILI9341/ILI9341_GFX.c **** 	uint8_t 	Negative_Y = 0;
+ 1091              		.loc 1 133 0
+ 1092 002a 0023     		movs	r3, #0
+ 1093 002c BB74     		strb	r3, [r7, #18]
+ 134:Src/ILI9341/ILI9341_GFX.c **** 	float 		Calc_Negative = 0;
+ 1094              		.loc 1 134 0
+ 1095 002e 4FF00003 		mov	r3, #0
+ 1096 0032 FB60     		str	r3, [r7, #12]	@ float
+ 135:Src/ILI9341/ILI9341_GFX.c **** 	
+ 136:Src/ILI9341/ILI9341_GFX.c **** 	Calc_Negative = X1 - X0;
+ 1097              		.loc 1 136 0
+ 1098 0034 7A88     		ldrh	r2, [r7, #2]
+ 1099 0036 FB88     		ldrh	r3, [r7, #6]
+ 1100 0038 D31A     		subs	r3, r2, r3
+ 1101 003a 07EE903A 		fmsr	s15, r3	@ int
+ 1102 003e F8EEE77A 		fsitos	s15, s15
+ 1103 0042 C7ED037A 		fsts	s15, [r7, #12]
+ 137:Src/ILI9341/ILI9341_GFX.c **** 	if(Calc_Negative < 0) Negative_X = 1;
+ 1104              		.loc 1 137 0
+ 1105 0046 D7ED037A 		flds	s15, [r7, #12]
+ 1106 004a F5EEC07A 		fcmpezs	s15
+ 1107 004e F1EE10FA 		fmstat
+ 1108 0052 01D5     		bpl	.L13
+ 1109              		.loc 1 137 0 is_stmt 0 discriminator 1
+ 1110 0054 0123     		movs	r3, #1
+ 1111 0056 FB74     		strb	r3, [r7, #19]
+ 1112              	.L13:
+ 138:Src/ILI9341/ILI9341_GFX.c **** 	Calc_Negative = 0;
+ 1113              		.loc 1 138 0 is_stmt 1
+ 1114 0058 4FF00003 		mov	r3, #0
+ 1115 005c FB60     		str	r3, [r7, #12]	@ float
+ 139:Src/ILI9341/ILI9341_GFX.c **** 	
+ 140:Src/ILI9341/ILI9341_GFX.c **** 	Calc_Negative = Y1 - Y0;
+ARM GAS  /tmp/ccj7mO0o.s 			page 23
+
+
+ 1116              		.loc 1 140 0
+ 1117 005e 3A88     		ldrh	r2, [r7]
+ 1118 0060 BB88     		ldrh	r3, [r7, #4]
+ 1119 0062 D31A     		subs	r3, r2, r3
+ 1120 0064 07EE903A 		fmsr	s15, r3	@ int
+ 1121 0068 F8EEE77A 		fsitos	s15, s15
+ 1122 006c C7ED037A 		fsts	s15, [r7, #12]
+ 141:Src/ILI9341/ILI9341_GFX.c **** 	if(Calc_Negative < 0) Negative_Y = 1;
+ 1123              		.loc 1 141 0
+ 1124 0070 D7ED037A 		flds	s15, [r7, #12]
+ 1125 0074 F5EEC07A 		fcmpezs	s15
+ 1126 0078 F1EE10FA 		fmstat
+ 1127 007c 01D5     		bpl	.L15
+ 1128              		.loc 1 141 0 is_stmt 0 discriminator 1
+ 1129 007e 0123     		movs	r3, #1
+ 1130 0080 BB74     		strb	r3, [r7, #18]
+ 1131              	.L15:
+ 142:Src/ILI9341/ILI9341_GFX.c **** 	
+ 143:Src/ILI9341/ILI9341_GFX.c **** 	
+ 144:Src/ILI9341/ILI9341_GFX.c **** 	//DRAW HORIZONTAL!
+ 145:Src/ILI9341/ILI9341_GFX.c **** 	if(!Negative_X)
+ 1132              		.loc 1 145 0 is_stmt 1
+ 1133 0082 FB7C     		ldrb	r3, [r7, #19]	@ zero_extendqisi2
+ 1134 0084 002B     		cmp	r3, #0
+ 1135 0086 04D1     		bne	.L17
+ 146:Src/ILI9341/ILI9341_GFX.c **** 	{
+ 147:Src/ILI9341/ILI9341_GFX.c **** 		X_length = X1 - X0;		
+ 1136              		.loc 1 147 0
+ 1137 0088 7A88     		ldrh	r2, [r7, #2]	@ movhi
+ 1138 008a FB88     		ldrh	r3, [r7, #6]	@ movhi
+ 1139 008c D31A     		subs	r3, r2, r3
+ 1140 008e FB82     		strh	r3, [r7, #22]	@ movhi
+ 1141 0090 03E0     		b	.L18
+ 1142              	.L17:
+ 148:Src/ILI9341/ILI9341_GFX.c **** 	}
+ 149:Src/ILI9341/ILI9341_GFX.c **** 	else
+ 150:Src/ILI9341/ILI9341_GFX.c **** 	{
+ 151:Src/ILI9341/ILI9341_GFX.c **** 		X_length = X0 - X1;		
+ 1143              		.loc 1 151 0
+ 1144 0092 FA88     		ldrh	r2, [r7, #6]	@ movhi
+ 1145 0094 7B88     		ldrh	r3, [r7, #2]	@ movhi
+ 1146 0096 D31A     		subs	r3, r2, r3
+ 1147 0098 FB82     		strh	r3, [r7, #22]	@ movhi
+ 1148              	.L18:
+ 152:Src/ILI9341/ILI9341_GFX.c **** 	}
+ 153:Src/ILI9341/ILI9341_GFX.c **** 	ILI9341_Draw_Horizontal_Line(X0, Y0, X_length, Colour);
+ 1149              		.loc 1 153 0
+ 1150 009a F888     		ldrh	r0, [r7, #6]
+ 1151 009c B988     		ldrh	r1, [r7, #4]
+ 1152 009e FA8A     		ldrh	r2, [r7, #22]
+ 1153 00a0 3B8D     		ldrh	r3, [r7, #40]
+ 1154 00a2 FFF7FEFF 		bl	ILI9341_Draw_Horizontal_Line
+ 154:Src/ILI9341/ILI9341_GFX.c **** 	ILI9341_Draw_Horizontal_Line(X0, Y1, X_length, Colour);
+ 1155              		.loc 1 154 0
+ 1156 00a6 F888     		ldrh	r0, [r7, #6]
+ 1157 00a8 3988     		ldrh	r1, [r7]
+ 1158 00aa FA8A     		ldrh	r2, [r7, #22]
+ARM GAS  /tmp/ccj7mO0o.s 			page 24
+
+
+ 1159 00ac 3B8D     		ldrh	r3, [r7, #40]
+ 1160 00ae FFF7FEFF 		bl	ILI9341_Draw_Horizontal_Line
+ 155:Src/ILI9341/ILI9341_GFX.c **** 	
+ 156:Src/ILI9341/ILI9341_GFX.c **** 	
+ 157:Src/ILI9341/ILI9341_GFX.c **** 	
+ 158:Src/ILI9341/ILI9341_GFX.c **** 	//DRAW VERTICAL!
+ 159:Src/ILI9341/ILI9341_GFX.c **** 	if(!Negative_Y)
+ 1161              		.loc 1 159 0
+ 1162 00b2 BB7C     		ldrb	r3, [r7, #18]	@ zero_extendqisi2
+ 1163 00b4 002B     		cmp	r3, #0
+ 1164 00b6 04D1     		bne	.L19
+ 160:Src/ILI9341/ILI9341_GFX.c **** 	{
+ 161:Src/ILI9341/ILI9341_GFX.c **** 		Y_length = Y1 - Y0;		
+ 1165              		.loc 1 161 0
+ 1166 00b8 3A88     		ldrh	r2, [r7]	@ movhi
+ 1167 00ba BB88     		ldrh	r3, [r7, #4]	@ movhi
+ 1168 00bc D31A     		subs	r3, r2, r3
+ 1169 00be BB82     		strh	r3, [r7, #20]	@ movhi
+ 1170 00c0 03E0     		b	.L20
+ 1171              	.L19:
+ 162:Src/ILI9341/ILI9341_GFX.c **** 	}
+ 163:Src/ILI9341/ILI9341_GFX.c **** 	else
+ 164:Src/ILI9341/ILI9341_GFX.c **** 	{
+ 165:Src/ILI9341/ILI9341_GFX.c **** 		Y_length = Y0 - Y1;		
+ 1172              		.loc 1 165 0
+ 1173 00c2 BA88     		ldrh	r2, [r7, #4]	@ movhi
+ 1174 00c4 3B88     		ldrh	r3, [r7]	@ movhi
+ 1175 00c6 D31A     		subs	r3, r2, r3
+ 1176 00c8 BB82     		strh	r3, [r7, #20]	@ movhi
+ 1177              	.L20:
+ 166:Src/ILI9341/ILI9341_GFX.c **** 	}
+ 167:Src/ILI9341/ILI9341_GFX.c **** 	ILI9341_Draw_Vertical_Line(X0, Y0, Y_length, Colour);
+ 1178              		.loc 1 167 0
+ 1179 00ca F888     		ldrh	r0, [r7, #6]
+ 1180 00cc B988     		ldrh	r1, [r7, #4]
+ 1181 00ce BA8A     		ldrh	r2, [r7, #20]
+ 1182 00d0 3B8D     		ldrh	r3, [r7, #40]
+ 1183 00d2 FFF7FEFF 		bl	ILI9341_Draw_Vertical_Line
+ 168:Src/ILI9341/ILI9341_GFX.c **** 	ILI9341_Draw_Vertical_Line(X1, Y0, Y_length, Colour);
+ 1184              		.loc 1 168 0
+ 1185 00d6 7888     		ldrh	r0, [r7, #2]
+ 1186 00d8 B988     		ldrh	r1, [r7, #4]
+ 1187 00da BA8A     		ldrh	r2, [r7, #20]
+ 1188 00dc 3B8D     		ldrh	r3, [r7, #40]
+ 1189 00de FFF7FEFF 		bl	ILI9341_Draw_Vertical_Line
+ 169:Src/ILI9341/ILI9341_GFX.c **** 	
+ 170:Src/ILI9341/ILI9341_GFX.c **** 	if((X_length > 0)||(Y_length > 0)) 
+ 1190              		.loc 1 170 0
+ 1191 00e2 FB8A     		ldrh	r3, [r7, #22]
+ 1192 00e4 002B     		cmp	r3, #0
+ 1193 00e6 02D1     		bne	.L21
+ 1194              		.loc 1 170 0 is_stmt 0 discriminator 1
+ 1195 00e8 BB8A     		ldrh	r3, [r7, #20]
+ 1196 00ea 002B     		cmp	r3, #0
+ 1197 00ec 07D0     		beq	.L12
+ 1198              	.L21:
+ 171:Src/ILI9341/ILI9341_GFX.c **** 	{
+ARM GAS  /tmp/ccj7mO0o.s 			page 25
+
+
+ 172:Src/ILI9341/ILI9341_GFX.c **** 		ILI9341_Draw_Pixel(X1, Y1, Colour);
+ 1199              		.loc 1 172 0 is_stmt 1
+ 1200 00ee 7988     		ldrh	r1, [r7, #2]
+ 1201 00f0 3A88     		ldrh	r2, [r7]
+ 1202 00f2 3B8D     		ldrh	r3, [r7, #40]
+ 1203 00f4 0846     		mov	r0, r1
+ 1204 00f6 1146     		mov	r1, r2
+ 1205 00f8 1A46     		mov	r2, r3
+ 1206 00fa FFF7FEFF 		bl	ILI9341_Draw_Pixel
+ 1207              	.L12:
+ 173:Src/ILI9341/ILI9341_GFX.c **** 	}
+ 174:Src/ILI9341/ILI9341_GFX.c **** 	
+ 175:Src/ILI9341/ILI9341_GFX.c **** }
+ 1208              		.loc 1 175 0
+ 1209 00fe 1C37     		adds	r7, r7, #28
+ 1210              	.LCFI13:
+ 1211              		.cfi_def_cfa_offset 12
+ 1212 0100 BD46     		mov	sp, r7
+ 1213              	.LCFI14:
+ 1214              		.cfi_def_cfa_register 13
+ 1215              		@ sp needed
+ 1216 0102 90BD     		pop	{r4, r7, pc}
+ 1217              		.cfi_endproc
+ 1218              	.LFE125:
+ 1220              		.section	.text.ILI9341_Draw_Filled_Rectangle_Coord,"ax",%progbits
+ 1221              		.align	2
+ 1222              		.global	ILI9341_Draw_Filled_Rectangle_Coord
+ 1223              		.thumb
+ 1224              		.thumb_func
+ 1226              	ILI9341_Draw_Filled_Rectangle_Coord:
+ 1227              	.LFB126:
+ 176:Src/ILI9341/ILI9341_GFX.c **** 
+ 177:Src/ILI9341/ILI9341_GFX.c **** /*Draw a filled rectangle between positions X0,Y0 and X1,Y1 with specified colour*/
+ 178:Src/ILI9341/ILI9341_GFX.c **** void ILI9341_Draw_Filled_Rectangle_Coord(uint16_t X0, uint16_t Y0, uint16_t X1, uint16_t Y1, uint16
+ 179:Src/ILI9341/ILI9341_GFX.c **** {
+ 1228              		.loc 1 179 0
+ 1229              		.cfi_startproc
+ 1230              		@ args = 4, pretend = 0, frame = 24
+ 1231              		@ frame_needed = 1, uses_anonymous_args = 0
+ 1232 0000 90B5     		push	{r4, r7, lr}
+ 1233              	.LCFI15:
+ 1234              		.cfi_def_cfa_offset 12
+ 1235              		.cfi_offset 4, -12
+ 1236              		.cfi_offset 7, -8
+ 1237              		.cfi_offset 14, -4
+ 1238 0002 89B0     		sub	sp, sp, #36
+ 1239              	.LCFI16:
+ 1240              		.cfi_def_cfa_offset 48
+ 1241 0004 02AF     		add	r7, sp, #8
+ 1242              	.LCFI17:
+ 1243              		.cfi_def_cfa 7, 40
+ 1244 0006 0446     		mov	r4, r0
+ 1245 0008 0846     		mov	r0, r1
+ 1246 000a 1146     		mov	r1, r2
+ 1247 000c 1A46     		mov	r2, r3
+ 1248 000e 2346     		mov	r3, r4	@ movhi
+ 1249 0010 FB80     		strh	r3, [r7, #6]	@ movhi
+ARM GAS  /tmp/ccj7mO0o.s 			page 26
+
+
+ 1250 0012 0346     		mov	r3, r0	@ movhi
+ 1251 0014 BB80     		strh	r3, [r7, #4]	@ movhi
+ 1252 0016 0B46     		mov	r3, r1	@ movhi
+ 1253 0018 7B80     		strh	r3, [r7, #2]	@ movhi
+ 1254 001a 1346     		mov	r3, r2	@ movhi
+ 1255 001c 3B80     		strh	r3, [r7]	@ movhi
+ 180:Src/ILI9341/ILI9341_GFX.c **** 	uint16_t 	X_length = 0;
+ 1256              		.loc 1 180 0
+ 1257 001e 0023     		movs	r3, #0
+ 1258 0020 FB82     		strh	r3, [r7, #22]	@ movhi
+ 181:Src/ILI9341/ILI9341_GFX.c **** 	uint16_t 	Y_length = 0;
+ 1259              		.loc 1 181 0
+ 1260 0022 0023     		movs	r3, #0
+ 1261 0024 BB82     		strh	r3, [r7, #20]	@ movhi
+ 182:Src/ILI9341/ILI9341_GFX.c **** 	uint8_t		Negative_X = 0;
+ 1262              		.loc 1 182 0
+ 1263 0026 0023     		movs	r3, #0
+ 1264 0028 FB74     		strb	r3, [r7, #19]
+ 183:Src/ILI9341/ILI9341_GFX.c **** 	uint8_t 	Negative_Y = 0;
+ 1265              		.loc 1 183 0
+ 1266 002a 0023     		movs	r3, #0
+ 1267 002c BB74     		strb	r3, [r7, #18]
+ 184:Src/ILI9341/ILI9341_GFX.c **** 	int32_t 	Calc_Negative = 0;
+ 1268              		.loc 1 184 0
+ 1269 002e 0023     		movs	r3, #0
+ 1270 0030 BB60     		str	r3, [r7, #8]
+ 185:Src/ILI9341/ILI9341_GFX.c **** 	
+ 186:Src/ILI9341/ILI9341_GFX.c **** 	uint16_t X0_true = 0;
+ 1271              		.loc 1 186 0
+ 1272 0032 0023     		movs	r3, #0
+ 1273 0034 3B82     		strh	r3, [r7, #16]	@ movhi
+ 187:Src/ILI9341/ILI9341_GFX.c **** 	uint16_t Y0_true = 0;
+ 1274              		.loc 1 187 0
+ 1275 0036 0023     		movs	r3, #0
+ 1276 0038 FB81     		strh	r3, [r7, #14]	@ movhi
+ 188:Src/ILI9341/ILI9341_GFX.c **** 	
+ 189:Src/ILI9341/ILI9341_GFX.c **** 	Calc_Negative = X1 - X0;
+ 1277              		.loc 1 189 0
+ 1278 003a 7A88     		ldrh	r2, [r7, #2]
+ 1279 003c FB88     		ldrh	r3, [r7, #6]
+ 1280 003e D31A     		subs	r3, r2, r3
+ 1281 0040 BB60     		str	r3, [r7, #8]
+ 190:Src/ILI9341/ILI9341_GFX.c **** 	if(Calc_Negative < 0) Negative_X = 1;
+ 1282              		.loc 1 190 0
+ 1283 0042 BB68     		ldr	r3, [r7, #8]
+ 1284 0044 002B     		cmp	r3, #0
+ 1285 0046 01DA     		bge	.L26
+ 1286              		.loc 1 190 0 is_stmt 0 discriminator 1
+ 1287 0048 0123     		movs	r3, #1
+ 1288 004a FB74     		strb	r3, [r7, #19]
+ 1289              	.L26:
+ 191:Src/ILI9341/ILI9341_GFX.c **** 	Calc_Negative = 0;
+ 1290              		.loc 1 191 0 is_stmt 1
+ 1291 004c 0023     		movs	r3, #0
+ 1292 004e BB60     		str	r3, [r7, #8]
+ 192:Src/ILI9341/ILI9341_GFX.c **** 	
+ 193:Src/ILI9341/ILI9341_GFX.c **** 	Calc_Negative = Y1 - Y0;
+ARM GAS  /tmp/ccj7mO0o.s 			page 27
+
+
+ 1293              		.loc 1 193 0
+ 1294 0050 3A88     		ldrh	r2, [r7]
+ 1295 0052 BB88     		ldrh	r3, [r7, #4]
+ 1296 0054 D31A     		subs	r3, r2, r3
+ 1297 0056 BB60     		str	r3, [r7, #8]
+ 194:Src/ILI9341/ILI9341_GFX.c **** 	if(Calc_Negative < 0) Negative_Y = 1;
+ 1298              		.loc 1 194 0
+ 1299 0058 BB68     		ldr	r3, [r7, #8]
+ 1300 005a 002B     		cmp	r3, #0
+ 1301 005c 01DA     		bge	.L27
+ 1302              		.loc 1 194 0 is_stmt 0 discriminator 1
+ 1303 005e 0123     		movs	r3, #1
+ 1304 0060 BB74     		strb	r3, [r7, #18]
+ 1305              	.L27:
+ 195:Src/ILI9341/ILI9341_GFX.c **** 	
+ 196:Src/ILI9341/ILI9341_GFX.c **** 	
+ 197:Src/ILI9341/ILI9341_GFX.c **** 	//DRAW HORIZONTAL!
+ 198:Src/ILI9341/ILI9341_GFX.c **** 	if(!Negative_X)
+ 1306              		.loc 1 198 0 is_stmt 1
+ 1307 0062 FB7C     		ldrb	r3, [r7, #19]	@ zero_extendqisi2
+ 1308 0064 002B     		cmp	r3, #0
+ 1309 0066 06D1     		bne	.L28
+ 199:Src/ILI9341/ILI9341_GFX.c **** 	{
+ 200:Src/ILI9341/ILI9341_GFX.c **** 		X_length = X1 - X0;
+ 1310              		.loc 1 200 0
+ 1311 0068 7A88     		ldrh	r2, [r7, #2]	@ movhi
+ 1312 006a FB88     		ldrh	r3, [r7, #6]	@ movhi
+ 1313 006c D31A     		subs	r3, r2, r3
+ 1314 006e FB82     		strh	r3, [r7, #22]	@ movhi
+ 201:Src/ILI9341/ILI9341_GFX.c **** 		X0_true = X0;
+ 1315              		.loc 1 201 0
+ 1316 0070 FB88     		ldrh	r3, [r7, #6]	@ movhi
+ 1317 0072 3B82     		strh	r3, [r7, #16]	@ movhi
+ 1318 0074 05E0     		b	.L29
+ 1319              	.L28:
+ 202:Src/ILI9341/ILI9341_GFX.c **** 	}
+ 203:Src/ILI9341/ILI9341_GFX.c **** 	else
+ 204:Src/ILI9341/ILI9341_GFX.c **** 	{
+ 205:Src/ILI9341/ILI9341_GFX.c **** 		X_length = X0 - X1;
+ 1320              		.loc 1 205 0
+ 1321 0076 FA88     		ldrh	r2, [r7, #6]	@ movhi
+ 1322 0078 7B88     		ldrh	r3, [r7, #2]	@ movhi
+ 1323 007a D31A     		subs	r3, r2, r3
+ 1324 007c FB82     		strh	r3, [r7, #22]	@ movhi
+ 206:Src/ILI9341/ILI9341_GFX.c **** 		X0_true = X1;
+ 1325              		.loc 1 206 0
+ 1326 007e 7B88     		ldrh	r3, [r7, #2]	@ movhi
+ 1327 0080 3B82     		strh	r3, [r7, #16]	@ movhi
+ 1328              	.L29:
+ 207:Src/ILI9341/ILI9341_GFX.c **** 	}
+ 208:Src/ILI9341/ILI9341_GFX.c **** 	
+ 209:Src/ILI9341/ILI9341_GFX.c **** 	//DRAW VERTICAL!
+ 210:Src/ILI9341/ILI9341_GFX.c **** 	if(!Negative_Y)
+ 1329              		.loc 1 210 0
+ 1330 0082 BB7C     		ldrb	r3, [r7, #18]	@ zero_extendqisi2
+ 1331 0084 002B     		cmp	r3, #0
+ 1332 0086 06D1     		bne	.L30
+ARM GAS  /tmp/ccj7mO0o.s 			page 28
+
+
+ 211:Src/ILI9341/ILI9341_GFX.c **** 	{
+ 212:Src/ILI9341/ILI9341_GFX.c **** 		Y_length = Y1 - Y0;
+ 1333              		.loc 1 212 0
+ 1334 0088 3A88     		ldrh	r2, [r7]	@ movhi
+ 1335 008a BB88     		ldrh	r3, [r7, #4]	@ movhi
+ 1336 008c D31A     		subs	r3, r2, r3
+ 1337 008e BB82     		strh	r3, [r7, #20]	@ movhi
+ 213:Src/ILI9341/ILI9341_GFX.c **** 		Y0_true = Y0;		
+ 1338              		.loc 1 213 0
+ 1339 0090 BB88     		ldrh	r3, [r7, #4]	@ movhi
+ 1340 0092 FB81     		strh	r3, [r7, #14]	@ movhi
+ 1341 0094 05E0     		b	.L31
+ 1342              	.L30:
+ 214:Src/ILI9341/ILI9341_GFX.c **** 	}
+ 215:Src/ILI9341/ILI9341_GFX.c **** 	else
+ 216:Src/ILI9341/ILI9341_GFX.c **** 	{
+ 217:Src/ILI9341/ILI9341_GFX.c **** 		Y_length = Y0 - Y1;
+ 1343              		.loc 1 217 0
+ 1344 0096 BA88     		ldrh	r2, [r7, #4]	@ movhi
+ 1345 0098 3B88     		ldrh	r3, [r7]	@ movhi
+ 1346 009a D31A     		subs	r3, r2, r3
+ 1347 009c BB82     		strh	r3, [r7, #20]	@ movhi
+ 218:Src/ILI9341/ILI9341_GFX.c **** 		Y0_true = Y1;	
+ 1348              		.loc 1 218 0
+ 1349 009e 3B88     		ldrh	r3, [r7]	@ movhi
+ 1350 00a0 FB81     		strh	r3, [r7, #14]	@ movhi
+ 1351              	.L31:
+ 219:Src/ILI9341/ILI9341_GFX.c **** 	}
+ 220:Src/ILI9341/ILI9341_GFX.c **** 	
+ 221:Src/ILI9341/ILI9341_GFX.c **** 	ILI9341_Draw_Rectangle(X0_true, Y0_true, X_length, Y_length, Colour);	
+ 1352              		.loc 1 221 0
+ 1353 00a2 388A     		ldrh	r0, [r7, #16]
+ 1354 00a4 F989     		ldrh	r1, [r7, #14]
+ 1355 00a6 FA8A     		ldrh	r2, [r7, #22]
+ 1356 00a8 BC8A     		ldrh	r4, [r7, #20]
+ 1357 00aa 3B8D     		ldrh	r3, [r7, #40]
+ 1358 00ac 0093     		str	r3, [sp]
+ 1359 00ae 2346     		mov	r3, r4
+ 1360 00b0 FFF7FEFF 		bl	ILI9341_Draw_Rectangle
+ 222:Src/ILI9341/ILI9341_GFX.c **** }
+ 1361              		.loc 1 222 0
+ 1362 00b4 1C37     		adds	r7, r7, #28
+ 1363              	.LCFI18:
+ 1364              		.cfi_def_cfa_offset 12
+ 1365 00b6 BD46     		mov	sp, r7
+ 1366              	.LCFI19:
+ 1367              		.cfi_def_cfa_register 13
+ 1368              		@ sp needed
+ 1369 00b8 90BD     		pop	{r4, r7, pc}
+ 1370              		.cfi_endproc
+ 1371              	.LFE126:
+ 1373 00ba 00BF     		.section	.text.ILI9341_Draw_Char,"ax",%progbits
+ 1374              		.align	2
+ 1375              		.global	ILI9341_Draw_Char
+ 1376              		.thumb
+ 1377              		.thumb_func
+ 1379              	ILI9341_Draw_Char:
+ARM GAS  /tmp/ccj7mO0o.s 			page 29
+
+
+ 1380              	.LFB127:
+ 223:Src/ILI9341/ILI9341_GFX.c **** 
+ 224:Src/ILI9341/ILI9341_GFX.c **** /*Draws a character (fonts imported from fonts.h) at X,Y location with specified font colour, size 
+ 225:Src/ILI9341/ILI9341_GFX.c **** /*See fonts.h implementation of font on what is required for changing to a different font when swit
+ 226:Src/ILI9341/ILI9341_GFX.c **** void ILI9341_Draw_Char(char Character, uint8_t X, uint8_t Y, uint16_t Colour, uint16_t Size, uint16
+ 227:Src/ILI9341/ILI9341_GFX.c **** {
+ 1381              		.loc 1 227 0
+ 1382              		.cfi_startproc
+ 1383              		@ args = 8, pretend = 0, frame = 24
+ 1384              		@ frame_needed = 1, uses_anonymous_args = 0
+ 1385 0000 90B5     		push	{r4, r7, lr}
+ 1386              	.LCFI20:
+ 1387              		.cfi_def_cfa_offset 12
+ 1388              		.cfi_offset 4, -12
+ 1389              		.cfi_offset 7, -8
+ 1390              		.cfi_offset 14, -4
+ 1391 0002 89B0     		sub	sp, sp, #36
+ 1392              	.LCFI21:
+ 1393              		.cfi_def_cfa_offset 48
+ 1394 0004 02AF     		add	r7, sp, #8
+ 1395              	.LCFI22:
+ 1396              		.cfi_def_cfa 7, 40
+ 1397 0006 0446     		mov	r4, r0
+ 1398 0008 0846     		mov	r0, r1
+ 1399 000a 1146     		mov	r1, r2
+ 1400 000c 1A46     		mov	r2, r3
+ 1401 000e 2346     		mov	r3, r4
+ 1402 0010 FB71     		strb	r3, [r7, #7]
+ 1403 0012 0346     		mov	r3, r0
+ 1404 0014 BB71     		strb	r3, [r7, #6]
+ 1405 0016 0B46     		mov	r3, r1
+ 1406 0018 7B71     		strb	r3, [r7, #5]
+ 1407 001a 1346     		mov	r3, r2	@ movhi
+ 1408 001c 7B80     		strh	r3, [r7, #2]	@ movhi
+ 228:Src/ILI9341/ILI9341_GFX.c **** 		uint8_t 	function_char;
+ 229:Src/ILI9341/ILI9341_GFX.c ****     uint8_t 	i,j;
+ 230:Src/ILI9341/ILI9341_GFX.c **** 		
+ 231:Src/ILI9341/ILI9341_GFX.c **** 		function_char = Character;
+ 1409              		.loc 1 231 0
+ 1410 001e FB79     		ldrb	r3, [r7, #7]
+ 1411 0020 FB75     		strb	r3, [r7, #23]
+ 232:Src/ILI9341/ILI9341_GFX.c **** 		
+ 233:Src/ILI9341/ILI9341_GFX.c ****     if (function_char < ' ') {
+ 1412              		.loc 1 233 0
+ 1413 0022 FB7D     		ldrb	r3, [r7, #23]	@ zero_extendqisi2
+ 1414 0024 1F2B     		cmp	r3, #31
+ 1415 0026 02D8     		bhi	.L33
+ 234:Src/ILI9341/ILI9341_GFX.c ****         Character = 0;
+ 1416              		.loc 1 234 0
+ 1417 0028 0023     		movs	r3, #0
+ 1418 002a FB71     		strb	r3, [r7, #7]
+ 1419 002c 02E0     		b	.L34
+ 1420              	.L33:
+ 235:Src/ILI9341/ILI9341_GFX.c ****     } else {
+ 236:Src/ILI9341/ILI9341_GFX.c ****         function_char -= 32;
+ 1421              		.loc 1 236 0
+ 1422 002e FB7D     		ldrb	r3, [r7, #23]
+ARM GAS  /tmp/ccj7mO0o.s 			page 30
+
+
+ 1423 0030 203B     		subs	r3, r3, #32
+ 1424 0032 FB75     		strb	r3, [r7, #23]
+ 1425              	.L34:
+ 1426              	.LBB4:
+ 237:Src/ILI9341/ILI9341_GFX.c **** 		}
+ 238:Src/ILI9341/ILI9341_GFX.c ****    	
+ 239:Src/ILI9341/ILI9341_GFX.c **** 		char temp[CHAR_WIDTH];
+ 240:Src/ILI9341/ILI9341_GFX.c **** 		for(uint8_t k = 0; k<CHAR_WIDTH; k++)
+ 1427              		.loc 1 240 0
+ 1428 0034 0023     		movs	r3, #0
+ 1429 0036 3B75     		strb	r3, [r7, #20]
+ 1430 0038 12E0     		b	.L35
+ 1431              	.L36:
+ 241:Src/ILI9341/ILI9341_GFX.c **** 		{
+ 242:Src/ILI9341/ILI9341_GFX.c **** 		temp[k] = font[function_char][k];
+ 1432              		.loc 1 242 0 discriminator 3
+ 1433 003a 397D     		ldrb	r1, [r7, #20]	@ zero_extendqisi2
+ 1434 003c FA7D     		ldrb	r2, [r7, #23]	@ zero_extendqisi2
+ 1435 003e 387D     		ldrb	r0, [r7, #20]	@ zero_extendqisi2
+ 1436 0040 3C4C     		ldr	r4, .L43
+ 1437 0042 1346     		mov	r3, r2
+ 1438 0044 5B00     		lsls	r3, r3, #1
+ 1439 0046 1344     		add	r3, r3, r2
+ 1440 0048 5B00     		lsls	r3, r3, #1
+ 1441 004a 0344     		add	r3, r3, r0
+ 1442 004c 2344     		add	r3, r3, r4
+ 1443 004e 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ 1444 0050 07F11803 		add	r3, r7, #24
+ 1445 0054 0B44     		add	r3, r3, r1
+ 1446 0056 03F80C2C 		strb	r2, [r3, #-12]
+ 240:Src/ILI9341/ILI9341_GFX.c **** 		{
+ 1447              		.loc 1 240 0 discriminator 3
+ 1448 005a 3B7D     		ldrb	r3, [r7, #20]	@ zero_extendqisi2
+ 1449 005c 0133     		adds	r3, r3, #1
+ 1450 005e 3B75     		strb	r3, [r7, #20]
+ 1451              	.L35:
+ 240:Src/ILI9341/ILI9341_GFX.c **** 		{
+ 1452              		.loc 1 240 0 is_stmt 0 discriminator 1
+ 1453 0060 3B7D     		ldrb	r3, [r7, #20]	@ zero_extendqisi2
+ 1454 0062 052B     		cmp	r3, #5
+ 1455 0064 E9D9     		bls	.L36
+ 1456              	.LBE4:
+ 243:Src/ILI9341/ILI9341_GFX.c **** 		}
+ 244:Src/ILI9341/ILI9341_GFX.c **** 		
+ 245:Src/ILI9341/ILI9341_GFX.c ****     // Draw pixels
+ 246:Src/ILI9341/ILI9341_GFX.c **** 		ILI9341_Draw_Rectangle(X, Y, CHAR_WIDTH*Size, CHAR_HEIGHT*Size, Background_Colour);
+ 1457              		.loc 1 246 0 is_stmt 1
+ 1458 0066 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
+ 1459 0068 98B2     		uxth	r0, r3
+ 1460 006a 7B79     		ldrb	r3, [r7, #5]	@ zero_extendqisi2
+ 1461 006c 99B2     		uxth	r1, r3
+ 1462 006e 3B8D     		ldrh	r3, [r7, #40]	@ movhi
+ 1463 0070 1A46     		mov	r2, r3	@ movhi
+ 1464 0072 5200     		lsls	r2, r2, #1
+ 1465 0074 1344     		add	r3, r3, r2
+ 1466 0076 5B00     		lsls	r3, r3, #1
+ 1467 0078 9AB2     		uxth	r2, r3
+ARM GAS  /tmp/ccj7mO0o.s 			page 31
+
+
+ 1468 007a 3B8D     		ldrh	r3, [r7, #40]	@ movhi
+ 1469 007c DB00     		lsls	r3, r3, #3
+ 1470 007e 9CB2     		uxth	r4, r3
+ 1471 0080 BB8D     		ldrh	r3, [r7, #44]
+ 1472 0082 0093     		str	r3, [sp]
+ 1473 0084 2346     		mov	r3, r4
+ 1474 0086 FFF7FEFF 		bl	ILI9341_Draw_Rectangle
+ 247:Src/ILI9341/ILI9341_GFX.c ****     for (j=0; j<CHAR_WIDTH; j++) {
+ 1475              		.loc 1 247 0
+ 1476 008a 0023     		movs	r3, #0
+ 1477 008c 7B75     		strb	r3, [r7, #21]
+ 1478 008e 4AE0     		b	.L37
+ 1479              	.L42:
+ 248:Src/ILI9341/ILI9341_GFX.c ****         for (i=0; i<CHAR_HEIGHT; i++) {
+ 1480              		.loc 1 248 0
+ 1481 0090 0023     		movs	r3, #0
+ 1482 0092 BB75     		strb	r3, [r7, #22]
+ 1483 0094 41E0     		b	.L38
+ 1484              	.L41:
+ 249:Src/ILI9341/ILI9341_GFX.c ****             if (temp[j] & (1<<i)) {			
+ 1485              		.loc 1 249 0
+ 1486 0096 7B7D     		ldrb	r3, [r7, #21]	@ zero_extendqisi2
+ 1487 0098 07F11802 		add	r2, r7, #24
+ 1488 009c 1344     		add	r3, r3, r2
+ 1489 009e 13F80C3C 		ldrb	r3, [r3, #-12]	@ zero_extendqisi2
+ 1490 00a2 1A46     		mov	r2, r3
+ 1491 00a4 BB7D     		ldrb	r3, [r7, #22]	@ zero_extendqisi2
+ 1492 00a6 42FA03F3 		asr	r3, r2, r3
+ 1493 00aa 03F00103 		and	r3, r3, #1
+ 1494 00ae 002B     		cmp	r3, #0
+ 1495 00b0 30D0     		beq	.L39
+ 250:Src/ILI9341/ILI9341_GFX.c **** 							if(Size == 1)
+ 1496              		.loc 1 250 0
+ 1497 00b2 3B8D     		ldrh	r3, [r7, #40]
+ 1498 00b4 012B     		cmp	r3, #1
+ 1499 00b6 12D1     		bne	.L40
+ 251:Src/ILI9341/ILI9341_GFX.c **** 							{
+ 252:Src/ILI9341/ILI9341_GFX.c ****               ILI9341_Draw_Pixel(X+j, Y+i, Colour);
+ 1500              		.loc 1 252 0
+ 1501 00b8 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
+ 1502 00ba 9AB2     		uxth	r2, r3
+ 1503 00bc 7B7D     		ldrb	r3, [r7, #21]	@ zero_extendqisi2
+ 1504 00be 9BB2     		uxth	r3, r3
+ 1505 00c0 1344     		add	r3, r3, r2
+ 1506 00c2 99B2     		uxth	r1, r3
+ 1507 00c4 7B79     		ldrb	r3, [r7, #5]	@ zero_extendqisi2
+ 1508 00c6 9AB2     		uxth	r2, r3
+ 1509 00c8 BB7D     		ldrb	r3, [r7, #22]	@ zero_extendqisi2
+ 1510 00ca 9BB2     		uxth	r3, r3
+ 1511 00cc 1344     		add	r3, r3, r2
+ 1512 00ce 9AB2     		uxth	r2, r3
+ 1513 00d0 7B88     		ldrh	r3, [r7, #2]
+ 1514 00d2 0846     		mov	r0, r1
+ 1515 00d4 1146     		mov	r1, r2
+ 1516 00d6 1A46     		mov	r2, r3
+ 1517 00d8 FFF7FEFF 		bl	ILI9341_Draw_Pixel
+ 1518 00dc 1AE0     		b	.L39
+ARM GAS  /tmp/ccj7mO0o.s 			page 32
+
+
+ 1519              	.L40:
+ 253:Src/ILI9341/ILI9341_GFX.c **** 							}
+ 254:Src/ILI9341/ILI9341_GFX.c **** 							else
+ 255:Src/ILI9341/ILI9341_GFX.c **** 							{
+ 256:Src/ILI9341/ILI9341_GFX.c **** 							ILI9341_Draw_Rectangle(X+(j*Size), Y+(i*Size), Size, Size, Colour);
+ 1520              		.loc 1 256 0
+ 1521 00de BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
+ 1522 00e0 9AB2     		uxth	r2, r3
+ 1523 00e2 7B7D     		ldrb	r3, [r7, #21]	@ zero_extendqisi2
+ 1524 00e4 9BB2     		uxth	r3, r3
+ 1525 00e6 398D     		ldrh	r1, [r7, #40]	@ movhi
+ 1526 00e8 11FB03F3 		smulbb	r3, r1, r3
+ 1527 00ec 9BB2     		uxth	r3, r3
+ 1528 00ee 1344     		add	r3, r3, r2
+ 1529 00f0 98B2     		uxth	r0, r3
+ 1530 00f2 7B79     		ldrb	r3, [r7, #5]	@ zero_extendqisi2
+ 1531 00f4 9AB2     		uxth	r2, r3
+ 1532 00f6 BB7D     		ldrb	r3, [r7, #22]	@ zero_extendqisi2
+ 1533 00f8 9BB2     		uxth	r3, r3
+ 1534 00fa 398D     		ldrh	r1, [r7, #40]	@ movhi
+ 1535 00fc 11FB03F3 		smulbb	r3, r1, r3
+ 1536 0100 9BB2     		uxth	r3, r3
+ 1537 0102 1344     		add	r3, r3, r2
+ 1538 0104 99B2     		uxth	r1, r3
+ 1539 0106 3A8D     		ldrh	r2, [r7, #40]
+ 1540 0108 3C8D     		ldrh	r4, [r7, #40]
+ 1541 010a 7B88     		ldrh	r3, [r7, #2]
+ 1542 010c 0093     		str	r3, [sp]
+ 1543 010e 2346     		mov	r3, r4
+ 1544 0110 FFF7FEFF 		bl	ILI9341_Draw_Rectangle
+ 1545              	.L39:
+ 248:Src/ILI9341/ILI9341_GFX.c ****             if (temp[j] & (1<<i)) {			
+ 1546              		.loc 1 248 0 discriminator 2
+ 1547 0114 BB7D     		ldrb	r3, [r7, #22]	@ zero_extendqisi2
+ 1548 0116 0133     		adds	r3, r3, #1
+ 1549 0118 BB75     		strb	r3, [r7, #22]
+ 1550              	.L38:
+ 248:Src/ILI9341/ILI9341_GFX.c ****             if (temp[j] & (1<<i)) {			
+ 1551              		.loc 1 248 0 is_stmt 0 discriminator 1
+ 1552 011a BB7D     		ldrb	r3, [r7, #22]	@ zero_extendqisi2
+ 1553 011c 072B     		cmp	r3, #7
+ 1554 011e BAD9     		bls	.L41
+ 247:Src/ILI9341/ILI9341_GFX.c ****         for (i=0; i<CHAR_HEIGHT; i++) {
+ 1555              		.loc 1 247 0 is_stmt 1 discriminator 2
+ 1556 0120 7B7D     		ldrb	r3, [r7, #21]	@ zero_extendqisi2
+ 1557 0122 0133     		adds	r3, r3, #1
+ 1558 0124 7B75     		strb	r3, [r7, #21]
+ 1559              	.L37:
+ 247:Src/ILI9341/ILI9341_GFX.c ****         for (i=0; i<CHAR_HEIGHT; i++) {
+ 1560              		.loc 1 247 0 is_stmt 0 discriminator 1
+ 1561 0126 7B7D     		ldrb	r3, [r7, #21]	@ zero_extendqisi2
+ 1562 0128 052B     		cmp	r3, #5
+ 1563 012a B1D9     		bls	.L42
+ 257:Src/ILI9341/ILI9341_GFX.c **** 							}
+ 258:Src/ILI9341/ILI9341_GFX.c ****             }						
+ 259:Src/ILI9341/ILI9341_GFX.c ****         }
+ 260:Src/ILI9341/ILI9341_GFX.c ****     }
+ARM GAS  /tmp/ccj7mO0o.s 			page 33
+
+
+ 261:Src/ILI9341/ILI9341_GFX.c **** }
+ 1564              		.loc 1 261 0 is_stmt 1
+ 1565 012c 1C37     		adds	r7, r7, #28
+ 1566              	.LCFI23:
+ 1567              		.cfi_def_cfa_offset 12
+ 1568 012e BD46     		mov	sp, r7
+ 1569              	.LCFI24:
+ 1570              		.cfi_def_cfa_register 13
+ 1571              		@ sp needed
+ 1572 0130 90BD     		pop	{r4, r7, pc}
+ 1573              	.L44:
+ 1574 0132 00BF     		.align	2
+ 1575              	.L43:
+ 1576 0134 00000000 		.word	font
+ 1577              		.cfi_endproc
+ 1578              	.LFE127:
+ 1580              		.section	.text.ILI9341_Draw_Text,"ax",%progbits
+ 1581              		.align	2
+ 1582              		.global	ILI9341_Draw_Text
+ 1583              		.thumb
+ 1584              		.thumb_func
+ 1586              	ILI9341_Draw_Text:
+ 1587              	.LFB128:
+ 262:Src/ILI9341/ILI9341_GFX.c **** 
+ 263:Src/ILI9341/ILI9341_GFX.c **** /*Draws an array of characters (fonts imported from fonts.h) at X,Y location with specified font co
+ 264:Src/ILI9341/ILI9341_GFX.c **** /*See fonts.h implementation of font on what is required for changing to a different font when swit
+ 265:Src/ILI9341/ILI9341_GFX.c **** void ILI9341_Draw_Text(const char* Text, uint8_t X, uint8_t Y, uint16_t Colour, uint16_t Size, uint
+ 266:Src/ILI9341/ILI9341_GFX.c **** {
+ 1588              		.loc 1 266 0
+ 1589              		.cfi_startproc
+ 1590              		@ args = 8, pretend = 0, frame = 8
+ 1591              		@ frame_needed = 1, uses_anonymous_args = 0
+ 1592 0000 90B5     		push	{r4, r7, lr}
+ 1593              	.LCFI25:
+ 1594              		.cfi_def_cfa_offset 12
+ 1595              		.cfi_offset 4, -12
+ 1596              		.cfi_offset 7, -8
+ 1597              		.cfi_offset 14, -4
+ 1598 0002 85B0     		sub	sp, sp, #20
+ 1599              	.LCFI26:
+ 1600              		.cfi_def_cfa_offset 32
+ 1601 0004 02AF     		add	r7, sp, #8
+ 1602              	.LCFI27:
+ 1603              		.cfi_def_cfa 7, 24
+ 1604 0006 7860     		str	r0, [r7, #4]
+ 1605 0008 0846     		mov	r0, r1
+ 1606 000a 1146     		mov	r1, r2
+ 1607 000c 1A46     		mov	r2, r3
+ 1608 000e 0346     		mov	r3, r0
+ 1609 0010 FB70     		strb	r3, [r7, #3]
+ 1610 0012 0B46     		mov	r3, r1
+ 1611 0014 BB70     		strb	r3, [r7, #2]
+ 1612 0016 1346     		mov	r3, r2	@ movhi
+ 1613 0018 3B80     		strh	r3, [r7]	@ movhi
+ 267:Src/ILI9341/ILI9341_GFX.c ****     while (*Text) {
+ 1614              		.loc 1 267 0
+ 1615 001a 17E0     		b	.L46
+ARM GAS  /tmp/ccj7mO0o.s 			page 34
+
+
+ 1616              	.L47:
+ 268:Src/ILI9341/ILI9341_GFX.c ****         ILI9341_Draw_Char(*Text++, X, Y, Colour, Size, Background_Colour);
+ 1617              		.loc 1 268 0
+ 1618 001c 7B68     		ldr	r3, [r7, #4]
+ 1619 001e 5A1C     		adds	r2, r3, #1
+ 1620 0020 7A60     		str	r2, [r7, #4]
+ 1621 0022 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 1622 0024 F978     		ldrb	r1, [r7, #3]	@ zero_extendqisi2
+ 1623 0026 BA78     		ldrb	r2, [r7, #2]	@ zero_extendqisi2
+ 1624 0028 3C88     		ldrh	r4, [r7]
+ 1625 002a 3B8B     		ldrh	r3, [r7, #24]
+ 1626 002c 0093     		str	r3, [sp]
+ 1627 002e BB8B     		ldrh	r3, [r7, #28]
+ 1628 0030 0193     		str	r3, [sp, #4]
+ 1629 0032 2346     		mov	r3, r4
+ 1630 0034 FFF7FEFF 		bl	ILI9341_Draw_Char
+ 269:Src/ILI9341/ILI9341_GFX.c ****         X += CHAR_WIDTH*Size;
+ 1631              		.loc 1 269 0
+ 1632 0038 3B8B     		ldrh	r3, [r7, #24]	@ movhi
+ 1633 003a DBB2     		uxtb	r3, r3
+ 1634 003c 1A46     		mov	r2, r3
+ 1635 003e 5200     		lsls	r2, r2, #1
+ 1636 0040 1344     		add	r3, r3, r2
+ 1637 0042 5B00     		lsls	r3, r3, #1
+ 1638 0044 DAB2     		uxtb	r2, r3
+ 1639 0046 FB78     		ldrb	r3, [r7, #3]
+ 1640 0048 1344     		add	r3, r3, r2
+ 1641 004a FB70     		strb	r3, [r7, #3]
+ 1642              	.L46:
+ 267:Src/ILI9341/ILI9341_GFX.c ****     while (*Text) {
+ 1643              		.loc 1 267 0
+ 1644 004c 7B68     		ldr	r3, [r7, #4]
+ 1645 004e 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 1646 0050 002B     		cmp	r3, #0
+ 1647 0052 E3D1     		bne	.L47
+ 270:Src/ILI9341/ILI9341_GFX.c ****     }
+ 271:Src/ILI9341/ILI9341_GFX.c **** }
+ 1648              		.loc 1 271 0
+ 1649 0054 0C37     		adds	r7, r7, #12
+ 1650              	.LCFI28:
+ 1651              		.cfi_def_cfa_offset 12
+ 1652 0056 BD46     		mov	sp, r7
+ 1653              	.LCFI29:
+ 1654              		.cfi_def_cfa_register 13
+ 1655              		@ sp needed
+ 1656 0058 90BD     		pop	{r4, r7, pc}
+ 1657              		.cfi_endproc
+ 1658              	.LFE128:
+ 1660 005a 00BF     		.section	.text.ILI9341_Draw_Image,"ax",%progbits
+ 1661              		.align	2
+ 1662              		.global	ILI9341_Draw_Image
+ 1663              		.thumb
+ 1664              		.thumb_func
+ 1666              	ILI9341_Draw_Image:
+ 1667              	.LFB129:
+ 272:Src/ILI9341/ILI9341_GFX.c **** 
+ 273:Src/ILI9341/ILI9341_GFX.c **** /*Draws a full screen picture from flash. Image converted from RGB .jpeg/other to C array using onl
+ARM GAS  /tmp/ccj7mO0o.s 			page 35
+
+
+ 274:Src/ILI9341/ILI9341_GFX.c **** //USING CONVERTER: http://www.digole.com/tools/PicturetoC_Hex_converter.php
+ 275:Src/ILI9341/ILI9341_GFX.c **** //65K colour (2Bytes / Pixel)
+ 276:Src/ILI9341/ILI9341_GFX.c **** void ILI9341_Draw_Image(const char* Image_Array, uint8_t Orientation)
+ 277:Src/ILI9341/ILI9341_GFX.c **** {
+ 1668              		.loc 1 277 0
+ 1669              		.cfi_startproc
+ 1670              		@ args = 0, pretend = 0, frame = 560
+ 1671              		@ frame_needed = 1, uses_anonymous_args = 0
+ 1672 0000 80B5     		push	{r7, lr}
+ 1673              	.LCFI30:
+ 1674              		.cfi_def_cfa_offset 8
+ 1675              		.cfi_offset 7, -8
+ 1676              		.cfi_offset 14, -4
+ 1677 0002 ADF50C7D 		sub	sp, sp, #560
+ 1678              	.LCFI31:
+ 1679              		.cfi_def_cfa_offset 568
+ 1680 0006 00AF     		add	r7, sp, #0
+ 1681              	.LCFI32:
+ 1682              		.cfi_def_cfa_register 7
+ 1683 0008 3B1D     		adds	r3, r7, #4
+ 1684 000a 1860     		str	r0, [r3]
+ 1685 000c 0A46     		mov	r2, r1
+ 1686 000e FB1C     		adds	r3, r7, #3
+ 1687 0010 1A70     		strb	r2, [r3]
+ 278:Src/ILI9341/ILI9341_GFX.c **** 	if(Orientation == SCREEN_HORIZONTAL_1)
+ 1688              		.loc 1 278 0
+ 1689 0012 FB1C     		adds	r3, r7, #3
+ 1690 0014 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 1691 0016 012B     		cmp	r3, #1
+ 1692 0018 58D1     		bne	.L49
+ 1693              	.LBB5:
+ 279:Src/ILI9341/ILI9341_GFX.c **** 	{
+ 280:Src/ILI9341/ILI9341_GFX.c **** 		ILI9341_Set_Rotation(SCREEN_HORIZONTAL_1);
+ 1694              		.loc 1 280 0
+ 1695 001a 0120     		movs	r0, #1
+ 1696 001c FFF7FEFF 		bl	ILI9341_Set_Rotation
+ 281:Src/ILI9341/ILI9341_GFX.c **** 		ILI9341_Set_Address(0,0,ILI9341_SCREEN_WIDTH,ILI9341_SCREEN_HEIGHT);
+ 1697              		.loc 1 281 0
+ 1698 0020 0020     		movs	r0, #0
+ 1699 0022 0021     		movs	r1, #0
+ 1700 0024 4FF4A072 		mov	r2, #320
+ 1701 0028 F023     		movs	r3, #240
+ 1702 002a FFF7FEFF 		bl	ILI9341_Set_Address
+ 282:Src/ILI9341/ILI9341_GFX.c **** 			
+ 283:Src/ILI9341/ILI9341_GFX.c **** 		HAL_GPIO_WritePin(GPIOC, DC_Pin, GPIO_PIN_SET);	
+ 1703              		.loc 1 283 0
+ 1704 002e B448     		ldr	r0, .L69
+ 1705 0030 4FF40041 		mov	r1, #32768
+ 1706 0034 0122     		movs	r2, #1
+ 1707 0036 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 284:Src/ILI9341/ILI9341_GFX.c **** 		HAL_GPIO_WritePin(GPIOC, CS_Pin, GPIO_PIN_RESET);
+ 1708              		.loc 1 284 0
+ 1709 003a B148     		ldr	r0, .L69
+ 1710 003c 0421     		movs	r1, #4
+ 1711 003e 0022     		movs	r2, #0
+ 1712 0040 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 285:Src/ILI9341/ILI9341_GFX.c **** 		
+ARM GAS  /tmp/ccj7mO0o.s 			page 36
+
+
+ 286:Src/ILI9341/ILI9341_GFX.c **** 		unsigned char Temp_small_buffer[BURST_MAX_SIZE];
+ 287:Src/ILI9341/ILI9341_GFX.c **** 		uint32_t counter = 0;
+ 1713              		.loc 1 287 0
+ 1714 0044 0023     		movs	r3, #0
+ 1715 0046 C7F82C32 		str	r3, [r7, #556]
+ 1716              	.LBB6:
+ 288:Src/ILI9341/ILI9341_GFX.c **** 		for(uint32_t i = 0; i < ILI9341_SCREEN_WIDTH*ILI9341_SCREEN_HEIGHT*2/BURST_MAX_SIZE; i++)
+ 1717              		.loc 1 288 0
+ 1718 004a 0023     		movs	r3, #0
+ 1719 004c C7F82832 		str	r3, [r7, #552]
+ 1720 0050 31E0     		b	.L50
+ 1721              	.L53:
+ 1722              	.LBB7:
+ 289:Src/ILI9341/ILI9341_GFX.c **** 		{			
+ 290:Src/ILI9341/ILI9341_GFX.c **** 				for(uint32_t k = 0; k< BURST_MAX_SIZE; k++)
+ 1723              		.loc 1 290 0
+ 1724 0052 0023     		movs	r3, #0
+ 1725 0054 C7F82432 		str	r3, [r7, #548]
+ 1726 0058 14E0     		b	.L51
+ 1727              	.L52:
+ 291:Src/ILI9341/ILI9341_GFX.c **** 				{
+ 292:Src/ILI9341/ILI9341_GFX.c **** 					Temp_small_buffer[k]	= Image_Array[counter+k];		
+ 1728              		.loc 1 292 0 discriminator 3
+ 1729 005a D7F82C22 		ldr	r2, [r7, #556]
+ 1730 005e D7F82432 		ldr	r3, [r7, #548]
+ 1731 0062 1344     		add	r3, r3, r2
+ 1732 0064 3A1D     		adds	r2, r7, #4
+ 1733 0066 1268     		ldr	r2, [r2]
+ 1734 0068 1344     		add	r3, r3, r2
+ 1735 006a 1978     		ldrb	r1, [r3]	@ zero_extendqisi2
+ 1736 006c 07F10C02 		add	r2, r7, #12
+ 1737 0070 D7F82432 		ldr	r3, [r7, #548]
+ 1738 0074 1344     		add	r3, r3, r2
+ 1739 0076 0A46     		mov	r2, r1
+ 1740 0078 1A70     		strb	r2, [r3]
+ 290:Src/ILI9341/ILI9341_GFX.c **** 				{
+ 1741              		.loc 1 290 0 discriminator 3
+ 1742 007a D7F82432 		ldr	r3, [r7, #548]
+ 1743 007e 0133     		adds	r3, r3, #1
+ 1744 0080 C7F82432 		str	r3, [r7, #548]
+ 1745              	.L51:
+ 290:Src/ILI9341/ILI9341_GFX.c **** 				{
+ 1746              		.loc 1 290 0 is_stmt 0 discriminator 1
+ 1747 0084 D7F82432 		ldr	r3, [r7, #548]
+ 1748 0088 B3F5FA7F 		cmp	r3, #500
+ 1749 008c E5D3     		bcc	.L52
+ 1750              	.LBE7:
+ 293:Src/ILI9341/ILI9341_GFX.c **** 				}						
+ 294:Src/ILI9341/ILI9341_GFX.c **** 				HAL_SPI_Transmit(&hspi3, (unsigned char*)Temp_small_buffer, BURST_MAX_SIZE, 10);
+ 1751              		.loc 1 294 0 is_stmt 1 discriminator 2
+ 1752 008e 07F10C03 		add	r3, r7, #12
+ 1753 0092 9C48     		ldr	r0, .L69+4
+ 1754 0094 1946     		mov	r1, r3
+ 1755 0096 4FF4FA72 		mov	r2, #500
+ 1756 009a 0A23     		movs	r3, #10
+ 1757 009c FFF7FEFF 		bl	HAL_SPI_Transmit
+ 295:Src/ILI9341/ILI9341_GFX.c **** 				counter += BURST_MAX_SIZE;			
+ARM GAS  /tmp/ccj7mO0o.s 			page 37
+
+
+ 1758              		.loc 1 295 0 discriminator 2
+ 1759 00a0 D7F82C32 		ldr	r3, [r7, #556]
+ 1760 00a4 03F5FA73 		add	r3, r3, #500
+ 1761 00a8 C7F82C32 		str	r3, [r7, #556]
+ 288:Src/ILI9341/ILI9341_GFX.c **** 		{			
+ 1762              		.loc 1 288 0 discriminator 2
+ 1763 00ac D7F82832 		ldr	r3, [r7, #552]
+ 1764 00b0 0133     		adds	r3, r3, #1
+ 1765 00b2 C7F82832 		str	r3, [r7, #552]
+ 1766              	.L50:
+ 288:Src/ILI9341/ILI9341_GFX.c **** 		{			
+ 1767              		.loc 1 288 0 is_stmt 0 discriminator 1
+ 1768 00b6 D7F82832 		ldr	r3, [r7, #552]
+ 1769 00ba B3F5997F 		cmp	r3, #306
+ 1770 00be C8D9     		bls	.L53
+ 1771              	.LBE6:
+ 296:Src/ILI9341/ILI9341_GFX.c **** 		}
+ 297:Src/ILI9341/ILI9341_GFX.c **** 		HAL_GPIO_WritePin(GPIOC, CS_Pin, GPIO_PIN_SET);
+ 1772              		.loc 1 297 0 is_stmt 1
+ 1773 00c0 8F48     		ldr	r0, .L69
+ 1774 00c2 0421     		movs	r1, #4
+ 1775 00c4 0122     		movs	r2, #1
+ 1776 00c6 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 1777              	.LBE5:
+ 1778 00ca 15E1     		b	.L48
+ 1779              	.L49:
+ 298:Src/ILI9341/ILI9341_GFX.c **** 	}
+ 299:Src/ILI9341/ILI9341_GFX.c **** 	else if(Orientation == SCREEN_HORIZONTAL_2)
+ 1780              		.loc 1 299 0
+ 1781 00cc FB1C     		adds	r3, r7, #3
+ 1782 00ce 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 1783 00d0 032B     		cmp	r3, #3
+ 1784 00d2 58D1     		bne	.L55
+ 1785              	.LBB8:
+ 300:Src/ILI9341/ILI9341_GFX.c **** 	{
+ 301:Src/ILI9341/ILI9341_GFX.c **** 		ILI9341_Set_Rotation(SCREEN_HORIZONTAL_2);
+ 1786              		.loc 1 301 0
+ 1787 00d4 0320     		movs	r0, #3
+ 1788 00d6 FFF7FEFF 		bl	ILI9341_Set_Rotation
+ 302:Src/ILI9341/ILI9341_GFX.c **** 		ILI9341_Set_Address(0,0,ILI9341_SCREEN_WIDTH,ILI9341_SCREEN_HEIGHT);
+ 1789              		.loc 1 302 0
+ 1790 00da 0020     		movs	r0, #0
+ 1791 00dc 0021     		movs	r1, #0
+ 1792 00de 4FF4A072 		mov	r2, #320
+ 1793 00e2 F023     		movs	r3, #240
+ 1794 00e4 FFF7FEFF 		bl	ILI9341_Set_Address
+ 303:Src/ILI9341/ILI9341_GFX.c **** 			
+ 304:Src/ILI9341/ILI9341_GFX.c **** 		HAL_GPIO_WritePin(GPIOC, DC_Pin, GPIO_PIN_SET);	
+ 1795              		.loc 1 304 0
+ 1796 00e8 8548     		ldr	r0, .L69
+ 1797 00ea 4FF40041 		mov	r1, #32768
+ 1798 00ee 0122     		movs	r2, #1
+ 1799 00f0 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 305:Src/ILI9341/ILI9341_GFX.c **** 		HAL_GPIO_WritePin(GPIOC, CS_Pin, GPIO_PIN_RESET);
+ 1800              		.loc 1 305 0
+ 1801 00f4 8248     		ldr	r0, .L69
+ 1802 00f6 0421     		movs	r1, #4
+ARM GAS  /tmp/ccj7mO0o.s 			page 38
+
+
+ 1803 00f8 0022     		movs	r2, #0
+ 1804 00fa FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 306:Src/ILI9341/ILI9341_GFX.c **** 		
+ 307:Src/ILI9341/ILI9341_GFX.c **** 		unsigned char Temp_small_buffer[BURST_MAX_SIZE];
+ 308:Src/ILI9341/ILI9341_GFX.c **** 		uint32_t counter = 0;
+ 1805              		.loc 1 308 0
+ 1806 00fe 0023     		movs	r3, #0
+ 1807 0100 C7F82032 		str	r3, [r7, #544]
+ 1808              	.LBB9:
+ 309:Src/ILI9341/ILI9341_GFX.c **** 		for(uint32_t i = 0; i < ILI9341_SCREEN_WIDTH*ILI9341_SCREEN_HEIGHT*2/BURST_MAX_SIZE; i++)
+ 1809              		.loc 1 309 0
+ 1810 0104 0023     		movs	r3, #0
+ 1811 0106 C7F81C32 		str	r3, [r7, #540]
+ 1812 010a 31E0     		b	.L56
+ 1813              	.L59:
+ 1814              	.LBB10:
+ 310:Src/ILI9341/ILI9341_GFX.c **** 		{			
+ 311:Src/ILI9341/ILI9341_GFX.c **** 				for(uint32_t k = 0; k< BURST_MAX_SIZE; k++)
+ 1815              		.loc 1 311 0
+ 1816 010c 0023     		movs	r3, #0
+ 1817 010e C7F81832 		str	r3, [r7, #536]
+ 1818 0112 14E0     		b	.L57
+ 1819              	.L58:
+ 312:Src/ILI9341/ILI9341_GFX.c **** 				{
+ 313:Src/ILI9341/ILI9341_GFX.c **** 					Temp_small_buffer[k]	= Image_Array[counter+k];		
+ 1820              		.loc 1 313 0 discriminator 3
+ 1821 0114 D7F82022 		ldr	r2, [r7, #544]
+ 1822 0118 D7F81832 		ldr	r3, [r7, #536]
+ 1823 011c 1344     		add	r3, r3, r2
+ 1824 011e 3A1D     		adds	r2, r7, #4
+ 1825 0120 1268     		ldr	r2, [r2]
+ 1826 0122 1344     		add	r3, r3, r2
+ 1827 0124 1978     		ldrb	r1, [r3]	@ zero_extendqisi2
+ 1828 0126 07F10C02 		add	r2, r7, #12
+ 1829 012a D7F81832 		ldr	r3, [r7, #536]
+ 1830 012e 1344     		add	r3, r3, r2
+ 1831 0130 0A46     		mov	r2, r1
+ 1832 0132 1A70     		strb	r2, [r3]
+ 311:Src/ILI9341/ILI9341_GFX.c **** 				{
+ 1833              		.loc 1 311 0 discriminator 3
+ 1834 0134 D7F81832 		ldr	r3, [r7, #536]
+ 1835 0138 0133     		adds	r3, r3, #1
+ 1836 013a C7F81832 		str	r3, [r7, #536]
+ 1837              	.L57:
+ 311:Src/ILI9341/ILI9341_GFX.c **** 				{
+ 1838              		.loc 1 311 0 is_stmt 0 discriminator 1
+ 1839 013e D7F81832 		ldr	r3, [r7, #536]
+ 1840 0142 B3F5FA7F 		cmp	r3, #500
+ 1841 0146 E5D3     		bcc	.L58
+ 1842              	.LBE10:
+ 314:Src/ILI9341/ILI9341_GFX.c **** 				}						
+ 315:Src/ILI9341/ILI9341_GFX.c **** 				HAL_SPI_Transmit(&hspi3, (unsigned char*)Temp_small_buffer, BURST_MAX_SIZE, 10);
+ 1843              		.loc 1 315 0 is_stmt 1 discriminator 2
+ 1844 0148 07F10C03 		add	r3, r7, #12
+ 1845 014c 6D48     		ldr	r0, .L69+4
+ 1846 014e 1946     		mov	r1, r3
+ 1847 0150 4FF4FA72 		mov	r2, #500
+ARM GAS  /tmp/ccj7mO0o.s 			page 39
+
+
+ 1848 0154 0A23     		movs	r3, #10
+ 1849 0156 FFF7FEFF 		bl	HAL_SPI_Transmit
+ 316:Src/ILI9341/ILI9341_GFX.c **** 				counter += BURST_MAX_SIZE;			
+ 1850              		.loc 1 316 0 discriminator 2
+ 1851 015a D7F82032 		ldr	r3, [r7, #544]
+ 1852 015e 03F5FA73 		add	r3, r3, #500
+ 1853 0162 C7F82032 		str	r3, [r7, #544]
+ 309:Src/ILI9341/ILI9341_GFX.c **** 		{			
+ 1854              		.loc 1 309 0 discriminator 2
+ 1855 0166 D7F81C32 		ldr	r3, [r7, #540]
+ 1856 016a 0133     		adds	r3, r3, #1
+ 1857 016c C7F81C32 		str	r3, [r7, #540]
+ 1858              	.L56:
+ 309:Src/ILI9341/ILI9341_GFX.c **** 		{			
+ 1859              		.loc 1 309 0 is_stmt 0 discriminator 1
+ 1860 0170 D7F81C32 		ldr	r3, [r7, #540]
+ 1861 0174 B3F5997F 		cmp	r3, #306
+ 1862 0178 C8D9     		bls	.L59
+ 1863              	.LBE9:
+ 317:Src/ILI9341/ILI9341_GFX.c **** 		}
+ 318:Src/ILI9341/ILI9341_GFX.c **** 		HAL_GPIO_WritePin(GPIOC, CS_Pin, GPIO_PIN_SET);
+ 1864              		.loc 1 318 0 is_stmt 1
+ 1865 017a 6148     		ldr	r0, .L69
+ 1866 017c 0421     		movs	r1, #4
+ 1867 017e 0122     		movs	r2, #1
+ 1868 0180 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 1869              	.LBE8:
+ 1870 0184 B8E0     		b	.L48
+ 1871              	.L55:
+ 319:Src/ILI9341/ILI9341_GFX.c **** 	}
+ 320:Src/ILI9341/ILI9341_GFX.c **** 	else if(Orientation == SCREEN_VERTICAL_2)
+ 1872              		.loc 1 320 0
+ 1873 0186 FB1C     		adds	r3, r7, #3
+ 1874 0188 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 1875 018a 022B     		cmp	r3, #2
+ 1876 018c 58D1     		bne	.L60
+ 1877              	.LBB11:
+ 321:Src/ILI9341/ILI9341_GFX.c **** 	{
+ 322:Src/ILI9341/ILI9341_GFX.c **** 		ILI9341_Set_Rotation(SCREEN_VERTICAL_2);
+ 1878              		.loc 1 322 0
+ 1879 018e 0220     		movs	r0, #2
+ 1880 0190 FFF7FEFF 		bl	ILI9341_Set_Rotation
+ 323:Src/ILI9341/ILI9341_GFX.c **** 		ILI9341_Set_Address(0,0,ILI9341_SCREEN_HEIGHT,ILI9341_SCREEN_WIDTH);
+ 1881              		.loc 1 323 0
+ 1882 0194 0020     		movs	r0, #0
+ 1883 0196 0021     		movs	r1, #0
+ 1884 0198 F022     		movs	r2, #240
+ 1885 019a 4FF4A073 		mov	r3, #320
+ 1886 019e FFF7FEFF 		bl	ILI9341_Set_Address
+ 324:Src/ILI9341/ILI9341_GFX.c **** 			
+ 325:Src/ILI9341/ILI9341_GFX.c **** 		HAL_GPIO_WritePin(GPIOC, DC_Pin, GPIO_PIN_SET);	
+ 1887              		.loc 1 325 0
+ 1888 01a2 5748     		ldr	r0, .L69
+ 1889 01a4 4FF40041 		mov	r1, #32768
+ 1890 01a8 0122     		movs	r2, #1
+ 1891 01aa FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 326:Src/ILI9341/ILI9341_GFX.c **** 		HAL_GPIO_WritePin(GPIOC, CS_Pin, GPIO_PIN_RESET);
+ARM GAS  /tmp/ccj7mO0o.s 			page 40
+
+
+ 1892              		.loc 1 326 0
+ 1893 01ae 5448     		ldr	r0, .L69
+ 1894 01b0 0421     		movs	r1, #4
+ 1895 01b2 0022     		movs	r2, #0
+ 1896 01b4 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 327:Src/ILI9341/ILI9341_GFX.c **** 		
+ 328:Src/ILI9341/ILI9341_GFX.c **** 		unsigned char Temp_small_buffer[BURST_MAX_SIZE];
+ 329:Src/ILI9341/ILI9341_GFX.c **** 		uint32_t counter = 0;
+ 1897              		.loc 1 329 0
+ 1898 01b8 0023     		movs	r3, #0
+ 1899 01ba C7F81432 		str	r3, [r7, #532]
+ 1900              	.LBB12:
+ 330:Src/ILI9341/ILI9341_GFX.c **** 		for(uint32_t i = 0; i < ILI9341_SCREEN_WIDTH*ILI9341_SCREEN_HEIGHT*2/BURST_MAX_SIZE; i++)
+ 1901              		.loc 1 330 0
+ 1902 01be 0023     		movs	r3, #0
+ 1903 01c0 C7F81032 		str	r3, [r7, #528]
+ 1904 01c4 31E0     		b	.L61
+ 1905              	.L64:
+ 1906              	.LBB13:
+ 331:Src/ILI9341/ILI9341_GFX.c **** 		{			
+ 332:Src/ILI9341/ILI9341_GFX.c **** 				for(uint32_t k = 0; k< BURST_MAX_SIZE; k++)
+ 1907              		.loc 1 332 0
+ 1908 01c6 0023     		movs	r3, #0
+ 1909 01c8 C7F80C32 		str	r3, [r7, #524]
+ 1910 01cc 14E0     		b	.L62
+ 1911              	.L63:
+ 333:Src/ILI9341/ILI9341_GFX.c **** 				{
+ 334:Src/ILI9341/ILI9341_GFX.c **** 					Temp_small_buffer[k]	= Image_Array[counter+k];		
+ 1912              		.loc 1 334 0 discriminator 3
+ 1913 01ce D7F81422 		ldr	r2, [r7, #532]
+ 1914 01d2 D7F80C32 		ldr	r3, [r7, #524]
+ 1915 01d6 1344     		add	r3, r3, r2
+ 1916 01d8 3A1D     		adds	r2, r7, #4
+ 1917 01da 1268     		ldr	r2, [r2]
+ 1918 01dc 1344     		add	r3, r3, r2
+ 1919 01de 1978     		ldrb	r1, [r3]	@ zero_extendqisi2
+ 1920 01e0 07F10C02 		add	r2, r7, #12
+ 1921 01e4 D7F80C32 		ldr	r3, [r7, #524]
+ 1922 01e8 1344     		add	r3, r3, r2
+ 1923 01ea 0A46     		mov	r2, r1
+ 1924 01ec 1A70     		strb	r2, [r3]
+ 332:Src/ILI9341/ILI9341_GFX.c **** 				{
+ 1925              		.loc 1 332 0 discriminator 3
+ 1926 01ee D7F80C32 		ldr	r3, [r7, #524]
+ 1927 01f2 0133     		adds	r3, r3, #1
+ 1928 01f4 C7F80C32 		str	r3, [r7, #524]
+ 1929              	.L62:
+ 332:Src/ILI9341/ILI9341_GFX.c **** 				{
+ 1930              		.loc 1 332 0 is_stmt 0 discriminator 1
+ 1931 01f8 D7F80C32 		ldr	r3, [r7, #524]
+ 1932 01fc B3F5FA7F 		cmp	r3, #500
+ 1933 0200 E5D3     		bcc	.L63
+ 1934              	.LBE13:
+ 335:Src/ILI9341/ILI9341_GFX.c **** 				}						
+ 336:Src/ILI9341/ILI9341_GFX.c **** 				HAL_SPI_Transmit(&hspi3, (unsigned char*)Temp_small_buffer, BURST_MAX_SIZE, 10);
+ 1935              		.loc 1 336 0 is_stmt 1 discriminator 2
+ 1936 0202 07F10C03 		add	r3, r7, #12
+ARM GAS  /tmp/ccj7mO0o.s 			page 41
+
+
+ 1937 0206 3F48     		ldr	r0, .L69+4
+ 1938 0208 1946     		mov	r1, r3
+ 1939 020a 4FF4FA72 		mov	r2, #500
+ 1940 020e 0A23     		movs	r3, #10
+ 1941 0210 FFF7FEFF 		bl	HAL_SPI_Transmit
+ 337:Src/ILI9341/ILI9341_GFX.c **** 				counter += BURST_MAX_SIZE;			
+ 1942              		.loc 1 337 0 discriminator 2
+ 1943 0214 D7F81432 		ldr	r3, [r7, #532]
+ 1944 0218 03F5FA73 		add	r3, r3, #500
+ 1945 021c C7F81432 		str	r3, [r7, #532]
+ 330:Src/ILI9341/ILI9341_GFX.c **** 		{			
+ 1946              		.loc 1 330 0 discriminator 2
+ 1947 0220 D7F81032 		ldr	r3, [r7, #528]
+ 1948 0224 0133     		adds	r3, r3, #1
+ 1949 0226 C7F81032 		str	r3, [r7, #528]
+ 1950              	.L61:
+ 330:Src/ILI9341/ILI9341_GFX.c **** 		{			
+ 1951              		.loc 1 330 0 is_stmt 0 discriminator 1
+ 1952 022a D7F81032 		ldr	r3, [r7, #528]
+ 1953 022e B3F5997F 		cmp	r3, #306
+ 1954 0232 C8D9     		bls	.L64
+ 1955              	.LBE12:
+ 338:Src/ILI9341/ILI9341_GFX.c **** 		}
+ 339:Src/ILI9341/ILI9341_GFX.c **** 		HAL_GPIO_WritePin(GPIOC, CS_Pin, GPIO_PIN_SET);
+ 1956              		.loc 1 339 0 is_stmt 1
+ 1957 0234 3248     		ldr	r0, .L69
+ 1958 0236 0421     		movs	r1, #4
+ 1959 0238 0122     		movs	r2, #1
+ 1960 023a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 1961              	.LBE11:
+ 1962 023e 5BE0     		b	.L48
+ 1963              	.L60:
+ 340:Src/ILI9341/ILI9341_GFX.c **** 	}
+ 341:Src/ILI9341/ILI9341_GFX.c **** 	else if(Orientation == SCREEN_VERTICAL_1)
+ 1964              		.loc 1 341 0
+ 1965 0240 FB1C     		adds	r3, r7, #3
+ 1966 0242 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 1967 0244 002B     		cmp	r3, #0
+ 1968 0246 57D1     		bne	.L48
+ 1969              	.LBB14:
+ 342:Src/ILI9341/ILI9341_GFX.c **** 	{
+ 343:Src/ILI9341/ILI9341_GFX.c **** 		ILI9341_Set_Rotation(SCREEN_VERTICAL_1);
+ 1970              		.loc 1 343 0
+ 1971 0248 0020     		movs	r0, #0
+ 1972 024a FFF7FEFF 		bl	ILI9341_Set_Rotation
+ 344:Src/ILI9341/ILI9341_GFX.c **** 		ILI9341_Set_Address(0,0,ILI9341_SCREEN_HEIGHT,ILI9341_SCREEN_WIDTH);
+ 1973              		.loc 1 344 0
+ 1974 024e 0020     		movs	r0, #0
+ 1975 0250 0021     		movs	r1, #0
+ 1976 0252 F022     		movs	r2, #240
+ 1977 0254 4FF4A073 		mov	r3, #320
+ 1978 0258 FFF7FEFF 		bl	ILI9341_Set_Address
+ 345:Src/ILI9341/ILI9341_GFX.c **** 			
+ 346:Src/ILI9341/ILI9341_GFX.c **** 		HAL_GPIO_WritePin(GPIOC, DC_Pin, GPIO_PIN_SET);	
+ 1979              		.loc 1 346 0
+ 1980 025c 2848     		ldr	r0, .L69
+ 1981 025e 4FF40041 		mov	r1, #32768
+ARM GAS  /tmp/ccj7mO0o.s 			page 42
+
+
+ 1982 0262 0122     		movs	r2, #1
+ 1983 0264 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 347:Src/ILI9341/ILI9341_GFX.c **** 		HAL_GPIO_WritePin(GPIOC, CS_Pin, GPIO_PIN_RESET);
+ 1984              		.loc 1 347 0
+ 1985 0268 2548     		ldr	r0, .L69
+ 1986 026a 0421     		movs	r1, #4
+ 1987 026c 0022     		movs	r2, #0
+ 1988 026e FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 348:Src/ILI9341/ILI9341_GFX.c **** 		
+ 349:Src/ILI9341/ILI9341_GFX.c **** 		unsigned char Temp_small_buffer[BURST_MAX_SIZE];
+ 350:Src/ILI9341/ILI9341_GFX.c **** 		uint32_t counter = 0;
+ 1989              		.loc 1 350 0
+ 1990 0272 0023     		movs	r3, #0
+ 1991 0274 C7F80832 		str	r3, [r7, #520]
+ 1992              	.LBB15:
+ 351:Src/ILI9341/ILI9341_GFX.c **** 		for(uint32_t i = 0; i < ILI9341_SCREEN_WIDTH*ILI9341_SCREEN_HEIGHT*2/BURST_MAX_SIZE; i++)
+ 1993              		.loc 1 351 0
+ 1994 0278 0023     		movs	r3, #0
+ 1995 027a C7F80432 		str	r3, [r7, #516]
+ 1996 027e 31E0     		b	.L65
+ 1997              	.L68:
+ 1998              	.LBB16:
+ 352:Src/ILI9341/ILI9341_GFX.c **** 		{			
+ 353:Src/ILI9341/ILI9341_GFX.c **** 				for(uint32_t k = 0; k< BURST_MAX_SIZE; k++)
+ 1999              		.loc 1 353 0
+ 2000 0280 0023     		movs	r3, #0
+ 2001 0282 C7F80032 		str	r3, [r7, #512]
+ 2002 0286 14E0     		b	.L66
+ 2003              	.L67:
+ 354:Src/ILI9341/ILI9341_GFX.c **** 				{
+ 355:Src/ILI9341/ILI9341_GFX.c **** 					Temp_small_buffer[k]	= Image_Array[counter+k];		
+ 2004              		.loc 1 355 0 discriminator 3
+ 2005 0288 D7F80822 		ldr	r2, [r7, #520]
+ 2006 028c D7F80032 		ldr	r3, [r7, #512]
+ 2007 0290 1344     		add	r3, r3, r2
+ 2008 0292 3A1D     		adds	r2, r7, #4
+ 2009 0294 1268     		ldr	r2, [r2]
+ 2010 0296 1344     		add	r3, r3, r2
+ 2011 0298 1978     		ldrb	r1, [r3]	@ zero_extendqisi2
+ 2012 029a 07F10C02 		add	r2, r7, #12
+ 2013 029e D7F80032 		ldr	r3, [r7, #512]
+ 2014 02a2 1344     		add	r3, r3, r2
+ 2015 02a4 0A46     		mov	r2, r1
+ 2016 02a6 1A70     		strb	r2, [r3]
+ 353:Src/ILI9341/ILI9341_GFX.c **** 				{
+ 2017              		.loc 1 353 0 discriminator 3
+ 2018 02a8 D7F80032 		ldr	r3, [r7, #512]
+ 2019 02ac 0133     		adds	r3, r3, #1
+ 2020 02ae C7F80032 		str	r3, [r7, #512]
+ 2021              	.L66:
+ 353:Src/ILI9341/ILI9341_GFX.c **** 				{
+ 2022              		.loc 1 353 0 is_stmt 0 discriminator 1
+ 2023 02b2 D7F80032 		ldr	r3, [r7, #512]
+ 2024 02b6 B3F5FA7F 		cmp	r3, #500
+ 2025 02ba E5D3     		bcc	.L67
+ 2026              	.LBE16:
+ 356:Src/ILI9341/ILI9341_GFX.c **** 				}						
+ARM GAS  /tmp/ccj7mO0o.s 			page 43
+
+
+ 357:Src/ILI9341/ILI9341_GFX.c **** 				HAL_SPI_Transmit(&hspi3, (unsigned char*)Temp_small_buffer, BURST_MAX_SIZE, 10);
+ 2027              		.loc 1 357 0 is_stmt 1 discriminator 2
+ 2028 02bc 07F10C03 		add	r3, r7, #12
+ 2029 02c0 1048     		ldr	r0, .L69+4
+ 2030 02c2 1946     		mov	r1, r3
+ 2031 02c4 4FF4FA72 		mov	r2, #500
+ 2032 02c8 0A23     		movs	r3, #10
+ 2033 02ca FFF7FEFF 		bl	HAL_SPI_Transmit
+ 358:Src/ILI9341/ILI9341_GFX.c **** 				counter += BURST_MAX_SIZE;			
+ 2034              		.loc 1 358 0 discriminator 2
+ 2035 02ce D7F80832 		ldr	r3, [r7, #520]
+ 2036 02d2 03F5FA73 		add	r3, r3, #500
+ 2037 02d6 C7F80832 		str	r3, [r7, #520]
+ 351:Src/ILI9341/ILI9341_GFX.c **** 		{			
+ 2038              		.loc 1 351 0 discriminator 2
+ 2039 02da D7F80432 		ldr	r3, [r7, #516]
+ 2040 02de 0133     		adds	r3, r3, #1
+ 2041 02e0 C7F80432 		str	r3, [r7, #516]
+ 2042              	.L65:
+ 351:Src/ILI9341/ILI9341_GFX.c **** 		{			
+ 2043              		.loc 1 351 0 is_stmt 0 discriminator 1
+ 2044 02e4 D7F80432 		ldr	r3, [r7, #516]
+ 2045 02e8 B3F5997F 		cmp	r3, #306
+ 2046 02ec C8D9     		bls	.L68
+ 2047              	.LBE15:
+ 359:Src/ILI9341/ILI9341_GFX.c **** 		}
+ 360:Src/ILI9341/ILI9341_GFX.c **** 		HAL_GPIO_WritePin(GPIOC, CS_Pin, GPIO_PIN_SET);
+ 2048              		.loc 1 360 0 is_stmt 1
+ 2049 02ee 0448     		ldr	r0, .L69
+ 2050 02f0 0421     		movs	r1, #4
+ 2051 02f2 0122     		movs	r2, #1
+ 2052 02f4 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 2053              	.L48:
+ 2054              	.LBE14:
+ 361:Src/ILI9341/ILI9341_GFX.c **** 	}
+ 362:Src/ILI9341/ILI9341_GFX.c **** }
+ 2055              		.loc 1 362 0
+ 2056 02f8 07F50C77 		add	r7, r7, #560
+ 2057              	.LCFI33:
+ 2058              		.cfi_def_cfa_offset 8
+ 2059 02fc BD46     		mov	sp, r7
+ 2060              	.LCFI34:
+ 2061              		.cfi_def_cfa_register 13
+ 2062              		@ sp needed
+ 2063 02fe 80BD     		pop	{r7, pc}
+ 2064              	.L70:
+ 2065              		.align	2
+ 2066              	.L69:
+ 2067 0300 00080048 		.word	1207961600
+ 2068 0304 00000000 		.word	hspi3
+ 2069              		.cfi_endproc
+ 2070              	.LFE129:
+ 2072              		.text
+ 2073              	.Letext0:
+ 2074              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
+ 2075              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
+ 2076              		.file 4 "../../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f302x8.h"
+ARM GAS  /tmp/ccj7mO0o.s 			page 44
+
+
+ 2077              		.file 5 "../../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
+ 2078              		.file 6 "../../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
+ 2079              		.file 7 "../../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
+ 2080              		.file 8 "../../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h"
+ 2081              		.file 9 "Src/ILI9341/5x5_font.h"
+ 2082              		.file 10 "../../Drivers/CMSIS/Include/core_cm4.h"
+ 2083              		.file 11 "Inc/lcd_spi.h"
+ARM GAS  /tmp/ccj7mO0o.s 			page 45
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 ILI9341_GFX.c
+     /tmp/ccj7mO0o.s:21     .rodata.font:0000000000000000 $d
+     /tmp/ccj7mO0o.s:24     .rodata.font:0000000000000000 font
+     /tmp/ccj7mO0o.s:602    .text.ILI9341_Draw_Hollow_Circle:0000000000000000 $t
+     /tmp/ccj7mO0o.s:607    .text.ILI9341_Draw_Hollow_Circle:0000000000000000 ILI9341_Draw_Hollow_Circle
+     /tmp/ccj7mO0o.s:846    .text.ILI9341_Draw_Filled_Circle:0000000000000000 $t
+     /tmp/ccj7mO0o.s:851    .text.ILI9341_Draw_Filled_Circle:0000000000000000 ILI9341_Draw_Filled_Circle
+     /tmp/ccj7mO0o.s:1047   .text.ILI9341_Draw_Hollow_Rectangle_Coord:0000000000000000 $t
+     /tmp/ccj7mO0o.s:1052   .text.ILI9341_Draw_Hollow_Rectangle_Coord:0000000000000000 ILI9341_Draw_Hollow_Rectangle_Coord
+     /tmp/ccj7mO0o.s:1221   .text.ILI9341_Draw_Filled_Rectangle_Coord:0000000000000000 $t
+     /tmp/ccj7mO0o.s:1226   .text.ILI9341_Draw_Filled_Rectangle_Coord:0000000000000000 ILI9341_Draw_Filled_Rectangle_Coord
+     /tmp/ccj7mO0o.s:1374   .text.ILI9341_Draw_Char:0000000000000000 $t
+     /tmp/ccj7mO0o.s:1379   .text.ILI9341_Draw_Char:0000000000000000 ILI9341_Draw_Char
+     /tmp/ccj7mO0o.s:1576   .text.ILI9341_Draw_Char:0000000000000134 $d
+     /tmp/ccj7mO0o.s:1581   .text.ILI9341_Draw_Text:0000000000000000 $t
+     /tmp/ccj7mO0o.s:1586   .text.ILI9341_Draw_Text:0000000000000000 ILI9341_Draw_Text
+     /tmp/ccj7mO0o.s:1661   .text.ILI9341_Draw_Image:0000000000000000 $t
+     /tmp/ccj7mO0o.s:1666   .text.ILI9341_Draw_Image:0000000000000000 ILI9341_Draw_Image
+     /tmp/ccj7mO0o.s:2067   .text.ILI9341_Draw_Image:0000000000000300 $d
+                     .debug_frame:0000000000000010 $d
+
+UNDEFINED SYMBOLS
+ILI9341_Draw_Pixel
+ILI9341_Draw_Horizontal_Line
+ILI9341_Draw_Vertical_Line
+ILI9341_Draw_Rectangle
+ILI9341_Set_Rotation
+ILI9341_Set_Address
+HAL_GPIO_WritePin
+HAL_SPI_Transmit
+hspi3

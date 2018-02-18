@@ -1,0 +1,1387 @@
+ARM GAS  /tmp/ccyJdpKT.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m4
+   3              		.eabi_attribute 27, 1
+   4              		.eabi_attribute 28, 1
+   5              		.fpu fpv4-sp-d16
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 6
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.thumb
+  16              		.file	"stm32f3xx_hal_msp.c"
+  17              		.text
+  18              	.Ltext0:
+  19              		.cfi_sections	.debug_frame
+  20              		.section	.text.HAL_MspInit,"ax",%progbits
+  21              		.align	2
+  22              		.global	HAL_MspInit
+  23              		.thumb
+  24              		.thumb_func
+  26              	HAL_MspInit:
+  27              	.LFB123:
+  28              		.file 1 "Src/stm32f3xx_hal_msp.c"
+   1:Src/stm32f3xx_hal_msp.c **** /**
+   2:Src/stm32f3xx_hal_msp.c ****   ******************************************************************************
+   3:Src/stm32f3xx_hal_msp.c ****   * File Name          : stm32f3xx_hal_msp.c
+   4:Src/stm32f3xx_hal_msp.c ****   * Description        : This file provides code for the MSP Initialization 
+   5:Src/stm32f3xx_hal_msp.c ****   *                      and de-Initialization codes.
+   6:Src/stm32f3xx_hal_msp.c ****   ******************************************************************************
+   7:Src/stm32f3xx_hal_msp.c ****   *
+   8:Src/stm32f3xx_hal_msp.c ****   * COPYRIGHT(c) 2017 STMicroelectronics
+   9:Src/stm32f3xx_hal_msp.c ****   *
+  10:Src/stm32f3xx_hal_msp.c ****   * Redistribution and use in source and binary forms, with or without modification,
+  11:Src/stm32f3xx_hal_msp.c ****   * are permitted provided that the following conditions are met:
+  12:Src/stm32f3xx_hal_msp.c ****   *   1. Redistributions of source code must retain the above copyright notice,
+  13:Src/stm32f3xx_hal_msp.c ****   *      this list of conditions and the following disclaimer.
+  14:Src/stm32f3xx_hal_msp.c ****   *   2. Redistributions in binary form must reproduce the above copyright notice,
+  15:Src/stm32f3xx_hal_msp.c ****   *      this list of conditions and the following disclaimer in the documentation
+  16:Src/stm32f3xx_hal_msp.c ****   *      and/or other materials provided with the distribution.
+  17:Src/stm32f3xx_hal_msp.c ****   *   3. Neither the name of STMicroelectronics nor the names of its contributors
+  18:Src/stm32f3xx_hal_msp.c ****   *      may be used to endorse or promote products derived from this software
+  19:Src/stm32f3xx_hal_msp.c ****   *      without specific prior written permission.
+  20:Src/stm32f3xx_hal_msp.c ****   *
+  21:Src/stm32f3xx_hal_msp.c ****   * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  22:Src/stm32f3xx_hal_msp.c ****   * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  23:Src/stm32f3xx_hal_msp.c ****   * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  24:Src/stm32f3xx_hal_msp.c ****   * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+  25:Src/stm32f3xx_hal_msp.c ****   * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  26:Src/stm32f3xx_hal_msp.c ****   * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+  27:Src/stm32f3xx_hal_msp.c ****   * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+  28:Src/stm32f3xx_hal_msp.c ****   * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+  29:Src/stm32f3xx_hal_msp.c ****   * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  30:Src/stm32f3xx_hal_msp.c ****   * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ARM GAS  /tmp/ccyJdpKT.s 			page 2
+
+
+  31:Src/stm32f3xx_hal_msp.c ****   *
+  32:Src/stm32f3xx_hal_msp.c ****   ******************************************************************************
+  33:Src/stm32f3xx_hal_msp.c ****   */
+  34:Src/stm32f3xx_hal_msp.c **** /* Includes ------------------------------------------------------------------*/
+  35:Src/stm32f3xx_hal_msp.c **** #include "stm32f3xx_hal.h"
+  36:Src/stm32f3xx_hal_msp.c **** 
+  37:Src/stm32f3xx_hal_msp.c **** extern void Error_Handler(void);
+  38:Src/stm32f3xx_hal_msp.c **** /* USER CODE BEGIN 0 */
+  39:Src/stm32f3xx_hal_msp.c **** 
+  40:Src/stm32f3xx_hal_msp.c **** /* USER CODE END 0 */
+  41:Src/stm32f3xx_hal_msp.c **** 
+  42:Src/stm32f3xx_hal_msp.c **** /**
+  43:Src/stm32f3xx_hal_msp.c ****   * Initializes the Global MSP.
+  44:Src/stm32f3xx_hal_msp.c ****   */
+  45:Src/stm32f3xx_hal_msp.c **** void HAL_MspInit(void)
+  46:Src/stm32f3xx_hal_msp.c **** {
+  29              		.loc 1 46 0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 8
+  32              		@ frame_needed = 1, uses_anonymous_args = 0
+  33 0000 80B5     		push	{r7, lr}
+  34              	.LCFI0:
+  35              		.cfi_def_cfa_offset 8
+  36              		.cfi_offset 7, -8
+  37              		.cfi_offset 14, -4
+  38 0002 82B0     		sub	sp, sp, #8
+  39              	.LCFI1:
+  40              		.cfi_def_cfa_offset 16
+  41 0004 00AF     		add	r7, sp, #0
+  42              	.LCFI2:
+  43              		.cfi_def_cfa_register 7
+  44              	.LBB7:
+  47:Src/stm32f3xx_hal_msp.c ****   /* USER CODE BEGIN MspInit 0 */
+  48:Src/stm32f3xx_hal_msp.c **** 
+  49:Src/stm32f3xx_hal_msp.c ****   /* USER CODE END MspInit 0 */
+  50:Src/stm32f3xx_hal_msp.c **** 
+  51:Src/stm32f3xx_hal_msp.c ****   __HAL_RCC_SYSCFG_CLK_ENABLE();
+  45              		.loc 1 51 0
+  46 0006 1E4A     		ldr	r2, .L2
+  47 0008 1D4B     		ldr	r3, .L2
+  48 000a 9B69     		ldr	r3, [r3, #24]
+  49 000c 43F00103 		orr	r3, r3, #1
+  50 0010 9361     		str	r3, [r2, #24]
+  51 0012 1B4B     		ldr	r3, .L2
+  52 0014 9B69     		ldr	r3, [r3, #24]
+  53 0016 03F00103 		and	r3, r3, #1
+  54 001a 7B60     		str	r3, [r7, #4]
+  55 001c 7B68     		ldr	r3, [r7, #4]
+  56              	.LBE7:
+  52:Src/stm32f3xx_hal_msp.c **** 
+  53:Src/stm32f3xx_hal_msp.c ****   HAL_NVIC_SetPriorityGrouping(NVIC_PRIORITYGROUP_4);
+  57              		.loc 1 53 0
+  58 001e 0320     		movs	r0, #3
+  59 0020 FFF7FEFF 		bl	HAL_NVIC_SetPriorityGrouping
+  54:Src/stm32f3xx_hal_msp.c **** 
+  55:Src/stm32f3xx_hal_msp.c ****   /* System interrupt init*/
+  56:Src/stm32f3xx_hal_msp.c ****   /* MemoryManagement_IRQn interrupt configuration */
+ARM GAS  /tmp/ccyJdpKT.s 			page 3
+
+
+  57:Src/stm32f3xx_hal_msp.c ****   HAL_NVIC_SetPriority(MemoryManagement_IRQn, 0, 0);
+  60              		.loc 1 57 0
+  61 0024 6FF00B00 		mvn	r0, #11
+  62 0028 0021     		movs	r1, #0
+  63 002a 0022     		movs	r2, #0
+  64 002c FFF7FEFF 		bl	HAL_NVIC_SetPriority
+  58:Src/stm32f3xx_hal_msp.c ****   /* BusFault_IRQn interrupt configuration */
+  59:Src/stm32f3xx_hal_msp.c ****   HAL_NVIC_SetPriority(BusFault_IRQn, 0, 0);
+  65              		.loc 1 59 0
+  66 0030 6FF00A00 		mvn	r0, #10
+  67 0034 0021     		movs	r1, #0
+  68 0036 0022     		movs	r2, #0
+  69 0038 FFF7FEFF 		bl	HAL_NVIC_SetPriority
+  60:Src/stm32f3xx_hal_msp.c ****   /* UsageFault_IRQn interrupt configuration */
+  61:Src/stm32f3xx_hal_msp.c ****   HAL_NVIC_SetPriority(UsageFault_IRQn, 0, 0);
+  70              		.loc 1 61 0
+  71 003c 6FF00900 		mvn	r0, #9
+  72 0040 0021     		movs	r1, #0
+  73 0042 0022     		movs	r2, #0
+  74 0044 FFF7FEFF 		bl	HAL_NVIC_SetPriority
+  62:Src/stm32f3xx_hal_msp.c ****   /* SVCall_IRQn interrupt configuration */
+  63:Src/stm32f3xx_hal_msp.c ****   HAL_NVIC_SetPriority(SVCall_IRQn, 0, 0);
+  75              		.loc 1 63 0
+  76 0048 6FF00400 		mvn	r0, #4
+  77 004c 0021     		movs	r1, #0
+  78 004e 0022     		movs	r2, #0
+  79 0050 FFF7FEFF 		bl	HAL_NVIC_SetPriority
+  64:Src/stm32f3xx_hal_msp.c ****   /* DebugMonitor_IRQn interrupt configuration */
+  65:Src/stm32f3xx_hal_msp.c ****   HAL_NVIC_SetPriority(DebugMonitor_IRQn, 0, 0);
+  80              		.loc 1 65 0
+  81 0054 6FF00300 		mvn	r0, #3
+  82 0058 0021     		movs	r1, #0
+  83 005a 0022     		movs	r2, #0
+  84 005c FFF7FEFF 		bl	HAL_NVIC_SetPriority
+  66:Src/stm32f3xx_hal_msp.c ****   /* PendSV_IRQn interrupt configuration */
+  67:Src/stm32f3xx_hal_msp.c ****   HAL_NVIC_SetPriority(PendSV_IRQn, 15, 0);
+  85              		.loc 1 67 0
+  86 0060 6FF00100 		mvn	r0, #1
+  87 0064 0F21     		movs	r1, #15
+  88 0066 0022     		movs	r2, #0
+  89 0068 FFF7FEFF 		bl	HAL_NVIC_SetPriority
+  68:Src/stm32f3xx_hal_msp.c ****   /* SysTick_IRQn interrupt configuration */
+  69:Src/stm32f3xx_hal_msp.c ****   HAL_NVIC_SetPriority(SysTick_IRQn, 15, 0);
+  90              		.loc 1 69 0
+  91 006c 4FF0FF30 		mov	r0, #-1
+  92 0070 0F21     		movs	r1, #15
+  93 0072 0022     		movs	r2, #0
+  94 0074 FFF7FEFF 		bl	HAL_NVIC_SetPriority
+  70:Src/stm32f3xx_hal_msp.c **** 
+  71:Src/stm32f3xx_hal_msp.c ****   /* USER CODE BEGIN MspInit 1 */
+  72:Src/stm32f3xx_hal_msp.c **** 
+  73:Src/stm32f3xx_hal_msp.c ****   /* USER CODE END MspInit 1 */
+  74:Src/stm32f3xx_hal_msp.c **** }
+  95              		.loc 1 74 0
+  96 0078 0837     		adds	r7, r7, #8
+  97              	.LCFI3:
+  98              		.cfi_def_cfa_offset 8
+ARM GAS  /tmp/ccyJdpKT.s 			page 4
+
+
+  99 007a BD46     		mov	sp, r7
+ 100              	.LCFI4:
+ 101              		.cfi_def_cfa_register 13
+ 102              		@ sp needed
+ 103 007c 80BD     		pop	{r7, pc}
+ 104              	.L3:
+ 105 007e 00BF     		.align	2
+ 106              	.L2:
+ 107 0080 00100240 		.word	1073876992
+ 108              		.cfi_endproc
+ 109              	.LFE123:
+ 111              		.section	.text.HAL_UART_MspInit,"ax",%progbits
+ 112              		.align	2
+ 113              		.global	HAL_UART_MspInit
+ 114              		.thumb
+ 115              		.thumb_func
+ 117              	HAL_UART_MspInit:
+ 118              	.LFB124:
+  75:Src/stm32f3xx_hal_msp.c **** 
+  76:Src/stm32f3xx_hal_msp.c **** void HAL_UART_MspInit(UART_HandleTypeDef* huart)
+  77:Src/stm32f3xx_hal_msp.c **** {
+ 119              		.loc 1 77 0
+ 120              		.cfi_startproc
+ 121              		@ args = 0, pretend = 0, frame = 40
+ 122              		@ frame_needed = 1, uses_anonymous_args = 0
+ 123 0000 80B5     		push	{r7, lr}
+ 124              	.LCFI5:
+ 125              		.cfi_def_cfa_offset 8
+ 126              		.cfi_offset 7, -8
+ 127              		.cfi_offset 14, -4
+ 128 0002 8AB0     		sub	sp, sp, #40
+ 129              	.LCFI6:
+ 130              		.cfi_def_cfa_offset 48
+ 131 0004 00AF     		add	r7, sp, #0
+ 132              	.LCFI7:
+ 133              		.cfi_def_cfa_register 7
+ 134 0006 7860     		str	r0, [r7, #4]
+  78:Src/stm32f3xx_hal_msp.c **** 
+  79:Src/stm32f3xx_hal_msp.c ****   GPIO_InitTypeDef GPIO_InitStruct;
+  80:Src/stm32f3xx_hal_msp.c ****   if(huart->Instance==USART1)
+ 135              		.loc 1 80 0
+ 136 0008 7B68     		ldr	r3, [r7, #4]
+ 137 000a 1B68     		ldr	r3, [r3]
+ 138 000c 224A     		ldr	r2, .L7
+ 139 000e 9342     		cmp	r3, r2
+ 140 0010 1CD1     		bne	.L5
+ 141              	.LBB8:
+  81:Src/stm32f3xx_hal_msp.c ****   {
+  82:Src/stm32f3xx_hal_msp.c ****   /* USER CODE BEGIN USART1_MspInit 0 */
+  83:Src/stm32f3xx_hal_msp.c **** 
+  84:Src/stm32f3xx_hal_msp.c ****   /* USER CODE END USART1_MspInit 0 */
+  85:Src/stm32f3xx_hal_msp.c ****     /* Peripheral clock enable */
+  86:Src/stm32f3xx_hal_msp.c ****     __HAL_RCC_USART1_CLK_ENABLE();
+ 142              		.loc 1 86 0
+ 143 0012 224A     		ldr	r2, .L7+4
+ 144 0014 214B     		ldr	r3, .L7+4
+ 145 0016 9B69     		ldr	r3, [r3, #24]
+ARM GAS  /tmp/ccyJdpKT.s 			page 5
+
+
+ 146 0018 43F48043 		orr	r3, r3, #16384
+ 147 001c 9361     		str	r3, [r2, #24]
+ 148 001e 1F4B     		ldr	r3, .L7+4
+ 149 0020 9B69     		ldr	r3, [r3, #24]
+ 150 0022 03F48043 		and	r3, r3, #16384
+ 151 0026 3B61     		str	r3, [r7, #16]
+ 152 0028 3B69     		ldr	r3, [r7, #16]
+ 153              	.LBE8:
+  87:Src/stm32f3xx_hal_msp.c **** 
+  88:Src/stm32f3xx_hal_msp.c ****     /**USART1 GPIO Configuration
+  89:Src/stm32f3xx_hal_msp.c ****     PC4     ------> USART1_TX
+  90:Src/stm32f3xx_hal_msp.c ****     PC5     ------> USART1_RX
+  91:Src/stm32f3xx_hal_msp.c ****     */
+  92:Src/stm32f3xx_hal_msp.c ****     GPIO_InitStruct.Pin = GPIO_PIN_4|GPIO_PIN_5;
+ 154              		.loc 1 92 0
+ 155 002a 3023     		movs	r3, #48
+ 156 002c 7B61     		str	r3, [r7, #20]
+  93:Src/stm32f3xx_hal_msp.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+ 157              		.loc 1 93 0
+ 158 002e 0223     		movs	r3, #2
+ 159 0030 BB61     		str	r3, [r7, #24]
+  94:Src/stm32f3xx_hal_msp.c ****     GPIO_InitStruct.Pull = GPIO_PULLUP;
+ 160              		.loc 1 94 0
+ 161 0032 0123     		movs	r3, #1
+ 162 0034 FB61     		str	r3, [r7, #28]
+  95:Src/stm32f3xx_hal_msp.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+ 163              		.loc 1 95 0
+ 164 0036 0023     		movs	r3, #0
+ 165 0038 3B62     		str	r3, [r7, #32]
+  96:Src/stm32f3xx_hal_msp.c ****     GPIO_InitStruct.Alternate = GPIO_AF7_USART1;
+ 166              		.loc 1 96 0
+ 167 003a 0723     		movs	r3, #7
+ 168 003c 7B62     		str	r3, [r7, #36]
+  97:Src/stm32f3xx_hal_msp.c ****     HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+ 169              		.loc 1 97 0
+ 170 003e 07F11403 		add	r3, r7, #20
+ 171 0042 1748     		ldr	r0, .L7+8
+ 172 0044 1946     		mov	r1, r3
+ 173 0046 FFF7FEFF 		bl	HAL_GPIO_Init
+ 174 004a 21E0     		b	.L4
+ 175              	.L5:
+  98:Src/stm32f3xx_hal_msp.c **** 
+  99:Src/stm32f3xx_hal_msp.c ****   /* USER CODE BEGIN USART1_MspInit 1 */
+ 100:Src/stm32f3xx_hal_msp.c **** 
+ 101:Src/stm32f3xx_hal_msp.c ****   /* USER CODE END USART1_MspInit 1 */
+ 102:Src/stm32f3xx_hal_msp.c ****   }
+ 103:Src/stm32f3xx_hal_msp.c ****   else if(huart->Instance==USART2)
+ 176              		.loc 1 103 0
+ 177 004c 7B68     		ldr	r3, [r7, #4]
+ 178 004e 1B68     		ldr	r3, [r3]
+ 179 0050 144A     		ldr	r2, .L7+12
+ 180 0052 9342     		cmp	r3, r2
+ 181 0054 1CD1     		bne	.L4
+ 182              	.LBB9:
+ 104:Src/stm32f3xx_hal_msp.c ****   {
+ 105:Src/stm32f3xx_hal_msp.c ****   /* USER CODE BEGIN USART2_MspInit 0 */
+ 106:Src/stm32f3xx_hal_msp.c **** 
+ARM GAS  /tmp/ccyJdpKT.s 			page 6
+
+
+ 107:Src/stm32f3xx_hal_msp.c ****   /* USER CODE END USART2_MspInit 0 */
+ 108:Src/stm32f3xx_hal_msp.c ****     /* Peripheral clock enable */
+ 109:Src/stm32f3xx_hal_msp.c ****     __HAL_RCC_USART2_CLK_ENABLE();
+ 183              		.loc 1 109 0
+ 184 0056 114A     		ldr	r2, .L7+4
+ 185 0058 104B     		ldr	r3, .L7+4
+ 186 005a DB69     		ldr	r3, [r3, #28]
+ 187 005c 43F40033 		orr	r3, r3, #131072
+ 188 0060 D361     		str	r3, [r2, #28]
+ 189 0062 0E4B     		ldr	r3, .L7+4
+ 190 0064 DB69     		ldr	r3, [r3, #28]
+ 191 0066 03F40033 		and	r3, r3, #131072
+ 192 006a FB60     		str	r3, [r7, #12]
+ 193 006c FB68     		ldr	r3, [r7, #12]
+ 194              	.LBE9:
+ 110:Src/stm32f3xx_hal_msp.c **** 
+ 111:Src/stm32f3xx_hal_msp.c ****     /**USART2 GPIO Configuration
+ 112:Src/stm32f3xx_hal_msp.c ****     PA2     ------> USART2_TX
+ 113:Src/stm32f3xx_hal_msp.c ****     PA3     ------> USART2_RX
+ 114:Src/stm32f3xx_hal_msp.c ****     */
+ 115:Src/stm32f3xx_hal_msp.c ****     GPIO_InitStruct.Pin = USART_TX_Pin|USART_RX_Pin;
+ 195              		.loc 1 115 0
+ 196 006e 0C23     		movs	r3, #12
+ 197 0070 7B61     		str	r3, [r7, #20]
+ 116:Src/stm32f3xx_hal_msp.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+ 198              		.loc 1 116 0
+ 199 0072 0223     		movs	r3, #2
+ 200 0074 BB61     		str	r3, [r7, #24]
+ 117:Src/stm32f3xx_hal_msp.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 201              		.loc 1 117 0
+ 202 0076 0023     		movs	r3, #0
+ 203 0078 FB61     		str	r3, [r7, #28]
+ 118:Src/stm32f3xx_hal_msp.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+ 204              		.loc 1 118 0
+ 205 007a 0023     		movs	r3, #0
+ 206 007c 3B62     		str	r3, [r7, #32]
+ 119:Src/stm32f3xx_hal_msp.c ****     GPIO_InitStruct.Alternate = GPIO_AF7_USART2;
+ 207              		.loc 1 119 0
+ 208 007e 0723     		movs	r3, #7
+ 209 0080 7B62     		str	r3, [r7, #36]
+ 120:Src/stm32f3xx_hal_msp.c ****     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+ 210              		.loc 1 120 0
+ 211 0082 07F11403 		add	r3, r7, #20
+ 212 0086 4FF09040 		mov	r0, #1207959552
+ 213 008a 1946     		mov	r1, r3
+ 214 008c FFF7FEFF 		bl	HAL_GPIO_Init
+ 215              	.L4:
+ 121:Src/stm32f3xx_hal_msp.c **** 
+ 122:Src/stm32f3xx_hal_msp.c ****   /* USER CODE BEGIN USART2_MspInit 1 */
+ 123:Src/stm32f3xx_hal_msp.c **** 
+ 124:Src/stm32f3xx_hal_msp.c ****   /* USER CODE END USART2_MspInit 1 */
+ 125:Src/stm32f3xx_hal_msp.c ****   }
+ 126:Src/stm32f3xx_hal_msp.c **** 
+ 127:Src/stm32f3xx_hal_msp.c **** }
+ 216              		.loc 1 127 0
+ 217 0090 2837     		adds	r7, r7, #40
+ 218              	.LCFI8:
+ARM GAS  /tmp/ccyJdpKT.s 			page 7
+
+
+ 219              		.cfi_def_cfa_offset 8
+ 220 0092 BD46     		mov	sp, r7
+ 221              	.LCFI9:
+ 222              		.cfi_def_cfa_register 13
+ 223              		@ sp needed
+ 224 0094 80BD     		pop	{r7, pc}
+ 225              	.L8:
+ 226 0096 00BF     		.align	2
+ 227              	.L7:
+ 228 0098 00380140 		.word	1073821696
+ 229 009c 00100240 		.word	1073876992
+ 230 00a0 00080048 		.word	1207961600
+ 231 00a4 00440040 		.word	1073759232
+ 232              		.cfi_endproc
+ 233              	.LFE124:
+ 235              		.section	.text.HAL_UART_MspDeInit,"ax",%progbits
+ 236              		.align	2
+ 237              		.global	HAL_UART_MspDeInit
+ 238              		.thumb
+ 239              		.thumb_func
+ 241              	HAL_UART_MspDeInit:
+ 242              	.LFB125:
+ 128:Src/stm32f3xx_hal_msp.c **** 
+ 129:Src/stm32f3xx_hal_msp.c **** void HAL_UART_MspDeInit(UART_HandleTypeDef* huart)
+ 130:Src/stm32f3xx_hal_msp.c **** {
+ 243              		.loc 1 130 0
+ 244              		.cfi_startproc
+ 245              		@ args = 0, pretend = 0, frame = 8
+ 246              		@ frame_needed = 1, uses_anonymous_args = 0
+ 247 0000 80B5     		push	{r7, lr}
+ 248              	.LCFI10:
+ 249              		.cfi_def_cfa_offset 8
+ 250              		.cfi_offset 7, -8
+ 251              		.cfi_offset 14, -4
+ 252 0002 82B0     		sub	sp, sp, #8
+ 253              	.LCFI11:
+ 254              		.cfi_def_cfa_offset 16
+ 255 0004 00AF     		add	r7, sp, #0
+ 256              	.LCFI12:
+ 257              		.cfi_def_cfa_register 7
+ 258 0006 7860     		str	r0, [r7, #4]
+ 131:Src/stm32f3xx_hal_msp.c **** 
+ 132:Src/stm32f3xx_hal_msp.c ****   if(huart->Instance==USART1)
+ 259              		.loc 1 132 0
+ 260 0008 7B68     		ldr	r3, [r7, #4]
+ 261 000a 1B68     		ldr	r3, [r3]
+ 262 000c 104A     		ldr	r2, .L12
+ 263 000e 9342     		cmp	r3, r2
+ 264 0010 0AD1     		bne	.L10
+ 133:Src/stm32f3xx_hal_msp.c ****   {
+ 134:Src/stm32f3xx_hal_msp.c ****   /* USER CODE BEGIN USART1_MspDeInit 0 */
+ 135:Src/stm32f3xx_hal_msp.c **** 
+ 136:Src/stm32f3xx_hal_msp.c ****   /* USER CODE END USART1_MspDeInit 0 */
+ 137:Src/stm32f3xx_hal_msp.c ****     /* Peripheral clock disable */
+ 138:Src/stm32f3xx_hal_msp.c ****     __HAL_RCC_USART1_CLK_DISABLE();
+ 265              		.loc 1 138 0
+ 266 0012 104A     		ldr	r2, .L12+4
+ARM GAS  /tmp/ccyJdpKT.s 			page 8
+
+
+ 267 0014 0F4B     		ldr	r3, .L12+4
+ 268 0016 9B69     		ldr	r3, [r3, #24]
+ 269 0018 23F48043 		bic	r3, r3, #16384
+ 270 001c 9361     		str	r3, [r2, #24]
+ 139:Src/stm32f3xx_hal_msp.c **** 
+ 140:Src/stm32f3xx_hal_msp.c ****     /**USART1 GPIO Configuration
+ 141:Src/stm32f3xx_hal_msp.c ****     PC4     ------> USART1_TX
+ 142:Src/stm32f3xx_hal_msp.c ****     PC5     ------> USART1_RX
+ 143:Src/stm32f3xx_hal_msp.c ****     */
+ 144:Src/stm32f3xx_hal_msp.c ****     HAL_GPIO_DeInit(GPIOC, GPIO_PIN_4|GPIO_PIN_5);
+ 271              		.loc 1 144 0
+ 272 001e 0E48     		ldr	r0, .L12+8
+ 273 0020 3021     		movs	r1, #48
+ 274 0022 FFF7FEFF 		bl	HAL_GPIO_DeInit
+ 275 0026 0FE0     		b	.L9
+ 276              	.L10:
+ 145:Src/stm32f3xx_hal_msp.c **** 
+ 146:Src/stm32f3xx_hal_msp.c ****   /* USER CODE BEGIN USART1_MspDeInit 1 */
+ 147:Src/stm32f3xx_hal_msp.c **** 
+ 148:Src/stm32f3xx_hal_msp.c ****   /* USER CODE END USART1_MspDeInit 1 */
+ 149:Src/stm32f3xx_hal_msp.c ****   }
+ 150:Src/stm32f3xx_hal_msp.c ****   else if(huart->Instance==USART2)
+ 277              		.loc 1 150 0
+ 278 0028 7B68     		ldr	r3, [r7, #4]
+ 279 002a 1B68     		ldr	r3, [r3]
+ 280 002c 0B4A     		ldr	r2, .L12+12
+ 281 002e 9342     		cmp	r3, r2
+ 282 0030 0AD1     		bne	.L9
+ 151:Src/stm32f3xx_hal_msp.c ****   {
+ 152:Src/stm32f3xx_hal_msp.c ****   /* USER CODE BEGIN USART2_MspDeInit 0 */
+ 153:Src/stm32f3xx_hal_msp.c **** 
+ 154:Src/stm32f3xx_hal_msp.c ****   /* USER CODE END USART2_MspDeInit 0 */
+ 155:Src/stm32f3xx_hal_msp.c ****     /* Peripheral clock disable */
+ 156:Src/stm32f3xx_hal_msp.c ****     __HAL_RCC_USART2_CLK_DISABLE();
+ 283              		.loc 1 156 0
+ 284 0032 084A     		ldr	r2, .L12+4
+ 285 0034 074B     		ldr	r3, .L12+4
+ 286 0036 DB69     		ldr	r3, [r3, #28]
+ 287 0038 23F40033 		bic	r3, r3, #131072
+ 288 003c D361     		str	r3, [r2, #28]
+ 157:Src/stm32f3xx_hal_msp.c **** 
+ 158:Src/stm32f3xx_hal_msp.c ****     /**USART2 GPIO Configuration
+ 159:Src/stm32f3xx_hal_msp.c ****     PA2     ------> USART2_TX
+ 160:Src/stm32f3xx_hal_msp.c ****     PA3     ------> USART2_RX
+ 161:Src/stm32f3xx_hal_msp.c ****     */
+ 162:Src/stm32f3xx_hal_msp.c ****     HAL_GPIO_DeInit(GPIOA, USART_TX_Pin|USART_RX_Pin);
+ 289              		.loc 1 162 0
+ 290 003e 4FF09040 		mov	r0, #1207959552
+ 291 0042 0C21     		movs	r1, #12
+ 292 0044 FFF7FEFF 		bl	HAL_GPIO_DeInit
+ 293              	.L9:
+ 163:Src/stm32f3xx_hal_msp.c **** 
+ 164:Src/stm32f3xx_hal_msp.c ****   /* USER CODE BEGIN USART2_MspDeInit 1 */
+ 165:Src/stm32f3xx_hal_msp.c **** 
+ 166:Src/stm32f3xx_hal_msp.c ****   /* USER CODE END USART2_MspDeInit 1 */
+ 167:Src/stm32f3xx_hal_msp.c ****   }
+ 168:Src/stm32f3xx_hal_msp.c **** 
+ARM GAS  /tmp/ccyJdpKT.s 			page 9
+
+
+ 169:Src/stm32f3xx_hal_msp.c **** }
+ 294              		.loc 1 169 0
+ 295 0048 0837     		adds	r7, r7, #8
+ 296              	.LCFI13:
+ 297              		.cfi_def_cfa_offset 8
+ 298 004a BD46     		mov	sp, r7
+ 299              	.LCFI14:
+ 300              		.cfi_def_cfa_register 13
+ 301              		@ sp needed
+ 302 004c 80BD     		pop	{r7, pc}
+ 303              	.L13:
+ 304 004e 00BF     		.align	2
+ 305              	.L12:
+ 306 0050 00380140 		.word	1073821696
+ 307 0054 00100240 		.word	1073876992
+ 308 0058 00080048 		.word	1207961600
+ 309 005c 00440040 		.word	1073759232
+ 310              		.cfi_endproc
+ 311              	.LFE125:
+ 313              		.section	.text.HAL_RTC_MspInit,"ax",%progbits
+ 314              		.align	2
+ 315              		.global	HAL_RTC_MspInit
+ 316              		.thumb
+ 317              		.thumb_func
+ 319              	HAL_RTC_MspInit:
+ 320              	.LFB126:
+ 170:Src/stm32f3xx_hal_msp.c **** 
+ 171:Src/stm32f3xx_hal_msp.c **** /**
+ 172:Src/stm32f3xx_hal_msp.c ****   * @brief RTC MSP Initialization
+ 173:Src/stm32f3xx_hal_msp.c ****   *        This function configures the hardware resources used in this example
+ 174:Src/stm32f3xx_hal_msp.c ****   * @param hrtc RTC handle pointer
+ 175:Src/stm32f3xx_hal_msp.c ****   *
+ 176:Src/stm32f3xx_hal_msp.c ****   * @note  Care must be taken when HAL_RCCEx_PeriphCLKConfig() is used to select
+ 177:Src/stm32f3xx_hal_msp.c ****   *        the RTC clock source; in this case the Backup domain will be reset in
+ 178:Src/stm32f3xx_hal_msp.c ****   *        order to modify the RTC Clock source, as consequence RTC registers (including
+ 179:Src/stm32f3xx_hal_msp.c ****   *        the backup registers) and RCC_BDCR register are set to their reset values.
+ 180:Src/stm32f3xx_hal_msp.c ****   *
+ 181:Src/stm32f3xx_hal_msp.c ****   * @retval None
+ 182:Src/stm32f3xx_hal_msp.c ****   */
+ 183:Src/stm32f3xx_hal_msp.c **** void HAL_RTC_MspInit(RTC_HandleTypeDef *hrtc)
+ 184:Src/stm32f3xx_hal_msp.c **** {
+ 321              		.loc 1 184 0
+ 322              		.cfi_startproc
+ 323              		@ args = 0, pretend = 0, frame = 112
+ 324              		@ frame_needed = 1, uses_anonymous_args = 0
+ 325 0000 80B5     		push	{r7, lr}
+ 326              	.LCFI15:
+ 327              		.cfi_def_cfa_offset 8
+ 328              		.cfi_offset 7, -8
+ 329              		.cfi_offset 14, -4
+ 330 0002 9CB0     		sub	sp, sp, #112
+ 331              	.LCFI16:
+ 332              		.cfi_def_cfa_offset 120
+ 333 0004 00AF     		add	r7, sp, #0
+ 334              	.LCFI17:
+ 335              		.cfi_def_cfa_register 7
+ 336 0006 7860     		str	r0, [r7, #4]
+ARM GAS  /tmp/ccyJdpKT.s 			page 10
+
+
+ 337              	.LBB10:
+ 185:Src/stm32f3xx_hal_msp.c ****   RCC_OscInitTypeDef        RCC_OscInitStruct;
+ 186:Src/stm32f3xx_hal_msp.c ****   RCC_PeriphCLKInitTypeDef  PeriphClkInitStruct;
+ 187:Src/stm32f3xx_hal_msp.c **** 
+ 188:Src/stm32f3xx_hal_msp.c ****   /*##-1- Enables the PWR Clock and Enables access to the backup domain ###########################
+ 189:Src/stm32f3xx_hal_msp.c ****   /* To change the source clock of the RTC feature (LSE, LSI), You have to:
+ 190:Src/stm32f3xx_hal_msp.c ****      - Enable the power clock using __HAL_RCC_PWR_CLK_ENABLE()
+ 191:Src/stm32f3xx_hal_msp.c ****      - Enable write access using HAL_PWR_EnableBkUpAccess() function before to
+ 192:Src/stm32f3xx_hal_msp.c ****        configure the RTC clock source (to be done once after reset).
+ 193:Src/stm32f3xx_hal_msp.c ****      - Reset the Back up Domain using __HAL_RCC_BACKUPRESET_FORCE() and
+ 194:Src/stm32f3xx_hal_msp.c ****        __HAL_RCC_BACKUPRESET_RELEASE().
+ 195:Src/stm32f3xx_hal_msp.c ****      - Configure the needed RTc clock source */
+ 196:Src/stm32f3xx_hal_msp.c ****   __HAL_RCC_PWR_CLK_ENABLE();
+ 338              		.loc 1 196 0
+ 339 0008 204A     		ldr	r2, .L18
+ 340 000a 204B     		ldr	r3, .L18
+ 341 000c DB69     		ldr	r3, [r3, #28]
+ 342 000e 43F08053 		orr	r3, r3, #268435456
+ 343 0012 D361     		str	r3, [r2, #28]
+ 344 0014 1D4B     		ldr	r3, .L18
+ 345 0016 DB69     		ldr	r3, [r3, #28]
+ 346 0018 03F08053 		and	r3, r3, #268435456
+ 347 001c BB60     		str	r3, [r7, #8]
+ 348 001e BB68     		ldr	r3, [r7, #8]
+ 349              	.LBE10:
+ 197:Src/stm32f3xx_hal_msp.c ****   HAL_PWR_EnableBkUpAccess();
+ 350              		.loc 1 197 0
+ 351 0020 FFF7FEFF 		bl	HAL_PWR_EnableBkUpAccess
+ 198:Src/stm32f3xx_hal_msp.c **** 
+ 199:Src/stm32f3xx_hal_msp.c **** 
+ 200:Src/stm32f3xx_hal_msp.c ****   /*##-2- Configure LSE as RTC clock source ###################################*/
+ 201:Src/stm32f3xx_hal_msp.c ****   RCC_OscInitStruct.OscillatorType =  RCC_OSCILLATORTYPE_LSI;
+ 352              		.loc 1 201 0
+ 353 0024 0823     		movs	r3, #8
+ 354 0026 3B64     		str	r3, [r7, #64]
+ 202:Src/stm32f3xx_hal_msp.c ****   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
+ 355              		.loc 1 202 0
+ 356 0028 0023     		movs	r3, #0
+ 357 002a FB65     		str	r3, [r7, #92]
+ 203:Src/stm32f3xx_hal_msp.c ****   RCC_OscInitStruct.LSIState = RCC_LSI_ON;
+ 358              		.loc 1 203 0
+ 359 002c 0123     		movs	r3, #1
+ 360 002e BB65     		str	r3, [r7, #88]
+ 204:Src/stm32f3xx_hal_msp.c ****   if(HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
+ 361              		.loc 1 204 0
+ 362 0030 07F14003 		add	r3, r7, #64
+ 363 0034 1846     		mov	r0, r3
+ 364 0036 FFF7FEFF 		bl	HAL_RCC_OscConfig
+ 365 003a 0346     		mov	r3, r0
+ 366 003c 002B     		cmp	r3, #0
+ 367 003e 01D0     		beq	.L15
+ 205:Src/stm32f3xx_hal_msp.c ****   {
+ 206:Src/stm32f3xx_hal_msp.c ****     Error_Handler();
+ 368              		.loc 1 206 0
+ 369 0040 FFF7FEFF 		bl	Error_Handler
+ 370              	.L15:
+ 207:Src/stm32f3xx_hal_msp.c ****   }
+ARM GAS  /tmp/ccyJdpKT.s 			page 11
+
+
+ 208:Src/stm32f3xx_hal_msp.c **** 
+ 209:Src/stm32f3xx_hal_msp.c ****   PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_RTC;
+ 371              		.loc 1 209 0
+ 372 0044 4FF48033 		mov	r3, #65536
+ 373 0048 FB60     		str	r3, [r7, #12]
+ 210:Src/stm32f3xx_hal_msp.c ****   PeriphClkInitStruct.RTCClockSelection = RCC_RTCCLKSOURCE_LSI;
+ 374              		.loc 1 210 0
+ 375 004a 4FF40073 		mov	r3, #512
+ 376 004e 3B61     		str	r3, [r7, #16]
+ 211:Src/stm32f3xx_hal_msp.c ****   if(HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
+ 377              		.loc 1 211 0
+ 378 0050 07F10C03 		add	r3, r7, #12
+ 379 0054 1846     		mov	r0, r3
+ 380 0056 FFF7FEFF 		bl	HAL_RCCEx_PeriphCLKConfig
+ 381 005a 0346     		mov	r3, r0
+ 382 005c 002B     		cmp	r3, #0
+ 383 005e 01D0     		beq	.L16
+ 212:Src/stm32f3xx_hal_msp.c ****   {
+ 213:Src/stm32f3xx_hal_msp.c ****     Error_Handler();
+ 384              		.loc 1 213 0
+ 385 0060 FFF7FEFF 		bl	Error_Handler
+ 386              	.L16:
+ 387 0064 4FF40043 		mov	r3, #32768
+ 388 0068 FB66     		str	r3, [r7, #108]
+ 389              	.LBB11:
+ 390              	.LBB12:
+ 391              		.file 2 "../../Drivers/CMSIS/Include/cmsis_gcc.h"
+   1:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**************************************************************************//**
+   2:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  * @file     cmsis_gcc.h
+   3:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  * @brief    CMSIS Cortex-M Core Function/Instruction Header File
+   4:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  * @version  V4.30
+   5:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  * @date     20. October 2015
+   6:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  ******************************************************************************/
+   7:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /* Copyright (c) 2009 - 2015 ARM LIMITED
+   8:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+   9:../../Drivers/CMSIS/Include/cmsis_gcc.h ****    All rights reserved.
+  10:../../Drivers/CMSIS/Include/cmsis_gcc.h ****    Redistribution and use in source and binary forms, with or without
+  11:../../Drivers/CMSIS/Include/cmsis_gcc.h ****    modification, are permitted provided that the following conditions are met:
+  12:../../Drivers/CMSIS/Include/cmsis_gcc.h ****    - Redistributions of source code must retain the above copyright
+  13:../../Drivers/CMSIS/Include/cmsis_gcc.h ****      notice, this list of conditions and the following disclaimer.
+  14:../../Drivers/CMSIS/Include/cmsis_gcc.h ****    - Redistributions in binary form must reproduce the above copyright
+  15:../../Drivers/CMSIS/Include/cmsis_gcc.h ****      notice, this list of conditions and the following disclaimer in the
+  16:../../Drivers/CMSIS/Include/cmsis_gcc.h ****      documentation and/or other materials provided with the distribution.
+  17:../../Drivers/CMSIS/Include/cmsis_gcc.h ****    - Neither the name of ARM nor the names of its contributors may be used
+  18:../../Drivers/CMSIS/Include/cmsis_gcc.h ****      to endorse or promote products derived from this software without
+  19:../../Drivers/CMSIS/Include/cmsis_gcc.h ****      specific prior written permission.
+  20:../../Drivers/CMSIS/Include/cmsis_gcc.h ****    *
+  21:../../Drivers/CMSIS/Include/cmsis_gcc.h ****    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  22:../../Drivers/CMSIS/Include/cmsis_gcc.h ****    AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  23:../../Drivers/CMSIS/Include/cmsis_gcc.h ****    IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  24:../../Drivers/CMSIS/Include/cmsis_gcc.h ****    ARE DISCLAIMED. IN NO EVENT SHALL COPYRIGHT HOLDERS AND CONTRIBUTORS BE
+  25:../../Drivers/CMSIS/Include/cmsis_gcc.h ****    LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  26:../../Drivers/CMSIS/Include/cmsis_gcc.h ****    CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  27:../../Drivers/CMSIS/Include/cmsis_gcc.h ****    SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  28:../../Drivers/CMSIS/Include/cmsis_gcc.h ****    INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  29:../../Drivers/CMSIS/Include/cmsis_gcc.h ****    CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  30:../../Drivers/CMSIS/Include/cmsis_gcc.h ****    ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ARM GAS  /tmp/ccyJdpKT.s 			page 12
+
+
+  31:../../Drivers/CMSIS/Include/cmsis_gcc.h ****    POSSIBILITY OF SUCH DAMAGE.
+  32:../../Drivers/CMSIS/Include/cmsis_gcc.h ****    ---------------------------------------------------------------------------*/
+  33:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+  34:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+  35:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __CMSIS_GCC_H
+  36:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_H
+  37:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+  38:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /* ignore some GCC warnings */
+  39:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #if defined ( __GNUC__ )
+  40:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic push
+  41:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wsign-conversion"
+  42:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wconversion"
+  43:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wunused-parameter"
+  44:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+  45:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+  46:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+  47:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /* ###########################  Core Function Access  ########################### */
+  48:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /** \ingroup  CMSIS_Core_FunctionInterface
+  49:../../Drivers/CMSIS/Include/cmsis_gcc.h ****     \defgroup CMSIS_Core_RegAccFunctions CMSIS Core Register Access Functions
+  50:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   @{
+  51:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+  52:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+  53:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+  54:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Enable IRQ Interrupts
+  55:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Enables IRQ interrupts by clearing the I-bit in the CPSR.
+  56:../../Drivers/CMSIS/Include/cmsis_gcc.h ****            Can only be executed in Privileged modes.
+  57:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+  58:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __enable_irq(void)
+  59:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+  60:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("cpsie i" : : : "memory");
+  61:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+  62:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+  63:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+  64:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+  65:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Disable IRQ Interrupts
+  66:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Disables IRQ interrupts by setting the I-bit in the CPSR.
+  67:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   Can only be executed in Privileged modes.
+  68:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+  69:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __disable_irq(void)
+  70:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+  71:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("cpsid i" : : : "memory");
+  72:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+  73:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+  74:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+  75:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+  76:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Control Register
+  77:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the content of the Control Register.
+  78:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Control Register value
+  79:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+  80:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_CONTROL(void)
+  81:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+  82:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+  83:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+  84:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, control" : "=r" (result) );
+  85:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+  86:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+  87:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ARM GAS  /tmp/ccyJdpKT.s 			page 13
+
+
+  88:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+  89:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+  90:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Control Register
+  91:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Writes the given value to the Control Register.
+  92:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    control  Control Register value to set
+  93:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+  94:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __set_CONTROL(uint32_t control)
+  95:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+  96:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR control, %0" : : "r" (control) : "memory");
+  97:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+  98:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+  99:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 100:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 101:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get IPSR Register
+ 102:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the content of the IPSR Register.
+ 103:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               IPSR Register value
+ 104:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 105:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_IPSR(void)
+ 106:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 107:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ 108:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 109:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, ipsr" : "=r" (result) );
+ 110:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 111:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 112:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 113:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 114:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 115:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get APSR Register
+ 116:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the content of the APSR Register.
+ 117:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               APSR Register value
+ 118:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 119:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_APSR(void)
+ 120:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 121:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ 122:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 123:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, apsr" : "=r" (result) );
+ 124:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 125:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 126:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 127:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 128:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 129:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get xPSR Register
+ 130:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the content of the xPSR Register.
+ 131:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 132:../../Drivers/CMSIS/Include/cmsis_gcc.h ****     \return               xPSR Register value
+ 133:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 134:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_xPSR(void)
+ 135:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 136:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ 137:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 138:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, xpsr" : "=r" (result) );
+ 139:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 140:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 141:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 142:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 143:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 144:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Process Stack Pointer
+ARM GAS  /tmp/ccyJdpKT.s 			page 14
+
+
+ 145:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the Process Stack Pointer (PSP).
+ 146:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               PSP Register value
+ 147:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 148:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_PSP(void)
+ 149:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 150:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   register uint32_t result;
+ 151:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 152:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, psp\n"  : "=r" (result) );
+ 153:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 154:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 155:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 156:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 157:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 158:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Process Stack Pointer
+ 159:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the Process Stack Pointer (PSP).
+ 160:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    topOfProcStack  Process Stack Pointer value to set
+ 161:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 162:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __set_PSP(uint32_t topOfProcStack)
+ 163:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 164:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR psp, %0\n" : : "r" (topOfProcStack) : "sp");
+ 165:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 166:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 167:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 168:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 169:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Main Stack Pointer
+ 170:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the Main Stack Pointer (MSP).
+ 171:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               MSP Register value
+ 172:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 173:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_MSP(void)
+ 174:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 175:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   register uint32_t result;
+ 176:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 177:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, msp\n" : "=r" (result) );
+ 178:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 179:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 180:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 181:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 182:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 183:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Main Stack Pointer
+ 184:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the Main Stack Pointer (MSP).
+ 185:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 186:../../Drivers/CMSIS/Include/cmsis_gcc.h ****     \param [in]    topOfMainStack  Main Stack Pointer value to set
+ 187:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 188:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __set_MSP(uint32_t topOfMainStack)
+ 189:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 190:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR msp, %0\n" : : "r" (topOfMainStack) : "sp");
+ 191:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 192:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 193:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 194:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 195:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Priority Mask
+ 196:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current state of the priority mask bit from the Priority Mask Register.
+ 197:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Priority Mask value
+ 198:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 199:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_PRIMASK(void)
+ 200:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 201:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ARM GAS  /tmp/ccyJdpKT.s 			page 15
+
+
+ 202:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 203:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, primask" : "=r" (result) );
+ 204:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 205:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 206:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 207:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 208:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 209:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Priority Mask
+ 210:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the Priority Mask Register.
+ 211:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    priMask  Priority Mask
+ 212:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 213:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __set_PRIMASK(uint32_t priMask)
+ 214:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 215:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR primask, %0" : : "r" (priMask) : "memory");
+ 216:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 217:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 218:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 219:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #if       (__CORTEX_M >= 0x03U)
+ 220:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 221:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 222:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Enable FIQ
+ 223:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Enables FIQ interrupts by clearing the F-bit in the CPSR.
+ 224:../../Drivers/CMSIS/Include/cmsis_gcc.h ****            Can only be executed in Privileged modes.
+ 225:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 226:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __enable_fault_irq(void)
+ 227:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 228:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("cpsie f" : : : "memory");
+ 229:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 230:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 231:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 232:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 233:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Disable FIQ
+ 234:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Disables FIQ interrupts by setting the F-bit in the CPSR.
+ 235:../../Drivers/CMSIS/Include/cmsis_gcc.h ****            Can only be executed in Privileged modes.
+ 236:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 237:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __disable_fault_irq(void)
+ 238:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 239:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("cpsid f" : : : "memory");
+ 240:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 241:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 242:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 243:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 244:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Base Priority
+ 245:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the Base Priority register.
+ 246:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Base Priority register value
+ 247:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 248:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_BASEPRI(void)
+ 249:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 250:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ 251:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 252:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, basepri" : "=r" (result) );
+ 253:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 254:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 255:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 256:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 257:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 258:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Base Priority
+ARM GAS  /tmp/ccyJdpKT.s 			page 16
+
+
+ 259:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the Base Priority register.
+ 260:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    basePri  Base Priority value to set
+ 261:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 262:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __set_BASEPRI(uint32_t value)
+ 263:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 264:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR basepri, %0" : : "r" (value) : "memory");
+ 265:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 266:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 267:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 268:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 269:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Base Priority with condition
+ 270:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the Base Priority register only if BASEPRI masking is disable
+ 271:../../Drivers/CMSIS/Include/cmsis_gcc.h ****            or the new value increases the BASEPRI priority level.
+ 272:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    basePri  Base Priority value to set
+ 273:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 274:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __set_BASEPRI_MAX(uint32_t value)
+ 275:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 276:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR basepri_max, %0" : : "r" (value) : "memory");
+ 277:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 278:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 279:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 280:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 281:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Fault Mask
+ 282:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the Fault Mask register.
+ 283:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Fault Mask register value
+ 284:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 285:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_FAULTMASK(void)
+ 286:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 287:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ 288:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 289:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, faultmask" : "=r" (result) );
+ 290:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 291:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 292:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 293:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 294:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 295:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Fault Mask
+ 296:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the Fault Mask register.
+ 297:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    faultMask  Fault Mask value to set
+ 298:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 299:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __set_FAULTMASK(uint32_t faultMask)
+ 300:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 301:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR faultmask, %0" : : "r" (faultMask) : "memory");
+ 302:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 303:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 304:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #endif /* (__CORTEX_M >= 0x03U) */
+ 305:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 306:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 307:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #if       (__CORTEX_M == 0x04U) || (__CORTEX_M == 0x07U)
+ 308:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 309:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 310:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get FPSCR
+ 311:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the Floating Point Status/Control register.
+ 312:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Floating Point Status/Control register value
+ 313:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 314:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __get_FPSCR(void)
+ 315:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ARM GAS  /tmp/ccyJdpKT.s 			page 17
+
+
+ 316:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #if (__FPU_PRESENT == 1U) && (__FPU_USED == 1U)
+ 317:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ 318:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 319:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   /* Empty asm statement works as a scheduling barrier */
+ 320:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("");
+ 321:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("VMRS %0, fpscr" : "=r" (result) );
+ 322:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("");
+ 323:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 324:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #else
+ 325:../../Drivers/CMSIS/Include/cmsis_gcc.h ****    return(0);
+ 326:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 327:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 328:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 329:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 330:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 331:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set FPSCR
+ 332:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the Floating Point Status/Control register.
+ 333:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    fpscr  Floating Point Status/Control value to set
+ 334:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 335:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__( ( always_inline ) ) __STATIC_INLINE void __set_FPSCR(uint32_t fpscr)
+ 336:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 337:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #if (__FPU_PRESENT == 1U) && (__FPU_USED == 1U)
+ 338:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   /* Empty asm statement works as a scheduling barrier */
+ 339:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("");
+ 340:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc");
+ 341:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("");
+ 342:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 343:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 344:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 345:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #endif /* (__CORTEX_M == 0x04U) || (__CORTEX_M == 0x07U) */
+ 346:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 347:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 348:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 349:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /*@} end of CMSIS_Core_RegAccFunctions */
+ 350:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 351:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 352:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /* ##########################  Core Instruction Access  ######################### */
+ 353:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /** \defgroup CMSIS_Core_InstructionInterface CMSIS Core Instruction Interface
+ 354:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   Access to dedicated instructions
+ 355:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   @{
+ 356:../../Drivers/CMSIS/Include/cmsis_gcc.h **** */
+ 357:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 358:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /* Define macros for porting to both thumb1 and thumb2.
+ 359:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  * For thumb1, use low register (r0-r7), specified by constraint "l"
+ 360:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  * Otherwise, use general registers, specified by constraint "r" */
+ 361:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #if defined (__thumb__) && !defined (__thumb2__)
+ 362:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_OUT_REG(r) "=l" (r)
+ 363:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_USE_REG(r) "l" (r)
+ 364:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #else
+ 365:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_OUT_REG(r) "=r" (r)
+ 366:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_USE_REG(r) "r" (r)
+ 367:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 368:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 369:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 370:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   No Operation
+ 371:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details No Operation does nothing. This instruction can be used for code alignment purposes.
+ 372:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ARM GAS  /tmp/ccyJdpKT.s 			page 18
+
+
+ 373:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__((always_inline)) __STATIC_INLINE void __NOP(void)
+ 374:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 375:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("nop");
+ 376:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 377:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 378:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 379:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 380:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Wait For Interrupt
+ 381:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Wait For Interrupt is a hint instruction that suspends execution until one of a number o
+ 382:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 383:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__((always_inline)) __STATIC_INLINE void __WFI(void)
+ 384:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 385:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("wfi");
+ 386:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 387:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 388:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 389:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 390:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Wait For Event
+ 391:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Wait For Event is a hint instruction that permits the processor to enter
+ 392:../../Drivers/CMSIS/Include/cmsis_gcc.h ****     a low-power state until one of a number of events occurs.
+ 393:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 394:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__((always_inline)) __STATIC_INLINE void __WFE(void)
+ 395:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 396:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("wfe");
+ 397:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 398:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 399:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 400:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 401:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Send Event
+ 402:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Send Event is a hint instruction. It causes an event to be signaled to the CPU.
+ 403:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 404:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__((always_inline)) __STATIC_INLINE void __SEV(void)
+ 405:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 406:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("sev");
+ 407:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 408:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 409:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 410:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 411:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Instruction Synchronization Barrier
+ 412:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Instruction Synchronization Barrier flushes the pipeline in the processor,
+ 413:../../Drivers/CMSIS/Include/cmsis_gcc.h ****            so that all instructions following the ISB are fetched from cache or memory,
+ 414:../../Drivers/CMSIS/Include/cmsis_gcc.h ****            after the instruction has been completed.
+ 415:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 416:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__((always_inline)) __STATIC_INLINE void __ISB(void)
+ 417:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 418:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("isb 0xF":::"memory");
+ 419:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 420:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 421:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 422:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 423:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Data Synchronization Barrier
+ 424:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Acts as a special kind of Data Memory Barrier.
+ 425:../../Drivers/CMSIS/Include/cmsis_gcc.h ****            It completes when all explicit memory accesses before this instruction complete.
+ 426:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 427:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__((always_inline)) __STATIC_INLINE void __DSB(void)
+ 428:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 429:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("dsb 0xF":::"memory");
+ARM GAS  /tmp/ccyJdpKT.s 			page 19
+
+
+ 430:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 431:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 432:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 433:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 434:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Data Memory Barrier
+ 435:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Ensures the apparent order of the explicit memory operations before
+ 436:../../Drivers/CMSIS/Include/cmsis_gcc.h ****            and after the instruction, without ensuring their completion.
+ 437:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 438:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__((always_inline)) __STATIC_INLINE void __DMB(void)
+ 439:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 440:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("dmb 0xF":::"memory");
+ 441:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 442:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 443:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 444:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 445:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Reverse byte order (32 bit)
+ 446:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Reverses the byte order in integer value.
+ 447:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    value  Value to reverse
+ 448:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Reversed value
+ 449:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 450:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__((always_inline)) __STATIC_INLINE uint32_t __REV(uint32_t value)
+ 451:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 452:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #if (__GNUC__ > 4) || (__GNUC__ == 4 && __GNUC_MINOR__ >= 5)
+ 453:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   return __builtin_bswap32(value);
+ 454:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #else
+ 455:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ 456:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 457:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("rev %0, %1" : __CMSIS_GCC_OUT_REG (result) : __CMSIS_GCC_USE_REG (value) );
+ 458:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 459:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 460:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 461:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 462:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 463:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 464:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Reverse byte order (16 bit)
+ 465:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Reverses the byte order in two unsigned short values.
+ 466:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    value  Value to reverse
+ 467:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Reversed value
+ 468:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 469:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__((always_inline)) __STATIC_INLINE uint32_t __REV16(uint32_t value)
+ 470:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 471:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ 472:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 473:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("rev16 %0, %1" : __CMSIS_GCC_OUT_REG (result) : __CMSIS_GCC_USE_REG (value) );
+ 474:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 475:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 476:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 477:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 478:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 479:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Reverse byte order in signed short value
+ 480:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Reverses the byte order in a signed short value with sign extension to integer.
+ 481:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    value  Value to reverse
+ 482:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Reversed value
+ 483:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 484:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__((always_inline)) __STATIC_INLINE int32_t __REVSH(int32_t value)
+ 485:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 486:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #if (__GNUC__ > 4) || (__GNUC__ == 4 && __GNUC_MINOR__ >= 8)
+ARM GAS  /tmp/ccyJdpKT.s 			page 20
+
+
+ 487:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   return (short)__builtin_bswap16(value);
+ 488:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #else
+ 489:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   int32_t result;
+ 490:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 491:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("revsh %0, %1" : __CMSIS_GCC_OUT_REG (result) : __CMSIS_GCC_USE_REG (value) );
+ 492:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 493:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 494:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 495:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 496:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 497:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 498:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Rotate Right in unsigned value (32 bit)
+ 499:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Rotate Right (immediate) provides the value of the contents of a register rotated by a v
+ 500:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    value  Value to rotate
+ 501:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    value  Number of Bits to rotate
+ 502:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Rotated value
+ 503:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 504:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__((always_inline)) __STATIC_INLINE uint32_t __ROR(uint32_t op1, uint32_t op2)
+ 505:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 506:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   return (op1 >> op2) | (op1 << (32U - op2));
+ 507:../../Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 508:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 509:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 510:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 511:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Breakpoint
+ 512:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Causes the processor to enter Debug state.
+ 513:../../Drivers/CMSIS/Include/cmsis_gcc.h ****            Debug tools can use this to investigate system state when the instruction at a particula
+ 514:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    value  is ignored by the processor.
+ 515:../../Drivers/CMSIS/Include/cmsis_gcc.h ****                  If required, a debugger can use it to store additional information about the break
+ 516:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 517:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #define __BKPT(value)                       __ASM volatile ("bkpt "#value)
+ 518:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 519:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 520:../../Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ 521:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Reverse bit order of value
+ 522:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Reverses the bit order of the given value.
+ 523:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    value  Value to reverse
+ 524:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Reversed value
+ 525:../../Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ 526:../../Drivers/CMSIS/Include/cmsis_gcc.h **** __attribute__((always_inline)) __STATIC_INLINE uint32_t __RBIT(uint32_t value)
+ 527:../../Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ 528:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
+ 529:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 530:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #if       (__CORTEX_M >= 0x03U) || (__CORTEX_SC >= 300U)
+ 531:../../Drivers/CMSIS/Include/cmsis_gcc.h ****    __ASM volatile ("rbit %0, %1" : "=r" (result) : "r" (value) );
+ 392              		.loc 2 531 0
+ 393 006a FB6E     		ldr	r3, [r7, #108]
+ 394              	@ 531 "../../Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 395 006c 93FAA3F3 		rbit r3, r3
+ 396              	@ 0 "" 2
+ 397              		.thumb
+ 398 0070 BB66     		str	r3, [r7, #104]
+ 532:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #else
+ 533:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   int32_t s = 4 /*sizeof(v)*/ * 8 - 1; /* extra shift needed at end */
+ 534:../../Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ 535:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   result = value;                      /* r will be reversed bits of v; first get LSB of v */
+ 536:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   for (value >>= 1U; value; value >>= 1U)
+ARM GAS  /tmp/ccyJdpKT.s 			page 21
+
+
+ 537:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   {
+ 538:../../Drivers/CMSIS/Include/cmsis_gcc.h ****     result <<= 1U;
+ 539:../../Drivers/CMSIS/Include/cmsis_gcc.h ****     result |= value & 1U;
+ 540:../../Drivers/CMSIS/Include/cmsis_gcc.h ****     s--;
+ 541:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   }
+ 542:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   result <<= s;                        /* shift when v's highest bits are zero */
+ 543:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
+ 544:../../Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
+ 399              		.loc 2 544 0
+ 400 0072 BB6E     		ldr	r3, [r7, #104]
+ 401              	.LBE12:
+ 402              	.LBE11:
+ 214:Src/stm32f3xx_hal_msp.c ****   }
+ 215:Src/stm32f3xx_hal_msp.c **** 
+ 216:Src/stm32f3xx_hal_msp.c ****   /*##-3- Enable RTC peripheral Clocks #######################################*/
+ 217:Src/stm32f3xx_hal_msp.c ****   /* Enable RTC Clock */
+ 218:Src/stm32f3xx_hal_msp.c ****   __HAL_RCC_RTC_ENABLE();
+ 403              		.loc 1 218 0
+ 404 0074 B3FA83F3 		clz	r3, r3
+ 405 0078 1A46     		mov	r2, r3
+ 406 007a 054B     		ldr	r3, .L18+4
+ 407 007c 1344     		add	r3, r3, r2
+ 408 007e 9B00     		lsls	r3, r3, #2
+ 409 0080 1A46     		mov	r2, r3
+ 410 0082 0123     		movs	r3, #1
+ 411 0084 1360     		str	r3, [r2]
+ 219:Src/stm32f3xx_hal_msp.c **** }
+ 412              		.loc 1 219 0
+ 413 0086 7037     		adds	r7, r7, #112
+ 414              	.LCFI18:
+ 415              		.cfi_def_cfa_offset 8
+ 416 0088 BD46     		mov	sp, r7
+ 417              	.LCFI19:
+ 418              		.cfi_def_cfa_register 13
+ 419              		@ sp needed
+ 420 008a 80BD     		pop	{r7, pc}
+ 421              	.L19:
+ 422              		.align	2
+ 423              	.L18:
+ 424 008c 00100240 		.word	1073876992
+ 425 0090 00819010 		.word	277905664
+ 426              		.cfi_endproc
+ 427              	.LFE126:
+ 429              		.section	.text.HAL_RTC_MspDeInit,"ax",%progbits
+ 430              		.align	2
+ 431              		.global	HAL_RTC_MspDeInit
+ 432              		.thumb
+ 433              		.thumb_func
+ 435              	HAL_RTC_MspDeInit:
+ 436              	.LFB127:
+ 220:Src/stm32f3xx_hal_msp.c **** 
+ 221:Src/stm32f3xx_hal_msp.c **** /**
+ 222:Src/stm32f3xx_hal_msp.c ****   * @brief RTC MSP De-Initialization
+ 223:Src/stm32f3xx_hal_msp.c ****   *        This function frees the hardware resources used in this example:
+ 224:Src/stm32f3xx_hal_msp.c ****   *          - Disable the Peripheral's clock
+ 225:Src/stm32f3xx_hal_msp.c ****   * @param hrtc: RTC handle pointer
+ 226:Src/stm32f3xx_hal_msp.c ****   * @retval None
+ARM GAS  /tmp/ccyJdpKT.s 			page 22
+
+
+ 227:Src/stm32f3xx_hal_msp.c ****   */
+ 228:Src/stm32f3xx_hal_msp.c **** void HAL_RTC_MspDeInit(RTC_HandleTypeDef *hrtc)
+ 229:Src/stm32f3xx_hal_msp.c **** {
+ 437              		.loc 1 229 0
+ 438              		.cfi_startproc
+ 439              		@ args = 0, pretend = 0, frame = 16
+ 440              		@ frame_needed = 1, uses_anonymous_args = 0
+ 441 0000 80B5     		push	{r7, lr}
+ 442              	.LCFI20:
+ 443              		.cfi_def_cfa_offset 8
+ 444              		.cfi_offset 7, -8
+ 445              		.cfi_offset 14, -4
+ 446 0002 84B0     		sub	sp, sp, #16
+ 447              	.LCFI21:
+ 448              		.cfi_def_cfa_offset 24
+ 449 0004 00AF     		add	r7, sp, #0
+ 450              	.LCFI22:
+ 451              		.cfi_def_cfa_register 7
+ 452 0006 7860     		str	r0, [r7, #4]
+ 453 0008 4FF40043 		mov	r3, #32768
+ 454 000c FB60     		str	r3, [r7, #12]
+ 455              	.LBB13:
+ 456              	.LBB14:
+ 531:../../Drivers/CMSIS/Include/cmsis_gcc.h **** #else
+ 457              		.loc 2 531 0
+ 458 000e FB68     		ldr	r3, [r7, #12]
+ 459              	@ 531 "../../Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 460 0010 93FAA3F3 		rbit r3, r3
+ 461              	@ 0 "" 2
+ 462              		.thumb
+ 463 0014 BB60     		str	r3, [r7, #8]
+ 464              		.loc 2 544 0
+ 465 0016 BB68     		ldr	r3, [r7, #8]
+ 466              	.LBE14:
+ 467              	.LBE13:
+ 230:Src/stm32f3xx_hal_msp.c ****   /*##-1- Reset peripherals ##################################################*/
+ 231:Src/stm32f3xx_hal_msp.c ****   __HAL_RCC_RTC_DISABLE();
+ 468              		.loc 1 231 0
+ 469 0018 B3FA83F3 		clz	r3, r3
+ 470 001c 1A46     		mov	r2, r3
+ 471 001e 084B     		ldr	r3, .L22
+ 472 0020 1344     		add	r3, r3, r2
+ 473 0022 9B00     		lsls	r3, r3, #2
+ 474 0024 1A46     		mov	r2, r3
+ 475 0026 0023     		movs	r3, #0
+ 476 0028 1360     		str	r3, [r2]
+ 232:Src/stm32f3xx_hal_msp.c **** 
+ 233:Src/stm32f3xx_hal_msp.c ****   /*##-2- Disables the PWR Clock and Disables access to the backup domain #########################
+ 234:Src/stm32f3xx_hal_msp.c ****   HAL_PWR_DisableBkUpAccess();
+ 477              		.loc 1 234 0
+ 478 002a FFF7FEFF 		bl	HAL_PWR_DisableBkUpAccess
+ 235:Src/stm32f3xx_hal_msp.c ****   __HAL_RCC_PWR_CLK_DISABLE();
+ 479              		.loc 1 235 0
+ 480 002e 054A     		ldr	r2, .L22+4
+ 481 0030 044B     		ldr	r3, .L22+4
+ 482 0032 DB69     		ldr	r3, [r3, #28]
+ 483 0034 23F08053 		bic	r3, r3, #268435456
+ARM GAS  /tmp/ccyJdpKT.s 			page 23
+
+
+ 484 0038 D361     		str	r3, [r2, #28]
+ 236:Src/stm32f3xx_hal_msp.c **** }
+ 485              		.loc 1 236 0
+ 486 003a 1037     		adds	r7, r7, #16
+ 487              	.LCFI23:
+ 488              		.cfi_def_cfa_offset 8
+ 489 003c BD46     		mov	sp, r7
+ 490              	.LCFI24:
+ 491              		.cfi_def_cfa_register 13
+ 492              		@ sp needed
+ 493 003e 80BD     		pop	{r7, pc}
+ 494              	.L23:
+ 495              		.align	2
+ 496              	.L22:
+ 497 0040 00819010 		.word	277905664
+ 498 0044 00100240 		.word	1073876992
+ 499              		.cfi_endproc
+ 500              	.LFE127:
+ 502              		.text
+ 503              	.Letext0:
+ 504              		.file 3 "/usr/arm-none-eabi/include/machine/_default_types.h"
+ 505              		.file 4 "/usr/arm-none-eabi/include/sys/_stdint.h"
+ 506              		.file 5 "../../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f302x8.h"
+ 507              		.file 6 "../../Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h"
+ 508              		.file 7 "../../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
+ 509              		.file 8 "../../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h"
+ 510              		.file 9 "../../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc_ex.h"
+ 511              		.file 10 "../../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
+ 512              		.file 11 "../../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
+ 513              		.file 12 "../../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rtc.h"
+ 514              		.file 13 "../../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h"
+ 515              		.file 14 "../../Drivers/CMSIS/Include/core_cm4.h"
+ARM GAS  /tmp/ccyJdpKT.s 			page 24
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 stm32f3xx_hal_msp.c
+     /tmp/ccyJdpKT.s:21     .text.HAL_MspInit:0000000000000000 $t
+     /tmp/ccyJdpKT.s:26     .text.HAL_MspInit:0000000000000000 HAL_MspInit
+     /tmp/ccyJdpKT.s:107    .text.HAL_MspInit:0000000000000080 $d
+     /tmp/ccyJdpKT.s:112    .text.HAL_UART_MspInit:0000000000000000 $t
+     /tmp/ccyJdpKT.s:117    .text.HAL_UART_MspInit:0000000000000000 HAL_UART_MspInit
+     /tmp/ccyJdpKT.s:228    .text.HAL_UART_MspInit:0000000000000098 $d
+     /tmp/ccyJdpKT.s:236    .text.HAL_UART_MspDeInit:0000000000000000 $t
+     /tmp/ccyJdpKT.s:241    .text.HAL_UART_MspDeInit:0000000000000000 HAL_UART_MspDeInit
+     /tmp/ccyJdpKT.s:306    .text.HAL_UART_MspDeInit:0000000000000050 $d
+     /tmp/ccyJdpKT.s:314    .text.HAL_RTC_MspInit:0000000000000000 $t
+     /tmp/ccyJdpKT.s:319    .text.HAL_RTC_MspInit:0000000000000000 HAL_RTC_MspInit
+     /tmp/ccyJdpKT.s:424    .text.HAL_RTC_MspInit:000000000000008c $d
+     /tmp/ccyJdpKT.s:430    .text.HAL_RTC_MspDeInit:0000000000000000 $t
+     /tmp/ccyJdpKT.s:435    .text.HAL_RTC_MspDeInit:0000000000000000 HAL_RTC_MspDeInit
+     /tmp/ccyJdpKT.s:497    .text.HAL_RTC_MspDeInit:0000000000000040 $d
+                     .debug_frame:0000000000000010 $d
+
+UNDEFINED SYMBOLS
+HAL_NVIC_SetPriorityGrouping
+HAL_NVIC_SetPriority
+HAL_GPIO_Init
+HAL_GPIO_DeInit
+HAL_PWR_EnableBkUpAccess
+HAL_RCC_OscConfig
+Error_Handler
+HAL_RCCEx_PeriphCLKConfig
+HAL_PWR_DisableBkUpAccess

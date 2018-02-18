@@ -1,0 +1,254 @@
+ARM GAS  /tmp/cc6KsCZ4.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m4
+   3              		.eabi_attribute 27, 1
+   4              		.eabi_attribute 28, 1
+   5              		.fpu fpv4-sp-d16
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 6
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.thumb
+  16              		.file	"SEGGER_SYSVIEW_Config_NoOS.c"
+  17              		.text
+  18              	.Ltext0:
+  19              		.cfi_sections	.debug_frame
+  20              		.section	.rodata
+  21              		.align	2
+  22              	.LC0:
+  23 0000 4E3D4465 		.ascii	"N=Demo Application,D=Cortex-M4\000"
+  23      6D6F2041 
+  23      70706C69 
+  23      63617469 
+  23      6F6E2C44 
+  24 001f 00       		.align	2
+  25              	.LC1:
+  26 0020 49233135 		.ascii	"I#15=SysTick\000"
+  26      3D537973 
+  26      5469636B 
+  26      00
+  27              		.section	.text._cbSendSystemDesc,"ax",%progbits
+  28              		.align	2
+  29              		.thumb
+  30              		.thumb_func
+  32              	_cbSendSystemDesc:
+  33              	.LFB0:
+  34              		.file 1 "../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c"
+   1:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** /*********************************************************************
+   2:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *                SEGGER Microcontroller GmbH & Co. KG                *
+   3:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *                        The Embedded Experts                        *
+   4:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** **********************************************************************
+   5:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *                                                                    *
+   6:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *       (c) 2015 - 2017  SEGGER Microcontroller GmbH & Co. KG        *
+   7:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *                                                                    *
+   8:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *       www.segger.com     Support: support@segger.com               *
+   9:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *                                                                    *
+  10:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** **********************************************************************
+  11:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *                                                                    *
+  12:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *       SEGGER SystemView * Real-time application analysis           *
+  13:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *                                                                    *
+  14:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** **********************************************************************
+  15:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *                                                                    *
+  16:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * All rights reserved.                                               *
+  17:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *                                                                    *
+ARM GAS  /tmp/cc6KsCZ4.s 			page 2
+
+
+  18:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * SEGGER strongly recommends to not make any changes                 *
+  19:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * to or modify the source code of this software in order to stay     *
+  20:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * compatible with the RTT protocol and J-Link.                       *
+  21:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *                                                                    *
+  22:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * Redistribution and use in source and binary forms, with or         *
+  23:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * without modification, are permitted provided that the following    *
+  24:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * conditions are met:                                                *
+  25:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *                                                                    *
+  26:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * o Redistributions of source code must retain the above copyright   *
+  27:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *   notice, this list of conditions and the following disclaimer.    *
+  28:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *                                                                    *
+  29:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * o Redistributions in binary form must reproduce the above          *
+  30:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *   copyright notice, this list of conditions and the following      *
+  31:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *   disclaimer in the documentation and/or other materials provided  *
+  32:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *   with the distribution.                                           *
+  33:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *                                                                    *
+  34:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * o Neither the name of SEGGER Microcontroller GmbH & Co. KG         *
+  35:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *   nor the names of its contributors may be used to endorse or      *
+  36:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *   promote products derived from this software without specific     *
+  37:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *   prior written permission.                                        *
+  38:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *                                                                    *
+  39:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND             *
+  40:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,        *
+  41:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF           *
+  42:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE           *
+  43:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * DISCLAIMED. IN NO EVENT SHALL SEGGER Microcontroller BE LIABLE FOR *
+  44:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR           *
+  45:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT  *
+  46:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;    *
+  47:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF      *
+  48:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT          *
+  49:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE  *
+  50:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH   *
+  51:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** * DAMAGE.                                                            *
+  52:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *                                                                    *
+  53:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** **********************************************************************
+  54:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *                                                                    *
+  55:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *       SystemView version: V2.50                                    *
+  56:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *                                                                    *
+  57:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** **********************************************************************
+  58:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** -------------------------- END-OF-HEADER -----------------------------
+  59:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** 
+  60:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** File    : SEGGER_SYSVIEW_Config_NoOS.c
+  61:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** Purpose : Sample setup configuration of SystemView without an OS.
+  62:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** Revision: $Rev: 3734 $
+  63:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** */
+  64:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** #include "SEGGER_SYSVIEW.h"
+  65:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** 
+  66:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** // SystemcoreClock can be used in most CMSIS compatible projects.
+  67:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** // In non-CMSIS projects define SYSVIEW_CPU_FREQ.
+  68:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** extern unsigned int SystemCoreClock;
+  69:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** 
+  70:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** /*********************************************************************
+  71:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *
+  72:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *       Defines, configurable
+  73:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *
+  74:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** **********************************************************************
+ARM GAS  /tmp/cc6KsCZ4.s 			page 3
+
+
+  75:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** */
+  76:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** // The application name to be displayed in SystemViewer
+  77:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** #define SYSVIEW_APP_NAME        "Demo Application"
+  78:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** 
+  79:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** // The target device name
+  80:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** #define SYSVIEW_DEVICE_NAME     "Cortex-M4"
+  81:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** 
+  82:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** // Frequency of the timestamp. Must match SEGGER_SYSVIEW_Conf.h
+  83:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** #define SYSVIEW_TIMESTAMP_FREQ  (SystemCoreClock)
+  84:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** 
+  85:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** // System Frequency. SystemcoreClock is used in most CMSIS compatible projects.
+  86:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** #define SYSVIEW_CPU_FREQ        (SystemCoreClock)
+  87:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** 
+  88:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** // The lowest RAM address used for IDs (pointers)
+  89:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** #define SYSVIEW_RAM_BASE        (0x10000000)
+  90:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** 
+  91:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** /********************************************************************* 
+  92:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *
+  93:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *       _cbSendSystemDesc()
+  94:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *
+  95:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *  Function description
+  96:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *    Sends SystemView description strings.
+  97:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** */
+  98:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** static void _cbSendSystemDesc(void) {
+  35              		.loc 1 98 0
+  36              		.cfi_startproc
+  37              		@ args = 0, pretend = 0, frame = 0
+  38              		@ frame_needed = 1, uses_anonymous_args = 0
+  39 0000 80B5     		push	{r7, lr}
+  40              	.LCFI0:
+  41              		.cfi_def_cfa_offset 8
+  42              		.cfi_offset 7, -8
+  43              		.cfi_offset 14, -4
+  44 0002 00AF     		add	r7, sp, #0
+  45              	.LCFI1:
+  46              		.cfi_def_cfa_register 7
+  99:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c ****   SEGGER_SYSVIEW_SendSysDesc("N="SYSVIEW_APP_NAME",D="SYSVIEW_DEVICE_NAME);
+  47              		.loc 1 99 0
+  48 0004 0348     		ldr	r0, .L2
+  49 0006 FFF7FEFF 		bl	SEGGER_SYSVIEW_SendSysDesc
+ 100:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c ****   SEGGER_SYSVIEW_SendSysDesc("I#15=SysTick");
+  50              		.loc 1 100 0
+  51 000a 0348     		ldr	r0, .L2+4
+  52 000c FFF7FEFF 		bl	SEGGER_SYSVIEW_SendSysDesc
+ 101:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** }
+  53              		.loc 1 101 0
+  54 0010 80BD     		pop	{r7, pc}
+  55              	.L3:
+  56 0012 00BF     		.align	2
+  57              	.L2:
+  58 0014 00000000 		.word	.LC0
+  59 0018 20000000 		.word	.LC1
+  60              		.cfi_endproc
+  61              	.LFE0:
+  63              		.section	.text.SEGGER_SYSVIEW_Conf,"ax",%progbits
+  64              		.align	2
+  65              		.global	SEGGER_SYSVIEW_Conf
+ARM GAS  /tmp/cc6KsCZ4.s 			page 4
+
+
+  66              		.thumb
+  67              		.thumb_func
+  69              	SEGGER_SYSVIEW_Conf:
+  70              	.LFB1:
+ 102:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** 
+ 103:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** /*********************************************************************
+ 104:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *
+ 105:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *       Global functions
+ 106:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** *
+ 107:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** **********************************************************************
+ 108:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** */
+ 109:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** void SEGGER_SYSVIEW_Conf(void) {
+  71              		.loc 1 109 0
+  72              		.cfi_startproc
+  73              		@ args = 0, pretend = 0, frame = 0
+  74              		@ frame_needed = 1, uses_anonymous_args = 0
+  75 0000 80B5     		push	{r7, lr}
+  76              	.LCFI2:
+  77              		.cfi_def_cfa_offset 8
+  78              		.cfi_offset 7, -8
+  79              		.cfi_offset 14, -4
+  80 0002 00AF     		add	r7, sp, #0
+  81              	.LCFI3:
+  82              		.cfi_def_cfa_register 7
+ 110:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c ****   SEGGER_SYSVIEW_Init(SYSVIEW_TIMESTAMP_FREQ, SYSVIEW_CPU_FREQ, 
+  83              		.loc 1 110 0
+  84 0004 074B     		ldr	r3, .L5
+  85 0006 1A68     		ldr	r2, [r3]
+  86 0008 064B     		ldr	r3, .L5
+  87 000a 1B68     		ldr	r3, [r3]
+  88 000c 1046     		mov	r0, r2
+  89 000e 1946     		mov	r1, r3
+  90 0010 0022     		movs	r2, #0
+  91 0012 054B     		ldr	r3, .L5+4
+  92 0014 FFF7FEFF 		bl	SEGGER_SYSVIEW_Init
+ 111:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c ****                       0, _cbSendSystemDesc);
+ 112:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c ****   SEGGER_SYSVIEW_SetRAMBase(SYSVIEW_RAM_BASE);
+  93              		.loc 1 112 0
+  94 0018 4FF08050 		mov	r0, #268435456
+  95 001c FFF7FEFF 		bl	SEGGER_SYSVIEW_SetRAMBase
+ 113:../../../SystemView/Sample/Config/SEGGER_SYSVIEW_Config_NoOS.c **** }
+  96              		.loc 1 113 0
+  97 0020 80BD     		pop	{r7, pc}
+  98              	.L6:
+  99 0022 00BF     		.align	2
+ 100              	.L5:
+ 101 0024 00000000 		.word	SystemCoreClock
+ 102 0028 00000000 		.word	_cbSendSystemDesc
+ 103              		.cfi_endproc
+ 104              	.LFE1:
+ 106              		.text
+ 107              	.Letext0:
+ARM GAS  /tmp/cc6KsCZ4.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 SEGGER_SYSVIEW_Config_NoOS.c
+     /tmp/cc6KsCZ4.s:21     .rodata:0000000000000000 $d
+     /tmp/cc6KsCZ4.s:28     .text._cbSendSystemDesc:0000000000000000 $t
+     /tmp/cc6KsCZ4.s:32     .text._cbSendSystemDesc:0000000000000000 _cbSendSystemDesc
+     /tmp/cc6KsCZ4.s:58     .text._cbSendSystemDesc:0000000000000014 $d
+     /tmp/cc6KsCZ4.s:64     .text.SEGGER_SYSVIEW_Conf:0000000000000000 $t
+     /tmp/cc6KsCZ4.s:69     .text.SEGGER_SYSVIEW_Conf:0000000000000000 SEGGER_SYSVIEW_Conf
+     /tmp/cc6KsCZ4.s:101    .text.SEGGER_SYSVIEW_Conf:0000000000000024 $d
+                     .debug_frame:0000000000000010 $d
+
+UNDEFINED SYMBOLS
+SEGGER_SYSVIEW_SendSysDesc
+SEGGER_SYSVIEW_Init
+SEGGER_SYSVIEW_SetRAMBase
+SystemCoreClock
