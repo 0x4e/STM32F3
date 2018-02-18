@@ -323,7 +323,7 @@ Discarded input sections
                 0x0000000000000000       0x88 build/stm32f3xx_hal_flash.o
  .debug_ranges  0x0000000000000000       0x78 build/stm32f3xx_hal_flash.o
  .debug_line    0x0000000000000000      0x352 build/stm32f3xx_hal_flash.o
- .debug_str     0x0000000000000000      0x537 build/stm32f3xx_hal_flash.o
+ .debug_str     0x0000000000000000      0x536 build/stm32f3xx_hal_flash.o
  .comment       0x0000000000000000       0x71 build/stm32f3xx_hal_flash.o
  .debug_frame   0x0000000000000000      0x22c build/stm32f3xx_hal_flash.o
  .ARM.attributes
@@ -368,7 +368,7 @@ Discarded input sections
                 0x0000000000000000       0x48 build/stm32f3xx_hal_i2c_ex.o
  .debug_ranges  0x0000000000000000       0x38 build/stm32f3xx_hal_i2c_ex.o
  .debug_line    0x0000000000000000      0x2df build/stm32f3xx_hal_i2c_ex.o
- .debug_str     0x0000000000000000      0x81a build/stm32f3xx_hal_i2c_ex.o
+ .debug_str     0x0000000000000000      0x819 build/stm32f3xx_hal_i2c_ex.o
  .comment       0x0000000000000000       0x71 build/stm32f3xx_hal_i2c_ex.o
  .debug_frame   0x0000000000000000      0x100 build/stm32f3xx_hal_i2c_ex.o
  .ARM.attributes
@@ -393,7 +393,7 @@ Discarded input sections
                 0x0000000000000000       0x40 build/stm32f3xx_hal_pwr_ex.o
  .debug_ranges  0x0000000000000000       0x30 build/stm32f3xx_hal_pwr_ex.o
  .debug_line    0x0000000000000000      0x1e2 build/stm32f3xx_hal_pwr_ex.o
- .debug_str     0x0000000000000000      0x2dd build/stm32f3xx_hal_pwr_ex.o
+ .debug_str     0x0000000000000000      0x2dc build/stm32f3xx_hal_pwr_ex.o
  .comment       0x0000000000000000       0x71 build/stm32f3xx_hal_pwr_ex.o
  .debug_frame   0x0000000000000000       0xc0 build/stm32f3xx_hal_pwr_ex.o
  .ARM.attributes
@@ -421,7 +421,7 @@ Discarded input sections
  .debug_aranges
                 0x0000000000000000       0x18 build/stm32f3xx_hal_adc_ex.o
  .debug_line    0x0000000000000000       0xaa build/stm32f3xx_hal_adc_ex.o
- .debug_str     0x0000000000000000      0x1df build/stm32f3xx_hal_adc_ex.o
+ .debug_str     0x0000000000000000      0x1de build/stm32f3xx_hal_adc_ex.o
  .comment       0x0000000000000000       0x71 build/stm32f3xx_hal_adc_ex.o
  .ARM.attributes
                 0x0000000000000000       0x39 build/stm32f3xx_hal_adc_ex.o
@@ -447,7 +447,7 @@ Discarded input sections
                 0x0000000000000000       0x48 build/stm32f3xx_hal_uart_ex.o
  .debug_ranges  0x0000000000000000       0x38 build/stm32f3xx_hal_uart_ex.o
  .debug_line    0x0000000000000000      0x2a2 build/stm32f3xx_hal_uart_ex.o
- .debug_str     0x0000000000000000      0x7e5 build/stm32f3xx_hal_uart_ex.o
+ .debug_str     0x0000000000000000      0x7e4 build/stm32f3xx_hal_uart_ex.o
  .comment       0x0000000000000000       0x71 build/stm32f3xx_hal_uart_ex.o
  .debug_frame   0x0000000000000000      0x100 build/stm32f3xx_hal_uart_ex.o
  .ARM.attributes
@@ -486,7 +486,7 @@ Discarded input sections
                 0x0000000000000000       0x78 build/stm32f3xx_hal_pwr.o
  .debug_ranges  0x0000000000000000       0x68 build/stm32f3xx_hal_pwr.o
  .debug_line    0x0000000000000000      0x243 build/stm32f3xx_hal_pwr.o
- .debug_str     0x0000000000000000      0x421 build/stm32f3xx_hal_pwr.o
+ .debug_str     0x0000000000000000      0x420 build/stm32f3xx_hal_pwr.o
  .comment       0x0000000000000000       0x71 build/stm32f3xx_hal_pwr.o
  .debug_frame   0x0000000000000000      0x1d0 build/stm32f3xx_hal_pwr.o
  .ARM.attributes
@@ -529,7 +529,7 @@ Discarded input sections
                 0x0000000000000000       0x88 build/stm32f3xx_hal_dma.o
  .debug_ranges  0x0000000000000000       0x78 build/stm32f3xx_hal_dma.o
  .debug_line    0x0000000000000000      0x39f build/stm32f3xx_hal_dma.o
- .debug_str     0x0000000000000000      0x642 build/stm32f3xx_hal_dma.o
+ .debug_str     0x0000000000000000      0x641 build/stm32f3xx_hal_dma.o
  .comment       0x0000000000000000       0x71 build/stm32f3xx_hal_dma.o
  .debug_frame   0x0000000000000000      0x240 build/stm32f3xx_hal_dma.o
  .ARM.attributes
@@ -690,7 +690,7 @@ Discarded input sections
                 0x0000000000000000      0x260 build/stm32f3xx_hal_i2c.o
  .debug_ranges  0x0000000000000000      0x250 build/stm32f3xx_hal_i2c.o
  .debug_line    0x0000000000000000     0x11e4 build/stm32f3xx_hal_i2c.o
- .debug_str     0x0000000000000000      0xe86 build/stm32f3xx_hal_i2c.o
+ .debug_str     0x0000000000000000      0xe85 build/stm32f3xx_hal_i2c.o
  .comment       0x0000000000000000       0x71 build/stm32f3xx_hal_i2c.o
  .debug_frame   0x0000000000000000      0xba4 build/stm32f3xx_hal_i2c.o
  .ARM.attributes
@@ -703,7 +703,7 @@ Discarded input sections
  .debug_aranges
                 0x0000000000000000       0x18 build/stm32f3xx_hal_adc.o
  .debug_line    0x0000000000000000       0xaa build/stm32f3xx_hal_adc.o
- .debug_str     0x0000000000000000      0x1dc build/stm32f3xx_hal_adc.o
+ .debug_str     0x0000000000000000      0x1db build/stm32f3xx_hal_adc.o
  .comment       0x0000000000000000       0x71 build/stm32f3xx_hal_adc.o
  .ARM.attributes
                 0x0000000000000000       0x39 build/stm32f3xx_hal_adc.o
@@ -1030,7 +1030,7 @@ Discarded input sections
                 0x0000000000000000       0x38 build/stm32f3xx_hal_rcc_ex.o
  .debug_ranges  0x0000000000000000       0x28 build/stm32f3xx_hal_rcc_ex.o
  .debug_line    0x0000000000000000      0x408 build/stm32f3xx_hal_rcc_ex.o
- .debug_str     0x0000000000000000      0x4f1 build/stm32f3xx_hal_rcc_ex.o
+ .debug_str     0x0000000000000000      0x4f0 build/stm32f3xx_hal_rcc_ex.o
  .comment       0x0000000000000000       0x71 build/stm32f3xx_hal_rcc_ex.o
  .debug_frame   0x0000000000000000       0xb8 build/stm32f3xx_hal_rcc_ex.o
  .ARM.attributes
@@ -1077,7 +1077,7 @@ Discarded input sections
                 0x0000000000000000       0x98 build/stm32f3xx_hal_flash_ex.o
  .debug_ranges  0x0000000000000000       0x88 build/stm32f3xx_hal_flash_ex.o
  .debug_line    0x0000000000000000      0x416 build/stm32f3xx_hal_flash_ex.o
- .debug_str     0x0000000000000000      0x673 build/stm32f3xx_hal_flash_ex.o
+ .debug_str     0x0000000000000000      0x672 build/stm32f3xx_hal_flash_ex.o
  .comment       0x0000000000000000       0x71 build/stm32f3xx_hal_flash_ex.o
  .debug_frame   0x0000000000000000      0x288 build/stm32f3xx_hal_flash_ex.o
  .ARM.attributes
@@ -1090,7 +1090,7 @@ Discarded input sections
  .debug_aranges
                 0x0000000000000000       0x18 build/croutine.o
  .debug_line    0x0000000000000000       0x1d build/croutine.o
- .debug_str     0x0000000000000000      0x1aa build/croutine.o
+ .debug_str     0x0000000000000000      0x1a9 build/croutine.o
  .comment       0x0000000000000000       0x71 build/croutine.o
  .ARM.attributes
                 0x0000000000000000       0x39 build/croutine.o
@@ -1189,7 +1189,7 @@ Discarded input sections
                 0x0000000000000000      0x110 build/queue.o
  .debug_ranges  0x0000000000000000      0x100 build/queue.o
  .debug_line    0x0000000000000000      0x936 build/queue.o
- .debug_str     0x0000000000000000      0x85b build/queue.o
+ .debug_str     0x0000000000000000      0x85a build/queue.o
  .comment       0x0000000000000000       0x71 build/queue.o
  .debug_frame   0x0000000000000000      0x500 build/queue.o
  .ARM.attributes
@@ -1288,7 +1288,7 @@ Discarded input sections
  .debug_aranges
                 0x0000000000000000       0x18 build/timers.o
  .debug_line    0x0000000000000000       0x1d build/timers.o
- .debug_str     0x0000000000000000      0x1a8 build/timers.o
+ .debug_str     0x0000000000000000      0x1a7 build/timers.o
  .comment       0x0000000000000000       0x71 build/timers.o
  .ARM.attributes
                 0x0000000000000000       0x39 build/timers.o
@@ -2569,7 +2569,7 @@ LOAD /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtn.o
                 0x0000000000000997       0x22 /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtn.o
 OUTPUT(build/STM32F3.elf elf32-littlearm)
 
-.debug_info     0x0000000000000000    0x129b5
+.debug_info     0x0000000000000000    0x129b4
  .debug_info    0x0000000000000000      0xaa9 build/stm32f3xx_hal_msp.o
  .debug_info    0x0000000000000aa9      0x972 build/stm32f3xx_hal_timebase_TIM.o
  .debug_info    0x000000000000141b     0x19b4 build/main.o
@@ -2590,7 +2590,7 @@ OUTPUT(build/STM32F3.elf elf32-littlearm)
  .debug_info    0x000000000000e22b      0xde0 build/SEGGER_RTT.o
  .debug_info    0x000000000000f00b     0x348e build/SEGGER_SYSVIEW.o
  .debug_info    0x0000000000012499      0x4ab build/SEGGER_SYSVIEW_FreeRTOS.o
- .debug_info    0x0000000000012944       0x71 build/startup_stm32f302x8.o
+ .debug_info    0x0000000000012944       0x70 build/startup_stm32f302x8.o
 
 .debug_abbrev   0x0000000000000000     0x2248
  .debug_abbrev  0x0000000000000000      0x157 build/stm32f3xx_hal_msp.o
@@ -2727,47 +2727,47 @@ OUTPUT(build/STM32F3.elf elf32-littlearm)
  .debug_line    0x000000000000742c      0x1f3 build/SEGGER_SYSVIEW_FreeRTOS.o
  .debug_line    0x000000000000761f       0x74 build/startup_stm32f302x8.o
 
-.debug_str      0x0000000000000000     0x57fc
- .debug_str     0x0000000000000000      0xa01 build/stm32f3xx_hal_msp.o
-                                        0xa91 (size before relaxing)
- .debug_str     0x0000000000000a01      0x308 build/stm32f3xx_hal_timebase_TIM.o
-                                        0xa4e (size before relaxing)
- .debug_str     0x0000000000000d09      0x56a build/main.o
-                                       0x124c (size before relaxing)
- .debug_str     0x0000000000001273       0xe1 build/system_stm32f3xx.o
-                                        0x2fb (size before relaxing)
- .debug_str     0x0000000000001354       0x72 build/stm32f3xx_it.o
+.debug_str      0x0000000000000000     0x57c5
+ .debug_str     0x0000000000000000      0xa00 build/stm32f3xx_hal_msp.o
+                                        0xa90 (size before relaxing)
+ .debug_str     0x0000000000000a00      0x308 build/stm32f3xx_hal_timebase_TIM.o
+                                        0xa4d (size before relaxing)
+ .debug_str     0x0000000000000d08      0x56a build/main.o
+                                       0x124b (size before relaxing)
+ .debug_str     0x0000000000001272       0xe1 build/system_stm32f3xx.o
+                                        0x2fa (size before relaxing)
+ .debug_str     0x0000000000001353       0x3c build/stm32f3xx_it.o
                                         0x5c3 (size before relaxing)
- .debug_str     0x00000000000013c6       0x90 build/SEGGER_SYSVIEW_Config_FreeRTOS.o
-                                        0x236 (size before relaxing)
- .debug_str     0x0000000000001456      0x775 build/stm32f3xx_hal_tim_ex.o
-                                        0xd5b (size before relaxing)
- .debug_str     0x0000000000001bcb      0x1d6 build/stm32f3xx_hal.o
-                                        0x7c4 (size before relaxing)
- .debug_str     0x0000000000001da1      0x2c1 build/stm32f3xx_hal_cortex.o
-                                        0x95d (size before relaxing)
- .debug_str     0x0000000000002062      0x1fe build/stm32f3xx_hal_rcc.o
-                                        0x65d (size before relaxing)
- .debug_str     0x0000000000002260      0x161 build/stm32f3xx_hal_gpio.o
-                                        0x470 (size before relaxing)
- .debug_str     0x00000000000023c1      0x683 build/stm32f3xx_hal_uart.o
-                                        0xdd5 (size before relaxing)
- .debug_str     0x0000000000002a44      0xb4a build/stm32f3xx_hal_tim.o
-                                       0x1329 (size before relaxing)
- .debug_str     0x000000000000358e      0x158 build/list.o
-                                        0x2f9 (size before relaxing)
- .debug_str     0x00000000000036e6      0x264 build/port.o
-                                        0x44b (size before relaxing)
- .debug_str     0x000000000000394a      0x1ea build/heap_4.o
-                                        0x3c3 (size before relaxing)
- .debug_str     0x0000000000003b34      0xc18 build/tasks.o
-                                        0xf5d (size before relaxing)
- .debug_str     0x000000000000474c      0x3d1 build/SEGGER_RTT.o
-                                        0x579 (size before relaxing)
- .debug_str     0x0000000000004b1d      0xc26 build/SEGGER_SYSVIEW.o
-                                        0xf02 (size before relaxing)
- .debug_str     0x0000000000005743       0xb9 build/SEGGER_SYSVIEW_FreeRTOS.o
-                                        0x384 (size before relaxing)
+ .debug_str     0x000000000000138f       0x90 build/SEGGER_SYSVIEW_Config_FreeRTOS.o
+                                        0x235 (size before relaxing)
+ .debug_str     0x000000000000141f      0x775 build/stm32f3xx_hal_tim_ex.o
+                                        0xd5a (size before relaxing)
+ .debug_str     0x0000000000001b94      0x1d6 build/stm32f3xx_hal.o
+                                        0x7c3 (size before relaxing)
+ .debug_str     0x0000000000001d6a      0x2c1 build/stm32f3xx_hal_cortex.o
+                                        0x95c (size before relaxing)
+ .debug_str     0x000000000000202b      0x1fe build/stm32f3xx_hal_rcc.o
+                                        0x65c (size before relaxing)
+ .debug_str     0x0000000000002229      0x161 build/stm32f3xx_hal_gpio.o
+                                        0x46f (size before relaxing)
+ .debug_str     0x000000000000238a      0x683 build/stm32f3xx_hal_uart.o
+                                        0xdd4 (size before relaxing)
+ .debug_str     0x0000000000002a0d      0xb4a build/stm32f3xx_hal_tim.o
+                                       0x1328 (size before relaxing)
+ .debug_str     0x0000000000003557      0x158 build/list.o
+                                        0x2f8 (size before relaxing)
+ .debug_str     0x00000000000036af      0x264 build/port.o
+                                        0x44a (size before relaxing)
+ .debug_str     0x0000000000003913      0x1ea build/heap_4.o
+                                        0x3c2 (size before relaxing)
+ .debug_str     0x0000000000003afd      0xc18 build/tasks.o
+                                        0xf5c (size before relaxing)
+ .debug_str     0x0000000000004715      0x3d1 build/SEGGER_RTT.o
+                                        0x578 (size before relaxing)
+ .debug_str     0x0000000000004ae6      0xc26 build/SEGGER_SYSVIEW.o
+                                        0xf01 (size before relaxing)
+ .debug_str     0x000000000000570c       0xb9 build/SEGGER_SYSVIEW_FreeRTOS.o
+                                        0x383 (size before relaxing)
 
 .comment        0x0000000000000000       0x70
  .comment       0x0000000000000000       0x70 build/stm32f3xx_hal_msp.o

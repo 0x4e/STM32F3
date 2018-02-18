@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccL7NlMG.s 			page 1
+ARM GAS  /tmp/ccwZNnDp.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccL7NlMG.s 			page 1
   27:Src/main.c    ****   * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
   28:Src/main.c    ****   * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
   29:Src/main.c    ****   * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-ARM GAS  /tmp/ccL7NlMG.s 			page 2
+ARM GAS  /tmp/ccwZNnDp.s 			page 2
 
 
   30:Src/main.c    ****   *
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccL7NlMG.s 			page 1
   56 001c FFF7FEFF 		bl	HAL_UART_Transmit
   58:Src/main.c    **** }
   57              		.loc 1 58 0
-ARM GAS  /tmp/ccL7NlMG.s 			page 3
+ARM GAS  /tmp/ccwZNnDp.s 			page 3
 
 
   58 0020 0837     		adds	r7, r7, #8
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccL7NlMG.s 			page 1
  108 002a 7868     		ldr	r0, [r7, #4]
  109 002c 1946     		mov	r1, r3
  110 002e 0222     		movs	r2, #2
-ARM GAS  /tmp/ccL7NlMG.s 			page 4
+ARM GAS  /tmp/ccwZNnDp.s 			page 4
 
 
  111 0030 0A23     		movs	r3, #10
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccL7NlMG.s 			page 1
  158              		.loc 1 73 0
  159 0016 7B68     		ldr	r3, [r7, #4]
  160 0018 9BB2     		uxth	r3, r3
-ARM GAS  /tmp/ccL7NlMG.s 			page 5
+ARM GAS  /tmp/ccwZNnDp.s 			page 5
 
 
  161 001a 0B48     		ldr	r0, .L7
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccL7NlMG.s 			page 1
   84:Src/main.c    **** 
   85:Src/main.c    **** 
   86:Src/main.c    **** void blink_task(void *pvParameters)
-ARM GAS  /tmp/ccL7NlMG.s 			page 6
+ARM GAS  /tmp/ccwZNnDp.s 			page 6
 
 
   87:Src/main.c    **** {
@@ -340,12 +340,12 @@ ARM GAS  /tmp/ccL7NlMG.s 			page 1
   98:Src/main.c    **** 
   99:Src/main.c    **** 		  //vTaskDelay(100);
  100:Src/main.c    **** 		  //ch = getchar();
- 101:Src/main.c    **** 		  HAL_UART_Receive( &huart1, (uint8_t *)aRxBuffer, 20, HAL_MAX_DELAY);
+ 101:Src/main.c    **** 		  HAL_UART_Receive( &huart1, (uint8_t *)aRxBuffer, 20, 0x1FFFFFF);
  232              		.loc 1 101 0 discriminator 1
  233 001a 0F48     		ldr	r0, .L11+4
  234 001c 0F49     		ldr	r1, .L11+8
  235 001e 1422     		movs	r2, #20
- 236 0020 4FF0FF33 		mov	r3, #-1
+ 236 0020 6FF07E43 		mvn	r3, #-33554432
  237 0024 FFF7FEFF 		bl	HAL_UART_Receive
  102:Src/main.c    **** 		  HAL_UART_Transmit(&huart1,aRxBuffer, 20,10);
  238              		.loc 1 102 0 discriminator 1
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccL7NlMG.s 			page 1
  244              		.loc 1 103 0 discriminator 1
  245 0034 07F10C03 		add	r3, r7, #12
  246 0038 0748     		ldr	r0, .L11+4
-ARM GAS  /tmp/ccL7NlMG.s 			page 7
+ARM GAS  /tmp/ccwZNnDp.s 			page 7
 
 
  247 003a 1946     		mov	r1, r3
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccL7NlMG.s 			page 1
  291 0004 02AF     		add	r7, sp, #8
  292              	.LCFI20:
  293              		.cfi_def_cfa 7, 8
-ARM GAS  /tmp/ccL7NlMG.s 			page 8
+ARM GAS  /tmp/ccwZNnDp.s 			page 8
 
 
  114:Src/main.c    **** 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccL7NlMG.s 			page 1
  136:Src/main.c    ****   }
  326              		.loc 1 136 0 discriminator 1
  327 0044 FEE7     		b	.L14
-ARM GAS  /tmp/ccL7NlMG.s 			page 9
+ARM GAS  /tmp/ccwZNnDp.s 			page 9
 
 
  328              	.L16:
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccL7NlMG.s 			page 1
  368 0010 FB62     		str	r3, [r7, #44]
  153:Src/main.c    ****   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
  369              		.loc 1 153 0
-ARM GAS  /tmp/ccL7NlMG.s 			page 10
+ARM GAS  /tmp/ccwZNnDp.s 			page 10
 
 
  370 0012 0223     		movs	r3, #2
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccL7NlMG.s 			page 1
  407 0050 FFF7FEFF 		bl	HAL_RCC_ClockConfig
  408 0054 0346     		mov	r3, r0
  409 0056 002B     		cmp	r3, #0
-ARM GAS  /tmp/ccL7NlMG.s 			page 11
+ARM GAS  /tmp/ccwZNnDp.s 			page 11
 
 
  410 0058 01D0     		beq	.L19
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccL7NlMG.s 			page 1
  451              	MX_USART1_UART_Init:
  452              	.LFB134:
  186:Src/main.c    **** 
-ARM GAS  /tmp/ccL7NlMG.s 			page 12
+ARM GAS  /tmp/ccwZNnDp.s 			page 12
 
 
  187:Src/main.c    **** /* USART1 init function */
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccL7NlMG.s 			page 1
  495 0032 0022     		movs	r2, #0
  496 0034 DA61     		str	r2, [r3, #28]
  199:Src/main.c    ****   huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
-ARM GAS  /tmp/ccL7NlMG.s 			page 13
+ARM GAS  /tmp/ccwZNnDp.s 			page 13
 
 
  497              		.loc 1 199 0
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccL7NlMG.s 			page 1
  535 0000 80B5     		push	{r7, lr}
  536              	.LCFI28:
  537              		.cfi_def_cfa_offset 8
-ARM GAS  /tmp/ccL7NlMG.s 			page 14
+ARM GAS  /tmp/ccwZNnDp.s 			page 14
 
 
  538              		.cfi_offset 7, -8
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccL7NlMG.s 			page 1
  585              	.LBB5:
  225:Src/main.c    ****   __HAL_RCC_GPIOB_CLK_ENABLE();
  586              		.loc 1 225 0
-ARM GAS  /tmp/ccL7NlMG.s 			page 15
+ARM GAS  /tmp/ccwZNnDp.s 			page 15
 
 
  587 004e 184A     		ldr	r2, .L27
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccL7NlMG.s 			page 1
  626              		.loc 1 240 0
  627 009a 0023     		movs	r3, #0
  628 009c 3B62     		str	r3, [r7, #32]
-ARM GAS  /tmp/ccL7NlMG.s 			page 16
+ARM GAS  /tmp/ccwZNnDp.s 			page 16
 
 
  241:Src/main.c    ****   HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccL7NlMG.s 			page 1
  670 0002 82B0     		sub	sp, sp, #8
  671              	.LCFI34:
  672              		.cfi_def_cfa_offset 16
-ARM GAS  /tmp/ccL7NlMG.s 			page 17
+ARM GAS  /tmp/ccwZNnDp.s 			page 17
 
 
  673 0004 00AF     		add	r7, sp, #0
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccL7NlMG.s 			page 1
  710              		.loc 1 274 0
  711              		.cfi_startproc
  712              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccL7NlMG.s 			page 18
+ARM GAS  /tmp/ccwZNnDp.s 			page 18
 
 
  713              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -1057,41 +1057,41 @@ ARM GAS  /tmp/ccL7NlMG.s 			page 1
  742              		.file 14 "../../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h"
  743              		.file 15 "../../../FreeRTOS_9_0/Source/include/task.h"
  744              		.file 16 "../../Drivers/CMSIS/Include/core_cm4.h"
-ARM GAS  /tmp/ccL7NlMG.s 			page 19
+ARM GAS  /tmp/ccwZNnDp.s 			page 19
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 main.c
                             *COM*:0000000000000070 huart1
                             *COM*:0000000000000014 aRxBuffer
-     /tmp/ccL7NlMG.s:23     .text.debugPrint:0000000000000000 $t
-     /tmp/ccL7NlMG.s:27     .text.debugPrint:0000000000000000 debugPrint
-     /tmp/ccL7NlMG.s:70     .text.debugPrintln:0000000000000000 $t
-     /tmp/ccL7NlMG.s:74     .text.debugPrintln:0000000000000000 debugPrintln
-     /tmp/ccL7NlMG.s:126    .text._read:0000000000000000 $t
-     /tmp/ccL7NlMG.s:131    .text._read:0000000000000000 _read
-     /tmp/ccL7NlMG.s:196    .text._read:0000000000000048 $d
-     /tmp/ccL7NlMG.s:201    .text.blink_task:0000000000000000 $t
-     /tmp/ccL7NlMG.s:205    .text.blink_task:0000000000000000 blink_task
-     /tmp/ccL7NlMG.s:261    .text.blink_task:0000000000000054 $d
-     /tmp/ccL7NlMG.s:268    .rodata:0000000000000000 $d
-     /tmp/ccL7NlMG.s:272    .text.main:0000000000000000 $t
-     /tmp/ccL7NlMG.s:277    .text.main:0000000000000000 main
-     /tmp/ccL7NlMG.s:343    .text.SystemClock_Config:0000000000000000 SystemClock_Config
-     /tmp/ccL7NlMG.s:529    .text.MX_GPIO_Init:0000000000000000 MX_GPIO_Init
-     /tmp/ccL7NlMG.s:451    .text.MX_USART1_UART_Init:0000000000000000 MX_USART1_UART_Init
-     /tmp/ccL7NlMG.s:331    .text.main:0000000000000048 $d
-     /tmp/ccL7NlMG.s:338    .text.SystemClock_Config:0000000000000000 $t
-     /tmp/ccL7NlMG.s:708    .text.Error_Handler:0000000000000000 Error_Handler
-     /tmp/ccL7NlMG.s:442    .text.SystemClock_Config:000000000000008c $d
-     /tmp/ccL7NlMG.s:447    .text.MX_USART1_UART_Init:0000000000000000 $t
-     /tmp/ccL7NlMG.s:519    .text.MX_USART1_UART_Init:0000000000000054 $d
-     /tmp/ccL7NlMG.s:525    .text.MX_GPIO_Init:0000000000000000 $t
-     /tmp/ccL7NlMG.s:646    .text.MX_GPIO_Init:00000000000000b0 $d
-     /tmp/ccL7NlMG.s:654    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 $t
-     /tmp/ccL7NlMG.s:659    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 HAL_TIM_PeriodElapsedCallback
-     /tmp/ccL7NlMG.s:698    .text.HAL_TIM_PeriodElapsedCallback:000000000000001c $d
-     /tmp/ccL7NlMG.s:703    .text.Error_Handler:0000000000000000 $t
+     /tmp/ccwZNnDp.s:23     .text.debugPrint:0000000000000000 $t
+     /tmp/ccwZNnDp.s:27     .text.debugPrint:0000000000000000 debugPrint
+     /tmp/ccwZNnDp.s:70     .text.debugPrintln:0000000000000000 $t
+     /tmp/ccwZNnDp.s:74     .text.debugPrintln:0000000000000000 debugPrintln
+     /tmp/ccwZNnDp.s:126    .text._read:0000000000000000 $t
+     /tmp/ccwZNnDp.s:131    .text._read:0000000000000000 _read
+     /tmp/ccwZNnDp.s:196    .text._read:0000000000000048 $d
+     /tmp/ccwZNnDp.s:201    .text.blink_task:0000000000000000 $t
+     /tmp/ccwZNnDp.s:205    .text.blink_task:0000000000000000 blink_task
+     /tmp/ccwZNnDp.s:261    .text.blink_task:0000000000000054 $d
+     /tmp/ccwZNnDp.s:268    .rodata:0000000000000000 $d
+     /tmp/ccwZNnDp.s:272    .text.main:0000000000000000 $t
+     /tmp/ccwZNnDp.s:277    .text.main:0000000000000000 main
+     /tmp/ccwZNnDp.s:343    .text.SystemClock_Config:0000000000000000 SystemClock_Config
+     /tmp/ccwZNnDp.s:529    .text.MX_GPIO_Init:0000000000000000 MX_GPIO_Init
+     /tmp/ccwZNnDp.s:451    .text.MX_USART1_UART_Init:0000000000000000 MX_USART1_UART_Init
+     /tmp/ccwZNnDp.s:331    .text.main:0000000000000048 $d
+     /tmp/ccwZNnDp.s:338    .text.SystemClock_Config:0000000000000000 $t
+     /tmp/ccwZNnDp.s:708    .text.Error_Handler:0000000000000000 Error_Handler
+     /tmp/ccwZNnDp.s:442    .text.SystemClock_Config:000000000000008c $d
+     /tmp/ccwZNnDp.s:447    .text.MX_USART1_UART_Init:0000000000000000 $t
+     /tmp/ccwZNnDp.s:519    .text.MX_USART1_UART_Init:0000000000000054 $d
+     /tmp/ccwZNnDp.s:525    .text.MX_GPIO_Init:0000000000000000 $t
+     /tmp/ccwZNnDp.s:646    .text.MX_GPIO_Init:00000000000000b0 $d
+     /tmp/ccwZNnDp.s:654    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 $t
+     /tmp/ccwZNnDp.s:659    .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 HAL_TIM_PeriodElapsedCallback
+     /tmp/ccwZNnDp.s:698    .text.HAL_TIM_PeriodElapsedCallback:000000000000001c $d
+     /tmp/ccwZNnDp.s:703    .text.Error_Handler:0000000000000000 $t
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS

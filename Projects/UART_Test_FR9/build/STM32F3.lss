@@ -456,11 +456,11 @@ void blink_task(void *pvParameters)
 
 		  //vTaskDelay(100);
 		  //ch = getchar();
-		  HAL_UART_Receive( &huart1, (uint8_t *)aRxBuffer, 20, HAL_MAX_DELAY);
+		  HAL_UART_Receive( &huart1, (uint8_t *)aRxBuffer, 20, 0x1FFFFFF);
  800042a:	480f      	ldr	r0, [pc, #60]	; (8000468 <blink_task+0x58>)
  800042c:	490f      	ldr	r1, [pc, #60]	; (800046c <blink_task+0x5c>)
  800042e:	2214      	movs	r2, #20
- 8000430:	f04f 33ff 	mov.w	r3, #4294967295	; 0xffffffff
+ 8000430:	f06f 437e 	mvn.w	r3, #4261412864	; 0xfe000000
  8000434:	f002 f93a 	bl	80026ac <HAL_UART_Receive>
 		  HAL_UART_Transmit(&huart1,aRxBuffer, 20,10);
  8000438:	480b      	ldr	r0, [pc, #44]	; (8000468 <blink_task+0x58>)

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccIgarPJ.s 			page 1
+ARM GAS  /tmp/ccsVbLDJ.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
   55              	pxOverflowDelayedTaskList:
   56 0000 00000000 		.space	4
   57              		.section	.bss.xPendingReadyList,"aw",%nobits
-ARM GAS  /tmp/ccIgarPJ.s 			page 2
+ARM GAS  /tmp/ccsVbLDJ.s 			page 2
 
 
   58              		.align	2
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  122 0000 00000000 		.space	4
  123              		.section	.bss.uxTaskNumber,"aw",%nobits
  124              		.align	2
-ARM GAS  /tmp/ccIgarPJ.s 			page 3
+ARM GAS  /tmp/ccsVbLDJ.s 			page 3
 
 
  127              	uxTaskNumber:
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
   33:../../../FreeRTOS_9_0/Source/tasks.c ****      *    to support the FreeRTOS project by purchasing a FreeRTOS           *
   34:../../../FreeRTOS_9_0/Source/tasks.c ****      *    tutorial book, reference manual, or both:                          *
   35:../../../FreeRTOS_9_0/Source/tasks.c ****      *    http://www.FreeRTOS.org/Documentation                              *
-ARM GAS  /tmp/ccIgarPJ.s 			page 4
+ARM GAS  /tmp/ccsVbLDJ.s 			page 4
 
 
   36:../../../FreeRTOS_9_0/Source/tasks.c ****      *                                                                       *
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
   90:../../../FreeRTOS_9_0/Source/tasks.c **** 
   91:../../../FreeRTOS_9_0/Source/tasks.c **** /* Set configUSE_STATS_FORMATTING_FUNCTIONS to 2 to include the stats formatting
   92:../../../FreeRTOS_9_0/Source/tasks.c **** functions but without including stdio.h here. */
-ARM GAS  /tmp/ccIgarPJ.s 			page 5
+ARM GAS  /tmp/ccsVbLDJ.s 			page 5
 
 
   93:../../../FreeRTOS_9_0/Source/tasks.c **** #if ( configUSE_STATS_FORMATTING_FUNCTIONS == 1 )
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  147:../../../FreeRTOS_9_0/Source/tasks.c **** 
  148:../../../FreeRTOS_9_0/Source/tasks.c **** /*
  149:../../../FreeRTOS_9_0/Source/tasks.c ****  * Some kernel aware debuggers require the data the debugger needs access to be
-ARM GAS  /tmp/ccIgarPJ.s 			page 6
+ARM GAS  /tmp/ccsVbLDJ.s 			page 6
 
 
  150:../../../FreeRTOS_9_0/Source/tasks.c ****  * global, rather than file scope.
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  204:../../../FreeRTOS_9_0/Source/tasks.c **** 
  205:../../../FreeRTOS_9_0/Source/tasks.c **** 	/* A port optimised version is provided.  Call the port defined macros. */
  206:../../../FreeRTOS_9_0/Source/tasks.c **** 	#define taskRECORD_READY_PRIORITY( uxPriority )	portRECORD_READY_PRIORITY( uxPriority, uxTopReadyP
-ARM GAS  /tmp/ccIgarPJ.s 			page 7
+ARM GAS  /tmp/ccsVbLDJ.s 			page 7
 
 
  207:../../../FreeRTOS_9_0/Source/tasks.c **** 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  261:../../../FreeRTOS_9_0/Source/tasks.c **** 	taskRECORD_READY_PRIORITY( ( pxTCB )->uxPriority );												\
  262:../../../FreeRTOS_9_0/Source/tasks.c **** 	vListInsertEnd( &( pxReadyTasksLists[ ( pxTCB )->uxPriority ] ), &( ( pxTCB )->xStateListItem ) );
  263:../../../FreeRTOS_9_0/Source/tasks.c **** 	tracePOST_MOVED_TASK_TO_READY_STATE( pxTCB )
-ARM GAS  /tmp/ccIgarPJ.s 			page 8
+ARM GAS  /tmp/ccsVbLDJ.s 			page 8
 
 
  264:../../../FreeRTOS_9_0/Source/tasks.c **** 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  318:../../../FreeRTOS_9_0/Source/tasks.c **** 	#if ( portSTACK_GROWTH > 0 )
  319:../../../FreeRTOS_9_0/Source/tasks.c **** 		StackType_t		*pxEndOfStack;		/*< Points to the end of the stack on architectures where the stack 
  320:../../../FreeRTOS_9_0/Source/tasks.c **** 	#endif
-ARM GAS  /tmp/ccIgarPJ.s 			page 9
+ARM GAS  /tmp/ccsVbLDJ.s 			page 9
 
 
  321:../../../FreeRTOS_9_0/Source/tasks.c **** 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  375:../../../FreeRTOS_9_0/Source/tasks.c **** 
  376:../../../FreeRTOS_9_0/Source/tasks.c **** /* The old tskTCB name is maintained above then typedefed to the new TCB_t name
  377:../../../FreeRTOS_9_0/Source/tasks.c **** below to enable the use of older kernel aware debuggers. */
-ARM GAS  /tmp/ccIgarPJ.s 			page 10
+ARM GAS  /tmp/ccsVbLDJ.s 			page 10
 
 
  378:../../../FreeRTOS_9_0/Source/tasks.c **** typedef tskTCB TCB_t;
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  432:../../../FreeRTOS_9_0/Source/tasks.c **** 
  433:../../../FreeRTOS_9_0/Source/tasks.c **** #endif
  434:../../../FreeRTOS_9_0/Source/tasks.c **** 
-ARM GAS  /tmp/ccIgarPJ.s 			page 11
+ARM GAS  /tmp/ccsVbLDJ.s 			page 11
 
 
  435:../../../FreeRTOS_9_0/Source/tasks.c **** /*lint +e956 */
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  489:../../../FreeRTOS_9_0/Source/tasks.c **** #if ( INCLUDE_vTaskDelete == 1 )
  490:../../../FreeRTOS_9_0/Source/tasks.c **** 
  491:../../../FreeRTOS_9_0/Source/tasks.c **** 	static void prvDeleteTCB( TCB_t *pxTCB ) PRIVILEGED_FUNCTION;
-ARM GAS  /tmp/ccIgarPJ.s 			page 12
+ARM GAS  /tmp/ccsVbLDJ.s 			page 12
 
 
  492:../../../FreeRTOS_9_0/Source/tasks.c **** 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  546:../../../FreeRTOS_9_0/Source/tasks.c ****  *
  547:../../../FreeRTOS_9_0/Source/tasks.c ****  * This conditional compilation should use inequality to 0, not equality to 1.
  548:../../../FreeRTOS_9_0/Source/tasks.c ****  * This is to ensure portSUPPRESS_TICKS_AND_SLEEP() can be called when user
-ARM GAS  /tmp/ccIgarPJ.s 			page 13
+ARM GAS  /tmp/ccsVbLDJ.s 			page 13
 
 
  549:../../../FreeRTOS_9_0/Source/tasks.c ****  * defined low power mode implementations require configUSE_TICKLESS_IDLE to be
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  603:../../../FreeRTOS_9_0/Source/tasks.c **** 									StaticTask_t * const pxTaskBuffer ) /*lint !e971 Unqualified char types are allowed for st
  604:../../../FreeRTOS_9_0/Source/tasks.c **** 	{
  605:../../../FreeRTOS_9_0/Source/tasks.c **** 	TCB_t *pxNewTCB;
-ARM GAS  /tmp/ccIgarPJ.s 			page 14
+ARM GAS  /tmp/ccsVbLDJ.s 			page 14
 
 
  606:../../../FreeRTOS_9_0/Source/tasks.c **** 	TaskHandle_t xReturn;
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  660:../../../FreeRTOS_9_0/Source/tasks.c **** 
  661:../../../FreeRTOS_9_0/Source/tasks.c **** 				/* Tasks can be created statically or dynamically, so note
  662:../../../FreeRTOS_9_0/Source/tasks.c **** 				this task had a statically allocated stack in case it is
-ARM GAS  /tmp/ccIgarPJ.s 			page 15
+ARM GAS  /tmp/ccsVbLDJ.s 			page 15
 
 
  663:../../../FreeRTOS_9_0/Source/tasks.c **** 				later deleted.  The TCB was allocated dynamically. */
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  696:../../../FreeRTOS_9_0/Source/tasks.c **** 
  697:../../../FreeRTOS_9_0/Source/tasks.c **** 		/* If the stack grows down then allocate the stack then the TCB so the stack
  698:../../../FreeRTOS_9_0/Source/tasks.c **** 		does not grow into the TCB.  Likewise if the stack grows up then allocate
-ARM GAS  /tmp/ccIgarPJ.s 			page 16
+ARM GAS  /tmp/ccsVbLDJ.s 			page 16
 
 
  699:../../../FreeRTOS_9_0/Source/tasks.c **** 		the TCB then the stack. */
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  735:../../../FreeRTOS_9_0/Source/tasks.c **** 				{
  736:../../../FreeRTOS_9_0/Source/tasks.c **** 					/* Store the stack location in the TCB. */
  737:../../../FreeRTOS_9_0/Source/tasks.c **** 					pxNewTCB->pxStack = pxStack;
-ARM GAS  /tmp/ccIgarPJ.s 			page 17
+ARM GAS  /tmp/ccsVbLDJ.s 			page 17
 
 
  195              		.loc 1 737 0
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  223 0058 0023     		movs	r3, #0
  224 005a 0393     		str	r3, [sp, #12]
  225 005c F868     		ldr	r0, [r7, #12]
-ARM GAS  /tmp/ccIgarPJ.s 			page 18
+ARM GAS  /tmp/ccsVbLDJ.s 			page 18
 
 
  226 005e B968     		ldr	r1, [r7, #8]
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  783:../../../FreeRTOS_9_0/Source/tasks.c **** 									TaskHandle_t * const pxCreatedTask,
  784:../../../FreeRTOS_9_0/Source/tasks.c **** 									TCB_t *pxNewTCB,
  785:../../../FreeRTOS_9_0/Source/tasks.c **** 									const MemoryRegion_t * const xRegions ) /*lint !e971 Unqualified char types are allowed fo
-ARM GAS  /tmp/ccIgarPJ.s 			page 19
+ARM GAS  /tmp/ccsVbLDJ.s 			page 19
 
 
  786:../../../FreeRTOS_9_0/Source/tasks.c **** {
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  812:../../../FreeRTOS_9_0/Source/tasks.c **** 	/* Calculate the top of stack address.  This depends on whether the stack
  813:../../../FreeRTOS_9_0/Source/tasks.c **** 	grows from high memory to low (as per the 80x86) or vice versa.
  814:../../../FreeRTOS_9_0/Source/tasks.c **** 	portSTACK_GROWTH is used to make the result positive or negative as required
-ARM GAS  /tmp/ccIgarPJ.s 			page 20
+ARM GAS  /tmp/ccsVbLDJ.s 			page 20
 
 
  815:../../../FreeRTOS_9_0/Source/tasks.c **** 	by the port. */
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
   26:../../../FreeRTOS_9_0/Source/portable/GCC/ARM_CM4F/portmacro.h ****      *                                                                       *
   27:../../../FreeRTOS_9_0/Source/portable/GCC/ARM_CM4F/portmacro.h ****      *    FreeRTOS provides completely free yet professionally developed,    *
   28:../../../FreeRTOS_9_0/Source/portable/GCC/ARM_CM4F/portmacro.h ****      *    robust, strictly quality controlled, supported, and cross          *
-ARM GAS  /tmp/ccIgarPJ.s 			page 21
+ARM GAS  /tmp/ccsVbLDJ.s 			page 21
 
 
   29:../../../FreeRTOS_9_0/Source/portable/GCC/ARM_CM4F/portmacro.h ****      *    platform software that is more than just the market leader, it     *
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
   83:../../../FreeRTOS_9_0/Source/portable/GCC/ARM_CM4F/portmacro.h ****  *
   84:../../../FreeRTOS_9_0/Source/portable/GCC/ARM_CM4F/portmacro.h ****  * These settings should not be altered.
   85:../../../FreeRTOS_9_0/Source/portable/GCC/ARM_CM4F/portmacro.h ****  *-----------------------------------------------------------
-ARM GAS  /tmp/ccIgarPJ.s 			page 22
+ARM GAS  /tmp/ccsVbLDJ.s 			page 22
 
 
   86:../../../FreeRTOS_9_0/Source/portable/GCC/ARM_CM4F/portmacro.h ****  */
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  140:../../../FreeRTOS_9_0/Source/portable/GCC/ARM_CM4F/portmacro.h **** extern void vPortExitCritical( void );
  141:../../../FreeRTOS_9_0/Source/portable/GCC/ARM_CM4F/portmacro.h **** #define portSET_INTERRUPT_MASK_FROM_ISR()		ulPortRaiseBASEPRI()
  142:../../../FreeRTOS_9_0/Source/portable/GCC/ARM_CM4F/portmacro.h **** #define portCLEAR_INTERRUPT_MASK_FROM_ISR(x)	vPortSetBASEPRI(x)
-ARM GAS  /tmp/ccIgarPJ.s 			page 23
+ARM GAS  /tmp/ccsVbLDJ.s 			page 23
 
 
  143:../../../FreeRTOS_9_0/Source/portable/GCC/ARM_CM4F/portmacro.h **** #define portDISABLE_INTERRUPTS()				vPortRaiseBASEPRI()
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  197:../../../FreeRTOS_9_0/Source/portable/GCC/ARM_CM4F/portmacro.h **** #ifdef configASSERT
  198:../../../FreeRTOS_9_0/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	void vPortValidateInterruptPriority( void );
  199:../../../FreeRTOS_9_0/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	#define portASSERT_IF_INTERRUPT_PRIORITY_INVALID() 	vPortValidateInterruptPriority()
-ARM GAS  /tmp/ccIgarPJ.s 			page 24
+ARM GAS  /tmp/ccsVbLDJ.s 			page 24
 
 
  200:../../../FreeRTOS_9_0/Source/portable/GCC/ARM_CM4F/portmacro.h **** #endif
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  823:../../../FreeRTOS_9_0/Source/tasks.c **** 	}
  824:../../../FreeRTOS_9_0/Source/tasks.c **** 	#else /* portSTACK_GROWTH */
  825:../../../FreeRTOS_9_0/Source/tasks.c **** 	{
-ARM GAS  /tmp/ccIgarPJ.s 			page 25
+ARM GAS  /tmp/ccsVbLDJ.s 			page 25
 
 
  826:../../../FreeRTOS_9_0/Source/tasks.c **** 		pxTopOfStack = pxNewTCB->pxStack;
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  838:../../../FreeRTOS_9_0/Source/tasks.c **** 	{
  359              		.loc 1 838 0 is_stmt 0 discriminator 1
  360 0086 FB69     		ldr	r3, [r7, #28]
-ARM GAS  /tmp/ccIgarPJ.s 			page 26
+ARM GAS  /tmp/ccsVbLDJ.s 			page 26
 
 
  361 0088 0F2B     		cmp	r3, #15
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  875:../../../FreeRTOS_9_0/Source/tasks.c **** 	}
  876:../../../FreeRTOS_9_0/Source/tasks.c **** 	#endif /* configUSE_MUTEXES */
  877:../../../FreeRTOS_9_0/Source/tasks.c **** 
-ARM GAS  /tmp/ccIgarPJ.s 			page 27
+ARM GAS  /tmp/ccsVbLDJ.s 			page 27
 
 
  878:../../../FreeRTOS_9_0/Source/tasks.c **** 	vListInitialiseItem( &( pxNewTCB->xStateListItem ) );
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  909:../../../FreeRTOS_9_0/Source/tasks.c **** 		vPortStoreTaskMPUSettings( &( pxNewTCB->xMPUSettings ), xRegions, pxNewTCB->pxStack, ulStackDepth
  910:../../../FreeRTOS_9_0/Source/tasks.c **** 	}
  911:../../../FreeRTOS_9_0/Source/tasks.c **** 	#else
-ARM GAS  /tmp/ccIgarPJ.s 			page 28
+ARM GAS  /tmp/ccsVbLDJ.s 			page 28
 
 
  912:../../../FreeRTOS_9_0/Source/tasks.c **** 	{
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  419              		.loc 1 957 0
  420 00e8 B869     		ldr	r0, [r7, #24]
  421 00ea F968     		ldr	r1, [r7, #12]
-ARM GAS  /tmp/ccIgarPJ.s 			page 29
+ARM GAS  /tmp/ccsVbLDJ.s 			page 29
 
 
  422 00ec 3A68     		ldr	r2, [r7]
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  460              	.LCFI10:
  461              		.cfi_def_cfa_offset 16
  462              		.cfi_offset 4, -16
-ARM GAS  /tmp/ccIgarPJ.s 			page 30
+ARM GAS  /tmp/ccsVbLDJ.s 			page 30
 
 
  463              		.cfi_offset 5, -12
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  994:../../../FreeRTOS_9_0/Source/tasks.c **** 			else
  995:../../../FreeRTOS_9_0/Source/tasks.c **** 			{
  996:../../../FreeRTOS_9_0/Source/tasks.c **** 				mtCOVERAGE_TEST_MARKER();
-ARM GAS  /tmp/ccIgarPJ.s 			page 31
+ARM GAS  /tmp/ccsVbLDJ.s 			page 31
 
 
  997:../../../FreeRTOS_9_0/Source/tasks.c **** 			}
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  523              		.loc 1 1026 0
  524 0058 2C4B     		ldr	r3, .L23+12
  525 005a 1A68     		ldr	r2, [r3]
-ARM GAS  /tmp/ccIgarPJ.s 			page 32
+ARM GAS  /tmp/ccsVbLDJ.s 			page 32
 
 
  526 005c 7B68     		ldr	r3, [r7, #4]
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  575 00c0 1A44     		add	r2, r2, r3
  576 00c2 7B68     		ldr	r3, [r7, #4]
  577 00c4 0433     		adds	r3, r3, #4
-ARM GAS  /tmp/ccIgarPJ.s 			page 33
+ARM GAS  /tmp/ccsVbLDJ.s 			page 33
 
 
  578 00c6 1046     		mov	r0, r2
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  609 00f8 0837     		adds	r7, r7, #8
  610              	.LCFI13:
  611              		.cfi_def_cfa_offset 16
-ARM GAS  /tmp/ccIgarPJ.s 			page 34
+ARM GAS  /tmp/ccsVbLDJ.s 			page 34
 
 
  612 00fa BD46     		mov	sp, r7
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1067:../../../FreeRTOS_9_0/Source/tasks.c **** 			pxTCB = prvGetTCBFromHandle( xTaskToDelete );
  656              		.loc 1 1067 0
  657 000c 7B68     		ldr	r3, [r7, #4]
-ARM GAS  /tmp/ccIgarPJ.s 			page 35
+ARM GAS  /tmp/ccsVbLDJ.s 			page 35
 
 
  658 000e 002B     		cmp	r3, #0
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1077:../../../FreeRTOS_9_0/Source/tasks.c **** 			}
 1078:../../../FreeRTOS_9_0/Source/tasks.c **** 
 1079:../../../FreeRTOS_9_0/Source/tasks.c **** 			/* Is the task waiting on an event also? */
-ARM GAS  /tmp/ccIgarPJ.s 			page 36
+ARM GAS  /tmp/ccsVbLDJ.s 			page 36
 
 
 1080:../../../FreeRTOS_9_0/Source/tasks.c **** 			if( listLIST_ITEM_CONTAINER( &( pxTCB->xEventListItem ) ) != NULL )
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1105:../../../FreeRTOS_9_0/Source/tasks.c **** 				there is a task that has been deleted and that it should therefore
 1106:../../../FreeRTOS_9_0/Source/tasks.c **** 				check the xTasksWaitingTermination list. */
 1107:../../../FreeRTOS_9_0/Source/tasks.c **** 				++uxDeletedTasksWaitingCleanUp;
-ARM GAS  /tmp/ccIgarPJ.s 			page 37
+ARM GAS  /tmp/ccsVbLDJ.s 			page 37
 
 
  732              		.loc 1 1107 0
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1132:../../../FreeRTOS_9_0/Source/tasks.c **** 		if( xSchedulerRunning != pdFALSE )
  762              		.loc 1 1132 0
  763 00c0 174B     		ldr	r3, .L36+28
-ARM GAS  /tmp/ccIgarPJ.s 			page 38
+ARM GAS  /tmp/ccsVbLDJ.s 			page 38
 
 
  764 00c2 1B68     		ldr	r3, [r3]
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1143:../../../FreeRTOS_9_0/Source/tasks.c **** 		}
 1144:../../../FreeRTOS_9_0/Source/tasks.c **** 	}
  808              		.loc 1 1144 0
-ARM GAS  /tmp/ccIgarPJ.s 			page 39
+ARM GAS  /tmp/ccsVbLDJ.s 			page 39
 
 
  809 00fe 1037     		adds	r7, r7, #16
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1169:../../../FreeRTOS_9_0/Source/tasks.c **** 			if( xConstTickCount < *pxPreviousWakeTime )
 1170:../../../FreeRTOS_9_0/Source/tasks.c **** 			{
 1171:../../../FreeRTOS_9_0/Source/tasks.c **** 				/* The tick count has overflowed since this function was
-ARM GAS  /tmp/ccIgarPJ.s 			page 40
+ARM GAS  /tmp/ccsVbLDJ.s 			page 40
 
 
 1172:../../../FreeRTOS_9_0/Source/tasks.c **** 				lasted called.  In this case the only time we should ever
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1226:../../../FreeRTOS_9_0/Source/tasks.c **** 			mtCOVERAGE_TEST_MARKER();
 1227:../../../FreeRTOS_9_0/Source/tasks.c **** 		}
 1228:../../../FreeRTOS_9_0/Source/tasks.c **** 	}
-ARM GAS  /tmp/ccIgarPJ.s 			page 41
+ARM GAS  /tmp/ccsVbLDJ.s 			page 41
 
 
 1229:../../../FreeRTOS_9_0/Source/tasks.c **** 
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  881              	.L41:
  882              	.LBE98:
  883              	.LBE97:
-ARM GAS  /tmp/ccIgarPJ.s 			page 42
+ARM GAS  /tmp/ccsVbLDJ.s 			page 42
 
 
  884              		.loc 1 1242 0 discriminator 1
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  913 005a BFF36F8F 		isb
  914              	@ 0 "" 2
  915              		.thumb
-ARM GAS  /tmp/ccIgarPJ.s 			page 43
+ARM GAS  /tmp/ccsVbLDJ.s 			page 43
 
 
  916              	.L38:
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1282:../../../FreeRTOS_9_0/Source/tasks.c **** 	eTaskState eReturn;
 1283:../../../FreeRTOS_9_0/Source/tasks.c **** 	List_t *pxStateList;
 1284:../../../FreeRTOS_9_0/Source/tasks.c **** 	const TCB_t * const pxTCB = ( TCB_t * ) xTask;
-ARM GAS  /tmp/ccIgarPJ.s 			page 44
+ARM GAS  /tmp/ccsVbLDJ.s 			page 44
 
 
  958              		.loc 1 1284 0
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  999 003e FB60     		str	r3, [r7, #12]
 1298:../../../FreeRTOS_9_0/Source/tasks.c **** 			}
 1299:../../../FreeRTOS_9_0/Source/tasks.c **** 			taskEXIT_CRITICAL();
-ARM GAS  /tmp/ccIgarPJ.s 			page 45
+ARM GAS  /tmp/ccsVbLDJ.s 			page 45
 
 
  1000              		.loc 1 1299 0
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1319:../../../FreeRTOS_9_0/Source/tasks.c **** 					{
 1320:../../../FreeRTOS_9_0/Source/tasks.c **** 						eReturn = eBlocked;
  1035              		.loc 1 1320 0
-ARM GAS  /tmp/ccIgarPJ.s 			page 46
+ARM GAS  /tmp/ccsVbLDJ.s 			page 46
 
 
  1036 0074 0223     		movs	r3, #2
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  1066 0098 BD46     		mov	sp, r7
  1067              	.LCFI29:
  1068              		.cfi_def_cfa_register 13
-ARM GAS  /tmp/ccIgarPJ.s 			page 47
+ARM GAS  /tmp/ccsVbLDJ.s 			page 47
 
 
  1069              		@ sp needed
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  1109 000c 7B68     		ldr	r3, [r7, #4]
  1110 000e 002B     		cmp	r3, #0
  1111 0010 02D1     		bne	.L61
-ARM GAS  /tmp/ccIgarPJ.s 			page 48
+ARM GAS  /tmp/ccsVbLDJ.s 			page 48
 
 
  1112              		.loc 1 1360 0 is_stmt 0 discriminator 1
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1374:../../../FreeRTOS_9_0/Source/tasks.c **** 	{
  1155              		.loc 1 1374 0
  1156              		.cfi_startproc
-ARM GAS  /tmp/ccIgarPJ.s 			page 49
+ARM GAS  /tmp/ccsVbLDJ.s 			page 49
 
 
  1157              		@ args = 0, pretend = 0, frame = 32
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  1175              		.loc 2 253 0
  1176              	@ 253 "../../../FreeRTOS_9_0/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
  1177 000c EFF31182 			mrs r2, basepri											
-ARM GAS  /tmp/ccIgarPJ.s 			page 50
+ARM GAS  /tmp/ccsVbLDJ.s 			page 50
 
 
  1178 0010 4FF05003 		mov r3, #80												
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  1213              	.LBB103:
  1214              	.LBB104:
  266:../../../FreeRTOS_9_0/Source/portable/GCC/ARM_CM4F/portmacro.h **** }
-ARM GAS  /tmp/ccIgarPJ.s 			page 51
+ARM GAS  /tmp/ccsVbLDJ.s 			page 51
 
 
  267:../../../FreeRTOS_9_0/Source/portable/GCC/ARM_CM4F/portmacro.h **** /*-----------------------------------------------------------*/
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  1253              		@ frame_needed = 1, uses_anonymous_args = 0
  1254 0000 90B5     		push	{r4, r7, lr}
  1255              	.LCFI40:
-ARM GAS  /tmp/ccIgarPJ.s 			page 52
+ARM GAS  /tmp/ccsVbLDJ.s 			page 52
 
 
  1256              		.cfi_def_cfa_offset 12
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  1299 0030 3B60     		str	r3, [r7]
  1300              	.L76:
 1425:../../../FreeRTOS_9_0/Source/tasks.c **** 		}
-ARM GAS  /tmp/ccIgarPJ.s 			page 53
+ARM GAS  /tmp/ccsVbLDJ.s 			page 53
 
 
 1426:../../../FreeRTOS_9_0/Source/tasks.c **** 		else
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  1339              		.loc 1 1441 0 discriminator 4
  1340 0078 BB69     		ldr	r3, [r7, #24]
  1341 007a DB6C     		ldr	r3, [r3, #76]
-ARM GAS  /tmp/ccIgarPJ.s 			page 54
+ARM GAS  /tmp/ccsVbLDJ.s 			page 54
 
 
  1342 007c 7B61     		str	r3, [r7, #20]
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1467:../../../FreeRTOS_9_0/Source/tasks.c **** 						}
 1468:../../../FreeRTOS_9_0/Source/tasks.c **** 					}
 1469:../../../FreeRTOS_9_0/Source/tasks.c **** 					else
-ARM GAS  /tmp/ccIgarPJ.s 			page 55
+ARM GAS  /tmp/ccsVbLDJ.s 			page 55
 
 
 1470:../../../FreeRTOS_9_0/Source/tasks.c **** 					{
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  1393 00ca BB69     		ldr	r3, [r7, #24]
  1394 00cc 3A68     		ldr	r2, [r7]
  1395 00ce DA62     		str	r2, [r3, #44]
-ARM GAS  /tmp/ccIgarPJ.s 			page 56
+ARM GAS  /tmp/ccsVbLDJ.s 			page 56
 
 
  1396              	.L82:
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  1419 00f4 9B00     		lsls	r3, r3, #2
  1420 00f6 234A     		ldr	r2, .L88+4
  1421 00f8 1344     		add	r3, r3, r2
-ARM GAS  /tmp/ccIgarPJ.s 			page 57
+ARM GAS  /tmp/ccsVbLDJ.s 			page 57
 
 
  1422 00fa 9942     		cmp	r1, r3
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  1460 013a 1B68     		ldr	r3, [r3]
  1461 013c 1343     		orrs	r3, r3, r2
  1462 013e 124A     		ldr	r2, .L88+8
-ARM GAS  /tmp/ccIgarPJ.s 			page 58
+ARM GAS  /tmp/ccsVbLDJ.s 			page 58
 
 
  1463 0140 1360     		str	r3, [r2]
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1570:../../../FreeRTOS_9_0/Source/tasks.c **** 	}
  1496              		.loc 1 1570 0
  1497 0178 2437     		adds	r7, r7, #36
-ARM GAS  /tmp/ccIgarPJ.s 			page 59
+ARM GAS  /tmp/ccsVbLDJ.s 			page 59
 
 
  1498              	.LCFI43:
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1584:../../../FreeRTOS_9_0/Source/tasks.c **** 			being suspended. */
 1585:../../../FreeRTOS_9_0/Source/tasks.c **** 			pxTCB = prvGetTCBFromHandle( xTaskToSuspend );
  1541              		.loc 1 1585 0
-ARM GAS  /tmp/ccIgarPJ.s 			page 60
+ARM GAS  /tmp/ccsVbLDJ.s 			page 60
 
 
  1542 000c 7B68     		ldr	r3, [r7, #4]
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  1588 005c 9340     		lsls	r3, r3, r2
  1589 005e DA43     		mvns	r2, r3
  1590 0060 2B4B     		ldr	r3, .L103+8
-ARM GAS  /tmp/ccIgarPJ.s 			page 61
+ARM GAS  /tmp/ccsVbLDJ.s 			page 61
 
 
  1591 0062 1B68     		ldr	r3, [r3]
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  1623 009a 002B     		cmp	r3, #0
  1624 009c 05D0     		beq	.L96
 1616:../../../FreeRTOS_9_0/Source/tasks.c **** 		{
-ARM GAS  /tmp/ccIgarPJ.s 			page 62
+ARM GAS  /tmp/ccsVbLDJ.s 			page 62
 
 
 1617:../../../FreeRTOS_9_0/Source/tasks.c **** 			/* Reset the next expected unblock time in case it referred to the
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  1659 00d4 BB60     		str	r3, [r7, #8]
  1660              	.L100:
  1661              	.LBE108:
-ARM GAS  /tmp/ccIgarPJ.s 			page 63
+ARM GAS  /tmp/ccsVbLDJ.s 			page 63
 
 
  1662              	.LBE107:
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1657:../../../FreeRTOS_9_0/Source/tasks.c **** 		else
 1658:../../../FreeRTOS_9_0/Source/tasks.c **** 		{
 1659:../../../FreeRTOS_9_0/Source/tasks.c **** 			mtCOVERAGE_TEST_MARKER();
-ARM GAS  /tmp/ccIgarPJ.s 			page 64
+ARM GAS  /tmp/ccsVbLDJ.s 			page 64
 
 
 1660:../../../FreeRTOS_9_0/Source/tasks.c **** 		}
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1670:../../../FreeRTOS_9_0/Source/tasks.c **** 	BaseType_t xReturn = pdFALSE;
  1741              		.loc 1 1670 0
  1742 0008 0023     		movs	r3, #0
-ARM GAS  /tmp/ccIgarPJ.s 			page 65
+ARM GAS  /tmp/ccsVbLDJ.s 			page 65
 
 
  1743 000a 7B61     		str	r3, [r7, #20]
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1682:../../../FreeRTOS_9_0/Source/tasks.c **** 			/* Has the task already been resumed from within an ISR? */
 1683:../../../FreeRTOS_9_0/Source/tasks.c **** 			if( listIS_CONTAINED_WITHIN( &xPendingReadyList, &( pxTCB->xEventListItem ) ) == pdFALSE )
  1785              		.loc 1 1683 0 is_stmt 1
-ARM GAS  /tmp/ccIgarPJ.s 			page 66
+ARM GAS  /tmp/ccsVbLDJ.s 			page 66
 
 
  1786 003e 3B69     		ldr	r3, [r7, #16]
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  1816              		.cfi_def_cfa_offset 4
  1817 0064 BD46     		mov	sp, r7
  1818              	.LCFI54:
-ARM GAS  /tmp/ccIgarPJ.s 			page 67
+ARM GAS  /tmp/ccsVbLDJ.s 			page 67
 
 
  1819              		.cfi_def_cfa_register 13
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  1863 000e 002B     		cmp	r3, #0
  1864 0010 09D1     		bne	.L117
  1865              	.LBB111:
-ARM GAS  /tmp/ccIgarPJ.s 			page 68
+ARM GAS  /tmp/ccsVbLDJ.s 			page 68
 
 
  1866              	.LBB112:
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1730:../../../FreeRTOS_9_0/Source/tasks.c **** 
 1731:../../../FreeRTOS_9_0/Source/tasks.c **** 					/* As we are in a critical section we can access the ready
 1732:../../../FreeRTOS_9_0/Source/tasks.c **** 					lists even if the scheduler is suspended. */
-ARM GAS  /tmp/ccIgarPJ.s 			page 69
+ARM GAS  /tmp/ccsVbLDJ.s 			page 69
 
 
 1733:../../../FreeRTOS_9_0/Source/tasks.c **** 					( void ) uxListRemove(  &( pxTCB->xStateListItem ) );
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  1953              	@ 1742 "../../../FreeRTOS_9_0/Source/tasks.c" 1
  1954 00b2 BFF34F8F 		dsb
  1955              	@ 0 "" 2
-ARM GAS  /tmp/ccIgarPJ.s 			page 70
+ARM GAS  /tmp/ccsVbLDJ.s 			page 70
 
 
  1956              	@ 1742 "../../../FreeRTOS_9_0/Source/tasks.c" 1
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1764:../../../FreeRTOS_9_0/Source/tasks.c **** /*-----------------------------------------------------------*/
 1765:../../../FreeRTOS_9_0/Source/tasks.c **** 
 1766:../../../FreeRTOS_9_0/Source/tasks.c **** #if ( ( INCLUDE_xTaskResumeFromISR == 1 ) && ( INCLUDE_vTaskSuspend == 1 ) )
-ARM GAS  /tmp/ccIgarPJ.s 			page 71
+ARM GAS  /tmp/ccsVbLDJ.s 			page 71
 
 
 1767:../../../FreeRTOS_9_0/Source/tasks.c **** 
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1776:../../../FreeRTOS_9_0/Source/tasks.c **** 		/* RTOS ports that support interrupt nesting have the concept of a
 1777:../../../FreeRTOS_9_0/Source/tasks.c **** 		maximum	system call (or maximum API call) interrupt priority.
 1778:../../../FreeRTOS_9_0/Source/tasks.c **** 		Interrupts that are	above the maximum system call priority are keep
-ARM GAS  /tmp/ccIgarPJ.s 			page 72
+ARM GAS  /tmp/ccsVbLDJ.s 			page 72
 
 
 1779:../../../FreeRTOS_9_0/Source/tasks.c **** 		permanently enabled, even when the RTOS kernel is in a critical section,
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  2067 005e 0346     		mov	r3, r0
  2068 0060 2B20     		movs	r0, #43
  2069 0062 1946     		mov	r1, r3
-ARM GAS  /tmp/ccIgarPJ.s 			page 73
+ARM GAS  /tmp/ccsVbLDJ.s 			page 73
 
 
  2070 0064 FFF7FEFF 		bl	SEGGER_SYSVIEW_RecordU32
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  2107 00aa 3B6A     		ldr	r3, [r7, #32]
  2108 00ac DA6A     		ldr	r2, [r3, #44]
  2109 00ae 1346     		mov	r3, r2
-ARM GAS  /tmp/ccIgarPJ.s 			page 74
+ARM GAS  /tmp/ccsVbLDJ.s 			page 74
 
 
  2110 00b0 9B00     		lsls	r3, r3, #2
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  2146              	.LCFI64:
  2147              		.cfi_def_cfa_offset 8
  2148 00e4 BD46     		mov	sp, r7
-ARM GAS  /tmp/ccIgarPJ.s 			page 75
+ARM GAS  /tmp/ccsVbLDJ.s 			page 75
 
 
  2149              	.LCFI65:
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1847:../../../FreeRTOS_9_0/Source/tasks.c **** 		uint32_t ulIdleTaskStackSize;
 1848:../../../FreeRTOS_9_0/Source/tasks.c **** 
 1849:../../../FreeRTOS_9_0/Source/tasks.c **** 		/* The Idle task is created using user provided RAM - obtain the
-ARM GAS  /tmp/ccIgarPJ.s 			page 76
+ARM GAS  /tmp/ccsVbLDJ.s 			page 76
 
 
 1850:../../../FreeRTOS_9_0/Source/tasks.c **** 		address of the RAM then create the idle task. */
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1893:../../../FreeRTOS_9_0/Source/tasks.c **** 	if( xReturn == pdPASS )
  2202              		.loc 1 1893 0
  2203 001c FB68     		ldr	r3, [r7, #12]
-ARM GAS  /tmp/ccIgarPJ.s 			page 77
+ARM GAS  /tmp/ccsVbLDJ.s 			page 77
 
 
  2204 001e 012B     		cmp	r3, #1
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1919:../../../FreeRTOS_9_0/Source/tasks.c **** 		/* Setting up the timer tick is hardware specific and thus in the
 1920:../../../FreeRTOS_9_0/Source/tasks.c **** 		portable interface. */
 1921:../../../FreeRTOS_9_0/Source/tasks.c **** 		if( xPortStartScheduler() != pdFALSE )
-ARM GAS  /tmp/ccIgarPJ.s 			page 78
+ARM GAS  /tmp/ccsVbLDJ.s 			page 78
 
 
  2232              		.loc 1 1921 0
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  2264              		.cfi_def_cfa_register 13
  2265              		@ sp needed
  2266 006e 80BD     		pop	{r7, pc}
-ARM GAS  /tmp/ccIgarPJ.s 			page 79
+ARM GAS  /tmp/ccsVbLDJ.s 			page 79
 
 
  2267              	.L139:
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1949:../../../FreeRTOS_9_0/Source/tasks.c **** 	layer must ensure interrupts enable	bit is left in the correct state. */
 1950:../../../FreeRTOS_9_0/Source/tasks.c **** 	portDISABLE_INTERRUPTS();
 1951:../../../FreeRTOS_9_0/Source/tasks.c **** 	xSchedulerRunning = pdFALSE;
-ARM GAS  /tmp/ccIgarPJ.s 			page 80
+ARM GAS  /tmp/ccsVbLDJ.s 			page 80
 
 
  2316              		.loc 1 1951 0
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  2361 0008 0133     		adds	r3, r3, #1
  2362 000a 034A     		ldr	r2, .L144
  2363 000c 1360     		str	r3, [r2]
-ARM GAS  /tmp/ccIgarPJ.s 			page 81
+ARM GAS  /tmp/ccsVbLDJ.s 			page 81
 
 
 1963:../../../FreeRTOS_9_0/Source/tasks.c **** }
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 1994:../../../FreeRTOS_9_0/Source/tasks.c **** 			{
 1995:../../../FreeRTOS_9_0/Source/tasks.c **** 				uxHigherPriorityReadyTasks = pdTRUE;
 1996:../../../FreeRTOS_9_0/Source/tasks.c **** 			}
-ARM GAS  /tmp/ccIgarPJ.s 			page 82
+ARM GAS  /tmp/ccsVbLDJ.s 			page 82
 
 
 1997:../../../FreeRTOS_9_0/Source/tasks.c **** 		}
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  2407              		.loc 1 2032 0
  2408 000a 0023     		movs	r3, #0
  2409 000c BB60     		str	r3, [r7, #8]
-ARM GAS  /tmp/ccIgarPJ.s 			page 83
+ARM GAS  /tmp/ccsVbLDJ.s 			page 83
 
 
 2033:../../../FreeRTOS_9_0/Source/tasks.c **** 
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  2446              		.loc 1 2049 0
  2447 0040 384B     		ldr	r3, .L157+4
  2448 0042 1B68     		ldr	r3, [r3]
-ARM GAS  /tmp/ccIgarPJ.s 			page 84
+ARM GAS  /tmp/ccsVbLDJ.s 			page 84
 
 
  2449 0044 002B     		cmp	r3, #0
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  2494 009a 1946     		mov	r1, r3
  2495 009c FFF7FEFF 		bl	vListInsertEnd
 2059:../../../FreeRTOS_9_0/Source/tasks.c **** 
-ARM GAS  /tmp/ccIgarPJ.s 			page 85
+ARM GAS  /tmp/ccsVbLDJ.s 			page 85
 
 
 2060:../../../FreeRTOS_9_0/Source/tasks.c **** 					/* If the moved task has a priority higher than the current
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 2087:../../../FreeRTOS_9_0/Source/tasks.c **** 				{
 2088:../../../FreeRTOS_9_0/Source/tasks.c **** 					UBaseType_t uxPendedCounts = uxPendedTicks; /* Non-volatile copy. */
  2522              		.loc 1 2088 0
-ARM GAS  /tmp/ccIgarPJ.s 			page 86
+ARM GAS  /tmp/ccsVbLDJ.s 			page 86
 
 
  2523 00c6 1D4B     		ldr	r3, .L157+28
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 2111:../../../FreeRTOS_9_0/Source/tasks.c **** 				}
 2112:../../../FreeRTOS_9_0/Source/tasks.c **** 
 2113:../../../FreeRTOS_9_0/Source/tasks.c **** 				if( xYieldPending != pdFALSE )
-ARM GAS  /tmp/ccIgarPJ.s 			page 87
+ARM GAS  /tmp/ccsVbLDJ.s 			page 87
 
 
  2555              		.loc 1 2113 0
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  2586              		.cfi_def_cfa_register 13
  2587              		@ sp needed
  2588 011c 80BD     		pop	{r7, pc}
-ARM GAS  /tmp/ccIgarPJ.s 			page 88
+ARM GAS  /tmp/ccsVbLDJ.s 			page 88
 
 
  2589              	.L158:
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  2631              		.loc 1 2150 0
  2632 000c 7B68     		ldr	r3, [r7, #4]
 2151:../../../FreeRTOS_9_0/Source/tasks.c **** }
-ARM GAS  /tmp/ccIgarPJ.s 			page 89
+ARM GAS  /tmp/ccsVbLDJ.s 			page 89
 
 
  2633              		.loc 1 2151 0
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 2164:../../../FreeRTOS_9_0/Source/tasks.c **** 	then portASSERT_IF_INTERRUPT_PRIORITY_INVALID() will result in an assertion
 2165:../../../FreeRTOS_9_0/Source/tasks.c **** 	failure if a FreeRTOS API function is called from an interrupt that has been
 2166:../../../FreeRTOS_9_0/Source/tasks.c **** 	assigned a priority above the configured maximum system call priority.
-ARM GAS  /tmp/ccIgarPJ.s 			page 90
+ARM GAS  /tmp/ccsVbLDJ.s 			page 90
 
 
 2167:../../../FreeRTOS_9_0/Source/tasks.c **** 	Only FreeRTOS functions that end in FromISR can be called from interrupts
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  2713              		.loc 1 2186 0
  2714              		.cfi_startproc
  2715              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccIgarPJ.s 			page 91
+ARM GAS  /tmp/ccsVbLDJ.s 			page 91
 
 
  2716              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  2764              	.LCFI101:
  2765              		.cfi_def_cfa_offset 24
  2766 0004 00AF     		add	r7, sp, #0
-ARM GAS  /tmp/ccIgarPJ.s 			page 92
+ARM GAS  /tmp/ccsVbLDJ.s 			page 92
 
 
  2767              	.LCFI102:
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  2812              	.LCFI103:
  2813              		.cfi_def_cfa_offset 4
  2814 003a BD46     		mov	sp, r7
-ARM GAS  /tmp/ccIgarPJ.s 			page 93
+ARM GAS  /tmp/ccsVbLDJ.s 			page 93
 
 
  2815              	.LCFI104:
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 2236:../../../FreeRTOS_9_0/Source/tasks.c **** 						/* Both strings terminated, a match must have been
 2237:../../../FreeRTOS_9_0/Source/tasks.c **** 						found. */
 2238:../../../FreeRTOS_9_0/Source/tasks.c **** 						pxReturn = pxNextTCB;
-ARM GAS  /tmp/ccIgarPJ.s 			page 94
+ARM GAS  /tmp/ccsVbLDJ.s 			page 94
 
 
 2239:../../../FreeRTOS_9_0/Source/tasks.c **** 						break;
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 2293:../../../FreeRTOS_9_0/Source/tasks.c **** 			if( pxTCB == NULL )
 2294:../../../FreeRTOS_9_0/Source/tasks.c **** 			{
 2295:../../../FreeRTOS_9_0/Source/tasks.c **** 				pxTCB = prvSearchForNameWithinSingleList( ( List_t * ) pxDelayedTaskList, pcNameToQuery );
-ARM GAS  /tmp/ccIgarPJ.s 			page 95
+ARM GAS  /tmp/ccsVbLDJ.s 			page 95
 
 
 2296:../../../FreeRTOS_9_0/Source/tasks.c **** 			}
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  2853 0006 F860     		str	r0, [r7, #12]
  2854 0008 B960     		str	r1, [r7, #8]
  2855 000a 7A60     		str	r2, [r7, #4]
-ARM GAS  /tmp/ccIgarPJ.s 			page 96
+ARM GAS  /tmp/ccsVbLDJ.s 			page 96
 
 
 2335:../../../FreeRTOS_9_0/Source/tasks.c **** 	UBaseType_t uxTask = 0, uxQueue = configMAX_PRIORITIES;
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  2897 0056 7B61     		str	r3, [r7, #20]
 2348:../../../FreeRTOS_9_0/Source/tasks.c **** 
 2349:../../../FreeRTOS_9_0/Source/tasks.c **** 				} while( uxQueue > ( UBaseType_t ) tskIDLE_PRIORITY ); /*lint !e961 MISRA exception as the cast
-ARM GAS  /tmp/ccIgarPJ.s 			page 97
+ARM GAS  /tmp/ccsVbLDJ.s 			page 97
 
 
  2898              		.loc 1 2349 0 discriminator 1
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  2941 00aa 7A69     		ldr	r2, [r7, #20]
  2942 00ac 1346     		mov	r3, r2
  2943 00ae DB00     		lsls	r3, r3, #3
-ARM GAS  /tmp/ccIgarPJ.s 			page 98
+ARM GAS  /tmp/ccsVbLDJ.s 			page 98
 
 
  2944 00b0 1344     		add	r3, r3, r2
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 2385:../../../FreeRTOS_9_0/Source/tasks.c **** 					if( pulTotalRunTime != NULL )
  2974              		.loc 1 2385 0
  2975 00ee 7B68     		ldr	r3, [r7, #4]
-ARM GAS  /tmp/ccIgarPJ.s 			page 99
+ARM GAS  /tmp/ccsVbLDJ.s 			page 99
 
 
  2976 00f0 002B     		cmp	r3, #0
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 2401:../../../FreeRTOS_9_0/Source/tasks.c **** 
 2402:../../../FreeRTOS_9_0/Source/tasks.c **** #endif /* configUSE_TRACE_FACILITY */
 2403:../../../FreeRTOS_9_0/Source/tasks.c **** /*----------------------------------------------------------*/
-ARM GAS  /tmp/ccIgarPJ.s 			page 100
+ARM GAS  /tmp/ccsVbLDJ.s 			page 100
 
 
 2404:../../../FreeRTOS_9_0/Source/tasks.c **** 
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 2458:../../../FreeRTOS_9_0/Source/tasks.c **** 				the event list too.  Interrupts can touch the event list item,
 2459:../../../FreeRTOS_9_0/Source/tasks.c **** 				even though the scheduler is suspended, so a critical section
 2460:../../../FreeRTOS_9_0/Source/tasks.c **** 				is used. */
-ARM GAS  /tmp/ccIgarPJ.s 			page 101
+ARM GAS  /tmp/ccsVbLDJ.s 			page 101
 
 
 2461:../../../FreeRTOS_9_0/Source/tasks.c **** 				taskENTER_CRITICAL();
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  3019              		@ args = 0, pretend = 0, frame = 24
  3020              		@ frame_needed = 1, uses_anonymous_args = 0
  3021 0000 80B5     		push	{r7, lr}
-ARM GAS  /tmp/ccIgarPJ.s 			page 102
+ARM GAS  /tmp/ccsVbLDJ.s 			page 102
 
 
  3022              	.LCFI111:
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  3055              		.loc 1 2533 0
  3056 0028 4D4B     		ldr	r3, .L203+8
  3057 002a 1B68     		ldr	r3, [r3]
-ARM GAS  /tmp/ccIgarPJ.s 			page 103
+ARM GAS  /tmp/ccsVbLDJ.s 			page 103
 
 
  3058 002c 1B68     		ldr	r3, [r3]
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  3100 006a 1B68     		ldr	r3, [r3]
  3101 006c 3A69     		ldr	r2, [r7, #16]
  3102 006e 9A42     		cmp	r2, r3
-ARM GAS  /tmp/ccIgarPJ.s 			page 104
+ARM GAS  /tmp/ccsVbLDJ.s 			page 104
 
 
  3103 0070 53D3     		bcc	.L191
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  3136 009c 5B68     		ldr	r3, [r3, #4]
  3137 009e 7B60     		str	r3, [r7, #4]
 2566:../../../FreeRTOS_9_0/Source/tasks.c **** 
-ARM GAS  /tmp/ccIgarPJ.s 			page 105
+ARM GAS  /tmp/ccsVbLDJ.s 			page 105
 
 
 2567:../../../FreeRTOS_9_0/Source/tasks.c **** 					if( xConstTickCount < xItemValue )
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 2593:../../../FreeRTOS_9_0/Source/tasks.c **** 						mtCOVERAGE_TEST_MARKER();
 2594:../../../FreeRTOS_9_0/Source/tasks.c **** 					}
 2595:../../../FreeRTOS_9_0/Source/tasks.c **** 
-ARM GAS  /tmp/ccIgarPJ.s 			page 106
+ARM GAS  /tmp/ccsVbLDJ.s 			page 106
 
 
 2596:../../../FreeRTOS_9_0/Source/tasks.c **** 					/* Place the unblocked task into the appropriate ready
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 2611:../../../FreeRTOS_9_0/Source/tasks.c **** 						}
 2612:../../../FreeRTOS_9_0/Source/tasks.c **** 						else
 2613:../../../FreeRTOS_9_0/Source/tasks.c **** 						{
-ARM GAS  /tmp/ccIgarPJ.s 			page 107
+ARM GAS  /tmp/ccsVbLDJ.s 			page 107
 
 
 2614:../../../FreeRTOS_9_0/Source/tasks.c **** 							mtCOVERAGE_TEST_MARKER();
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 2645:../../../FreeRTOS_9_0/Source/tasks.c **** 			}
 2646:../../../FreeRTOS_9_0/Source/tasks.c **** 			else
 2647:../../../FreeRTOS_9_0/Source/tasks.c **** 			{
-ARM GAS  /tmp/ccIgarPJ.s 			page 108
+ARM GAS  /tmp/ccsVbLDJ.s 			page 108
 
 
 2648:../../../FreeRTOS_9_0/Source/tasks.c **** 				mtCOVERAGE_TEST_MARKER();
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  3249              	.LCFI114:
  3250              		.cfi_def_cfa_offset 8
  3251 0154 BD46     		mov	sp, r7
-ARM GAS  /tmp/ccIgarPJ.s 			page 109
+ARM GAS  /tmp/ccsVbLDJ.s 			page 109
 
 
  3252              	.LCFI115:
@@ -6538,7 +6538,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 2708:../../../FreeRTOS_9_0/Source/tasks.c **** /*-----------------------------------------------------------*/
 2709:../../../FreeRTOS_9_0/Source/tasks.c **** 
 2710:../../../FreeRTOS_9_0/Source/tasks.c **** #if ( configUSE_APPLICATION_TASK_TAG == 1 )
-ARM GAS  /tmp/ccIgarPJ.s 			page 110
+ARM GAS  /tmp/ccsVbLDJ.s 			page 110
 
 
 2711:../../../FreeRTOS_9_0/Source/tasks.c **** 
@@ -6598,7 +6598,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 2765:../../../FreeRTOS_9_0/Source/tasks.c **** 		}
 2766:../../../FreeRTOS_9_0/Source/tasks.c **** 
 2767:../../../FreeRTOS_9_0/Source/tasks.c **** 		return xReturn;
-ARM GAS  /tmp/ccIgarPJ.s 			page 111
+ARM GAS  /tmp/ccsVbLDJ.s 			page 111
 
 
 2768:../../../FreeRTOS_9_0/Source/tasks.c **** 	}
@@ -6658,7 +6658,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 2791:../../../FreeRTOS_9_0/Source/tasks.c **** 					ulTotalRunTime = portGET_RUN_TIME_COUNTER_VALUE();
 2792:../../../FreeRTOS_9_0/Source/tasks.c **** 				#endif
 2793:../../../FreeRTOS_9_0/Source/tasks.c **** 
-ARM GAS  /tmp/ccIgarPJ.s 			page 112
+ARM GAS  /tmp/ccsVbLDJ.s 			page 112
 
 
 2794:../../../FreeRTOS_9_0/Source/tasks.c **** 				/* Add the amount of time the task has been running to the
@@ -6718,7 +6718,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  3339 0040 1B68     		ldr	r3, [r3]
  3340 0042 002B     		cmp	r3, #0
  3341 0044 09D1     		bne	.L209
-ARM GAS  /tmp/ccIgarPJ.s 			page 113
+ARM GAS  /tmp/ccsVbLDJ.s 			page 113
 
 
  3342              	.LBB137:
@@ -6778,7 +6778,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  3395              	.LBE134:
 2819:../../../FreeRTOS_9_0/Source/tasks.c **** 		traceTASK_SWITCHED_IN();
  3396              		.loc 1 2819 0 is_stmt 1 discriminator 5
-ARM GAS  /tmp/ccIgarPJ.s 			page 114
+ARM GAS  /tmp/ccsVbLDJ.s 			page 114
 
 
  3397 0094 0E4B     		ldr	r3, .L213+16
@@ -6838,7 +6838,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  3442              		.thumb_func
  3444              	vTaskPlaceOnEventList:
  3445              	.LFB29:
-ARM GAS  /tmp/ccIgarPJ.s 			page 115
+ARM GAS  /tmp/ccsVbLDJ.s 			page 115
 
 
 2830:../../../FreeRTOS_9_0/Source/tasks.c **** /*-----------------------------------------------------------*/
@@ -6898,7 +6898,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  3485              		.loc 1 2843 0
  3486 0024 064B     		ldr	r3, .L218
  3487 0026 1B68     		ldr	r3, [r3]
-ARM GAS  /tmp/ccIgarPJ.s 			page 116
+ARM GAS  /tmp/ccsVbLDJ.s 			page 116
 
 
  3488 0028 1833     		adds	r3, r3, #24
@@ -6958,7 +6958,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  3537 000a 7A60     		str	r2, [r7, #4]
 2851:../../../FreeRTOS_9_0/Source/tasks.c **** 	configASSERT( pxEventList );
  3538              		.loc 1 2851 0
-ARM GAS  /tmp/ccIgarPJ.s 			page 117
+ARM GAS  /tmp/ccsVbLDJ.s 			page 117
 
 
  3539 000c FB68     		ldr	r3, [r7, #12]
@@ -7018,7 +7018,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 2860:../../../FreeRTOS_9_0/Source/tasks.c **** 	listSET_LIST_ITEM_VALUE( &( pxCurrentTCB->xEventListItem ), xItemValue | taskEVENT_LIST_ITEM_VALUE
  3583              		.loc 1 2860 0
  3584 0042 0B4B     		ldr	r3, .L225+4
-ARM GAS  /tmp/ccIgarPJ.s 			page 118
+ARM GAS  /tmp/ccsVbLDJ.s 			page 118
 
 
  3585 0044 1B68     		ldr	r3, [r3]
@@ -7078,7 +7078,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 2877:../../../FreeRTOS_9_0/Source/tasks.c **** 		configASSERT( pxEventList );
 2878:../../../FreeRTOS_9_0/Source/tasks.c **** 
 2879:../../../FreeRTOS_9_0/Source/tasks.c **** 		/* This function should not be called by application code hence the
-ARM GAS  /tmp/ccIgarPJ.s 			page 119
+ARM GAS  /tmp/ccsVbLDJ.s 			page 119
 
 
 2880:../../../FreeRTOS_9_0/Source/tasks.c **** 		'Restricted' in its name.  It is not part of the public API.  It is
@@ -7138,7 +7138,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 2918:../../../FreeRTOS_9_0/Source/tasks.c **** 	If an event is for a queue that is locked then this function will never
 2919:../../../FreeRTOS_9_0/Source/tasks.c **** 	get called - the lock count on the queue will get modified instead.  This
 2920:../../../FreeRTOS_9_0/Source/tasks.c **** 	means exclusive access to the event list is guaranteed here.
-ARM GAS  /tmp/ccIgarPJ.s 			page 120
+ARM GAS  /tmp/ccsVbLDJ.s 			page 120
 
 
 2921:../../../FreeRTOS_9_0/Source/tasks.c **** 
@@ -7198,7 +7198,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  3683              		.loc 1 2931 0
  3684 0046 3B69     		ldr	r3, [r7, #16]
  3685 0048 1846     		mov	r0, r3
-ARM GAS  /tmp/ccIgarPJ.s 			page 121
+ARM GAS  /tmp/ccsVbLDJ.s 			page 121
 
 
  3686 004a FFF7FEFF 		bl	SEGGER_SYSVIEW_OnTaskStartReady
@@ -7258,7 +7258,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 2945:../../../FreeRTOS_9_0/Source/tasks.c **** 		xReturn = pdTRUE;
  3727              		.loc 1 2945 0
  3728 009c 0123     		movs	r3, #1
-ARM GAS  /tmp/ccIgarPJ.s 			page 122
+ARM GAS  /tmp/ccsVbLDJ.s 			page 122
 
 
  3729 009e 7B61     		str	r3, [r7, #20]
@@ -7318,7 +7318,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  3757 00c0 00000000 		.word	pxReadyTasksLists
  3758 00c4 00000000 		.word	xPendingReadyList
  3759 00c8 00000000 		.word	pxCurrentTCB
-ARM GAS  /tmp/ccIgarPJ.s 			page 123
+ARM GAS  /tmp/ccsVbLDJ.s 			page 123
 
 
  3760 00cc 00000000 		.word	xYieldPending
@@ -7378,7 +7378,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  3805 0022 FB60     		str	r3, [r7, #12]
  3806              	.L239:
  3807              	.LBE149:
-ARM GAS  /tmp/ccIgarPJ.s 			page 124
+ARM GAS  /tmp/ccsVbLDJ.s 			page 124
 
 
  3808              	.LBE148:
@@ -7438,7 +7438,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  3847 0056 3B69     		ldr	r3, [r7, #16]
  3848 0058 0433     		adds	r3, r3, #4
  3849 005a 1846     		mov	r0, r3
-ARM GAS  /tmp/ccIgarPJ.s 			page 125
+ARM GAS  /tmp/ccsVbLDJ.s 			page 125
 
 
  3850 005c FFF7FEFF 		bl	uxListRemove
@@ -7498,7 +7498,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  3891 00ae 0122     		movs	r2, #1
  3892 00b0 1A60     		str	r2, [r3]
  3893 00b2 01E0     		b	.L243
-ARM GAS  /tmp/ccIgarPJ.s 			page 126
+ARM GAS  /tmp/ccsVbLDJ.s 			page 126
 
 
  3894              	.L242:
@@ -7558,7 +7558,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  3938              		.cfi_offset 7, -4
  3939 0002 85B0     		sub	sp, sp, #20
  3940              	.LCFI142:
-ARM GAS  /tmp/ccIgarPJ.s 			page 127
+ARM GAS  /tmp/ccsVbLDJ.s 			page 127
 
 
  3941              		.cfi_def_cfa_offset 24
@@ -7618,7 +7618,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  3990 003a 7047     		bx	lr
  3991              	.L251:
  3992              		.align	2
-ARM GAS  /tmp/ccIgarPJ.s 			page 128
+ARM GAS  /tmp/ccsVbLDJ.s 			page 128
 
 
  3993              	.L250:
@@ -7678,7 +7678,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  4041              	.LBE155:
  4042              	.LBE154:
  4043              		.loc 1 3031 0 discriminator 1
-ARM GAS  /tmp/ccIgarPJ.s 			page 129
+ARM GAS  /tmp/ccsVbLDJ.s 			page 129
 
 
  4044 0022 FEE7     		b	.L254
@@ -7738,7 +7738,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  4077 004a 1B68     		ldr	r3, [r3]
  4078 004c B3F1FF3F 		cmp	r3, #-1
  4079 0050 02D1     		bne	.L257
-ARM GAS  /tmp/ccIgarPJ.s 			page 130
+ARM GAS  /tmp/ccsVbLDJ.s 			page 130
 
 
 3052:../../../FreeRTOS_9_0/Source/tasks.c **** 			{
@@ -7798,7 +7798,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  4112              		.loc 1 3073 0
  4113 0084 3B68     		ldr	r3, [r7]
  4114 0086 1A68     		ldr	r2, [r3]
-ARM GAS  /tmp/ccIgarPJ.s 			page 131
+ARM GAS  /tmp/ccsVbLDJ.s 			page 131
 
 
  4115 0088 7B68     		ldr	r3, [r7, #4]
@@ -7858,7 +7858,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  4158              		.align	2
  4159              		.global	vTaskMissedYield
  4160              		.thumb
-ARM GAS  /tmp/ccIgarPJ.s 			page 132
+ARM GAS  /tmp/ccsVbLDJ.s 			page 132
 
 
  4161              		.thumb_func
@@ -7918,7 +7918,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  4206              		.loc 1 3097 0
  4207              		.cfi_startproc
  4208              		@ args = 0, pretend = 0, frame = 16
-ARM GAS  /tmp/ccIgarPJ.s 			page 133
+ARM GAS  /tmp/ccsVbLDJ.s 			page 133
 
 
  4209              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -7978,7 +7978,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  4248              		.cfi_def_cfa_register 13
  4249              		@ sp needed
  4250 0026 5DF8047B 		ldr	r7, [sp], #4
-ARM GAS  /tmp/ccIgarPJ.s 			page 134
+ARM GAS  /tmp/ccsVbLDJ.s 			page 134
 
 
  4251              	.LCFI161:
@@ -8038,7 +8038,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  4293 0018 9A64     		str	r2, [r3, #72]
  4294              	.L271:
 3127:../../../FreeRTOS_9_0/Source/tasks.c **** 		}
-ARM GAS  /tmp/ccIgarPJ.s 			page 135
+ARM GAS  /tmp/ccsVbLDJ.s 			page 135
 
 
 3128:../../../FreeRTOS_9_0/Source/tasks.c **** 	}
@@ -8098,7 +8098,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  4334              	.L275:
 3145:../../../FreeRTOS_9_0/Source/tasks.c **** 	/* Stop warnings. */
 3146:../../../FreeRTOS_9_0/Source/tasks.c **** 	( void ) pvParameters;
-ARM GAS  /tmp/ccIgarPJ.s 			page 136
+ARM GAS  /tmp/ccsVbLDJ.s 			page 136
 
 
 3147:../../../FreeRTOS_9_0/Source/tasks.c **** 
@@ -8158,7 +8158,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 3182:../../../FreeRTOS_9_0/Source/tasks.c **** 			else
 3183:../../../FreeRTOS_9_0/Source/tasks.c **** 			{
 3184:../../../FreeRTOS_9_0/Source/tasks.c **** 				mtCOVERAGE_TEST_MARKER();
-ARM GAS  /tmp/ccIgarPJ.s 			page 137
+ARM GAS  /tmp/ccsVbLDJ.s 			page 137
 
 
 3185:../../../FreeRTOS_9_0/Source/tasks.c **** 			}
@@ -8218,7 +8218,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 3239:../../../FreeRTOS_9_0/Source/tasks.c **** 			}
 3240:../../../FreeRTOS_9_0/Source/tasks.c **** 			else
 3241:../../../FreeRTOS_9_0/Source/tasks.c **** 			{
-ARM GAS  /tmp/ccIgarPJ.s 			page 138
+ARM GAS  /tmp/ccsVbLDJ.s 			page 138
 
 
 3242:../../../FreeRTOS_9_0/Source/tasks.c **** 				mtCOVERAGE_TEST_MARKER();
@@ -8278,7 +8278,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 3281:../../../FreeRTOS_9_0/Source/tasks.c **** 			}
 3282:../../../FreeRTOS_9_0/Source/tasks.c **** 		}
 3283:../../../FreeRTOS_9_0/Source/tasks.c **** 
-ARM GAS  /tmp/ccIgarPJ.s 			page 139
+ARM GAS  /tmp/ccsVbLDJ.s 			page 139
 
 
 3284:../../../FreeRTOS_9_0/Source/tasks.c **** 		return eReturn;
@@ -8338,7 +8338,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 3338:../../../FreeRTOS_9_0/Source/tasks.c **** 
 3339:../../../FreeRTOS_9_0/Source/tasks.c **** 		vPortStoreTaskMPUSettings( &( pxTCB->xMPUSettings ), xRegions, NULL, 0 );
 3340:../../../FreeRTOS_9_0/Source/tasks.c **** 	}
-ARM GAS  /tmp/ccIgarPJ.s 			page 140
+ARM GAS  /tmp/ccsVbLDJ.s 			page 140
 
 
 3341:../../../FreeRTOS_9_0/Source/tasks.c **** 
@@ -8398,7 +8398,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 3354:../../../FreeRTOS_9_0/Source/tasks.c **** 	vListInitialise( &xDelayedTaskList1 );
  4410              		.loc 1 3354 0 is_stmt 1
  4411 002c 0C48     		ldr	r0, .L281+4
-ARM GAS  /tmp/ccIgarPJ.s 			page 141
+ARM GAS  /tmp/ccsVbLDJ.s 			page 141
 
 
  4412 002e FFF7FEFF 		bl	vListInitialise
@@ -8458,7 +8458,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  4446 0060 00000000 		.word	xDelayedTaskList1
  4447 0064 00000000 		.word	xDelayedTaskList2
  4448 0068 00000000 		.word	xPendingReadyList
-ARM GAS  /tmp/ccIgarPJ.s 			page 142
+ARM GAS  /tmp/ccsVbLDJ.s 			page 142
 
 
  4449 006c 00000000 		.word	xTasksWaitingTermination
@@ -8518,7 +8518,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  4487 0010 002B     		cmp	r3, #0
  4488 0012 0CBF     		ite	eq
  4489 0014 0123     		moveq	r3, #1
-ARM GAS  /tmp/ccIgarPJ.s 			page 143
+ARM GAS  /tmp/ccsVbLDJ.s 			page 143
 
 
  4490 0016 0023     		movne	r3, #0
@@ -8578,7 +8578,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  4527 0054 3868     		ldr	r0, [r7]
  4528 0056 FFF7FEFF 		bl	prvDeleteTCB
  4529              	.L284:
-ARM GAS  /tmp/ccIgarPJ.s 			page 144
+ARM GAS  /tmp/ccsVbLDJ.s 			page 144
 
 
  4530              	.LBE160:
@@ -8638,7 +8638,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  4570              		.cfi_offset 7, -8
  4571              		.cfi_offset 14, -4
  4572 0002 86B0     		sub	sp, sp, #24
-ARM GAS  /tmp/ccIgarPJ.s 			page 145
+ARM GAS  /tmp/ccsVbLDJ.s 			page 145
 
 
  4573              	.LCFI182:
@@ -8698,7 +8698,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  4617 0040 5A6C     		ldr	r2, [r3, #68]
  4618 0042 BB68     		ldr	r3, [r7, #8]
  4619 0044 9A60     		str	r2, [r3, #8]
-ARM GAS  /tmp/ccIgarPJ.s 			page 146
+ARM GAS  /tmp/ccsVbLDJ.s 			page 146
 
 
 3435:../../../FreeRTOS_9_0/Source/tasks.c **** 
@@ -8758,7 +8758,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 3464:../../../FreeRTOS_9_0/Source/tasks.c **** 
 3465:../../../FreeRTOS_9_0/Source/tasks.c **** 		#if ( configGENERATE_RUN_TIME_STATS == 1 )
 3466:../../../FreeRTOS_9_0/Source/tasks.c **** 		{
-ARM GAS  /tmp/ccIgarPJ.s 			page 147
+ARM GAS  /tmp/ccsVbLDJ.s 			page 147
 
 
 3467:../../../FreeRTOS_9_0/Source/tasks.c **** 			pxTaskStatus->ulRunTimeCounter = pxTCB->ulRunTimeCounter;
@@ -8818,7 +8818,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 3495:../../../FreeRTOS_9_0/Source/tasks.c **** 			#else
 3496:../../../FreeRTOS_9_0/Source/tasks.c **** 			{
 3497:../../../FreeRTOS_9_0/Source/tasks.c **** 				pxTaskStatus->usStackHighWaterMark = prvTaskCheckFreeStackSpace( ( uint8_t * ) pxTCB->pxStack )
-ARM GAS  /tmp/ccIgarPJ.s 			page 148
+ARM GAS  /tmp/ccsVbLDJ.s 			page 148
 
 
  4671              		.loc 1 3497 0
@@ -8878,7 +8878,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  4711              		.cfi_startproc
  4712              		@ args = 0, pretend = 0, frame = 40
  4713              		@ frame_needed = 1, uses_anonymous_args = 0
-ARM GAS  /tmp/ccIgarPJ.s 			page 149
+ARM GAS  /tmp/ccsVbLDJ.s 			page 149
 
 
  4714 0000 80B5     		push	{r7, lr}
@@ -8938,7 +8938,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  4762 0042 DB68     		ldr	r3, [r3, #12]
  4763 0044 FB61     		str	r3, [r7, #28]
  4764              	.L303:
-ARM GAS  /tmp/ccIgarPJ.s 			page 150
+ARM GAS  /tmp/ccsVbLDJ.s 			page 150
 
 
  4765              	.LBE161:
@@ -8998,7 +8998,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  4809 008e 7B6A     		ldr	r3, [r7, #36]
  4810 0090 0133     		adds	r3, r3, #1
  4811 0092 7B62     		str	r3, [r7, #36]
-ARM GAS  /tmp/ccIgarPJ.s 			page 151
+ARM GAS  /tmp/ccsVbLDJ.s 			page 151
 
 
 3530:../../../FreeRTOS_9_0/Source/tasks.c **** 			} while( pxNextTCB != pxFirstTCB );
@@ -9058,7 +9058,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  4851              		.cfi_def_cfa_offset 24
  4852 0004 00AF     		add	r7, sp, #0
  4853              	.LCFI193:
-ARM GAS  /tmp/ccIgarPJ.s 			page 152
+ARM GAS  /tmp/ccsVbLDJ.s 			page 152
 
 
  4854              		.cfi_def_cfa_register 7
@@ -9118,7 +9118,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  4895              		.cfi_def_cfa_offset 0
  4896 0036 7047     		bx	lr
  4897              		.cfi_endproc
-ARM GAS  /tmp/ccIgarPJ.s 			page 153
+ARM GAS  /tmp/ccsVbLDJ.s 			page 153
 
 
  4898              	.LFE43:
@@ -9178,7 +9178,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 3606:../../../FreeRTOS_9_0/Source/tasks.c **** 
 3607:../../../FreeRTOS_9_0/Source/tasks.c **** 	static void prvDeleteTCB( TCB_t *pxTCB )
 3608:../../../FreeRTOS_9_0/Source/tasks.c **** 	{
-ARM GAS  /tmp/ccIgarPJ.s 			page 154
+ARM GAS  /tmp/ccsVbLDJ.s 			page 154
 
 
  4907              		.loc 1 3608 0
@@ -9238,7 +9238,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 3639:../../../FreeRTOS_9_0/Source/tasks.c **** 				vPortFree( pxTCB );
 3640:../../../FreeRTOS_9_0/Source/tasks.c **** 			}
 3641:../../../FreeRTOS_9_0/Source/tasks.c **** 			else if( pxTCB->ucStaticallyAllocated == tskSTATICALLY_ALLOCATED_STACK_ONLY )
-ARM GAS  /tmp/ccIgarPJ.s 			page 155
+ARM GAS  /tmp/ccsVbLDJ.s 			page 155
 
 
 3642:../../../FreeRTOS_9_0/Source/tasks.c **** 			{
@@ -9298,7 +9298,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 3664:../../../FreeRTOS_9_0/Source/tasks.c **** 
 3665:../../../FreeRTOS_9_0/Source/tasks.c **** 	if( listLIST_IS_EMPTY( pxDelayedTaskList ) != pdFALSE )
  4965              		.loc 1 3665 0
-ARM GAS  /tmp/ccIgarPJ.s 			page 156
+ARM GAS  /tmp/ccsVbLDJ.s 			page 156
 
 
  4966 0006 0E4B     		ldr	r3, .L315
@@ -9358,7 +9358,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  5003 0038 BD46     		mov	sp, r7
  5004              	.LCFI206:
  5005              		.cfi_def_cfa_register 13
-ARM GAS  /tmp/ccIgarPJ.s 			page 157
+ARM GAS  /tmp/ccsVbLDJ.s 			page 157
 
 
  5006              		@ sp needed
@@ -9418,7 +9418,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  5048 000c 7B68     		ldr	r3, [r7, #4]
 3697:../../../FreeRTOS_9_0/Source/tasks.c **** 	}
  5049              		.loc 1 3697 0
-ARM GAS  /tmp/ccIgarPJ.s 			page 158
+ARM GAS  /tmp/ccsVbLDJ.s 			page 158
 
 
  5050 000e 1846     		mov	r0, r3
@@ -9478,7 +9478,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  5095 0008 1B68     		ldr	r3, [r3]
  5096 000a 002B     		cmp	r3, #0
  5097 000c 02D1     		bne	.L322
-ARM GAS  /tmp/ccIgarPJ.s 			page 159
+ARM GAS  /tmp/ccsVbLDJ.s 			page 159
 
 
 3709:../../../FreeRTOS_9_0/Source/tasks.c **** 		{
@@ -9538,7 +9538,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  5135              	.L326:
  5136 0034 00000000 		.word	xSchedulerRunning
  5137 0038 00000000 		.word	uxSchedulerSuspended
-ARM GAS  /tmp/ccIgarPJ.s 			page 160
+ARM GAS  /tmp/ccsVbLDJ.s 			page 160
 
 
  5138              		.cfi_endproc
@@ -9598,7 +9598,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  5176 0018 1B68     		ldr	r3, [r3]
  5177 001a DB6A     		ldr	r3, [r3, #44]
  5178 001c 9A42     		cmp	r2, r3
-ARM GAS  /tmp/ccIgarPJ.s 			page 161
+ARM GAS  /tmp/ccsVbLDJ.s 			page 161
 
 
  5179 001e 62D2     		bcs	.L328
@@ -9658,7 +9658,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 3761:../../../FreeRTOS_9_0/Source/tasks.c **** 					if( uxListRemove( &( pxTCB->xStateListItem ) ) == ( UBaseType_t ) 0 )
  5216              		.loc 1 3761 0 is_stmt 1
  5217 0058 FB68     		ldr	r3, [r7, #12]
-ARM GAS  /tmp/ccIgarPJ.s 			page 162
+ARM GAS  /tmp/ccsVbLDJ.s 			page 162
 
 
  5218 005a 0433     		adds	r3, r3, #4
@@ -9718,7 +9718,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  5261 00aa 124B     		ldr	r3, .L337+8
  5262 00ac 1B68     		ldr	r3, [r3]
  5263 00ae 1343     		orrs	r3, r3, r2
-ARM GAS  /tmp/ccIgarPJ.s 			page 163
+ARM GAS  /tmp/ccsVbLDJ.s 			page 163
 
 
  5264 00b0 104A     		ldr	r2, .L337+8
@@ -9778,7 +9778,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  5299              	.LCFI224:
  5300              		.cfi_def_cfa_register 13
  5301              		@ sp needed
-ARM GAS  /tmp/ccIgarPJ.s 			page 164
+ARM GAS  /tmp/ccsVbLDJ.s 			page 164
 
 
  5302 00ea 80BD     		pop	{r7, pc}
@@ -9838,7 +9838,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 3804:../../../FreeRTOS_9_0/Source/tasks.c **** 		{
 3805:../../../FreeRTOS_9_0/Source/tasks.c **** 			/* A task can only have an inherited priority if it holds the mutex.
 3806:../../../FreeRTOS_9_0/Source/tasks.c **** 			If the mutex is held by a task then it cannot be given from an
-ARM GAS  /tmp/ccIgarPJ.s 			page 165
+ARM GAS  /tmp/ccsVbLDJ.s 			page 165
 
 
 3807:../../../FreeRTOS_9_0/Source/tasks.c **** 			interrupt, and if a mutex is given by the holding task then it must
@@ -9898,7 +9898,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 3812:../../../FreeRTOS_9_0/Source/tasks.c **** 			( pxTCB->uxMutexesHeld )--;
  5393              		.loc 1 3812 0
  5394 0050 3B69     		ldr	r3, [r7, #16]
-ARM GAS  /tmp/ccIgarPJ.s 			page 166
+ARM GAS  /tmp/ccsVbLDJ.s 			page 166
 
 
  5395 0052 1B6D     		ldr	r3, [r3, #80]
@@ -9958,7 +9958,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  5433 0096 DB6A     		ldr	r3, [r3, #44]
  5434 0098 1A46     		mov	r2, r3
  5435 009a 0123     		movs	r3, #1
-ARM GAS  /tmp/ccIgarPJ.s 			page 167
+ARM GAS  /tmp/ccsVbLDJ.s 			page 167
 
 
  5436 009c 9340     		lsls	r3, r3, r2
@@ -10018,7 +10018,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  5474 00e4 9B00     		lsls	r3, r3, #2
  5475 00e6 1344     		add	r3, r3, r2
  5476 00e8 9B00     		lsls	r3, r3, #2
-ARM GAS  /tmp/ccIgarPJ.s 			page 168
+ARM GAS  /tmp/ccsVbLDJ.s 			page 168
 
 
  5477 00ea 084A     		ldr	r2, .L348+4
@@ -10078,7 +10078,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  5503 0108 00000000 		.word	pxCurrentTCB
  5504 010c 00000000 		.word	pxReadyTasksLists
  5505 0110 00000000 		.word	uxTopReadyPriority
-ARM GAS  /tmp/ccIgarPJ.s 			page 169
+ARM GAS  /tmp/ccsVbLDJ.s 			page 169
 
 
  5506              		.cfi_endproc
@@ -10138,7 +10138,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 3919:../../../FreeRTOS_9_0/Source/tasks.c **** 					portENABLE_INTERRUPTS();
 3920:../../../FreeRTOS_9_0/Source/tasks.c **** 				}
 3921:../../../FreeRTOS_9_0/Source/tasks.c **** 				else
-ARM GAS  /tmp/ccIgarPJ.s 			page 170
+ARM GAS  /tmp/ccsVbLDJ.s 			page 170
 
 
 3922:../../../FreeRTOS_9_0/Source/tasks.c **** 				{
@@ -10198,7 +10198,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  5540 0018 F860     		str	r0, [r7, #12]
  5541 001a 07E0     		b	.L351
  5542              	.L352:
-ARM GAS  /tmp/ccIgarPJ.s 			page 171
+ARM GAS  /tmp/ccsVbLDJ.s 			page 171
 
 
 3952:../../../FreeRTOS_9_0/Source/tasks.c **** 		{
@@ -10258,7 +10258,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  5584      75092575 
  5584      0D0A00
  5585              		.section	.text.vTaskList,"ax",%progbits
-ARM GAS  /tmp/ccIgarPJ.s 			page 172
+ARM GAS  /tmp/ccsVbLDJ.s 			page 172
 
 
  5586              		.align	2
@@ -10318,7 +10318,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 3992:../../../FreeRTOS_9_0/Source/tasks.c **** 		 *
 3993:../../../FreeRTOS_9_0/Source/tasks.c **** 		 * It is recommended that production systems call uxTaskGetSystemState()
 3994:../../../FreeRTOS_9_0/Source/tasks.c **** 		 * directly to get access to raw stats data, rather than indirectly
-ARM GAS  /tmp/ccIgarPJ.s 			page 173
+ARM GAS  /tmp/ccsVbLDJ.s 			page 173
 
 
 3995:../../../FreeRTOS_9_0/Source/tasks.c **** 		 * through a call to vTaskList().
@@ -10378,7 +10378,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  5642 003e 0023     		movs	r3, #0
  5643 0040 BB60     		str	r3, [r7, #8]
  5644 0042 63E0     		b	.L356
-ARM GAS  /tmp/ccIgarPJ.s 			page 174
+ARM GAS  /tmp/ccsVbLDJ.s 			page 174
 
 
  5645              	.L364:
@@ -10438,7 +10438,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 4030:../../../FreeRTOS_9_0/Source/tasks.c **** 					case eDeleted:		cStatus = tskDELETED_CHAR;
  5687              		.loc 1 4030 0
  5688 0086 4423     		movs	r3, #68
-ARM GAS  /tmp/ccIgarPJ.s 			page 175
+ARM GAS  /tmp/ccsVbLDJ.s 			page 175
 
 
  5689 0088 FB75     		strb	r3, [r7, #23]
@@ -10498,7 +10498,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  5729 00cc 1A46     		mov	r2, r3
  5730 00ce 3B69     		ldr	r3, [r7, #16]
  5731 00d0 1344     		add	r3, r3, r2
-ARM GAS  /tmp/ccIgarPJ.s 			page 176
+ARM GAS  /tmp/ccsVbLDJ.s 			page 176
 
 
  5732 00d2 1B8C     		ldrh	r3, [r3, #32]
@@ -10558,7 +10558,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  5772 011a 1837     		adds	r7, r7, #24
  5773              	.LCFI238:
  5774              		.cfi_def_cfa_offset 16
-ARM GAS  /tmp/ccIgarPJ.s 			page 177
+ARM GAS  /tmp/ccsVbLDJ.s 			page 177
 
 
  5775 011c BD46     		mov	sp, r7
@@ -10618,7 +10618,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 4092:../../../FreeRTOS_9_0/Source/tasks.c **** 		 * a file called printf-stdarg.c (note printf-stdarg.c does not provide
 4093:../../../FreeRTOS_9_0/Source/tasks.c **** 		 * a full snprintf() implementation!).
 4094:../../../FreeRTOS_9_0/Source/tasks.c **** 		 *
-ARM GAS  /tmp/ccIgarPJ.s 			page 178
+ARM GAS  /tmp/ccsVbLDJ.s 			page 178
 
 
 4095:../../../FreeRTOS_9_0/Source/tasks.c **** 		 * It is recommended that production systems call uxTaskGetSystemState()
@@ -10678,7 +10678,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 4149:../../../FreeRTOS_9_0/Source/tasks.c **** 					}
 4150:../../../FreeRTOS_9_0/Source/tasks.c **** 					else
 4151:../../../FreeRTOS_9_0/Source/tasks.c **** 					{
-ARM GAS  /tmp/ccIgarPJ.s 			page 179
+ARM GAS  /tmp/ccsVbLDJ.s 			page 179
 
 
 4152:../../../FreeRTOS_9_0/Source/tasks.c **** 						/* If the percentage is zero here then the task has
@@ -10738,7 +10738,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 4191:../../../FreeRTOS_9_0/Source/tasks.c **** 
 4192:../../../FreeRTOS_9_0/Source/tasks.c **** 	uxReturn = listGET_LIST_ITEM_VALUE( &( pxCurrentTCB->xEventListItem ) );
  5811              		.loc 1 4192 0
-ARM GAS  /tmp/ccIgarPJ.s 			page 180
+ARM GAS  /tmp/ccsVbLDJ.s 			page 180
 
 
  5812 0006 094B     		ldr	r3, .L369
@@ -10798,7 +10798,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  5855              		.loc 1 4205 0
  5856              		.cfi_startproc
  5857              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccIgarPJ.s 			page 181
+ARM GAS  /tmp/ccsVbLDJ.s 			page 181
 
 
  5858              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -10858,7 +10858,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  5904              		.thumb_func
  5906              	ulTaskNotifyTake:
  5907              	.LFB54:
-ARM GAS  /tmp/ccIgarPJ.s 			page 182
+ARM GAS  /tmp/ccsVbLDJ.s 			page 182
 
 
 4215:../../../FreeRTOS_9_0/Source/tasks.c **** 
@@ -10918,7 +10918,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 4235:../../../FreeRTOS_9_0/Source/tasks.c **** 					prvAddCurrentTaskToDelayedList( xTicksToWait, pdTRUE );
  5942              		.loc 1 4235 0
  5943 0028 3868     		ldr	r0, [r7]
-ARM GAS  /tmp/ccIgarPJ.s 			page 183
+ARM GAS  /tmp/ccsVbLDJ.s 			page 183
 
 
  5944 002a 0121     		movs	r1, #1
@@ -10978,7 +10978,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 4261:../../../FreeRTOS_9_0/Source/tasks.c **** 			if( ulReturn != 0UL )
  5973              		.loc 1 4261 0
  5974 005c FB68     		ldr	r3, [r7, #12]
-ARM GAS  /tmp/ccIgarPJ.s 			page 184
+ARM GAS  /tmp/ccsVbLDJ.s 			page 184
 
 
  5975 005e 002B     		cmp	r3, #0
@@ -11038,7 +11038,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  6008              		.cfi_def_cfa_offset 8
  6009 0090 BD46     		mov	sp, r7
  6010              	.LCFI254:
-ARM GAS  /tmp/ccIgarPJ.s 			page 185
+ARM GAS  /tmp/ccsVbLDJ.s 			page 185
 
 
  6011              		.cfi_def_cfa_register 13
@@ -11098,7 +11098,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  6053 0012 2B4B     		ldr	r3, .L390
  6054 0014 1B68     		ldr	r3, [r3]
  6055 0016 93F85830 		ldrb	r3, [r3, #88]
-ARM GAS  /tmp/ccIgarPJ.s 			page 186
+ARM GAS  /tmp/ccsVbLDJ.s 			page 186
 
 
  6056 001a DBB2     		uxtb	r3, r3
@@ -11158,7 +11158,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  6091              	.L385:
 4316:../../../FreeRTOS_9_0/Source/tasks.c **** 				}
 4317:../../../FreeRTOS_9_0/Source/tasks.c **** 				else
-ARM GAS  /tmp/ccIgarPJ.s 			page 187
+ARM GAS  /tmp/ccsVbLDJ.s 			page 187
 
 
 4318:../../../FreeRTOS_9_0/Source/tasks.c **** 				{
@@ -11218,7 +11218,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  6119 0084 93F85830 		ldrb	r3, [r3, #88]
  6120 0088 DBB2     		uxtb	r3, r3
  6121 008a 012B     		cmp	r3, #1
-ARM GAS  /tmp/ccIgarPJ.s 			page 188
+ARM GAS  /tmp/ccsVbLDJ.s 			page 188
 
 
  6122 008c 02D1     		bne	.L387
@@ -11278,7 +11278,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  6158 00bc 90BD     		pop	{r4, r7, pc}
  6159              	.L391:
  6160 00be 00BF     		.align	2
-ARM GAS  /tmp/ccIgarPJ.s 			page 189
+ARM GAS  /tmp/ccsVbLDJ.s 			page 189
 
 
  6161              	.L390:
@@ -11338,7 +11338,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  6204              	.LBB168:
  237:../../../FreeRTOS_9_0/Source/portable/GCC/ARM_CM4F/portmacro.h **** 	(
  6205              		.loc 2 237 0 discriminator 1
-ARM GAS  /tmp/ccIgarPJ.s 			page 190
+ARM GAS  /tmp/ccsVbLDJ.s 			page 190
 
 
  6206              	@ 237 "../../../FreeRTOS_9_0/Source/portable/GCC/ARM_CM4F/portmacro.h" 1
@@ -11398,7 +11398,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  6246 0056 042B     		cmp	r3, #4
  6247 0058 27D8     		bhi	.L396
  6248 005a 01A2     		adr	r2, .L398
-ARM GAS  /tmp/ccIgarPJ.s 			page 191
+ARM GAS  /tmp/ccsVbLDJ.s 			page 191
 
 
  6249 005c 52F823F0 		ldr	pc, [r2, r3, lsl #2]
@@ -11458,7 +11458,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  6288 009a 03D0     		beq	.L403
 4405:../../../FreeRTOS_9_0/Source/tasks.c **** 					{
 4406:../../../FreeRTOS_9_0/Source/tasks.c **** 						pxTCB->ulNotifiedValue = ulValue;
-ARM GAS  /tmp/ccIgarPJ.s 			page 192
+ARM GAS  /tmp/ccsVbLDJ.s 			page 192
 
 
  6289              		.loc 1 4406 0
@@ -11518,7 +11518,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  6321 00cc 3B6A     		ldr	r3, [r7, #32]
  6322 00ce 0433     		adds	r3, r3, #4
  6323 00d0 1846     		mov	r0, r3
-ARM GAS  /tmp/ccIgarPJ.s 			page 193
+ARM GAS  /tmp/ccsVbLDJ.s 			page 193
 
 
  6324 00d2 FFF7FEFF 		bl	uxListRemove
@@ -11578,7 +11578,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  6373 012a FEE7     		b	.L407
  6374              	.L406:
 4432:../../../FreeRTOS_9_0/Source/tasks.c **** 
-ARM GAS  /tmp/ccIgarPJ.s 			page 194
+ARM GAS  /tmp/ccsVbLDJ.s 			page 194
 
 
 4433:../../../FreeRTOS_9_0/Source/tasks.c **** 				#if( configUSE_TICKLESS_IDLE != 0 )
@@ -11638,7 +11638,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  6396 014a FFF7FEFF 		bl	vPortExitCritical
 4466:../../../FreeRTOS_9_0/Source/tasks.c **** 
 4467:../../../FreeRTOS_9_0/Source/tasks.c **** 		return xReturn;
-ARM GAS  /tmp/ccIgarPJ.s 			page 195
+ARM GAS  /tmp/ccsVbLDJ.s 			page 195
 
 
  6397              		.loc 1 4467 0
@@ -11698,7 +11698,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  6444 0008 B960     		str	r1, [r7, #8]
  6445 000a 3B60     		str	r3, [r7]
  6446 000c 1346     		mov	r3, r2
-ARM GAS  /tmp/ccIgarPJ.s 			page 196
+ARM GAS  /tmp/ccsVbLDJ.s 			page 196
 
 
  6447 000e FB71     		strb	r3, [r7, #7]
@@ -11758,7 +11758,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 4502:../../../FreeRTOS_9_0/Source/tasks.c **** 		pxTCB = ( TCB_t * ) xTaskToNotify;
  6475              		.loc 1 4502 0
  6476 0032 FB68     		ldr	r3, [r7, #12]
-ARM GAS  /tmp/ccIgarPJ.s 			page 197
+ARM GAS  /tmp/ccsVbLDJ.s 			page 197
 
 
  6477 0034 3B63     		str	r3, [r7, #48]
@@ -11818,7 +11818,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  6517 0072 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
  6518 0074 042B     		cmp	r3, #4
  6519 0076 29D8     		bhi	.L417
-ARM GAS  /tmp/ccIgarPJ.s 			page 198
+ARM GAS  /tmp/ccsVbLDJ.s 			page 198
 
 
  6520 0078 01A2     		adr	r2, .L419
@@ -11878,7 +11878,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  6559 00ba 022B     		cmp	r3, #2
  6560 00bc 03D0     		beq	.L424
 4530:../../../FreeRTOS_9_0/Source/tasks.c **** 					{
-ARM GAS  /tmp/ccIgarPJ.s 			page 199
+ARM GAS  /tmp/ccsVbLDJ.s 			page 199
 
 
 4531:../../../FreeRTOS_9_0/Source/tasks.c **** 						pxTCB->ulNotifiedValue = ulValue;
@@ -11938,7 +11938,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 4552:../../../FreeRTOS_9_0/Source/tasks.c **** 				/* The task should not have been on an event list. */
 4553:../../../FreeRTOS_9_0/Source/tasks.c **** 				configASSERT( listLIST_ITEM_CONTAINER( &( pxTCB->xEventListItem ) ) == NULL );
  6593              		.loc 1 4553 0
-ARM GAS  /tmp/ccIgarPJ.s 			page 200
+ARM GAS  /tmp/ccsVbLDJ.s 			page 200
 
 
  6594 00f2 3B6B     		ldr	r3, [r7, #48]
@@ -11998,7 +11998,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  6642 0142 1346     		mov	r3, r2
  6643 0144 9B00     		lsls	r3, r3, #2
  6644 0146 1344     		add	r3, r3, r2
-ARM GAS  /tmp/ccIgarPJ.s 			page 201
+ARM GAS  /tmp/ccsVbLDJ.s 			page 201
 
 
  6645 0148 9B00     		lsls	r3, r3, #2
@@ -12058,7 +12058,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 4578:../../../FreeRTOS_9_0/Source/tasks.c **** 						using the "xHigherPriorityTaskWoken" parameter to an ISR
 4579:../../../FreeRTOS_9_0/Source/tasks.c **** 						safe FreeRTOS function. */
 4580:../../../FreeRTOS_9_0/Source/tasks.c **** 						xYieldPending = pdTRUE;
-ARM GAS  /tmp/ccIgarPJ.s 			page 202
+ARM GAS  /tmp/ccsVbLDJ.s 			page 202
 
 
  6680              		.loc 1 4580 0
@@ -12118,7 +12118,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  6723              		.global	vTaskNotifyGiveFromISR
  6724              		.thumb
  6725              		.thumb_func
-ARM GAS  /tmp/ccIgarPJ.s 			page 203
+ARM GAS  /tmp/ccsVbLDJ.s 			page 203
 
 
  6727              	vTaskNotifyGiveFromISR:
@@ -12178,7 +12178,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  6767              	.L438:
 4606:../../../FreeRTOS_9_0/Source/tasks.c **** 
 4607:../../../FreeRTOS_9_0/Source/tasks.c **** 		/* RTOS ports that support interrupt nesting have the concept of a
-ARM GAS  /tmp/ccIgarPJ.s 			page 204
+ARM GAS  /tmp/ccsVbLDJ.s 			page 204
 
 
 4608:../../../FreeRTOS_9_0/Source/tasks.c **** 		maximum	system call (or maximum API call) interrupt priority.
@@ -12238,7 +12238,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  6797              		.loc 1 4630 0
  6798 0050 7B6A     		ldr	r3, [r7, #36]
  6799 0052 0222     		movs	r2, #2
-ARM GAS  /tmp/ccIgarPJ.s 			page 205
+ARM GAS  /tmp/ccsVbLDJ.s 			page 205
 
 
  6800 0054 83F85820 		strb	r2, [r3, #88]
@@ -12298,7 +12298,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  6840              	.LBE183:
  6841              		.loc 1 4643 0 discriminator 2
  6842 0098 FEE7     		b	.L443
-ARM GAS  /tmp/ccIgarPJ.s 			page 206
+ARM GAS  /tmp/ccsVbLDJ.s 			page 206
 
 
  6843              	.L442:
@@ -12358,7 +12358,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  6886 00ec 1148     		ldr	r0, .L448+12
  6887 00ee 1946     		mov	r1, r3
  6888 00f0 FFF7FEFF 		bl	vListInsertEnd
-ARM GAS  /tmp/ccIgarPJ.s 			page 207
+ARM GAS  /tmp/ccsVbLDJ.s 			page 207
 
 
  6889              	.L445:
@@ -12418,7 +12418,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 4673:../../../FreeRTOS_9_0/Source/tasks.c **** 				else
 4674:../../../FreeRTOS_9_0/Source/tasks.c **** 				{
 4675:../../../FreeRTOS_9_0/Source/tasks.c **** 					mtCOVERAGE_TEST_MARKER();
-ARM GAS  /tmp/ccIgarPJ.s 			page 208
+ARM GAS  /tmp/ccsVbLDJ.s 			page 208
 
 
 4676:../../../FreeRTOS_9_0/Source/tasks.c **** 				}
@@ -12478,7 +12478,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  6967              	.LCFI277:
  6968              		.cfi_def_cfa_register 7
  6969 0006 7860     		str	r0, [r7, #4]
-ARM GAS  /tmp/ccIgarPJ.s 			page 209
+ARM GAS  /tmp/ccsVbLDJ.s 			page 209
 
 
 4690:../../../FreeRTOS_9_0/Source/tasks.c **** 	TCB_t *pxTCB;
@@ -12538,7 +12538,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 4709:../../../FreeRTOS_9_0/Source/tasks.c **** 		taskEXIT_CRITICAL();
  7005              		.loc 1 4709 0
  7006 003a FFF7FEFF 		bl	vPortExitCritical
-ARM GAS  /tmp/ccIgarPJ.s 			page 210
+ARM GAS  /tmp/ccsVbLDJ.s 			page 210
 
 
 4710:../../../FreeRTOS_9_0/Source/tasks.c **** 
@@ -12598,7 +12598,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  7051 000a 314B     		ldr	r3, .L463
  7052 000c 1B68     		ldr	r3, [r3]
  7053 000e FB60     		str	r3, [r7, #12]
-ARM GAS  /tmp/ccIgarPJ.s 			page 211
+ARM GAS  /tmp/ccsVbLDJ.s 			page 211
 
 
 4722:../../../FreeRTOS_9_0/Source/tasks.c **** 
@@ -12658,7 +12658,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  7082 0042 3B68     		ldr	r3, [r7]
  7083 0044 002B     		cmp	r3, #0
  7084 0046 0DD0     		beq	.L460
-ARM GAS  /tmp/ccIgarPJ.s 			page 212
+ARM GAS  /tmp/ccsVbLDJ.s 			page 212
 
 
 4748:../../../FreeRTOS_9_0/Source/tasks.c **** 		{
@@ -12718,7 +12718,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  7119 0082 0421     		movs	r1, #4
  7120 0084 FFF7FEFF 		bl	SEGGER_SYSVIEW_OnTaskStopReady
 4768:../../../FreeRTOS_9_0/Source/tasks.c **** 				/* Wake time has overflowed.  Place this item in the overflow
-ARM GAS  /tmp/ccIgarPJ.s 			page 213
+ARM GAS  /tmp/ccsVbLDJ.s 			page 213
 
 
 4769:../../../FreeRTOS_9_0/Source/tasks.c **** 				list. */
@@ -12778,7 +12778,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
 4786:../../../FreeRTOS_9_0/Source/tasks.c **** 				else
 4787:../../../FreeRTOS_9_0/Source/tasks.c **** 				{
 4788:../../../FreeRTOS_9_0/Source/tasks.c **** 					mtCOVERAGE_TEST_MARKER();
-ARM GAS  /tmp/ccIgarPJ.s 			page 214
+ARM GAS  /tmp/ccsVbLDJ.s 			page 214
 
 
 4789:../../../FreeRTOS_9_0/Source/tasks.c **** 				}
@@ -12838,7 +12838,7 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  7168              		.align	2
  7169              	.L463:
  7170 00d0 00000000 		.word	xTickCount
-ARM GAS  /tmp/ccIgarPJ.s 			page 215
+ARM GAS  /tmp/ccsVbLDJ.s 			page 215
 
 
  7171 00d4 00000000 		.word	pxCurrentTCB
@@ -12857,229 +12857,229 @@ ARM GAS  /tmp/ccIgarPJ.s 			page 1
  7185              		.file 6 "../../../FreeRTOS_9_0/Source/include/projdefs.h"
  7186              		.file 7 "../../../FreeRTOS_9_0/Source/include/list.h"
  7187              		.file 8 "../../../FreeRTOS_9_0/Source/include/task.h"
-ARM GAS  /tmp/ccIgarPJ.s 			page 216
+ARM GAS  /tmp/ccsVbLDJ.s 			page 216
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 tasks.c
-     /tmp/ccIgarPJ.s:25     .bss.pxCurrentTCB:0000000000000000 pxCurrentTCB
-     /tmp/ccIgarPJ.s:22     .bss.pxCurrentTCB:0000000000000000 $d
-     /tmp/ccIgarPJ.s:28     .bss.pxReadyTasksLists:0000000000000000 $d
-     /tmp/ccIgarPJ.s:31     .bss.pxReadyTasksLists:0000000000000000 pxReadyTasksLists
-     /tmp/ccIgarPJ.s:34     .bss.xDelayedTaskList1:0000000000000000 $d
-     /tmp/ccIgarPJ.s:37     .bss.xDelayedTaskList1:0000000000000000 xDelayedTaskList1
-     /tmp/ccIgarPJ.s:40     .bss.xDelayedTaskList2:0000000000000000 $d
-     /tmp/ccIgarPJ.s:43     .bss.xDelayedTaskList2:0000000000000000 xDelayedTaskList2
-     /tmp/ccIgarPJ.s:46     .bss.pxDelayedTaskList:0000000000000000 $d
-     /tmp/ccIgarPJ.s:49     .bss.pxDelayedTaskList:0000000000000000 pxDelayedTaskList
-     /tmp/ccIgarPJ.s:52     .bss.pxOverflowDelayedTaskList:0000000000000000 $d
-     /tmp/ccIgarPJ.s:55     .bss.pxOverflowDelayedTaskList:0000000000000000 pxOverflowDelayedTaskList
-     /tmp/ccIgarPJ.s:58     .bss.xPendingReadyList:0000000000000000 $d
-     /tmp/ccIgarPJ.s:61     .bss.xPendingReadyList:0000000000000000 xPendingReadyList
-     /tmp/ccIgarPJ.s:64     .bss.xTasksWaitingTermination:0000000000000000 $d
-     /tmp/ccIgarPJ.s:67     .bss.xTasksWaitingTermination:0000000000000000 xTasksWaitingTermination
-     /tmp/ccIgarPJ.s:70     .bss.uxDeletedTasksWaitingCleanUp:0000000000000000 $d
-     /tmp/ccIgarPJ.s:73     .bss.uxDeletedTasksWaitingCleanUp:0000000000000000 uxDeletedTasksWaitingCleanUp
-     /tmp/ccIgarPJ.s:76     .bss.xSuspendedTaskList:0000000000000000 $d
-     /tmp/ccIgarPJ.s:79     .bss.xSuspendedTaskList:0000000000000000 xSuspendedTaskList
-     /tmp/ccIgarPJ.s:82     .bss.uxCurrentNumberOfTasks:0000000000000000 $d
-     /tmp/ccIgarPJ.s:85     .bss.uxCurrentNumberOfTasks:0000000000000000 uxCurrentNumberOfTasks
-     /tmp/ccIgarPJ.s:88     .bss.xTickCount:0000000000000000 $d
-     /tmp/ccIgarPJ.s:91     .bss.xTickCount:0000000000000000 xTickCount
-     /tmp/ccIgarPJ.s:94     .bss.uxTopReadyPriority:0000000000000000 $d
-     /tmp/ccIgarPJ.s:97     .bss.uxTopReadyPriority:0000000000000000 uxTopReadyPriority
-     /tmp/ccIgarPJ.s:100    .bss.xSchedulerRunning:0000000000000000 $d
-     /tmp/ccIgarPJ.s:103    .bss.xSchedulerRunning:0000000000000000 xSchedulerRunning
-     /tmp/ccIgarPJ.s:106    .bss.uxPendedTicks:0000000000000000 $d
-     /tmp/ccIgarPJ.s:109    .bss.uxPendedTicks:0000000000000000 uxPendedTicks
-     /tmp/ccIgarPJ.s:112    .bss.xYieldPending:0000000000000000 $d
-     /tmp/ccIgarPJ.s:115    .bss.xYieldPending:0000000000000000 xYieldPending
-     /tmp/ccIgarPJ.s:118    .bss.xNumOfOverflows:0000000000000000 $d
-     /tmp/ccIgarPJ.s:121    .bss.xNumOfOverflows:0000000000000000 xNumOfOverflows
-     /tmp/ccIgarPJ.s:124    .bss.uxTaskNumber:0000000000000000 $d
-     /tmp/ccIgarPJ.s:127    .bss.uxTaskNumber:0000000000000000 uxTaskNumber
-     /tmp/ccIgarPJ.s:130    .bss.xNextTaskUnblockTime:0000000000000000 $d
-     /tmp/ccIgarPJ.s:133    .bss.xNextTaskUnblockTime:0000000000000000 xNextTaskUnblockTime
-     /tmp/ccIgarPJ.s:136    .bss.xIdleTaskHandle:0000000000000000 $d
-     /tmp/ccIgarPJ.s:139    .bss.xIdleTaskHandle:0000000000000000 xIdleTaskHandle
-     /tmp/ccIgarPJ.s:142    .bss.uxSchedulerSuspended:0000000000000000 $d
-     /tmp/ccIgarPJ.s:145    .bss.uxSchedulerSuspended:0000000000000000 uxSchedulerSuspended
-     /tmp/ccIgarPJ.s:148    .text.xTaskCreate:0000000000000000 $t
-     /tmp/ccIgarPJ.s:153    .text.xTaskCreate:0000000000000000 xTaskCreate
-     /tmp/ccIgarPJ.s:261    .text.prvInitialiseNewTask:0000000000000000 prvInitialiseNewTask
-     /tmp/ccIgarPJ.s:453    .text.prvAddNewTaskToReadyList:0000000000000000 prvAddNewTaskToReadyList
-     /tmp/ccIgarPJ.s:257    .text.prvInitialiseNewTask:0000000000000000 $t
-     /tmp/ccIgarPJ.s:449    .text.prvAddNewTaskToReadyList:0000000000000000 $t
-     /tmp/ccIgarPJ.s:4369   .text.prvInitialiseTaskLists:0000000000000000 prvInitialiseTaskLists
-     /tmp/ccIgarPJ.s:620    .text.prvAddNewTaskToReadyList:0000000000000100 $d
-     /tmp/ccIgarPJ.s:631    .text.vTaskDelete:0000000000000000 $t
-     /tmp/ccIgarPJ.s:636    .text.vTaskDelete:0000000000000000 vTaskDelete
-     /tmp/ccIgarPJ.s:4905   .text.prvDeleteTCB:0000000000000000 prvDeleteTCB
-     /tmp/ccIgarPJ.s:4948   .text.prvResetNextTaskUnblockTime:0000000000000000 prvResetNextTaskUnblockTime
-     /tmp/ccIgarPJ.s:820    .text.vTaskDelete:0000000000000104 $d
-ARM GAS  /tmp/ccIgarPJ.s 			page 217
+     /tmp/ccsVbLDJ.s:25     .bss.pxCurrentTCB:0000000000000000 pxCurrentTCB
+     /tmp/ccsVbLDJ.s:22     .bss.pxCurrentTCB:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:28     .bss.pxReadyTasksLists:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:31     .bss.pxReadyTasksLists:0000000000000000 pxReadyTasksLists
+     /tmp/ccsVbLDJ.s:34     .bss.xDelayedTaskList1:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:37     .bss.xDelayedTaskList1:0000000000000000 xDelayedTaskList1
+     /tmp/ccsVbLDJ.s:40     .bss.xDelayedTaskList2:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:43     .bss.xDelayedTaskList2:0000000000000000 xDelayedTaskList2
+     /tmp/ccsVbLDJ.s:46     .bss.pxDelayedTaskList:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:49     .bss.pxDelayedTaskList:0000000000000000 pxDelayedTaskList
+     /tmp/ccsVbLDJ.s:52     .bss.pxOverflowDelayedTaskList:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:55     .bss.pxOverflowDelayedTaskList:0000000000000000 pxOverflowDelayedTaskList
+     /tmp/ccsVbLDJ.s:58     .bss.xPendingReadyList:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:61     .bss.xPendingReadyList:0000000000000000 xPendingReadyList
+     /tmp/ccsVbLDJ.s:64     .bss.xTasksWaitingTermination:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:67     .bss.xTasksWaitingTermination:0000000000000000 xTasksWaitingTermination
+     /tmp/ccsVbLDJ.s:70     .bss.uxDeletedTasksWaitingCleanUp:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:73     .bss.uxDeletedTasksWaitingCleanUp:0000000000000000 uxDeletedTasksWaitingCleanUp
+     /tmp/ccsVbLDJ.s:76     .bss.xSuspendedTaskList:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:79     .bss.xSuspendedTaskList:0000000000000000 xSuspendedTaskList
+     /tmp/ccsVbLDJ.s:82     .bss.uxCurrentNumberOfTasks:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:85     .bss.uxCurrentNumberOfTasks:0000000000000000 uxCurrentNumberOfTasks
+     /tmp/ccsVbLDJ.s:88     .bss.xTickCount:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:91     .bss.xTickCount:0000000000000000 xTickCount
+     /tmp/ccsVbLDJ.s:94     .bss.uxTopReadyPriority:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:97     .bss.uxTopReadyPriority:0000000000000000 uxTopReadyPriority
+     /tmp/ccsVbLDJ.s:100    .bss.xSchedulerRunning:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:103    .bss.xSchedulerRunning:0000000000000000 xSchedulerRunning
+     /tmp/ccsVbLDJ.s:106    .bss.uxPendedTicks:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:109    .bss.uxPendedTicks:0000000000000000 uxPendedTicks
+     /tmp/ccsVbLDJ.s:112    .bss.xYieldPending:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:115    .bss.xYieldPending:0000000000000000 xYieldPending
+     /tmp/ccsVbLDJ.s:118    .bss.xNumOfOverflows:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:121    .bss.xNumOfOverflows:0000000000000000 xNumOfOverflows
+     /tmp/ccsVbLDJ.s:124    .bss.uxTaskNumber:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:127    .bss.uxTaskNumber:0000000000000000 uxTaskNumber
+     /tmp/ccsVbLDJ.s:130    .bss.xNextTaskUnblockTime:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:133    .bss.xNextTaskUnblockTime:0000000000000000 xNextTaskUnblockTime
+     /tmp/ccsVbLDJ.s:136    .bss.xIdleTaskHandle:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:139    .bss.xIdleTaskHandle:0000000000000000 xIdleTaskHandle
+     /tmp/ccsVbLDJ.s:142    .bss.uxSchedulerSuspended:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:145    .bss.uxSchedulerSuspended:0000000000000000 uxSchedulerSuspended
+     /tmp/ccsVbLDJ.s:148    .text.xTaskCreate:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:153    .text.xTaskCreate:0000000000000000 xTaskCreate
+     /tmp/ccsVbLDJ.s:261    .text.prvInitialiseNewTask:0000000000000000 prvInitialiseNewTask
+     /tmp/ccsVbLDJ.s:453    .text.prvAddNewTaskToReadyList:0000000000000000 prvAddNewTaskToReadyList
+     /tmp/ccsVbLDJ.s:257    .text.prvInitialiseNewTask:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:449    .text.prvAddNewTaskToReadyList:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:4369   .text.prvInitialiseTaskLists:0000000000000000 prvInitialiseTaskLists
+     /tmp/ccsVbLDJ.s:620    .text.prvAddNewTaskToReadyList:0000000000000100 $d
+     /tmp/ccsVbLDJ.s:631    .text.vTaskDelete:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:636    .text.vTaskDelete:0000000000000000 vTaskDelete
+     /tmp/ccsVbLDJ.s:4905   .text.prvDeleteTCB:0000000000000000 prvDeleteTCB
+     /tmp/ccsVbLDJ.s:4948   .text.prvResetNextTaskUnblockTime:0000000000000000 prvResetNextTaskUnblockTime
+     /tmp/ccsVbLDJ.s:820    .text.vTaskDelete:0000000000000104 $d
+ARM GAS  /tmp/ccsVbLDJ.s 			page 217
 
 
-     /tmp/ccIgarPJ.s:834    .text.vTaskDelay:0000000000000000 $t
-     /tmp/ccIgarPJ.s:839    .text.vTaskDelay:0000000000000000 vTaskDelay
-     /tmp/ccIgarPJ.s:2344   .text.vTaskSuspendAll:0000000000000000 vTaskSuspendAll
-     /tmp/ccIgarPJ.s:7031   .text.prvAddCurrentTaskToDelayedList:0000000000000000 prvAddCurrentTaskToDelayedList
-     /tmp/ccIgarPJ.s:2387   .text.xTaskResumeAll:0000000000000000 xTaskResumeAll
-     /tmp/ccIgarPJ.s:929    .text.vTaskDelay:0000000000000064 $d
-     /tmp/ccIgarPJ.s:935    .text.eTaskGetState:0000000000000000 $t
-     /tmp/ccIgarPJ.s:940    .text.eTaskGetState:0000000000000000 eTaskGetState
-     /tmp/ccIgarPJ.s:1074   .text.eTaskGetState:000000000000009c $d
-     /tmp/ccIgarPJ.s:1083   .text.uxTaskPriorityGet:0000000000000000 $t
-     /tmp/ccIgarPJ.s:1088   .text.uxTaskPriorityGet:0000000000000000 uxTaskPriorityGet
-     /tmp/ccIgarPJ.s:1143   .text.uxTaskPriorityGet:0000000000000030 $d
-     /tmp/ccIgarPJ.s:1148   .text.uxTaskPriorityGetFromISR:0000000000000000 $t
-     /tmp/ccIgarPJ.s:1153   .text.uxTaskPriorityGetFromISR:0000000000000000 uxTaskPriorityGetFromISR
-     /tmp/ccIgarPJ.s:1238   .text.uxTaskPriorityGetFromISR:0000000000000054 $d
-     /tmp/ccIgarPJ.s:1243   .text.vTaskPrioritySet:0000000000000000 $t
-     /tmp/ccIgarPJ.s:1248   .text.vTaskPrioritySet:0000000000000000 vTaskPrioritySet
-     /tmp/ccIgarPJ.s:1508   .text.vTaskPrioritySet:0000000000000180 $d
-     /tmp/ccIgarPJ.s:1516   .text.vTaskSuspend:0000000000000000 $t
-     /tmp/ccIgarPJ.s:1521   .text.vTaskSuspend:0000000000000000 vTaskSuspend
-     /tmp/ccIgarPJ.s:3279   .text.vTaskSwitchContext:0000000000000000 vTaskSwitchContext
-     /tmp/ccIgarPJ.s:1707   .text.vTaskSuspend:0000000000000108 $d
-     /tmp/ccIgarPJ.s:1719   .text.prvTaskIsTaskSuspended:0000000000000000 $t
-     /tmp/ccIgarPJ.s:1723   .text.prvTaskIsTaskSuspended:0000000000000000 prvTaskIsTaskSuspended
-     /tmp/ccIgarPJ.s:1829   .text.prvTaskIsTaskSuspended:000000000000006c $d
-     /tmp/ccIgarPJ.s:1835   .text.vTaskResume:0000000000000000 $t
-     /tmp/ccIgarPJ.s:1840   .text.vTaskResume:0000000000000000 vTaskResume
-     /tmp/ccIgarPJ.s:1976   .text.vTaskResume:00000000000000c4 $d
-     /tmp/ccIgarPJ.s:1984   .text.xTaskResumeFromISR:0000000000000000 $t
-     /tmp/ccIgarPJ.s:1989   .text.xTaskResumeFromISR:0000000000000000 xTaskResumeFromISR
-     /tmp/ccIgarPJ.s:2156   .text.xTaskResumeFromISR:00000000000000e8 $d
-     /tmp/ccIgarPJ.s:2165   .rodata:0000000000000000 $d
-     /tmp/ccIgarPJ.s:2169   .text.vTaskStartScheduler:0000000000000000 $t
-     /tmp/ccIgarPJ.s:2174   .text.vTaskStartScheduler:0000000000000000 vTaskStartScheduler
-     /tmp/ccIgarPJ.s:2270   .text.vTaskStartScheduler:0000000000000070 $d
-     /tmp/ccIgarPJ.s:4316   .text.prvIdleTask:0000000000000000 prvIdleTask
-     /tmp/ccIgarPJ.s:2280   .text.vTaskEndScheduler:0000000000000000 $t
-     /tmp/ccIgarPJ.s:2285   .text.vTaskEndScheduler:0000000000000000 vTaskEndScheduler
-     /tmp/ccIgarPJ.s:2334   .text.vTaskEndScheduler:0000000000000028 $d
-     /tmp/ccIgarPJ.s:2339   .text.vTaskSuspendAll:0000000000000000 $t
-     /tmp/ccIgarPJ.s:2377   .text.vTaskSuspendAll:0000000000000018 $d
-     /tmp/ccIgarPJ.s:2382   .text.xTaskResumeAll:0000000000000000 $t
-     /tmp/ccIgarPJ.s:3015   .text.xTaskIncrementTick:0000000000000000 xTaskIncrementTick
-     /tmp/ccIgarPJ.s:2592   .text.xTaskResumeAll:0000000000000120 $d
-     /tmp/ccIgarPJ.s:2605   .text.xTaskGetTickCount:0000000000000000 $t
-     /tmp/ccIgarPJ.s:2610   .text.xTaskGetTickCount:0000000000000000 xTaskGetTickCount
-     /tmp/ccIgarPJ.s:2650   .text.xTaskGetTickCount:000000000000001c $d
-     /tmp/ccIgarPJ.s:2655   .text.xTaskGetTickCountFromISR:0000000000000000 $t
-     /tmp/ccIgarPJ.s:2660   .text.xTaskGetTickCountFromISR:0000000000000000 xTaskGetTickCountFromISR
-     /tmp/ccIgarPJ.s:2701   .text.xTaskGetTickCountFromISR:0000000000000020 $d
-     /tmp/ccIgarPJ.s:2706   .text.uxTaskGetNumberOfTasks:0000000000000000 $t
-     /tmp/ccIgarPJ.s:2711   .text.uxTaskGetNumberOfTasks:0000000000000000 uxTaskGetNumberOfTasks
-     /tmp/ccIgarPJ.s:2742   .text.uxTaskGetNumberOfTasks:0000000000000014 $d
-     /tmp/ccIgarPJ.s:2747   .text.pcTaskGetName:0000000000000000 $t
-     /tmp/ccIgarPJ.s:2752   .text.pcTaskGetName:0000000000000000 pcTaskGetName
-     /tmp/ccIgarPJ.s:2826   .text.pcTaskGetName:0000000000000044 $d
-     /tmp/ccIgarPJ.s:2831   .text.uxTaskGetSystemState:0000000000000000 $t
-ARM GAS  /tmp/ccIgarPJ.s 			page 218
+     /tmp/ccsVbLDJ.s:834    .text.vTaskDelay:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:839    .text.vTaskDelay:0000000000000000 vTaskDelay
+     /tmp/ccsVbLDJ.s:2344   .text.vTaskSuspendAll:0000000000000000 vTaskSuspendAll
+     /tmp/ccsVbLDJ.s:7031   .text.prvAddCurrentTaskToDelayedList:0000000000000000 prvAddCurrentTaskToDelayedList
+     /tmp/ccsVbLDJ.s:2387   .text.xTaskResumeAll:0000000000000000 xTaskResumeAll
+     /tmp/ccsVbLDJ.s:929    .text.vTaskDelay:0000000000000064 $d
+     /tmp/ccsVbLDJ.s:935    .text.eTaskGetState:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:940    .text.eTaskGetState:0000000000000000 eTaskGetState
+     /tmp/ccsVbLDJ.s:1074   .text.eTaskGetState:000000000000009c $d
+     /tmp/ccsVbLDJ.s:1083   .text.uxTaskPriorityGet:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:1088   .text.uxTaskPriorityGet:0000000000000000 uxTaskPriorityGet
+     /tmp/ccsVbLDJ.s:1143   .text.uxTaskPriorityGet:0000000000000030 $d
+     /tmp/ccsVbLDJ.s:1148   .text.uxTaskPriorityGetFromISR:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:1153   .text.uxTaskPriorityGetFromISR:0000000000000000 uxTaskPriorityGetFromISR
+     /tmp/ccsVbLDJ.s:1238   .text.uxTaskPriorityGetFromISR:0000000000000054 $d
+     /tmp/ccsVbLDJ.s:1243   .text.vTaskPrioritySet:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:1248   .text.vTaskPrioritySet:0000000000000000 vTaskPrioritySet
+     /tmp/ccsVbLDJ.s:1508   .text.vTaskPrioritySet:0000000000000180 $d
+     /tmp/ccsVbLDJ.s:1516   .text.vTaskSuspend:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:1521   .text.vTaskSuspend:0000000000000000 vTaskSuspend
+     /tmp/ccsVbLDJ.s:3279   .text.vTaskSwitchContext:0000000000000000 vTaskSwitchContext
+     /tmp/ccsVbLDJ.s:1707   .text.vTaskSuspend:0000000000000108 $d
+     /tmp/ccsVbLDJ.s:1719   .text.prvTaskIsTaskSuspended:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:1723   .text.prvTaskIsTaskSuspended:0000000000000000 prvTaskIsTaskSuspended
+     /tmp/ccsVbLDJ.s:1829   .text.prvTaskIsTaskSuspended:000000000000006c $d
+     /tmp/ccsVbLDJ.s:1835   .text.vTaskResume:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:1840   .text.vTaskResume:0000000000000000 vTaskResume
+     /tmp/ccsVbLDJ.s:1976   .text.vTaskResume:00000000000000c4 $d
+     /tmp/ccsVbLDJ.s:1984   .text.xTaskResumeFromISR:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:1989   .text.xTaskResumeFromISR:0000000000000000 xTaskResumeFromISR
+     /tmp/ccsVbLDJ.s:2156   .text.xTaskResumeFromISR:00000000000000e8 $d
+     /tmp/ccsVbLDJ.s:2165   .rodata:0000000000000000 $d
+     /tmp/ccsVbLDJ.s:2169   .text.vTaskStartScheduler:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:2174   .text.vTaskStartScheduler:0000000000000000 vTaskStartScheduler
+     /tmp/ccsVbLDJ.s:2270   .text.vTaskStartScheduler:0000000000000070 $d
+     /tmp/ccsVbLDJ.s:4316   .text.prvIdleTask:0000000000000000 prvIdleTask
+     /tmp/ccsVbLDJ.s:2280   .text.vTaskEndScheduler:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:2285   .text.vTaskEndScheduler:0000000000000000 vTaskEndScheduler
+     /tmp/ccsVbLDJ.s:2334   .text.vTaskEndScheduler:0000000000000028 $d
+     /tmp/ccsVbLDJ.s:2339   .text.vTaskSuspendAll:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:2377   .text.vTaskSuspendAll:0000000000000018 $d
+     /tmp/ccsVbLDJ.s:2382   .text.xTaskResumeAll:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:3015   .text.xTaskIncrementTick:0000000000000000 xTaskIncrementTick
+     /tmp/ccsVbLDJ.s:2592   .text.xTaskResumeAll:0000000000000120 $d
+     /tmp/ccsVbLDJ.s:2605   .text.xTaskGetTickCount:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:2610   .text.xTaskGetTickCount:0000000000000000 xTaskGetTickCount
+     /tmp/ccsVbLDJ.s:2650   .text.xTaskGetTickCount:000000000000001c $d
+     /tmp/ccsVbLDJ.s:2655   .text.xTaskGetTickCountFromISR:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:2660   .text.xTaskGetTickCountFromISR:0000000000000000 xTaskGetTickCountFromISR
+     /tmp/ccsVbLDJ.s:2701   .text.xTaskGetTickCountFromISR:0000000000000020 $d
+     /tmp/ccsVbLDJ.s:2706   .text.uxTaskGetNumberOfTasks:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:2711   .text.uxTaskGetNumberOfTasks:0000000000000000 uxTaskGetNumberOfTasks
+     /tmp/ccsVbLDJ.s:2742   .text.uxTaskGetNumberOfTasks:0000000000000014 $d
+     /tmp/ccsVbLDJ.s:2747   .text.pcTaskGetName:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:2752   .text.pcTaskGetName:0000000000000000 pcTaskGetName
+     /tmp/ccsVbLDJ.s:2826   .text.pcTaskGetName:0000000000000044 $d
+     /tmp/ccsVbLDJ.s:2831   .text.uxTaskGetSystemState:0000000000000000 $t
+ARM GAS  /tmp/ccsVbLDJ.s 			page 218
 
 
-     /tmp/ccIgarPJ.s:2836   .text.uxTaskGetSystemState:0000000000000000 uxTaskGetSystemState
-     /tmp/ccIgarPJ.s:4708   .text.prvListTasksWithinSingleList:0000000000000000 prvListTasksWithinSingleList
-     /tmp/ccIgarPJ.s:3000   .text.uxTaskGetSystemState:0000000000000108 $d
-     /tmp/ccIgarPJ.s:3010   .text.xTaskIncrementTick:0000000000000000 $t
-     /tmp/ccIgarPJ.s:3259   .text.xTaskIncrementTick:0000000000000158 $d
-     /tmp/ccIgarPJ.s:3274   .text.vTaskSwitchContext:0000000000000000 $t
-     /tmp/ccIgarPJ.s:3429   .text.vTaskSwitchContext:00000000000000c0 $d
-     /tmp/ccIgarPJ.s:3439   .text.vTaskPlaceOnEventList:0000000000000000 $t
-     /tmp/ccIgarPJ.s:3444   .text.vTaskPlaceOnEventList:0000000000000000 vTaskPlaceOnEventList
-     /tmp/ccIgarPJ.s:3508   .text.vTaskPlaceOnEventList:0000000000000040 $d
-     /tmp/ccIgarPJ.s:3513   .text.vTaskPlaceOnUnorderedEventList:0000000000000000 $t
-     /tmp/ccIgarPJ.s:3518   .text.vTaskPlaceOnUnorderedEventList:0000000000000000 vTaskPlaceOnUnorderedEventList
-     /tmp/ccIgarPJ.s:3612   .text.vTaskPlaceOnUnorderedEventList:000000000000006c $d
-     /tmp/ccIgarPJ.s:3618   .text.xTaskRemoveFromEventList:0000000000000000 $t
-     /tmp/ccIgarPJ.s:3623   .text.xTaskRemoveFromEventList:0000000000000000 xTaskRemoveFromEventList
-     /tmp/ccIgarPJ.s:3755   .text.xTaskRemoveFromEventList:00000000000000b8 $d
-     /tmp/ccIgarPJ.s:3765   .text.xTaskRemoveFromUnorderedEventList:0000000000000000 $t
-     /tmp/ccIgarPJ.s:3770   .text.xTaskRemoveFromUnorderedEventList:0000000000000000 xTaskRemoveFromUnorderedEventList
-     /tmp/ccIgarPJ.s:3914   .text.xTaskRemoveFromUnorderedEventList:00000000000000c4 $d
-     /tmp/ccIgarPJ.s:3923   .text.vTaskSetTimeOutState:0000000000000000 $t
-     /tmp/ccIgarPJ.s:3928   .text.vTaskSetTimeOutState:0000000000000000 vTaskSetTimeOutState
-     /tmp/ccIgarPJ.s:3994   .text.vTaskSetTimeOutState:000000000000003c $d
-     /tmp/ccIgarPJ.s:4000   .text.xTaskCheckForTimeOut:0000000000000000 $t
-     /tmp/ccIgarPJ.s:4005   .text.xTaskCheckForTimeOut:0000000000000000 xTaskCheckForTimeOut
-     /tmp/ccIgarPJ.s:4152   .text.xTaskCheckForTimeOut:00000000000000b4 $d
-     /tmp/ccIgarPJ.s:4158   .text.vTaskMissedYield:0000000000000000 $t
-     /tmp/ccIgarPJ.s:4163   .text.vTaskMissedYield:0000000000000000 vTaskMissedYield
-     /tmp/ccIgarPJ.s:4194   .text.vTaskMissedYield:0000000000000014 $d
-     /tmp/ccIgarPJ.s:4199   .text.uxTaskGetTaskNumber:0000000000000000 $t
-     /tmp/ccIgarPJ.s:4204   .text.uxTaskGetTaskNumber:0000000000000000 uxTaskGetTaskNumber
-     /tmp/ccIgarPJ.s:4259   .text.vTaskSetTaskNumber:0000000000000000 $t
-     /tmp/ccIgarPJ.s:4264   .text.vTaskSetTaskNumber:0000000000000000 vTaskSetTaskNumber
-     /tmp/ccIgarPJ.s:4312   .text.prvIdleTask:0000000000000000 $t
-     /tmp/ccIgarPJ.s:4461   .text.prvCheckTasksWaitingTermination:0000000000000000 prvCheckTasksWaitingTermination
-     /tmp/ccIgarPJ.s:4359   .text.prvIdleTask:0000000000000028 $d
-     /tmp/ccIgarPJ.s:4365   .text.prvInitialiseTaskLists:0000000000000000 $t
-     /tmp/ccIgarPJ.s:4445   .text.prvInitialiseTaskLists:000000000000005c $d
-     /tmp/ccIgarPJ.s:4457   .text.prvCheckTasksWaitingTermination:0000000000000000 $t
-     /tmp/ccIgarPJ.s:4549   .text.prvCheckTasksWaitingTermination:0000000000000068 $d
-     /tmp/ccIgarPJ.s:4556   .text.vTaskGetInfo:0000000000000000 $t
-     /tmp/ccIgarPJ.s:4561   .text.vTaskGetInfo:0000000000000000 vTaskGetInfo
-     /tmp/ccIgarPJ.s:4838   .text.prvTaskCheckFreeStackSpace:0000000000000000 prvTaskCheckFreeStackSpace
-     /tmp/ccIgarPJ.s:4699   .text.vTaskGetInfo:00000000000000b4 $d
-     /tmp/ccIgarPJ.s:4704   .text.prvListTasksWithinSingleList:0000000000000000 $t
-     /tmp/ccIgarPJ.s:4834   .text.prvTaskCheckFreeStackSpace:0000000000000000 $t
-     /tmp/ccIgarPJ.s:4901   .text.prvDeleteTCB:0000000000000000 $t
-     /tmp/ccIgarPJ.s:4944   .text.prvResetNextTaskUnblockTime:0000000000000000 $t
-     /tmp/ccIgarPJ.s:5015   .text.prvResetNextTaskUnblockTime:0000000000000040 $d
-     /tmp/ccIgarPJ.s:5021   .text.xTaskGetCurrentTaskHandle:0000000000000000 $t
-     /tmp/ccIgarPJ.s:5026   .text.xTaskGetCurrentTaskHandle:0000000000000000 xTaskGetCurrentTaskHandle
-     /tmp/ccIgarPJ.s:5066   .text.xTaskGetCurrentTaskHandle:000000000000001c $d
-     /tmp/ccIgarPJ.s:5071   .text.xTaskGetSchedulerState:0000000000000000 $t
-     /tmp/ccIgarPJ.s:5076   .text.xTaskGetSchedulerState:0000000000000000 xTaskGetSchedulerState
-     /tmp/ccIgarPJ.s:5136   .text.xTaskGetSchedulerState:0000000000000034 $d
-     /tmp/ccIgarPJ.s:5142   .text.vTaskPriorityInherit:0000000000000000 $t
-     /tmp/ccIgarPJ.s:5147   .text.vTaskPriorityInherit:0000000000000000 vTaskPriorityInherit
-     /tmp/ccIgarPJ.s:5306   .text.vTaskPriorityInherit:00000000000000ec $d
-ARM GAS  /tmp/ccIgarPJ.s 			page 219
+     /tmp/ccsVbLDJ.s:2836   .text.uxTaskGetSystemState:0000000000000000 uxTaskGetSystemState
+     /tmp/ccsVbLDJ.s:4708   .text.prvListTasksWithinSingleList:0000000000000000 prvListTasksWithinSingleList
+     /tmp/ccsVbLDJ.s:3000   .text.uxTaskGetSystemState:0000000000000108 $d
+     /tmp/ccsVbLDJ.s:3010   .text.xTaskIncrementTick:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:3259   .text.xTaskIncrementTick:0000000000000158 $d
+     /tmp/ccsVbLDJ.s:3274   .text.vTaskSwitchContext:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:3429   .text.vTaskSwitchContext:00000000000000c0 $d
+     /tmp/ccsVbLDJ.s:3439   .text.vTaskPlaceOnEventList:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:3444   .text.vTaskPlaceOnEventList:0000000000000000 vTaskPlaceOnEventList
+     /tmp/ccsVbLDJ.s:3508   .text.vTaskPlaceOnEventList:0000000000000040 $d
+     /tmp/ccsVbLDJ.s:3513   .text.vTaskPlaceOnUnorderedEventList:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:3518   .text.vTaskPlaceOnUnorderedEventList:0000000000000000 vTaskPlaceOnUnorderedEventList
+     /tmp/ccsVbLDJ.s:3612   .text.vTaskPlaceOnUnorderedEventList:000000000000006c $d
+     /tmp/ccsVbLDJ.s:3618   .text.xTaskRemoveFromEventList:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:3623   .text.xTaskRemoveFromEventList:0000000000000000 xTaskRemoveFromEventList
+     /tmp/ccsVbLDJ.s:3755   .text.xTaskRemoveFromEventList:00000000000000b8 $d
+     /tmp/ccsVbLDJ.s:3765   .text.xTaskRemoveFromUnorderedEventList:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:3770   .text.xTaskRemoveFromUnorderedEventList:0000000000000000 xTaskRemoveFromUnorderedEventList
+     /tmp/ccsVbLDJ.s:3914   .text.xTaskRemoveFromUnorderedEventList:00000000000000c4 $d
+     /tmp/ccsVbLDJ.s:3923   .text.vTaskSetTimeOutState:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:3928   .text.vTaskSetTimeOutState:0000000000000000 vTaskSetTimeOutState
+     /tmp/ccsVbLDJ.s:3994   .text.vTaskSetTimeOutState:000000000000003c $d
+     /tmp/ccsVbLDJ.s:4000   .text.xTaskCheckForTimeOut:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:4005   .text.xTaskCheckForTimeOut:0000000000000000 xTaskCheckForTimeOut
+     /tmp/ccsVbLDJ.s:4152   .text.xTaskCheckForTimeOut:00000000000000b4 $d
+     /tmp/ccsVbLDJ.s:4158   .text.vTaskMissedYield:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:4163   .text.vTaskMissedYield:0000000000000000 vTaskMissedYield
+     /tmp/ccsVbLDJ.s:4194   .text.vTaskMissedYield:0000000000000014 $d
+     /tmp/ccsVbLDJ.s:4199   .text.uxTaskGetTaskNumber:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:4204   .text.uxTaskGetTaskNumber:0000000000000000 uxTaskGetTaskNumber
+     /tmp/ccsVbLDJ.s:4259   .text.vTaskSetTaskNumber:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:4264   .text.vTaskSetTaskNumber:0000000000000000 vTaskSetTaskNumber
+     /tmp/ccsVbLDJ.s:4312   .text.prvIdleTask:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:4461   .text.prvCheckTasksWaitingTermination:0000000000000000 prvCheckTasksWaitingTermination
+     /tmp/ccsVbLDJ.s:4359   .text.prvIdleTask:0000000000000028 $d
+     /tmp/ccsVbLDJ.s:4365   .text.prvInitialiseTaskLists:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:4445   .text.prvInitialiseTaskLists:000000000000005c $d
+     /tmp/ccsVbLDJ.s:4457   .text.prvCheckTasksWaitingTermination:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:4549   .text.prvCheckTasksWaitingTermination:0000000000000068 $d
+     /tmp/ccsVbLDJ.s:4556   .text.vTaskGetInfo:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:4561   .text.vTaskGetInfo:0000000000000000 vTaskGetInfo
+     /tmp/ccsVbLDJ.s:4838   .text.prvTaskCheckFreeStackSpace:0000000000000000 prvTaskCheckFreeStackSpace
+     /tmp/ccsVbLDJ.s:4699   .text.vTaskGetInfo:00000000000000b4 $d
+     /tmp/ccsVbLDJ.s:4704   .text.prvListTasksWithinSingleList:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:4834   .text.prvTaskCheckFreeStackSpace:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:4901   .text.prvDeleteTCB:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:4944   .text.prvResetNextTaskUnblockTime:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:5015   .text.prvResetNextTaskUnblockTime:0000000000000040 $d
+     /tmp/ccsVbLDJ.s:5021   .text.xTaskGetCurrentTaskHandle:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:5026   .text.xTaskGetCurrentTaskHandle:0000000000000000 xTaskGetCurrentTaskHandle
+     /tmp/ccsVbLDJ.s:5066   .text.xTaskGetCurrentTaskHandle:000000000000001c $d
+     /tmp/ccsVbLDJ.s:5071   .text.xTaskGetSchedulerState:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:5076   .text.xTaskGetSchedulerState:0000000000000000 xTaskGetSchedulerState
+     /tmp/ccsVbLDJ.s:5136   .text.xTaskGetSchedulerState:0000000000000034 $d
+     /tmp/ccsVbLDJ.s:5142   .text.vTaskPriorityInherit:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:5147   .text.vTaskPriorityInherit:0000000000000000 vTaskPriorityInherit
+     /tmp/ccsVbLDJ.s:5306   .text.vTaskPriorityInherit:00000000000000ec $d
+ARM GAS  /tmp/ccsVbLDJ.s 			page 219
 
 
-     /tmp/ccIgarPJ.s:5313   .text.xTaskPriorityDisinherit:0000000000000000 $t
-     /tmp/ccIgarPJ.s:5318   .text.xTaskPriorityDisinherit:0000000000000000 xTaskPriorityDisinherit
-     /tmp/ccIgarPJ.s:5503   .text.xTaskPriorityDisinherit:0000000000000108 $d
-     /tmp/ccIgarPJ.s:5510   .text.prvWriteNameToBuffer:0000000000000000 $t
-     /tmp/ccIgarPJ.s:5514   .text.prvWriteNameToBuffer:0000000000000000 prvWriteNameToBuffer
-     /tmp/ccIgarPJ.s:5586   .text.vTaskList:0000000000000000 $t
-     /tmp/ccIgarPJ.s:5591   .text.vTaskList:0000000000000000 vTaskList
-     /tmp/ccIgarPJ.s:5663   .text.vTaskList:0000000000000064 $d
-     /tmp/ccIgarPJ.s:5667   .text.vTaskList:0000000000000074 $t
-     /tmp/ccIgarPJ.s:5783   .text.vTaskList:0000000000000120 $d
-     /tmp/ccIgarPJ.s:5789   .text.uxTaskResetEventItemValue:0000000000000000 $t
-     /tmp/ccIgarPJ.s:5794   .text.uxTaskResetEventItemValue:0000000000000000 uxTaskResetEventItemValue
-     /tmp/ccIgarPJ.s:5843   .text.uxTaskResetEventItemValue:000000000000002c $d
-     /tmp/ccIgarPJ.s:5848   .text.pvTaskIncrementMutexHeldCount:0000000000000000 $t
-     /tmp/ccIgarPJ.s:5853   .text.pvTaskIncrementMutexHeldCount:0000000000000000 pvTaskIncrementMutexHeldCount
-     /tmp/ccIgarPJ.s:5896   .text.pvTaskIncrementMutexHeldCount:0000000000000024 $d
-     /tmp/ccIgarPJ.s:5901   .text.ulTaskNotifyTake:0000000000000000 $t
-     /tmp/ccIgarPJ.s:5906   .text.ulTaskNotifyTake:0000000000000000 ulTaskNotifyTake
-     /tmp/ccIgarPJ.s:6017   .text.ulTaskNotifyTake:0000000000000094 $d
-     /tmp/ccIgarPJ.s:6023   .text.xTaskNotifyWait:0000000000000000 $t
-     /tmp/ccIgarPJ.s:6028   .text.xTaskNotifyWait:0000000000000000 xTaskNotifyWait
-     /tmp/ccIgarPJ.s:6162   .text.xTaskNotifyWait:00000000000000c0 $d
-     /tmp/ccIgarPJ.s:6168   .text.xTaskGenericNotify:0000000000000000 $t
-     /tmp/ccIgarPJ.s:6173   .text.xTaskGenericNotify:0000000000000000 xTaskGenericNotify
-     /tmp/ccIgarPJ.s:6252   .text.xTaskGenericNotify:0000000000000060 $d
-     /tmp/ccIgarPJ.s:6257   .text.xTaskGenericNotify:0000000000000074 $t
-     /tmp/ccIgarPJ.s:6412   .text.xTaskGenericNotify:0000000000000158 $d
-     /tmp/ccIgarPJ.s:6420   .text.xTaskGenericNotifyFromISR:0000000000000000 $t
-     /tmp/ccIgarPJ.s:6425   .text.xTaskGenericNotifyFromISR:0000000000000000 xTaskGenericNotifyFromISR
-     /tmp/ccIgarPJ.s:6524   .text.xTaskGenericNotifyFromISR:0000000000000080 $d
-     /tmp/ccIgarPJ.s:6529   .text.xTaskGenericNotifyFromISR:0000000000000094 $t
-     /tmp/ccIgarPJ.s:6712   .text.xTaskGenericNotifyFromISR:00000000000001a0 $d
-     /tmp/ccIgarPJ.s:6722   .text.vTaskNotifyGiveFromISR:0000000000000000 $t
-     /tmp/ccIgarPJ.s:6727   .text.vTaskNotifyGiveFromISR:0000000000000000 vTaskNotifyGiveFromISR
-     /tmp/ccIgarPJ.s:6937   .text.vTaskNotifyGiveFromISR:0000000000000128 $d
-     /tmp/ccIgarPJ.s:6947   .text.xTaskNotifyStateClear:0000000000000000 $t
-     /tmp/ccIgarPJ.s:6952   .text.xTaskNotifyStateClear:0000000000000000 xTaskNotifyStateClear
-     /tmp/ccIgarPJ.s:7022   .text.xTaskNotifyStateClear:0000000000000048 $d
-     /tmp/ccIgarPJ.s:7027   .text.prvAddCurrentTaskToDelayedList:0000000000000000 $t
-     /tmp/ccIgarPJ.s:7170   .text.prvAddCurrentTaskToDelayedList:00000000000000d0 $d
+     /tmp/ccsVbLDJ.s:5313   .text.xTaskPriorityDisinherit:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:5318   .text.xTaskPriorityDisinherit:0000000000000000 xTaskPriorityDisinherit
+     /tmp/ccsVbLDJ.s:5503   .text.xTaskPriorityDisinherit:0000000000000108 $d
+     /tmp/ccsVbLDJ.s:5510   .text.prvWriteNameToBuffer:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:5514   .text.prvWriteNameToBuffer:0000000000000000 prvWriteNameToBuffer
+     /tmp/ccsVbLDJ.s:5586   .text.vTaskList:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:5591   .text.vTaskList:0000000000000000 vTaskList
+     /tmp/ccsVbLDJ.s:5663   .text.vTaskList:0000000000000064 $d
+     /tmp/ccsVbLDJ.s:5667   .text.vTaskList:0000000000000074 $t
+     /tmp/ccsVbLDJ.s:5783   .text.vTaskList:0000000000000120 $d
+     /tmp/ccsVbLDJ.s:5789   .text.uxTaskResetEventItemValue:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:5794   .text.uxTaskResetEventItemValue:0000000000000000 uxTaskResetEventItemValue
+     /tmp/ccsVbLDJ.s:5843   .text.uxTaskResetEventItemValue:000000000000002c $d
+     /tmp/ccsVbLDJ.s:5848   .text.pvTaskIncrementMutexHeldCount:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:5853   .text.pvTaskIncrementMutexHeldCount:0000000000000000 pvTaskIncrementMutexHeldCount
+     /tmp/ccsVbLDJ.s:5896   .text.pvTaskIncrementMutexHeldCount:0000000000000024 $d
+     /tmp/ccsVbLDJ.s:5901   .text.ulTaskNotifyTake:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:5906   .text.ulTaskNotifyTake:0000000000000000 ulTaskNotifyTake
+     /tmp/ccsVbLDJ.s:6017   .text.ulTaskNotifyTake:0000000000000094 $d
+     /tmp/ccsVbLDJ.s:6023   .text.xTaskNotifyWait:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:6028   .text.xTaskNotifyWait:0000000000000000 xTaskNotifyWait
+     /tmp/ccsVbLDJ.s:6162   .text.xTaskNotifyWait:00000000000000c0 $d
+     /tmp/ccsVbLDJ.s:6168   .text.xTaskGenericNotify:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:6173   .text.xTaskGenericNotify:0000000000000000 xTaskGenericNotify
+     /tmp/ccsVbLDJ.s:6252   .text.xTaskGenericNotify:0000000000000060 $d
+     /tmp/ccsVbLDJ.s:6257   .text.xTaskGenericNotify:0000000000000074 $t
+     /tmp/ccsVbLDJ.s:6412   .text.xTaskGenericNotify:0000000000000158 $d
+     /tmp/ccsVbLDJ.s:6420   .text.xTaskGenericNotifyFromISR:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:6425   .text.xTaskGenericNotifyFromISR:0000000000000000 xTaskGenericNotifyFromISR
+     /tmp/ccsVbLDJ.s:6524   .text.xTaskGenericNotifyFromISR:0000000000000080 $d
+     /tmp/ccsVbLDJ.s:6529   .text.xTaskGenericNotifyFromISR:0000000000000094 $t
+     /tmp/ccsVbLDJ.s:6712   .text.xTaskGenericNotifyFromISR:00000000000001a0 $d
+     /tmp/ccsVbLDJ.s:6722   .text.vTaskNotifyGiveFromISR:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:6727   .text.vTaskNotifyGiveFromISR:0000000000000000 vTaskNotifyGiveFromISR
+     /tmp/ccsVbLDJ.s:6937   .text.vTaskNotifyGiveFromISR:0000000000000128 $d
+     /tmp/ccsVbLDJ.s:6947   .text.xTaskNotifyStateClear:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:6952   .text.xTaskNotifyStateClear:0000000000000000 xTaskNotifyStateClear
+     /tmp/ccsVbLDJ.s:7022   .text.xTaskNotifyStateClear:0000000000000048 $d
+     /tmp/ccsVbLDJ.s:7027   .text.prvAddCurrentTaskToDelayedList:0000000000000000 $t
+     /tmp/ccsVbLDJ.s:7170   .text.prvAddCurrentTaskToDelayedList:00000000000000d0 $d
                      .debug_frame:0000000000000010 $d
 
 UNDEFINED SYMBOLS
@@ -13097,7 +13097,7 @@ vPortExitCritical
 uxListRemove
 SEGGER_SYSVIEW_ShrinkId
 SEGGER_SYSVIEW_RecordU32
-ARM GAS  /tmp/ccIgarPJ.s 			page 220
+ARM GAS  /tmp/ccsVbLDJ.s 			page 220
 
 
 vPortValidateInterruptPriority

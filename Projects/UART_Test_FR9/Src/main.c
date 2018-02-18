@@ -98,7 +98,7 @@ void blink_task(void *pvParameters)
 
 		  //vTaskDelay(100);
 		  //ch = getchar();
-		  HAL_UART_Receive( &huart1, (uint8_t *)aRxBuffer, 20, HAL_MAX_DELAY);
+		  HAL_UART_Receive( &huart1, (uint8_t *)aRxBuffer, 20, 0x1FFFFFF);
 		  HAL_UART_Transmit(&huart1,aRxBuffer, 20,10);
 		  HAL_UART_Transmit(&huart1, (uint8_t*) newline, 2, 10);
 
