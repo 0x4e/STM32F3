@@ -3,63 +3,24 @@
   * File Name          : main.c
   * Description        : Main program body
   ******************************************************************************
-  *
-  * COPYRIGHT(c) 2017 STMicroelectronics
-  *
-  * Redistribution and use in source and binary forms, with or without modification,
-  * are permitted provided that the following conditions are met:
-  *   1. Redistributions of source code must retain the above copyright notice,
-  *      this list of conditions and the following disclaimer.
-  *   2. Redistributions in binary form must reproduce the above copyright notice,
-  *      this list of conditions and the following disclaimer in the documentation
-  *      and/or other materials provided with the distribution.
-  *   3. Neither the name of STMicroelectronics nor the names of its contributors
-  *      may be used to endorse or promote products derived from this software
-  *      without specific prior written permission.
-  *
-  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-  * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-  * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-  * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-  * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-  * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-  * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-  * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-  *
-  ******************************************************************************
   */
 
-//TODO
-// 1. SPI should be setup for SPI3 (this is the only one on the STM32F3
-// 2. Pin mapping needs to be sorted for all IO.
+//    Pin mapping:
 //    SPI_LCD_CS = PD2 (CN7-4)
 //    SPI_LCD_CLK = PC10 (CN7-1)
 //	  SPI_LCD_MOSI = PC12 (CN7-3)
 //	  SPI_LCD_MISO = PC11 (CN7-2)
 //    SPI_LCD_DC = PA15 (CN7-17)
 //	  SPI_LCD_RST = PA13 (CN7-23)
-// 3. Review timer 1 use
-
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "stm32f3xx_hal.h"
 
 #include "lcd_spi.h"
-
-//#include "tim.h"
-//#include "usart.h"
-//#include "gpio.h"
-
-
 #include "ILI9341_Touchscreen.h"
-
 #include "ILI9341_STM32_Driver.h"
 #include "ILI9341_GFX.h"
-
-#include "snow_tiger.h"
 
 #include "SEGGER_SYSVIEW.h"
 #include "string.h"
@@ -88,23 +49,16 @@ int main(void)
   MX_GPIO_Init();
   MX_USART1_UART_Init();
   LCD_SPI_Init();
-  //MX_TIM1_Init();
-
 
   //SEGGER_SYSVIEW_Conf();
   //SEGGER_SYSVIEW_Start(); // start SystemView
-  //setvbuf(stdin, NULL, _IONBF, 0);
 
   ILI9341_Init();//initial driver setup to drive ili9341
 
   /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
+
   while (1)
   {
-  /* USER CODE END WHILE */
-
-  /* USER CODE BEGIN 3 */
-
 //----------------------------------------------------------PERFORMANCE TEST
 		ILI9341_Fill_Screen(WHITE);
 		ILI9341_Set_Rotation(SCREEN_HORIZONTAL_2);
@@ -135,7 +89,7 @@ int main(void)
 		char counter_buff[30];
 		ILI9341_Fill_Screen(WHITE);
 		ILI9341_Set_Rotation(SCREEN_HORIZONTAL_2);
-		sprintf(counter_buff, "Timer counter value: %d", Timer_Counter*2);
+		sprintf(counter_buff, "Timer counter value: %d", (int)Timer_Counter*2);
 		ILI9341_Draw_Text(counter_buff, 10, 10, BLACK, 1, WHITE);
 
 		double seconds_passed = 2*((float)Timer_Counter / 20000);
@@ -325,8 +279,6 @@ int main(void)
 
 
   }
-  /* USER CODE END 3 */
-
 
 }
 
@@ -512,13 +464,3 @@ void assert_failed(uint8_t* file, uint32_t line)
 }
 
 #endif
-
-/**
-  * @}
-  */ 
-
-/**
-  * @}
-*/ 
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

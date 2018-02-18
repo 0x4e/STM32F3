@@ -84,8 +84,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/main.o
  .data          0x0000000000000000        0x0 build/main.o
  .bss           0x0000000000000000        0x0 build/main.o
- .rodata.snow_tiger
-                0x0000000000000000    0x25800 build/main.o
  .text          0x0000000000000000        0x0 build/lcd_spi.o
  .data          0x0000000000000000        0x0 build/lcd_spi.o
  .bss           0x0000000000000000        0x0 build/lcd_spi.o
@@ -2109,8 +2107,8 @@ LOAD /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtn.o
  *(.bss)
  .bss           0x000000002000006c       0x1c /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtbegin.o
  *(.bss*)
- .bss.x.8095    0x0000000020000088        0x2 build/main.o
- .bss.y.8096    0x000000002000008a        0x2 build/main.o
+ .bss.x.8094    0x0000000020000088        0x2 build/main.o
+ .bss.y.8095    0x000000002000008a        0x2 build/main.o
  .bss.__malloc_sbrk_start
                 0x000000002000008c        0x4 /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc_nano.a(lib_a-nano-mallocr.o)
                 0x000000002000008c                __malloc_sbrk_start
@@ -2230,43 +2228,43 @@ LOAD /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtn.o
                 0x0000000000000757       0x22 /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/fpu/crtn.o
 OUTPUT(build/STM32F3.elf elf32-littlearm)
 
-.debug_info     0x0000000000000000     0xe700
+.debug_info     0x0000000000000000     0xe6d2
  .debug_info    0x0000000000000000      0xaa8 build/stm32f3xx_hal_msp.o
  .debug_info    0x0000000000000aa8      0x972 build/stm32f3xx_hal_timebase_TIM.o
- .debug_info    0x000000000000141a     0x10d6 build/main.o
- .debug_info    0x00000000000024f0      0x8ab build/lcd_spi.o
- .debug_info    0x0000000000002d9b      0x433 build/system_stm32f3xx.o
- .debug_info    0x00000000000031ce      0x606 build/stm32f3xx_it.o
- .debug_info    0x00000000000037d4      0xcb0 build/ILI9341_GFX.o
- .debug_info    0x0000000000004484      0xb30 build/ILI9341_STM32_Driver.o
- .debug_info    0x0000000000004fb4     0x13a5 build/stm32f3xx_hal_tim_ex.o
- .debug_info    0x0000000000006359      0x6fc build/stm32f3xx_hal.o
- .debug_info    0x0000000000006a55      0xbab build/stm32f3xx_hal_cortex.o
- .debug_info    0x0000000000007600     0x1814 build/stm32f3xx_hal_rcc.o
- .debug_info    0x0000000000008e14      0x6da build/stm32f3xx_hal_gpio.o
- .debug_info    0x00000000000094ee     0x15a6 build/stm32f3xx_hal_uart.o
- .debug_info    0x000000000000aa94     0x252d build/stm32f3xx_hal_tim.o
- .debug_info    0x000000000000cfc1     0x16cb build/stm32f3xx_hal_spi.o
- .debug_info    0x000000000000e68c       0x74 build/startup_stm32f302x8.o
+ .debug_info    0x000000000000141a     0x10a8 build/main.o
+ .debug_info    0x00000000000024c2      0x8ab build/lcd_spi.o
+ .debug_info    0x0000000000002d6d      0x433 build/system_stm32f3xx.o
+ .debug_info    0x00000000000031a0      0x606 build/stm32f3xx_it.o
+ .debug_info    0x00000000000037a6      0xcb0 build/ILI9341_GFX.o
+ .debug_info    0x0000000000004456      0xb30 build/ILI9341_STM32_Driver.o
+ .debug_info    0x0000000000004f86     0x13a5 build/stm32f3xx_hal_tim_ex.o
+ .debug_info    0x000000000000632b      0x6fc build/stm32f3xx_hal.o
+ .debug_info    0x0000000000006a27      0xbab build/stm32f3xx_hal_cortex.o
+ .debug_info    0x00000000000075d2     0x1814 build/stm32f3xx_hal_rcc.o
+ .debug_info    0x0000000000008de6      0x6da build/stm32f3xx_hal_gpio.o
+ .debug_info    0x00000000000094c0     0x15a6 build/stm32f3xx_hal_uart.o
+ .debug_info    0x000000000000aa66     0x252d build/stm32f3xx_hal_tim.o
+ .debug_info    0x000000000000cf93     0x16cb build/stm32f3xx_hal_spi.o
+ .debug_info    0x000000000000e65e       0x74 build/startup_stm32f302x8.o
 
-.debug_abbrev   0x0000000000000000     0x1c59
+.debug_abbrev   0x0000000000000000     0x1c3a
  .debug_abbrev  0x0000000000000000      0x157 build/stm32f3xx_hal_msp.o
  .debug_abbrev  0x0000000000000157      0x175 build/stm32f3xx_hal_timebase_TIM.o
- .debug_abbrev  0x00000000000002cc      0x22e build/main.o
- .debug_abbrev  0x00000000000004fa      0x175 build/lcd_spi.o
- .debug_abbrev  0x000000000000066f      0x103 build/system_stm32f3xx.o
- .debug_abbrev  0x0000000000000772      0x132 build/stm32f3xx_it.o
- .debug_abbrev  0x00000000000008a4      0x1ec build/ILI9341_GFX.o
- .debug_abbrev  0x0000000000000a90      0x1ff build/ILI9341_STM32_Driver.o
- .debug_abbrev  0x0000000000000c8f      0x1fd build/stm32f3xx_hal_tim_ex.o
- .debug_abbrev  0x0000000000000e8c      0x18f build/stm32f3xx_hal.o
- .debug_abbrev  0x000000000000101b      0x249 build/stm32f3xx_hal_cortex.o
- .debug_abbrev  0x0000000000001264      0x276 build/stm32f3xx_hal_rcc.o
- .debug_abbrev  0x00000000000014da      0x1ac build/stm32f3xx_hal_gpio.o
- .debug_abbrev  0x0000000000001686      0x1bc build/stm32f3xx_hal_uart.o
- .debug_abbrev  0x0000000000001842      0x206 build/stm32f3xx_hal_tim.o
- .debug_abbrev  0x0000000000001a48      0x1ff build/stm32f3xx_hal_spi.o
- .debug_abbrev  0x0000000000001c47       0x12 build/startup_stm32f302x8.o
+ .debug_abbrev  0x00000000000002cc      0x20f build/main.o
+ .debug_abbrev  0x00000000000004db      0x175 build/lcd_spi.o
+ .debug_abbrev  0x0000000000000650      0x103 build/system_stm32f3xx.o
+ .debug_abbrev  0x0000000000000753      0x132 build/stm32f3xx_it.o
+ .debug_abbrev  0x0000000000000885      0x1ec build/ILI9341_GFX.o
+ .debug_abbrev  0x0000000000000a71      0x1ff build/ILI9341_STM32_Driver.o
+ .debug_abbrev  0x0000000000000c70      0x1fd build/stm32f3xx_hal_tim_ex.o
+ .debug_abbrev  0x0000000000000e6d      0x18f build/stm32f3xx_hal.o
+ .debug_abbrev  0x0000000000000ffc      0x249 build/stm32f3xx_hal_cortex.o
+ .debug_abbrev  0x0000000000001245      0x276 build/stm32f3xx_hal_rcc.o
+ .debug_abbrev  0x00000000000014bb      0x1ac build/stm32f3xx_hal_gpio.o
+ .debug_abbrev  0x0000000000001667      0x1bc build/stm32f3xx_hal_uart.o
+ .debug_abbrev  0x0000000000001823      0x206 build/stm32f3xx_hal_tim.o
+ .debug_abbrev  0x0000000000001a29      0x1ff build/stm32f3xx_hal_spi.o
+ .debug_abbrev  0x0000000000001c28       0x12 build/startup_stm32f302x8.o
 
 .debug_loc      0x0000000000000000     0x79e8
  .debug_loc     0x0000000000000000       0xf0 build/stm32f3xx_hal_msp.o
@@ -2341,57 +2339,57 @@ OUTPUT(build/STM32F3.elf elf32-littlearm)
  .debug_ranges  0x0000000000000aa8      0x1c8 build/stm32f3xx_hal_spi.o
  .debug_ranges  0x0000000000000c70       0x20 build/startup_stm32f302x8.o
 
-.debug_line     0x0000000000000000     0x5ea2
+.debug_line     0x0000000000000000     0x5e82
  .debug_line    0x0000000000000000      0x1dc build/stm32f3xx_hal_msp.o
  .debug_line    0x00000000000001dc      0x1db build/stm32f3xx_hal_timebase_TIM.o
- .debug_line    0x00000000000003b7      0x3ce build/main.o
- .debug_line    0x0000000000000785      0x1cd build/lcd_spi.o
- .debug_line    0x0000000000000952      0x149 build/system_stm32f3xx.o
- .debug_line    0x0000000000000a9b      0x191 build/stm32f3xx_it.o
- .debug_line    0x0000000000000c2c      0x3dc build/ILI9341_GFX.o
- .debug_line    0x0000000000001008      0x3ce build/ILI9341_STM32_Driver.o
- .debug_line    0x00000000000013d6      0x8f8 build/stm32f3xx_hal_tim_ex.o
- .debug_line    0x0000000000001cce      0x31b build/stm32f3xx_hal.o
- .debug_line    0x0000000000001fe9      0x3e0 build/stm32f3xx_hal_cortex.o
- .debug_line    0x00000000000023c9      0xc63 build/stm32f3xx_hal_rcc.o
- .debug_line    0x000000000000302c      0x30c build/stm32f3xx_hal_gpio.o
- .debug_line    0x0000000000003338      0xb6a build/stm32f3xx_hal_uart.o
- .debug_line    0x0000000000003ea2     0x139c build/stm32f3xx_hal_tim.o
- .debug_line    0x000000000000523e      0xbf0 build/stm32f3xx_hal_spi.o
- .debug_line    0x0000000000005e2e       0x74 build/startup_stm32f302x8.o
+ .debug_line    0x00000000000003b7      0x3af build/main.o
+ .debug_line    0x0000000000000766      0x1cc build/lcd_spi.o
+ .debug_line    0x0000000000000932      0x149 build/system_stm32f3xx.o
+ .debug_line    0x0000000000000a7b      0x191 build/stm32f3xx_it.o
+ .debug_line    0x0000000000000c0c      0x3dc build/ILI9341_GFX.o
+ .debug_line    0x0000000000000fe8      0x3ce build/ILI9341_STM32_Driver.o
+ .debug_line    0x00000000000013b6      0x8f8 build/stm32f3xx_hal_tim_ex.o
+ .debug_line    0x0000000000001cae      0x31b build/stm32f3xx_hal.o
+ .debug_line    0x0000000000001fc9      0x3e0 build/stm32f3xx_hal_cortex.o
+ .debug_line    0x00000000000023a9      0xc63 build/stm32f3xx_hal_rcc.o
+ .debug_line    0x000000000000300c      0x30c build/stm32f3xx_hal_gpio.o
+ .debug_line    0x0000000000003318      0xb6a build/stm32f3xx_hal_uart.o
+ .debug_line    0x0000000000003e82     0x139c build/stm32f3xx_hal_tim.o
+ .debug_line    0x000000000000521e      0xbf0 build/stm32f3xx_hal_spi.o
+ .debug_line    0x0000000000005e0e       0x74 build/startup_stm32f302x8.o
 
-.debug_str      0x0000000000000000     0x3c85
+.debug_str      0x0000000000000000     0x3c7a
  .debug_str     0x0000000000000000      0xa0d build/stm32f3xx_hal_msp.o
                                         0xa9d (size before relaxing)
  .debug_str     0x0000000000000a0d      0x308 build/stm32f3xx_hal_timebase_TIM.o
                                         0xa5a (size before relaxing)
- .debug_str     0x0000000000000d15      0x1de build/main.o
-                                        0xe94 (size before relaxing)
- .debug_str     0x0000000000000ef3      0x1db build/lcd_spi.o
+ .debug_str     0x0000000000000d15      0x1d3 build/main.o
+                                        0xe89 (size before relaxing)
+ .debug_str     0x0000000000000ee8      0x1db build/lcd_spi.o
                                         0x6e5 (size before relaxing)
- .debug_str     0x00000000000010ce       0xe1 build/system_stm32f3xx.o
+ .debug_str     0x00000000000010c3       0xe1 build/system_stm32f3xx.o
                                         0x307 (size before relaxing)
- .debug_str     0x00000000000011af       0x3c build/stm32f3xx_it.o
+ .debug_str     0x00000000000011a4       0x3c build/stm32f3xx_it.o
                                         0x5c5 (size before relaxing)
- .debug_str     0x00000000000011eb      0x199 build/ILI9341_GFX.o
+ .debug_str     0x00000000000011e0      0x199 build/ILI9341_GFX.o
                                         0x7be (size before relaxing)
- .debug_str     0x0000000000001384      0x225 build/ILI9341_STM32_Driver.o
+ .debug_str     0x0000000000001379      0x225 build/ILI9341_STM32_Driver.o
                                         0x850 (size before relaxing)
- .debug_str     0x00000000000015a9      0x78e build/stm32f3xx_hal_tim_ex.o
+ .debug_str     0x000000000000159e      0x78e build/stm32f3xx_hal_tim_ex.o
                                         0xd80 (size before relaxing)
- .debug_str     0x0000000000001d37      0x202 build/stm32f3xx_hal.o
+ .debug_str     0x0000000000001d2c      0x202 build/stm32f3xx_hal.o
                                         0x7fc (size before relaxing)
- .debug_str     0x0000000000001f39      0x2c1 build/stm32f3xx_hal_cortex.o
+ .debug_str     0x0000000000001f2e      0x2c1 build/stm32f3xx_hal_cortex.o
                                         0x969 (size before relaxing)
- .debug_str     0x00000000000021fa      0x205 build/stm32f3xx_hal_rcc.o
+ .debug_str     0x00000000000021ef      0x205 build/stm32f3xx_hal_rcc.o
                                         0x669 (size before relaxing)
- .debug_str     0x00000000000023ff      0x161 build/stm32f3xx_hal_gpio.o
+ .debug_str     0x00000000000023f4      0x161 build/stm32f3xx_hal_gpio.o
                                         0x47c (size before relaxing)
- .debug_str     0x0000000000002560      0x683 build/stm32f3xx_hal_uart.o
+ .debug_str     0x0000000000002555      0x683 build/stm32f3xx_hal_uart.o
                                         0xde1 (size before relaxing)
- .debug_str     0x0000000000002be3      0xb96 build/stm32f3xx_hal_tim.o
+ .debug_str     0x0000000000002bd8      0xb96 build/stm32f3xx_hal_tim.o
                                        0x1381 (size before relaxing)
- .debug_str     0x0000000000003779      0x50c build/stm32f3xx_hal_spi.o
+ .debug_str     0x000000000000376e      0x50c build/stm32f3xx_hal_spi.o
                                         0xb7e (size before relaxing)
 
 .comment        0x0000000000000000       0x70
@@ -3250,7 +3248,6 @@ memset                                            /usr/bin/../lib/gcc/arm-none-e
 pFlash                                            build/stm32f3xx_hal_flash.o
                                                   build/stm32f3xx_hal_flash_ex.o
 siprintf                                          /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc_nano.a(lib_a-sprintf.o)
-snow_tiger                                        build/main.o
 software_init_hook                                /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu/crt0.o
 sprintf                                           /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/fpu/libc_nano.a(lib_a-sprintf.o)
                                                   build/main.o

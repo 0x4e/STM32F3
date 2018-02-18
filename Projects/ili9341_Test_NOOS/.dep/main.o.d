@@ -52,7 +52,7 @@ build/main.o: Src/main.c Inc/main.h \
  ../../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h \
  Inc/lcd_spi.h Src/ILI9341/ILI9341_Touchscreen.h \
  Src/ILI9341/ILI9341_STM32_Driver.h Src/ILI9341/ILI9341_GFX.h \
- Src/ILI9341/snow_tiger.h ../../../SystemView/SEGGER/SEGGER_SYSVIEW.h \
+ ../../../SystemView/SEGGER/SEGGER_SYSVIEW.h \
  ../../../SystemView/SEGGER/SEGGER.h ../../../SystemView/Config/Global.h \
  /usr/arm-none-eabi/include/string.h \
  /usr/arm-none-eabi/include/sys/string.h
@@ -172,8 +172,6 @@ Src/ILI9341/ILI9341_Touchscreen.h:
 Src/ILI9341/ILI9341_STM32_Driver.h:
 
 Src/ILI9341/ILI9341_GFX.h:
-
-Src/ILI9341/snow_tiger.h:
 
 ../../../SystemView/SEGGER/SEGGER_SYSVIEW.h:
 

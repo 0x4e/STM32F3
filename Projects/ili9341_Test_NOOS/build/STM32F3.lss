@@ -1025,14 +1025,13 @@ int main(void)
 
   //SEGGER_SYSVIEW_Conf();
   //SEGGER_SYSVIEW_Start(); // start SystemView
-  //setvbuf(stdin, NULL, _IONBF, 0);
 
   ILI9341_Init();//initial driver setup to drive ili9341
  8000b6a:	f001 f8af 	bl	8001ccc <ILI9341_Init>
-  /* USER CODE END WHILE */
+  /* Infinite loop */
 
-  /* USER CODE BEGIN 3 */
-
+  while (1)
+  {
 //----------------------------------------------------------PERFORMANCE TEST
 		ILI9341_Fill_Screen(WHITE);
  8000b6e:	f64f 70ff 	movw	r0, #65535	; 0xffff
@@ -1124,7 +1123,7 @@ int main(void)
 		ILI9341_Set_Rotation(SCREEN_HORIZONTAL_2);
  8000bfa:	2003      	movs	r0, #3
  8000bfc:	f001 f80c 	bl	8001c18 <ILI9341_Set_Rotation>
-		sprintf(counter_buff, "Timer counter value: %d", Timer_Counter*2);
+		sprintf(counter_buff, "Timer counter value: %d", (int)Timer_Counter*2);
  8000c00:	6f7b      	ldr	r3, [r7, #116]	; 0x74
  8000c02:	005b      	lsls	r3, r3, #1
  8000c04:	f107 0228 	add.w	r2, r7, #40	; 0x28
@@ -2551,9 +2550,6 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi)
  800162e:	4293      	cmp	r3, r2
  8001630:	d11c      	bne.n	800166c <HAL_SPI_MspInit+0x4c>
   {
-  /* USER CODE BEGIN SPI3_MspInit 0 */
-
-  /* USER CODE END SPI3_MspInit 0 */
     /* Peripheral clock enable */
     __HAL_RCC_SPI3_CLK_ENABLE();
  8001632:	4a11      	ldr	r2, [pc, #68]	; (8001678 <HAL_SPI_MspInit+0x58>)
@@ -2591,9 +2587,7 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi)
  8001664:	4805      	ldr	r0, [pc, #20]	; (800167c <HAL_SPI_MspInit+0x5c>)
  8001666:	4619      	mov	r1, r3
  8001668:	f002 fc08 	bl	8003e7c <HAL_GPIO_Init>
-  /* USER CODE BEGIN SPI3_MspInit 1 */
 
-  /* USER CODE END SPI3_MspInit 1 */
   }
 
 }
